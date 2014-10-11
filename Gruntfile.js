@@ -56,6 +56,23 @@ module.exports = function(grunt) {
       }
     },
 
+    concat: {
+      dist: {
+          src: [
+            "<%= config.src %>/assets/js/*.js",
+            "<%= config.src %>/assets/libs/*.js"
+          ],
+          dest: "<%= config.dist %>/assets/js/site.js"
+      }
+    },
+
+    uglify: {
+        build: {
+            src: "<%= config.dist %>/assets/js/site.js",
+            dest: "<%= config.dist %>/assets/js/site.min.js"
+        }
+    },
+
     watch: {
       sass: {
         files: ["**/*.scss"],

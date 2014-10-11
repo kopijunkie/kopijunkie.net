@@ -44,6 +44,7 @@ module.exports = function(grunt) {
         options: {
           style: "expanded",
           lineNumbers: true,
+          loadPath: require("node-neat").includePaths,
           update: true
         },
         files: [{

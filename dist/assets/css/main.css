@@ -1,13 +1,20 @@
-/* line 4, ../../../src/scss/main.scss */
+/* line 2, /Users/kimmigan/Development/kopijunkie.net/node_modules/node-neat/assets/stylesheets/grid/_grid.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 5, ../../../src/scss/main.scss */
 body {
   color: #123456;
 }
-/* line 7, ../../../src/scss/main.scss */
+/* line 8, ../../../src/scss/main.scss */
 body h2 {
   color: #7e9c27;
   margin: 15px 10px;
 }
-/* line 12, ../../../src/scss/main.scss */
+/* line 13, ../../../src/scss/main.scss */
 body li {
   color: #b4d455;
 }

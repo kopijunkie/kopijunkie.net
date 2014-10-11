@@ -1,0 +1,11 @@
+---
+title: Blog
+posts: ["README.md", "src/content/markdown.md"]
+---
+
+<h1>Posts</h1>
+{{#each posts}}
+    <section>
+    {{md this}}
+    </section>
+{{/each}}

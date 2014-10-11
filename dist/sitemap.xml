@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://github.com/kopijunkie/kopijunkienet/dist/blog.html</loc>
+    <lastmod>2014-10-11T17:03:44.002Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://github.com/kopijunkie/kopijunkienet/dist/index.html</loc>
+    <lastmod>2014-10-11T17:03:44.002Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+</urlset>

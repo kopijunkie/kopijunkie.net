@@ -39,7 +39,28 @@ module.exports = function(grunt) {
       }
     },
 
+    sass: {
+      dist: {
+        options: {
+          style: "expanded",
+          lineNumbers: true,
+          update: true
+        },
+        files: [{
+          expand: true,
+          cwd: "<%= config.src %>/scss",
+          src: ["*.scss"],
+          dest: "<%= config.dist %>/assets/css",
+          ext: ".css"
+        }]
+      }
+    },
+
     watch: {
+      sass: {
+        files: ["**/*.scss"],
+        tasks: ["sass"]
+      },
       assemble: {
         files: ["<%= config.src %>/{content,data,templates}/{,*/}*.{md,hbs,yml}"],
         tasks: ["assemble"]
@@ -62,7 +83,7 @@ module.exports = function(grunt) {
         port: 9000,
         livereload: 35729,
         // change this to "0.0.0.0" to access the server from outside
-        hostname: "localhost"
+        hostname: "local.kopijunkie.dev"
       },
       livereload: {
         options: {
@@ -98,7 +119,7 @@ module.exports = function(grunt) {
   // Autoload grunt tasks, including "assemble" task.
   require("load-grunt-tasks")(grunt, { pattern: [ "grunt-*", "assemble" ] });
 
-  grunt.registerTask("build", [ "bower", "clean", "assemble" ]);
+  grunt.registerTask("build", [ "bower", "sass", "clean", "assemble" ]);
 
   grunt.registerTask("server", [
     "build",

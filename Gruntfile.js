@@ -26,6 +26,19 @@ module.exports = function(grunt) {
       dist: "dist"
     },
 
+    bower: {
+      install: {
+          options: {
+              targetDir: "dist/assets/libs",
+              install: true,
+              verbose: false,
+              cleanTargetDir: false,
+              cleanBowerDir: false,
+              bowerOptions: {}
+          }
+      }
+    },
+
     watch: {
       assemble: {
         files: ["<%= config.src %>/{content,data,templates}/{,*/}*.{md,hbs,yml}"],
@@ -85,20 +98,14 @@ module.exports = function(grunt) {
   // Autoload grunt tasks, including "assemble" task.
   require("load-grunt-tasks")(grunt, { pattern: [ "grunt-*", "assemble" ] });
 
+  grunt.registerTask("build", [ "bower", "clean", "assemble" ]);
+
   grunt.registerTask("server", [
-    "clean",
-    "assemble",
+    "build",
     "connect:livereload",
     "watch"
   ]);
 
-  grunt.registerTask("build", [
-    "clean",
-    "assemble"
-  ]);
-
-  grunt.registerTask("default", [
-    "build"
-  ]);
+  grunt.registerTask("default", [ "build" ]);
 
 };

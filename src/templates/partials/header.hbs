@@ -3,26 +3,27 @@ component: header
 ---
 <div id="header">
     <div id="logo">
-        <h1><a href="http://www.kopijunkie.net">KopiJunkie</a></h1>
+        <h1><a href="{{site.url}}">KopiJunkie</a></h1>
     </div>
 
     <div class="clearBoth"></div>
 
     <div id="tagline">
-        <h3><?php echo $tagline ?></h3>
+        <h3>The online home of a web developing coffee junkie</h3>
     </div>
 
     <div id="socialm">
         <h3>Follow Me On</h3>
+
         <ul id="follow">
             <li id="codepen">
-                <a href="<?php echo $codepenURL ?>" target="_blank">Codepen</a>
+                <a href="http://codepen.io/kopijunkie/" target="_blank">Codepen</a>
             </li>
             <li id="twitter">
-                <a href="<?php echo $twitterURL ?>" target="_blank">Twitter</a>
+                <a href="http://www.twitter.com/kopijunkie" target="_blank">Twitter</a>
             </li>
             <li id="lastfm">
-                <a href="<?php echo $lastfmURL ?>" target="_blank">Last.fm</a>
+                <a href="http://www.last.fm/user/KopiJunkie" target="_blank">Last.fm</a>
             </li>
         </ul>
     </div><!-- end #socialm -->
@@ -30,7 +31,7 @@ component: header
     <div class="clearBoth"></div>
 
     <ul id="navbar">
-        <li><a href="<?php echo $siteURL ?>">Home</a></li>
+        <li><a href="http://kopijunkie.net/">Home</a></li>
         <li><a href="about.php">About</a></li>
         <li><a href="portfolio.php">Portfolio</a></li>
         <li><a href="blog">Blog</a></li>

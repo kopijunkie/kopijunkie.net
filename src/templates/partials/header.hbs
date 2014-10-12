@@ -1,44 +1,46 @@
 ---
 component: header
 ---
-<div id="header" class="header">
-    <div id="logo" class="logo">
-        <h1><a href="{{site.url}}">KopiJunkie</a></h1>
-    </div>
+<div class="header">
+    <h1 class="header--logo"><a href="{{site.url}}">KopiJunkie</a></h1>
 
-    <div class="clear-both"></div>
+    <h2 class="header--tagline">The online home of a web developing coffee junkie</h2>
 
-    <div id="tagline" class="tagline">
-        <h3>The online home of a web developing coffee junkie</h3>
-    </div>
-
-    <section id="socialm">
+    <section class="social-media social-media--horizontal right">
         <h3>Follow Me On</h3>
 
-        <ul id="follow">
-            <li id="codepen">
+        <ul class="social-links-list">
+            <li class="social-links-list__item social-links-list__item--codepen">
                 <a href="{{social.codepen}}" target="_blank">Codepen</a>
             </li>
-            <li id="twitter">
+            <li class="social-links-list__item social-links-list__item--twitter">
                 <a href="{{social.twitter}}" target="_blank">Twitter</a>
             </li>
-            <li id="lastfm">
+            <li class="social-links-list__item social-links-list__item--lastfm">
                 <a href="{{social.lastfm}}" target="_blank">Last.fm</a>
             </li>
         </ul>
     </section>
 
-    <div class="clear-both"></div>
-
     <nav>
-        <ul id="navbar" class="nav-menu">
-            <li class="nav-menu__item"><a href="{{site.url}}">Home</a></li>
-            <li class="nav-menu__item"><a href="about.html">About</a></li>
-            <li class="nav-menu__item"><a href="portfolio.html">Portfolio</a></li>
-            <li class="nav-menu__item"><a href="blog">Blog</a></li>
-            <li class="nav-menu__item"><a href="contact.html">Contact</a></li>
-        </ul><!-- end #navbar -->
+        <ul class="nav-menu nav-menu--horizontal" role="navigation">
+            <li class="nav-menu__item">
+                <a href="{{site.url}}">Home</a>
+            </li>
+            <li class="nav-menu__item">
+                <a href="about.html">About</a>
+            </li>
+            <li class="nav-menu__item">
+                <a href="portfolio.html">Portfolio</a>
+            </li>
+            <li class="nav-menu__item">
+                <a href="blog">Blog</a>
+            </li>
+            <li class="nav-menu__item">
+                <a href="contact.html">Contact</a>
+            </li>
+        </ul>
     </nav>
 
     <div class="clear-both"></div>
-</div><!-- end #header -->
+</div>

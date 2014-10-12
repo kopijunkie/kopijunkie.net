@@ -28,23 +28,23 @@
   <body>
 
     
-<div id="header">
-    <div id="logo">
+<div id="header" class="header">
+    <div id="logo" class="logo">
         <h1><a href="http://kopijunkie.net">KopiJunkie</a></h1>
     </div>
 
-    <div class="clearBoth"></div>
+    <div class="clear-both"></div>
 
-    <div id="tagline">
+    <div id="tagline" class="tagline">
         <h3>The online home of a web developing coffee junkie</h3>
     </div>
 
-    <div id="socialm">
+    <section id="socialm">
         <h3>Follow Me On</h3>
 
         <ul id="follow">
             <li id="codepen">
-                <a href="http://codepen.io/kopijunkie/" target="_blank">Codepen</a>
+                <a href="http://codepen.io/kopijunkie" target="_blank">Codepen</a>
             </li>
             <li id="twitter">
                 <a href="http://www.twitter.com/kopijunkie" target="_blank">Twitter</a>
@@ -53,19 +53,21 @@
                 <a href="http://www.last.fm/user/KopiJunkie" target="_blank">Last.fm</a>
             </li>
         </ul>
-    </div><!-- end #socialm -->
+    </section>
 
-    <div class="clearBoth"></div>
+    <div class="clear-both"></div>
 
-    <ul id="navbar">
-        <li><a href="http://kopijunkie.net/">Home</a></li>
-        <li><a href="about.php">About</a></li>
-        <li><a href="portfolio.php">Portfolio</a></li>
-        <li><a href="blog">Blog</a></li>
-        <li><a href="contact-me.php">Contact</a></li>
-    </ul><!-- end #navbar -->
+    <nav>
+        <ul id="navbar" class="nav-menu">
+            <li class="nav-menu__item"><a href="http://kopijunkie.net">Home</a></li>
+            <li class="nav-menu__item"><a href="about.html">About</a></li>
+            <li class="nav-menu__item"><a href="portfolio.html">Portfolio</a></li>
+            <li class="nav-menu__item"><a href="blog">Blog</a></li>
+            <li class="nav-menu__item"><a href="contact.html">Contact</a></li>
+        </ul><!-- end #navbar -->
+    </nav>
 
-    <div class="clearBoth"></div>
+    <div class="clear-both"></div>
 </div><!-- end #header -->
 
     <div class="container" role="main">
@@ -93,16 +95,16 @@
 
     
 <div class="footer container" role="footer">
-    <div id="media-previews">
+    <div id="media-previews" class="media-previews">
         <h3>What I'm Listening To...</h3>
-        <div id="lastfmrecords"></div>
-        <div style="clear:both"></div>
+        <div id="lastfm-records" class="lastfm-records"></div>
+        <div class="clear-both"></div>
         <br />
-        <h3 id="photo-wall">Flickr Through My Photos...</h3>
+        <h3 id="photo-wall" class="photo-wall">Flickr Through My Photos...</h3>
         <div id="flickr_badge_wrapper">
         <script type="text/javascript" src="http://www.flickr.com/badge_code_v2.gne?&amp;count=6&amp;display=random&amp;size=s&amp;layout=x&amp;source=user&amp;user=99054034%40N00"></script>
         </div>
-    <div class="clearBoth"></div>
+    <div class="clear-both"></div>
     </div><!-- end media previews -->
 
     <p id="copyright">Copyright &copy; 2014 Kimmi Gan / KopiJunkie |

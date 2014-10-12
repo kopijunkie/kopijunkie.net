@@ -1,42 +1,44 @@
 ---
 component: header
 ---
-<div id="header">
-    <div id="logo">
+<div id="header" class="header">
+    <div id="logo" class="logo">
         <h1><a href="{{site.url}}">KopiJunkie</a></h1>
     </div>
 
-    <div class="clearBoth"></div>
+    <div class="clear-both"></div>
 
-    <div id="tagline">
+    <div id="tagline" class="tagline">
         <h3>The online home of a web developing coffee junkie</h3>
     </div>
 
-    <div id="socialm">
+    <section id="socialm">
         <h3>Follow Me On</h3>
 
         <ul id="follow">
             <li id="codepen">
-                <a href="http://codepen.io/kopijunkie/" target="_blank">Codepen</a>
+                <a href="{{social.codepen}}" target="_blank">Codepen</a>
             </li>
             <li id="twitter">
-                <a href="http://www.twitter.com/kopijunkie" target="_blank">Twitter</a>
+                <a href="{{social.twitter}}" target="_blank">Twitter</a>
             </li>
             <li id="lastfm">
-                <a href="http://www.last.fm/user/KopiJunkie" target="_blank">Last.fm</a>
+                <a href="{{social.lastfm}}" target="_blank">Last.fm</a>
             </li>
         </ul>
-    </div><!-- end #socialm -->
+    </section>
 
-    <div class="clearBoth"></div>
+    <div class="clear-both"></div>
 
-    <ul id="navbar">
-        <li><a href="http://kopijunkie.net/">Home</a></li>
-        <li><a href="about.php">About</a></li>
-        <li><a href="portfolio.php">Portfolio</a></li>
-        <li><a href="blog">Blog</a></li>
-        <li><a href="contact-me.php">Contact</a></li>
-    </ul><!-- end #navbar -->
+    <nav>
+        <ul id="navbar" class="nav-menu">
+            <li class="nav-menu__item"><a href="{{site.url}}">Home</a></li>
+            <li class="nav-menu__item"><a href="about.html">About</a></li>
+            <li class="nav-menu__item"><a href="portfolio.html">Portfolio</a></li>
+            <li class="nav-menu__item"><a href="blog">Blog</a></li>
+            <li class="nav-menu__item"><a href="contact.html">Contact</a></li>
+        </ul><!-- end #navbar -->
+    </nav>
 
-    <div class="clearBoth"></div>
+    <div class="clear-both"></div>
 </div><!-- end #header -->

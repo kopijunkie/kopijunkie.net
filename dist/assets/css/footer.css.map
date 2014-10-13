@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": ";AAIA,gBAAiB;ECoFb,OAAO,EA7BF,MAA4B;;;ADpDjC,sBAAQ;EACJ,OAAO,EAAE,KAAK",
+"sources": ["../../../src/scss/footer.scss","../../../node_modules/node-bourbon/assets/stylesheets/addons/_directional-values.scss"],
+"names": [],
+"file": "footer.css"
+}

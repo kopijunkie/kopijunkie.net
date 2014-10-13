@@ -1,0 +1,12 @@
+@import "bourbon";
+@import "colours";
+
+
+.site-info__item {
+    @include padding(0 10px);
+
+    &:after {
+        content: " | ";
+    }
+
+}

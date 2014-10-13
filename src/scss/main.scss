@@ -1,16 +1,4 @@
-@import "bourbon";
-@import "neat";
-@import "colours";
+@import "general";
 
-body {
-    color: $primary-colour;
-
-    h2 {
-        color: darken($secondary-colour, 20%);
-        @include margin(15px 10px);
-    }
-
-    li {
-        color: $secondary-colour;
-    }
-}
+@import "nav-menu";
+@import "footer";

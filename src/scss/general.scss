@@ -1,0 +1,35 @@
+@import "bourbon";
+@import "colours";
+
+body {
+    background: $body-bg-colour;
+    color: $body-text-colour;
+}
+
+h1 {
+    color: $primary-heading-colour;
+}
+h2 {
+    color: saturate(lighten($primary-heading-colour, 10%), 20%);
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+
+.container {
+    padding: 0 10px;
+}
+
+
+.list--no-bullets {
+    @include clearfix;
+    list-style: none;
+}
+
+.list__item--horizontal {
+    float: left;
+}

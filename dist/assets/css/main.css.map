@@ -1,7 +1,7 @@
 {
 "version": 3,
-"mappings": ";AACE,CAAE;ECQI,kBAAoB,EDPJ,UAAU;ECY1B,eAAiB,EDZD,UAAU;EC2B1B,UAAY,ED3BI,UAAU;;;;AEElC,IAAK;EACD,KAAK,ECLQ,OAAO;;;ADOpB,OAAG;EACC,KAAK,EAAE,OAA8B;EEgFzC,MAAO,EA7BF,SAA4B;;;AF/CjC,OAAG;EACC,KAAK,ECZM,OAAO",
-"sources": ["../../../node_modules/node-neat/assets/stylesheets/grid/_grid.scss","../../../node_modules/node-bourbon/assets/stylesheets/addons/_prefixer.scss","../../../src/scss/main.scss","../../../src/scss/colours.scss","../../../node_modules/node-bourbon/assets/stylesheets/addons/_directional-values.scss"],
+"mappings": ";AAGA,IAAK;EACD,UAAU,ECFG,OAAO;EDGpB,KAAK,EC2BU,OAAO;;;;ADxB1B,EAAG;EACC,KAAK,ECiBgB,OAAO;;;;ADfhC,EAAG;EACC,KAAK,EAAE,OAAoD;;;;AAG/D,CAAE;EACE,eAAe,EAAE,IAAI;;;;AAMzB,UAAW;EACP,OAAO,EAAE,MAAM;;;;AAInB,iBAAkB;EAEd,UAAU,EAAE,IAAI;;;AEflB,uBAAQ;EACN,OAAO,EAAC,EAAE;EACV,OAAO,EAAC,KAAK;EACb,KAAK,EAAC,IAAI;;;;AFed,uBAAwB;EACpB,KAAK,EAAE,IAAI;;;;AG9Bf,SAAU;EACN,UAAU,EFDE,OAAO;;;;AEIvB,eAAgB;EACZ,WAAW,EAAE,IAAI;EACjB,SAAS,EAAE,MAAM;;EACjB,WAAW,EAAE,KAAK;EAClB,cAAc,EAAE,GAAG;EACnB,KAAK,EFMS,KAAK;EELnB,WAAW,EAAE,eAAe;;;AAE5B,qBAAQ;EACJ,KAAK,EFGW,OAAO;;;;AGf/B,gBAAiB;ECoFb,OAAO,EA7BF,MAA4B;;;ADpDjC,sBAAQ;EACJ,OAAO,EAAE,KAAK",
+"sources": ["../../../src/scss/general.scss","../../../src/scss/colours.scss","../../../node_modules/node-bourbon/assets/stylesheets/addons/_clearfix.scss","../../../src/scss/nav-menu.scss","../../../src/scss/footer.scss","../../../node_modules/node-bourbon/assets/stylesheets/addons/_directional-values.scss"],
 "names": [],
 "file": "main.css"
 }

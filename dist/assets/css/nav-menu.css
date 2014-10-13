@@ -1,0 +1,21 @@
+/* line 4, ../../../src/scss/nav-menu.scss */
+.nav-menu {
+  background: #794012;
+}
+
+/* line 8, ../../../src/scss/nav-menu.scss */
+.nav-menu__link {
+  font-weight: bold;
+  font-size: 1.25em;
+  /* 20px */
+  line-height: 1.2em;
+  letter-spacing: 5px;
+  color: white;
+  text-shadow: 0 1px 1px black;
+}
+/* line 16, ../../../src/scss/nav-menu.scss */
+.nav-menu__link:hover {
+  color: #d38444;
+}
+
+/*# sourceMappingURL=nav-menu.css.map */

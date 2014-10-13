@@ -1,0 +1,10 @@
+/* line 5, ../../../src/scss/footer.scss */
+.site-info__item {
+  padding: 0 10px;
+}
+/* line 8, ../../../src/scss/footer.scss */
+.site-info__item:after {
+  content: " | ";
+}
+
+/*# sourceMappingURL=footer.css.map */

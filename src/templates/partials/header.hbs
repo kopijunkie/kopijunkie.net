@@ -1,46 +1,44 @@
 ---
 component: header
 ---
-<div class="header">
+<header class="header">
     <h1 class="header--logo"><a href="{{site.url}}">KopiJunkie</a></h1>
 
     <h2 class="header--tagline">The online home of a web developing coffee junkie</h2>
 
-    <section class="social-media social-media--horizontal right">
-        <h3>Follow Me On</h3>
+    <section class="social-links right">
+        <span class="social-links__action">Follow Me On</span>
 
-        <ul class="social-links-list">
-            <li class="social-links-list__item social-links-list__item--codepen">
+        <ul class="social-links__list list--no-bullets">
+            <li class="social-links-list__item--codepen list__item--horizontal">
                 <a href="{{social.codepen}}" target="_blank">Codepen</a>
             </li>
-            <li class="social-links-list__item social-links-list__item--twitter">
+            <li class="social-links-list__item--twitter list__item--horizontal">
                 <a href="{{social.twitter}}" target="_blank">Twitter</a>
             </li>
-            <li class="social-links-list__item social-links-list__item--lastfm">
+            <li class="social-links-list__item--lastfm list__item--horizontal">
                 <a href="{{social.lastfm}}" target="_blank">Last.fm</a>
             </li>
         </ul>
     </section>
 
-    <nav>
-        <ul class="nav-menu nav-menu--horizontal" role="navigation">
-            <li class="nav-menu__item">
-                <a href="index.html">Home</a>
+    <nav class="nav-menu">
+        <ul class="nav-menu__list list--no-bullets" role="navigation">
+            <li class="nav-menu__item list__item--horizontal">
+                <a href="index.html" class="nav-menu__link">Home</a>
             </li>
-            <li class="nav-menu__item">
-                <a href="about.html">About</a>
+            <li class="nav-menu__item list__item--horizontal">
+                <a href="about.html" class="nav-menu__link">About</a>
             </li>
-            <li class="nav-menu__item">
-                <a href="portfolio.html">Portfolio</a>
+            <li class="nav-menu__item list__item--horizontal">
+                <a href="portfolio.html" class="nav-menu__link">Work</a>
             </li>
-            <li class="nav-menu__item">
-                <a href="blog.html">Blog</a>
+            <li class="nav-menu__item list__item--horizontal">
+                <a href="blog.html" class="nav-menu__link">Blog</a>
             </li>
-            <li class="nav-menu__item">
-                <a href="contact.html">Contact</a>
+            <li class="nav-menu__item list__item--horizontal">
+                <a href="contact.html" class="nav-menu__link">Contact</a>
             </li>
         </ul>
     </nav>
-
-    <div class="clear-both"></div>
-</div>
+</header>

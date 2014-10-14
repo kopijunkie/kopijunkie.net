@@ -27,7 +27,7 @@
   </head>
 
   <body>
-    <div class="container" >
+    <div class="wrapper" >
         
 <header class="header" role="banner">
     <h1 class="header--logo"><a href="http://kopijunkie.net">KopiJunkie</a></h1>
@@ -129,16 +129,18 @@
         </section>
 
         
-<footer class="footer container" role="footer">
-    <section class="media-previews">
-        <h3>What I'm Listening To...</h3>
+<footer class="footer" role="footer">
+    <section class="media-wall">
+        <h3 class="media-wall__heading">What I'm Listening To...</h3>
 
         <div id="lastfm-records" class="lastfm-records"></div>
+    </section>
 
-        <h3 class="photo-wall">Flickr Through My Photos...</h3>
+    <section class="media-wall">
+        <h3 class="media-wall__heading">Flickr Through My Photos...</h3>
 
-        <div id="flickr_badge_wrapper">
-        <script type="text/javascript" src="http://www.flickr.com/badge_code_v2.gne?&amp;count=6&amp;display=random&amp;size=s&amp;layout=x&amp;source=user&amp;user=99054034%40N00"></script>
+        <div class="flickr_badge_wrapper">
+            <script type="text/javascript" src="http://www.flickr.com/badge_code_v2.gne?&amp;count=6&amp;display=random&amp;size=s&amp;layout=x&amp;source=user&amp;user=99054034%40N00"></script>
         </div>
     </section>
 

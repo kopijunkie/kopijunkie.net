@@ -37,18 +37,18 @@ a {
 }
 
 /* line 31, ../../../src/scss/general.scss */
-.container {
+.wrapper {
   max-width: 68em;
   margin-left: auto;
   margin-right: auto;
-  padding: 0 10px;
 }
 /* line 15, /Users/kimmigan/Development/kopijunkie.net/node_modules/node-bourbon/assets/stylesheets/addons/_clearfix.scss */
-.container:after {
+.wrapper:after {
   content: "";
   display: table;
   clear: both;
 }
+
 /* line 15, /Users/kimmigan/Development/kopijunkie.net/node_modules/node-bourbon/assets/stylesheets/addons/_clearfix.scss */
 .container:after {
   content: "";
@@ -56,9 +56,10 @@ a {
   clear: both;
 }
 
-/* line 38, ../../../src/scss/general.scss */
+/* line 40, ../../../src/scss/general.scss */
 .list--no-bullets {
   list-style: none;
+  padding: 0;
 }
 /* line 15, /Users/kimmigan/Development/kopijunkie.net/node_modules/node-bourbon/assets/stylesheets/addons/_clearfix.scss */
 .list--no-bullets:after {
@@ -67,12 +68,12 @@ a {
   clear: both;
 }
 
-/* line 43, ../../../src/scss/general.scss */
+/* line 46, ../../../src/scss/general.scss */
 .list__item {
   padding: 0.625em 1.25em;
 }
 
-/* line 46, ../../../src/scss/general.scss */
+/* line 49, ../../../src/scss/general.scss */
 .list__item--horizontal {
   float: left;
 }

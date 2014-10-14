@@ -3,15 +3,47 @@
 
 
 .footer {
+    padding: em(10px);
     background: $footer-bg-colour;
     color: $footer-text-colour;
 }
 
+
+.media-wall {
+    @include clearfix;
+    padding: em(10px) 0 em(30px);
+    border-top: 1px solid $footer-border-colour;
+
+    &:first-child {
+        padding-top: 0;
+        border-top: 0;
+    }
+}
+.media-wall__heading {
+    font-size: rem(25px);
+    letter-spacing: 3px;
+    text-shadow:
+               0 6px 1px rgba(0,0,0,0.1),
+               0 0 5px rgba(0,0,0,0.1),
+               0 1px 3px rgba(0,0,0,0.3),
+               0 3px 5px rgba(0,0,0,0.2),
+               0 5px 10px rgba(0,0,0,0.25),
+               0 10px 10px rgba(0,0,0,0.2),
+               0 20px 20px rgba(0,0,0,0.15);
+}
+
+
 .site-info {
+    clear: both;
+    margin-top: em(15px);
     font-size: rem(13px);
 }
 .site-info__item {
     padding: 0 10px;
+
+    &:first-child {
+        padding-left: 0;
+    }
 }
 .site-info__link {
     color: $footer-link-colour;

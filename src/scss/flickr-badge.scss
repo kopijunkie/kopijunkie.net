@@ -1,0 +1,28 @@
+@import "bourbon";
+@import "neat";
+
+.flickr_badge_wrapper {
+    width: 76%;
+    margin: 0 auto;
+}
+
+.flickr_badge_image {
+    margin: 10px;
+    display: inline-block;
+    border: 5px solid white;
+    border-bottom: 20px solid white;
+    margin: em(15px) em(25px);
+    @include prefixer(box-shadow, 7px 5px 5px rgba(0,0,0,0.5), webkit moz ms o);
+
+    &:hover {
+        @include prefixer(transform, scale(1.25), webkit moz ms o);
+        position: relative;
+        z-index: 5;
+    }
+
+    img {
+        $flickr-img-size: 75px;
+        width: $flickr-img-size;
+        height: $flickr-img-size;
+    }
+}

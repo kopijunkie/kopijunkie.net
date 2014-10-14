@@ -12,6 +12,28 @@
   box-sizing: border-box;
 }
 
+/* line 11, /Users/kimmigan/Development/kopijunkie.net/node_modules/node-neat/assets/stylesheets/grid/_visual-grid.scss */
+body:before {
+  content: '';
+  display: inline-block;
+  background-image: deprecated-webkit-gradient(linear, left top, left bottom, transparent 0, pink 0, pink 6.17215%, transparent 6.17215%, transparent 8.5298%, pink 8.5298%, pink 14.70196%, transparent 14.70196%, transparent 17.05961%, pink 17.05961%, pink 23.23176%, transparent 23.23176%, transparent 25.58941%, pink 25.58941%, pink 31.76157%, transparent 31.76157%, transparent 34.11922%, pink 34.11922%, pink 40.29137%, transparent 40.29137%, transparent 42.64902%, pink 42.64902%, pink 48.82117%, transparent 48.82117%, transparent 51.17883%, pink 51.17883%, pink 57.35098%, transparent 57.35098%, transparent 59.70863%, pink 59.70863%, pink 65.88078%, transparent 65.88078%, transparent 68.23843%, pink 68.23843%, pink 74.41059%, transparent 74.41059%, transparent 76.76824%, pink 76.76824%, pink 82.94039%, transparent 82.94039%, transparent 85.29804%, pink 85.29804%, pink 91.4702%, transparent 91.4702%, transparent 93.82785%, pink 93.82785%, pink 100.0%, transparent 100.0%);
+  background-image: -webkit-linear-gradient(left, transparent 0, pink 0, pink 6.17215%, transparent 6.17215%, transparent 8.5298%, pink 8.5298%, pink 14.70196%, transparent 14.70196%, transparent 17.05961%, pink 17.05961%, pink 23.23176%, transparent 23.23176%, transparent 25.58941%, pink 25.58941%, pink 31.76157%, transparent 31.76157%, transparent 34.11922%, pink 34.11922%, pink 40.29137%, transparent 40.29137%, transparent 42.64902%, pink 42.64902%, pink 48.82117%, transparent 48.82117%, transparent 51.17883%, pink 51.17883%, pink 57.35098%, transparent 57.35098%, transparent 59.70863%, pink 59.70863%, pink 65.88078%, transparent 65.88078%, transparent 68.23843%, pink 68.23843%, pink 74.41059%, transparent 74.41059%, transparent 76.76824%, pink 76.76824%, pink 82.94039%, transparent 82.94039%, transparent 85.29804%, pink 85.29804%, pink 91.4702%, transparent 91.4702%, transparent 93.82785%, pink 93.82785%, pink 100.0%, transparent 100.0%);
+  background-image: -moz-linear-gradient(left, transparent 0, pink 0, pink 6.17215%, transparent 6.17215%, transparent 8.5298%, pink 8.5298%, pink 14.70196%, transparent 14.70196%, transparent 17.05961%, pink 17.05961%, pink 23.23176%, transparent 23.23176%, transparent 25.58941%, pink 25.58941%, pink 31.76157%, transparent 31.76157%, transparent 34.11922%, pink 34.11922%, pink 40.29137%, transparent 40.29137%, transparent 42.64902%, pink 42.64902%, pink 48.82117%, transparent 48.82117%, transparent 51.17883%, pink 51.17883%, pink 57.35098%, transparent 57.35098%, transparent 59.70863%, pink 59.70863%, pink 65.88078%, transparent 65.88078%, transparent 68.23843%, pink 68.23843%, pink 74.41059%, transparent 74.41059%, transparent 76.76824%, pink 76.76824%, pink 82.94039%, transparent 82.94039%, transparent 85.29804%, pink 85.29804%, pink 91.4702%, transparent 91.4702%, transparent 93.82785%, pink 93.82785%, pink 100.0%, transparent 100.0%);
+  background-image: -ms-linear-gradient(left, transparent 0, pink 0, pink 6.17215%, transparent 6.17215%, transparent 8.5298%, pink 8.5298%, pink 14.70196%, transparent 14.70196%, transparent 17.05961%, pink 17.05961%, pink 23.23176%, transparent 23.23176%, transparent 25.58941%, pink 25.58941%, pink 31.76157%, transparent 31.76157%, transparent 34.11922%, pink 34.11922%, pink 40.29137%, transparent 40.29137%, transparent 42.64902%, pink 42.64902%, pink 48.82117%, transparent 48.82117%, transparent 51.17883%, pink 51.17883%, pink 57.35098%, transparent 57.35098%, transparent 59.70863%, pink 59.70863%, pink 65.88078%, transparent 65.88078%, transparent 68.23843%, pink 68.23843%, pink 74.41059%, transparent 74.41059%, transparent 76.76824%, pink 76.76824%, pink 82.94039%, transparent 82.94039%, transparent 85.29804%, pink 85.29804%, pink 91.4702%, transparent 91.4702%, transparent 93.82785%, pink 93.82785%, pink 100.0%, transparent 100.0%);
+  background-image: -o-linear-gradient(left, transparent 0, pink 0, pink 6.17215%, transparent 6.17215%, transparent 8.5298%, pink 8.5298%, pink 14.70196%, transparent 14.70196%, transparent 17.05961%, pink 17.05961%, pink 23.23176%, transparent 23.23176%, transparent 25.58941%, pink 25.58941%, pink 31.76157%, transparent 31.76157%, transparent 34.11922%, pink 34.11922%, pink 40.29137%, transparent 40.29137%, transparent 42.64902%, pink 42.64902%, pink 48.82117%, transparent 48.82117%, transparent 51.17883%, pink 51.17883%, pink 57.35098%, transparent 57.35098%, transparent 59.70863%, pink 59.70863%, pink 65.88078%, transparent 65.88078%, transparent 68.23843%, pink 68.23843%, pink 74.41059%, transparent 74.41059%, transparent 76.76824%, pink 76.76824%, pink 82.94039%, transparent 82.94039%, transparent 85.29804%, pink 85.29804%, pink 91.4702%, transparent 91.4702%, transparent 93.82785%, pink 93.82785%, pink 100.0%, transparent 100.0%);
+  background-image: linear-gradient(left, transparent 0, pink 0, pink 6.17215%, transparent 6.17215%, transparent 8.5298%, pink 8.5298%, pink 14.70196%, transparent 14.70196%, transparent 17.05961%, pink 17.05961%, pink 23.23176%, transparent 23.23176%, transparent 25.58941%, pink 25.58941%, pink 31.76157%, transparent 31.76157%, transparent 34.11922%, pink 34.11922%, pink 40.29137%, transparent 40.29137%, transparent 42.64902%, pink 42.64902%, pink 48.82117%, transparent 48.82117%, transparent 51.17883%, pink 51.17883%, pink 57.35098%, transparent 57.35098%, transparent 59.70863%, pink 59.70863%, pink 65.88078%, transparent 65.88078%, transparent 68.23843%, pink 68.23843%, pink 74.41059%, transparent 74.41059%, transparent 76.76824%, pink 76.76824%, pink 82.94039%, transparent 82.94039%, transparent 85.29804%, pink 85.29804%, pink 91.4702%, transparent 91.4702%, transparent 93.82785%, pink 93.82785%, pink 100.0%, transparent 100.0%);
+  height: 100%;
+  left: 0;
+  margin: 0 auto;
+  max-width: 68em;
+  opacity: 0.3;
+  position: fixed;
+  right: 0;
+  width: 100%;
+  pointer-events: none;
+  z-index: 9999;
+}
+
 /* line 5, ../../../src/scss/general.scss */
 body {
   background: #fff9e8;
@@ -44,18 +66,18 @@ a {
 }
 
 /* line 31, ../../../src/scss/general.scss */
-.container {
+.wrapper {
   max-width: 68em;
   margin-left: auto;
   margin-right: auto;
-  padding: 0 10px;
 }
 /* line 15, /Users/kimmigan/Development/kopijunkie.net/node_modules/node-bourbon/assets/stylesheets/addons/_clearfix.scss */
-.container:after {
+.wrapper:after {
   content: "";
   display: table;
   clear: both;
 }
+
 /* line 15, /Users/kimmigan/Development/kopijunkie.net/node_modules/node-bourbon/assets/stylesheets/addons/_clearfix.scss */
 .container:after {
   content: "";
@@ -63,9 +85,10 @@ a {
   clear: both;
 }
 
-/* line 38, ../../../src/scss/general.scss */
+/* line 40, ../../../src/scss/general.scss */
 .list--no-bullets {
   list-style: none;
+  padding: 0;
 }
 /* line 15, /Users/kimmigan/Development/kopijunkie.net/node_modules/node-bourbon/assets/stylesheets/addons/_clearfix.scss */
 .list--no-bullets:after {
@@ -74,25 +97,93 @@ a {
   clear: both;
 }
 
-/* line 43, ../../../src/scss/general.scss */
+/* line 46, ../../../src/scss/general.scss */
 .list__item {
   padding: 0.625em 1.25em;
 }
 
-/* line 46, ../../../src/scss/general.scss */
+/* line 49, ../../../src/scss/general.scss */
 .list__item--horizontal {
   float: left;
 }
 
+/* line 2, /Users/kimmigan/Development/kopijunkie.net/node_modules/node-neat/assets/stylesheets/grid/_grid.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 11, /Users/kimmigan/Development/kopijunkie.net/node_modules/node-neat/assets/stylesheets/grid/_visual-grid.scss */
+body:before {
+  content: '';
+  display: inline-block;
+  background-image: deprecated-webkit-gradient(linear, left top, left bottom, transparent 0, pink 0, pink 6.17215%, transparent 6.17215%, transparent 8.5298%, pink 8.5298%, pink 14.70196%, transparent 14.70196%, transparent 17.05961%, pink 17.05961%, pink 23.23176%, transparent 23.23176%, transparent 25.58941%, pink 25.58941%, pink 31.76157%, transparent 31.76157%, transparent 34.11922%, pink 34.11922%, pink 40.29137%, transparent 40.29137%, transparent 42.64902%, pink 42.64902%, pink 48.82117%, transparent 48.82117%, transparent 51.17883%, pink 51.17883%, pink 57.35098%, transparent 57.35098%, transparent 59.70863%, pink 59.70863%, pink 65.88078%, transparent 65.88078%, transparent 68.23843%, pink 68.23843%, pink 74.41059%, transparent 74.41059%, transparent 76.76824%, pink 76.76824%, pink 82.94039%, transparent 82.94039%, transparent 85.29804%, pink 85.29804%, pink 91.4702%, transparent 91.4702%, transparent 93.82785%, pink 93.82785%, pink 100.0%, transparent 100.0%);
+  background-image: -webkit-linear-gradient(left, transparent 0, pink 0, pink 6.17215%, transparent 6.17215%, transparent 8.5298%, pink 8.5298%, pink 14.70196%, transparent 14.70196%, transparent 17.05961%, pink 17.05961%, pink 23.23176%, transparent 23.23176%, transparent 25.58941%, pink 25.58941%, pink 31.76157%, transparent 31.76157%, transparent 34.11922%, pink 34.11922%, pink 40.29137%, transparent 40.29137%, transparent 42.64902%, pink 42.64902%, pink 48.82117%, transparent 48.82117%, transparent 51.17883%, pink 51.17883%, pink 57.35098%, transparent 57.35098%, transparent 59.70863%, pink 59.70863%, pink 65.88078%, transparent 65.88078%, transparent 68.23843%, pink 68.23843%, pink 74.41059%, transparent 74.41059%, transparent 76.76824%, pink 76.76824%, pink 82.94039%, transparent 82.94039%, transparent 85.29804%, pink 85.29804%, pink 91.4702%, transparent 91.4702%, transparent 93.82785%, pink 93.82785%, pink 100.0%, transparent 100.0%);
+  background-image: -moz-linear-gradient(left, transparent 0, pink 0, pink 6.17215%, transparent 6.17215%, transparent 8.5298%, pink 8.5298%, pink 14.70196%, transparent 14.70196%, transparent 17.05961%, pink 17.05961%, pink 23.23176%, transparent 23.23176%, transparent 25.58941%, pink 25.58941%, pink 31.76157%, transparent 31.76157%, transparent 34.11922%, pink 34.11922%, pink 40.29137%, transparent 40.29137%, transparent 42.64902%, pink 42.64902%, pink 48.82117%, transparent 48.82117%, transparent 51.17883%, pink 51.17883%, pink 57.35098%, transparent 57.35098%, transparent 59.70863%, pink 59.70863%, pink 65.88078%, transparent 65.88078%, transparent 68.23843%, pink 68.23843%, pink 74.41059%, transparent 74.41059%, transparent 76.76824%, pink 76.76824%, pink 82.94039%, transparent 82.94039%, transparent 85.29804%, pink 85.29804%, pink 91.4702%, transparent 91.4702%, transparent 93.82785%, pink 93.82785%, pink 100.0%, transparent 100.0%);
+  background-image: -ms-linear-gradient(left, transparent 0, pink 0, pink 6.17215%, transparent 6.17215%, transparent 8.5298%, pink 8.5298%, pink 14.70196%, transparent 14.70196%, transparent 17.05961%, pink 17.05961%, pink 23.23176%, transparent 23.23176%, transparent 25.58941%, pink 25.58941%, pink 31.76157%, transparent 31.76157%, transparent 34.11922%, pink 34.11922%, pink 40.29137%, transparent 40.29137%, transparent 42.64902%, pink 42.64902%, pink 48.82117%, transparent 48.82117%, transparent 51.17883%, pink 51.17883%, pink 57.35098%, transparent 57.35098%, transparent 59.70863%, pink 59.70863%, pink 65.88078%, transparent 65.88078%, transparent 68.23843%, pink 68.23843%, pink 74.41059%, transparent 74.41059%, transparent 76.76824%, pink 76.76824%, pink 82.94039%, transparent 82.94039%, transparent 85.29804%, pink 85.29804%, pink 91.4702%, transparent 91.4702%, transparent 93.82785%, pink 93.82785%, pink 100.0%, transparent 100.0%);
+  background-image: -o-linear-gradient(left, transparent 0, pink 0, pink 6.17215%, transparent 6.17215%, transparent 8.5298%, pink 8.5298%, pink 14.70196%, transparent 14.70196%, transparent 17.05961%, pink 17.05961%, pink 23.23176%, transparent 23.23176%, transparent 25.58941%, pink 25.58941%, pink 31.76157%, transparent 31.76157%, transparent 34.11922%, pink 34.11922%, pink 40.29137%, transparent 40.29137%, transparent 42.64902%, pink 42.64902%, pink 48.82117%, transparent 48.82117%, transparent 51.17883%, pink 51.17883%, pink 57.35098%, transparent 57.35098%, transparent 59.70863%, pink 59.70863%, pink 65.88078%, transparent 65.88078%, transparent 68.23843%, pink 68.23843%, pink 74.41059%, transparent 74.41059%, transparent 76.76824%, pink 76.76824%, pink 82.94039%, transparent 82.94039%, transparent 85.29804%, pink 85.29804%, pink 91.4702%, transparent 91.4702%, transparent 93.82785%, pink 93.82785%, pink 100.0%, transparent 100.0%);
+  background-image: linear-gradient(left, transparent 0, pink 0, pink 6.17215%, transparent 6.17215%, transparent 8.5298%, pink 8.5298%, pink 14.70196%, transparent 14.70196%, transparent 17.05961%, pink 17.05961%, pink 23.23176%, transparent 23.23176%, transparent 25.58941%, pink 25.58941%, pink 31.76157%, transparent 31.76157%, transparent 34.11922%, pink 34.11922%, pink 40.29137%, transparent 40.29137%, transparent 42.64902%, pink 42.64902%, pink 48.82117%, transparent 48.82117%, transparent 51.17883%, pink 51.17883%, pink 57.35098%, transparent 57.35098%, transparent 59.70863%, pink 59.70863%, pink 65.88078%, transparent 65.88078%, transparent 68.23843%, pink 68.23843%, pink 74.41059%, transparent 74.41059%, transparent 76.76824%, pink 76.76824%, pink 82.94039%, transparent 82.94039%, transparent 85.29804%, pink 85.29804%, pink 91.4702%, transparent 91.4702%, transparent 93.82785%, pink 93.82785%, pink 100.0%, transparent 100.0%);
+  height: 100%;
+  left: 0;
+  margin: 0 auto;
+  max-width: 68em;
+  opacity: 0.3;
+  position: fixed;
+  right: 0;
+  width: 100%;
+  pointer-events: none;
+  z-index: 9999;
+}
+
+/* line 4, ../../../src/scss/flickr-badge.scss */
+.flickr_badge_wrapper {
+  width: 76%;
+  margin: 0 auto;
+}
+
+/* line 9, ../../../src/scss/flickr-badge.scss */
+.flickr_badge_image {
+  margin: 10px;
+  display: inline-block;
+  border: 5px solid white;
+  border-bottom: 20px solid white;
+  margin: 0.9375em 1.5625em;
+  -webkit-box-shadow: 7px 5px 5px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 7px 5px 5px rgba(0, 0, 0, 0.5);
+  -ms-box-shadow: 7px 5px 5px rgba(0, 0, 0, 0.5);
+  -o-box-shadow: 7px 5px 5px rgba(0, 0, 0, 0.5);
+}
+/* line 17, ../../../src/scss/flickr-badge.scss */
+.flickr_badge_image:hover {
+  -webkit-transform: scale(1.25);
+  -moz-transform: scale(1.25);
+  -ms-transform: scale(1.25);
+  -o-transform: scale(1.25);
+  position: relative;
+  z-index: 5;
+}
+/* line 23, ../../../src/scss/flickr-badge.scss */
+.flickr_badge_image img {
+  width: 75px;
+  height: 75px;
+}
+
 /* line 4, ../../../src/scss/header.scss */
 .header {
+  height: 260px;
   background: #f7f2f8;
   background-image: -webkit-linear-gradient(-360deg, transparent 79px, #ffdae0 79px, transparent 80px, #ffdae0 81px, transparent 81px), -webkit-linear-gradient( #d5f2ed 0.1em, transparent 0.1em);
   background-image: linear-gradient(90deg, transparent 79px, #ffdae0 79px, transparent 80px, #ffdae0 81px, transparent 81px), linear-gradient( #d5f2ed 0.1em, transparent 0.1em);
   background-size: 100% 1.2em;
 }
 
-/* line 11, ../../../src/scss/header.scss */
+/* line 12, ../../../src/scss/header.scss */
+.header--logo {
+  height: 100px;
+}
+
+/* line 16, ../../../src/scss/header.scss */
 .header--tagline {
   background: white;
   opacity: 0.55;
@@ -137,10 +228,11 @@ a {
 
 /* line 4, ../../../src/scss/nav-menu.scss */
 .nav-menu {
+  clear: both;
   background: #794012;
 }
 
-/* line 8, ../../../src/scss/nav-menu.scss */
+/* line 9, ../../../src/scss/nav-menu.scss */
 .nav-menu__link {
   font-weight: bold;
   font-size: 1.25em;
@@ -150,32 +242,63 @@ a {
   color: white;
   text-shadow: 0 1px 1px black;
 }
-/* line 16, ../../../src/scss/nav-menu.scss */
+/* line 17, ../../../src/scss/nav-menu.scss */
 .nav-menu__link:hover {
   color: #d38444;
 }
 
 /* line 5, ../../../src/scss/footer.scss */
 .footer {
+  padding: 0.625em;
   background: #393838;
   color: #ebe8e8;
 }
 
-/* line 10, ../../../src/scss/footer.scss */
+/* line 12, ../../../src/scss/footer.scss */
+.media-wall {
+  padding: 0.625em 0 1.875em;
+  border-top: 1px solid #595959;
+}
+/* line 15, /Users/kimmigan/Development/kopijunkie.net/node_modules/node-bourbon/assets/stylesheets/addons/_clearfix.scss */
+.media-wall:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 17, ../../../src/scss/footer.scss */
+.media-wall:first-child {
+  padding-top: 0;
+  border-top: 0;
+}
+
+/* line 22, ../../../src/scss/footer.scss */
+.media-wall__heading {
+  font-size: 1.5625rem;
+  letter-spacing: 3px;
+  text-shadow: 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* line 36, ../../../src/scss/footer.scss */
 .site-info {
+  clear: both;
+  margin-top: 0.9375em;
   font-size: 0.8125rem;
 }
 
-/* line 13, ../../../src/scss/footer.scss */
+/* line 41, ../../../src/scss/footer.scss */
 .site-info__item {
   padding: 0 10px;
 }
+/* line 44, ../../../src/scss/footer.scss */
+.site-info__item:first-child {
+  padding-left: 0;
+}
 
-/* line 16, ../../../src/scss/footer.scss */
+/* line 48, ../../../src/scss/footer.scss */
 .site-info__link {
   color: #a55719;
 }
-/* line 19, ../../../src/scss/footer.scss */
+/* line 51, ../../../src/scss/footer.scss */
 .site-info__link:hover {
   color: #fff9e8;
 }

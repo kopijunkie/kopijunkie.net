@@ -1,12 +1,35 @@
 /* line 5, ../../../src/scss/social-media.scss */
-.social-links {
+.social-media {
   font-size: 0.8125rem;
 }
 
 /* line 9, ../../../src/scss/social-media.scss */
-.social-links__action {
+.social-media__action {
   color: #123456;
   font-weight: bold;
+}
+
+/* line 14, ../../../src/scss/social-media.scss */
+.social-media__icon {
+  display: inline-block;
+  height: 32px;
+  width: 32px;
+  background: pink;
+}
+
+/* line 21, ../../../src/scss/social-media.scss */
+.social-media__link {
+  display: inline-block;
+  text-decoration: none;
+  color: #75410d;
+}
+/* line 26, ../../../src/scss/social-media.scss */
+.social-media__link:visited {
+  color: #b46c04;
+}
+/* line 30, ../../../src/scss/social-media.scss */
+.social-media__link:hover {
+  color: #d38444;
 }
 
 /*# sourceMappingURL=social-media.css.map */

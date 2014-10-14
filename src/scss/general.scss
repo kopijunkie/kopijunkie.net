@@ -40,6 +40,9 @@ a {
     list-style: none;
 }
 
+.list__item {
+    padding: em(10) em(20);
+}
 .list__item--horizontal {
     float: left;
 }

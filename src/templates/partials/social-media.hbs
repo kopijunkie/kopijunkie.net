@@ -1,21 +1,24 @@
 ---
 component: social-media
 ---
-<section class="social-links right">
-    <span class="social-links__action">Follow Me On</span>
+<section class="social-media right">
+    <span class="social-media__action">Follow Me On</span>
 
-    <ul class="social-links__list list--no-bullets">
-        <li class="social-links-list__item--codepen list__item--horizontal">
-            <i class="icon-codepen"></i>
-            <a href="{{social.codepen}}" target="_blank">Codepen</a>
+    <ul class="list--no-bullets">
+        <li class="list__item list__item--horizontal">
+            <a class="social-media__link" href="{{social.codepen}}" title="Codepen" target="_blank">
+                <i class="social-media__icon icon-codepen"></i>Codepen
+            </a>
         </li>
-        <li class="social-links-list__item--twitter list__item--horizontal">
-            <i class="icon-twitter"></i>
-            <a href="{{social.twitter}}" target="_blank">Twitter</a>
+        <li class="list__item list__item--horizontal">
+            <a class="social-media__link" href="{{social.twitter}}" title="Twitter" target="_blank">
+                <i class="social-media__icon icon-twitter"></i>Twitter
+            </a>
         </li>
-        <li class="social-links-list__item--lastfm list__item--horizontal">
-            <i class="icon-lastfm"></i>
-            <a href="{{social.lastfm}}" target="_blank">Last.fm</a>
+        <li class="list__item list__item--horizontal">
+            <a class="social-media__link" href="{{social.lastfm}}" title="Last.fm" target="_blank">
+                <i class="social-media__icon icon-lastfm"></i>Last.fm
+            </a>
         </li>
     </ul>
 </section>

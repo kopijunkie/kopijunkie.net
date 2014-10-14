@@ -2,11 +2,32 @@
 @import "colours";
 
 
-.social-links {
+.social-media {
     font-size: rem(13px);
 }
 
-.social-links__action {
+.social-media__action {
     color: $primary-heading-colour;
     font-weight: bold;
+}
+
+.social-media__icon {
+    display: inline-block;
+    $size: 32px;
+    height: $size;
+    width: $size;
+    background: pink;
+}
+.social-media__link {
+    display: inline-block;
+    text-decoration: none;
+    color: $link-colour;
+
+    &:visited {
+        color: $link-visited-colour;
+    }
+
+    &:hover {
+        color: $link-hover-colour;
+    }
 }

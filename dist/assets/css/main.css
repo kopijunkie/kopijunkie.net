@@ -75,19 +75,64 @@ a {
 }
 
 /* line 43, ../../../src/scss/general.scss */
+.list__item {
+  padding: 0.625em 1.25em;
+}
+
+/* line 46, ../../../src/scss/general.scss */
 .list__item--horizontal {
   float: left;
 }
 
+/* line 4, ../../../src/scss/header.scss */
+.header {
+  background: #f7f2f8;
+  background-image: -webkit-linear-gradient(-360deg, transparent 79px, #ffdae0 79px, transparent 80px, #ffdae0 81px, transparent 81px), -webkit-linear-gradient( #d5f2ed 0.1em, transparent 0.1em);
+  background-image: linear-gradient(90deg, transparent 79px, #ffdae0 79px, transparent 80px, #ffdae0 81px, transparent 81px), linear-gradient( #d5f2ed 0.1em, transparent 0.1em);
+  background-size: 100% 1.2em;
+}
+
+/* line 11, ../../../src/scss/header.scss */
+.header--tagline {
+  background: white;
+  opacity: 0.55;
+  padding: 5px 3.125em;
+  color: #123456;
+  font-size: 1.0625rem;
+}
+
 /* line 5, ../../../src/scss/social-media.scss */
-.social-links {
+.social-media {
   font-size: 0.8125rem;
 }
 
 /* line 9, ../../../src/scss/social-media.scss */
-.social-links__action {
+.social-media__action {
   color: #123456;
   font-weight: bold;
+}
+
+/* line 14, ../../../src/scss/social-media.scss */
+.social-media__icon {
+  display: inline-block;
+  height: 32px;
+  width: 32px;
+  background: pink;
+}
+
+/* line 21, ../../../src/scss/social-media.scss */
+.social-media__link {
+  display: inline-block;
+  text-decoration: none;
+  color: #75410d;
+}
+/* line 26, ../../../src/scss/social-media.scss */
+.social-media__link:visited {
+  color: #b46c04;
+}
+/* line 30, ../../../src/scss/social-media.scss */
+.social-media__link:hover {
+  color: #d38444;
 }
 
 /* line 4, ../../../src/scss/nav-menu.scss */

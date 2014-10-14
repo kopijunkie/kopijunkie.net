@@ -1,6 +1,6 @@
 {
 "version": 3,
-"mappings": ";AAIA,OAAQ;EACJ,UAAU,ECCK,OAAO;EDAtB,KAAK,EC0BY,OAAO;;;;ADvB5B,UAAW;EACP,SAAS,EAAE,SAAS;;;;AAExB,gBAAiB;EACb,OAAO,EAAE,MAAM;;;;AAEnB,gBAAiB;EACb,KAAK,ECIY,OAA6B;;;ADF9C,sBAAQ;EACJ,KAAK,ECEgB,OAAO",
+"mappings": ";AAIA,OAAQ;EACJ,UAAU,ECEK,OAAO;EDDtB,KAAK,EC2BY,OAAO;;;;ADxB5B,UAAW;EACP,SAAS,EAAE,SAAS;;;;AAExB,gBAAiB;EACb,OAAO,EAAE,MAAM;;;;AAEnB,gBAAiB;EACb,KAAK,ECKY,OAA6B;;;ADH9C,sBAAQ;EACJ,KAAK,ECGgB,OAAO",
 "sources": ["../../../src/scss/footer.scss","../../../src/scss/colours.scss"],
 "names": [],
 "file": "footer.css"

@@ -2,11 +2,21 @@
 @import "colours";
 
 
+.footer {
+    background: $footer-bg-colour;
+    color: $footer-text-colour;
+}
+
+.site-info {
+    font-size: rem(13px);
+}
 .site-info__item {
-    @include padding(0 10px);
+    padding: 0 10px;
+}
+.site-info__link {
+    color: $footer-link-colour;
 
-    &:after {
-        content: " | ";
+    &:hover {
+        color: $footer-link-visited-colour;
     }
-
 }

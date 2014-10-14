@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="Author" content="Kimmi Gan aka KopiJunkie" />
+    <meta name="Copyright" content="Copyright Kimmi Gan / KopiJunkie" />
+    <meta name="Description" content="Online home and portfolio of Kimmi Gan aka KopiJunkie - web technologies geek and aspiring web designer, web developer." />
+    <meta name="Keywords" content="Kimmi Gan, Gan Kimmi, KopiJunkie, Kimmi Gan portfolio, KopiJunkie portfolio, web design, web development, portfolio" />
+
+    <title>Contact | Kopijunkie.net</title>
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+    <link rel="stylesheet" href="assets/libs/normalize.css/normalize.css" />
+
+    <link href="assets/css/main.css" rel="stylesheet" />
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <div class="container" >
+        
+<header class="header">
+    <h1 class="header--logo"><a href="http://kopijunkie.net">KopiJunkie</a></h1>
+
+    <div class="container">
+        <h2 class="header--tagline left">The online home of a web developing coffee junkie</h2>
+
+        
+<section class="social-links right">
+    <span class="social-links__action">Follow Me On</span>
+
+    <ul class="social-links__list list--no-bullets">
+        <li class="social-links-list__item--codepen list__item--horizontal">
+            <i class="icon-codepen"></i>
+            <a href="http://codepen.io/kopijunkie" target="_blank">Codepen</a>
+        </li>
+        <li class="social-links-list__item--twitter list__item--horizontal">
+            <i class="icon-twitter"></i>
+            <a href="http://www.twitter.com/kopijunkie" target="_blank">Twitter</a>
+        </li>
+        <li class="social-links-list__item--lastfm list__item--horizontal">
+            <i class="icon-lastfm"></i>
+            <a href="http://www.last.fm/user/KopiJunkie" target="_blank">Last.fm</a>
+        </li>
+    </ul>
+</section>
+    </div>
+
+    
+<nav class="nav-menu">
+    <ul class="nav-menu__list list--no-bullets" role="navigation">
+        
+        <li class="nav-menu__item list__item--horizontal">
+            <a href="about.html" class="nav-menu__link">About</a>
+        </li>
+        
+        <li class="nav-menu__item list__item--horizontal">
+            <a href="blog.html" class="nav-menu__link">Blog</a>
+        </li>
+        
+        <li class="nav-menu__item list__item--horizontal active">
+            <a href="contact.html" class="nav-menu__link">Contact</a>
+        </li>
+        
+        <li class="nav-menu__item list__item--horizontal">
+            <a href="index.html" class="nav-menu__link">Home</a>
+        </li>
+        
+    </ul>
+</nav>
+
+</header>
+
+        <section class="content" role="main">
+
+            
+<h1></h1>
+
+<p>Drop me message with the form below.</p>
+
+
+<form id="ajax_form" action="contact.php" method="POST">
+    <p><label for="name">Name</label>
+    <input id="name" class="text_input clear" name="name" type="text" value="Your Name" /></p>
+
+    <p><label for="email">Email</label>
+    <input id="email" class="text_input clear" name="email" type="text" value="Your Email" /></p>
+
+     <p id="comments"><label for="message">Message</label><textarea id="message" name="message"></textarea></p>
+
+    <p><label for="spam">What's 5 + 2?</label>
+    <input id="spam" class="text_input clear" name="spam" type="text"  /></p>
+
+    <p><input id="submit" name="submit" type="submit" value="Send" /></p>
+</form>
+
+        </section>
+
+        
+<footer class="footer container" role="footer">
+    <section class="media-previews">
+        <h3>What I'm Listening To...</h3>
+
+        <div id="lastfm-records" class="lastfm-records"></div>
+
+        <h3 class="photo-wall">Flickr Through My Photos...</h3>
+
+        <div id="flickr_badge_wrapper">
+        <script type="text/javascript" src="http://www.flickr.com/badge_code_v2.gne?&amp;count=6&amp;display=random&amp;size=s&amp;layout=x&amp;source=user&amp;user=99054034%40N00"></script>
+        </div>
+    </section>
+
+    <section class="site-info">
+        <ul class="site-info__list list--no-bullets">
+            <li class="site-info__item list__item--horizontal">
+                Copyright &copy; 2014 Kimmi Gan / KopiJunkie
+            </li>
+            <li class="site-info__item list__item--horizontal">
+                <a class="site-info__link" href="contact.html" title="Get In Touch">Contact</a>
+            </li>
+            <li class="site-info__item list__item--horizontal">
+                <a class="site-info__link" href="http://validator.w3.org/check?amp;uri=www.kopijunkie.net&amp;charset=(detect+automatically)&amp;doctype=Inline&amp;group=0" title="HTML Validation" target="_blank">HTML</a>
+            </li>
+            <li class="site-info__item list__item--horizontal">
+                <a class="site-info__link" href="http://jigsaw.w3.org/css-validator/validator?uri=www.kopijunkie.net&amp;profile=css3&amp;usermedium=all&amp;warning=1&amp;lang=en" title="CSS Validation" target="_blank">CSS</a>
+            </li>
+        </ul>
+    </section>
+</footer>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="assets/libs/jquery/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+  </body>
+</html>

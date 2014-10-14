@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": ";AAIA,aAAc;EACV,SAAS,EAAE,SAAS;;;;AAGxB,qBAAsB;EAClB,KAAK,ECgBgB,OAAO;EDf5B,WAAW,EAAE,IAAI",
+"sources": ["../../../src/scss/social-media.scss","../../../src/scss/colours.scss"],
+"names": [],
+"file": "social-media.css"
+}

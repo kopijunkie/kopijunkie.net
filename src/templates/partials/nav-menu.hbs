@@ -1,0 +1,12 @@
+---
+component: nav-menu
+---
+<nav class="nav-menu">
+    <ul class="nav-menu__list list--no-bullets" role="navigation">
+        {{#each pages}}
+        <li class="nav-menu__item list__item--horizontal{{#if this.isCurrentPage}} active{{/if}}">
+            <a href="{{relative dest this.dest}}" class="nav-menu__link">{{ data.title }}</a>
+        </li>
+        {{/each}}
+    </ul>
+</nav>

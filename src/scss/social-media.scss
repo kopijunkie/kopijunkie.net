@@ -1,0 +1,12 @@
+@import "bourbon";
+@import "colours";
+
+
+.social-links {
+    font-size: rem(13px);
+}
+
+.social-links__action {
+    color: $primary-heading-colour;
+    font-weight: bold;
+}

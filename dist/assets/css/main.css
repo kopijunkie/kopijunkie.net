@@ -1,30 +1,69 @@
-/* line 4, ../../../src/scss/general.scss */
+/* line 2, /Users/kimmigan/Development/kopijunkie.net/node_modules/node-neat/assets/stylesheets/grid/_grid.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 2, /Users/kimmigan/Development/kopijunkie.net/node_modules/node-neat/assets/stylesheets/grid/_grid.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 5, ../../../src/scss/general.scss */
 body {
   background: #fff9e8;
   color: #393838;
 }
 
-/* line 9, ../../../src/scss/general.scss */
+/* line 10, ../../../src/scss/general.scss */
 h1 {
   color: #123456;
 }
 
-/* line 12, ../../../src/scss/general.scss */
+/* line 13, ../../../src/scss/general.scss */
 h2 {
   color: #0b4d90;
 }
 
-/* line 16, ../../../src/scss/general.scss */
+/* line 17, ../../../src/scss/general.scss */
 a {
   text-decoration: none;
 }
 
-/* line 23, ../../../src/scss/general.scss */
-.container {
-  padding: 0 10px;
+/* line 22, ../../../src/scss/general.scss */
+.left {
+  float: left;
 }
 
-/* line 28, ../../../src/scss/general.scss */
+/* line 26, ../../../src/scss/general.scss */
+.right {
+  float: right;
+}
+
+/* line 31, ../../../src/scss/general.scss */
+.container {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 10px;
+}
+/* line 15, /Users/kimmigan/Development/kopijunkie.net/node_modules/node-bourbon/assets/stylesheets/addons/_clearfix.scss */
+.container:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 15, /Users/kimmigan/Development/kopijunkie.net/node_modules/node-bourbon/assets/stylesheets/addons/_clearfix.scss */
+.container:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* line 38, ../../../src/scss/general.scss */
 .list--no-bullets {
   list-style: none;
 }
@@ -35,9 +74,20 @@ a {
   clear: both;
 }
 
-/* line 33, ../../../src/scss/general.scss */
+/* line 43, ../../../src/scss/general.scss */
 .list__item--horizontal {
   float: left;
+}
+
+/* line 5, ../../../src/scss/social-media.scss */
+.social-links {
+  font-size: 0.8125rem;
+}
+
+/* line 9, ../../../src/scss/social-media.scss */
+.social-links__action {
+  color: #123456;
+  font-weight: bold;
 }
 
 /* line 4, ../../../src/scss/nav-menu.scss */
@@ -61,12 +111,28 @@ a {
 }
 
 /* line 5, ../../../src/scss/footer.scss */
+.footer {
+  background: #393838;
+  color: #ebe8e8;
+}
+
+/* line 10, ../../../src/scss/footer.scss */
+.site-info {
+  font-size: 0.8125rem;
+}
+
+/* line 13, ../../../src/scss/footer.scss */
 .site-info__item {
   padding: 0 10px;
 }
-/* line 8, ../../../src/scss/footer.scss */
-.site-info__item:after {
-  content: " | ";
+
+/* line 16, ../../../src/scss/footer.scss */
+.site-info__link {
+  color: #a55719;
+}
+/* line 19, ../../../src/scss/footer.scss */
+.site-info__link:hover {
+  color: #fff9e8;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,34 +1,33 @@
-// Backgrounds
+$primary-colour: #794012;   // Coffee
+$secondary-colour: #123456; // Dark Blue
 
+// Backgrounds
 $body-bg-colour: #fff9e8;
 $nav-bg-colour: #794012;
 $footer-bg-colour: #393838;
 
 
 // Borders
-
 $body-border-colour: #f5d3a4;
 $nav-border-colour: #bebdbd;
 
 
 // Links
-
 $link-colour: #75410d;
 $link-hover-colour: #d38444;
 $link-visited-colour: #b46c04;
 $nav-link-colour: white;
 $nav-link-hover-colour: #d38444;
-$footer-link-hover-colour: #794012;
+$footer-link-colour: lighten($primary-colour, 10%);
 $footer-link-visited-colour: #fff9e8;
 
 
 // Headings
-
 $primary-heading-colour: #123456;
 $secondary-heading-colour: #ebe8e8;
 
 
 // Text
-
 $body-text-colour: #393838;
 $tagline-text-colour: #042849;
+$footer-text-colour: #ebe8e8;

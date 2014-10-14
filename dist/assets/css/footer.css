@@ -1,10 +1,26 @@
 /* line 5, ../../../src/scss/footer.scss */
+.footer {
+  background: #393838;
+  color: #ebe8e8;
+}
+
+/* line 10, ../../../src/scss/footer.scss */
+.site-info {
+  font-size: 0.8125rem;
+}
+
+/* line 13, ../../../src/scss/footer.scss */
 .site-info__item {
   padding: 0 10px;
 }
-/* line 8, ../../../src/scss/footer.scss */
-.site-info__item:after {
-  content: " | ";
+
+/* line 16, ../../../src/scss/footer.scss */
+.site-info__link {
+  color: #a55719;
+}
+/* line 19, ../../../src/scss/footer.scss */
+.site-info__link:hover {
+  color: #fff9e8;
 }
 
 /*# sourceMappingURL=footer.css.map */

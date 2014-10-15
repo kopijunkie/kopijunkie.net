@@ -5,5 +5,6 @@
 .sidebar {
     @include span-columns(3.5);
     @include omega();
-    padding: 0 em(15px) em(20px);
+    padding-right: em(15px);
+    padding-bottom: em(20px);
 }

@@ -309,7 +309,8 @@ a {
   margin-right: 2.35765%;
   width: 27.49666%;
   margin-right: 0;
-  padding: 0 0.9375em 1.25em;
+  padding-right: 0.9375em;
+  padding-bottom: 1.25em;
 }
 /* line 38, /Users/kimmigan/Development/kopijunkie.net/node_modules/node-neat/assets/stylesheets/grid/_span-columns.scss */
 .sidebar:last-child {

@@ -56,7 +56,12 @@ a {
   clear: both;
 }
 
-/* line 40, ../../../src/scss/general.scss */
+/* line 39, ../../../src/scss/general.scss */
+.content {
+  padding: 0.9375em;
+}
+
+/* line 44, ../../../src/scss/general.scss */
 .list--no-bullets {
   list-style: none;
   padding: 0;
@@ -68,12 +73,12 @@ a {
   clear: both;
 }
 
-/* line 46, ../../../src/scss/general.scss */
+/* line 50, ../../../src/scss/general.scss */
 .list__item {
   padding: 0.625em 1.25em;
 }
 
-/* line 49, ../../../src/scss/general.scss */
+/* line 53, ../../../src/scss/general.scss */
 .list__item--horizontal {
   float: left;
 }

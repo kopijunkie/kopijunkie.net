@@ -5,25 +5,25 @@
   box-sizing: border-box;
 }
 
-/* line 4, ../../../src/scss/flickr-badge.scss */
+/* line 5, ../../../src/scss/flickr-badge.scss */
 .flickr_badge_wrapper {
   width: 76%;
   margin: 0 auto;
 }
 
-/* line 9, ../../../src/scss/flickr-badge.scss */
+/* line 10, ../../../src/scss/flickr-badge.scss */
 .flickr_badge_image {
   margin: 10px;
   display: inline-block;
   border: 5px solid white;
   border-bottom: 20px solid white;
   margin: 0.9375em 1.5625em;
-  -webkit-box-shadow: 7px 5px 5px rgba(0, 0, 0, 0.5);
-  -moz-box-shadow: 7px 5px 5px rgba(0, 0, 0, 0.5);
-  -ms-box-shadow: 7px 5px 5px rgba(0, 0, 0, 0.5);
-  -o-box-shadow: 7px 5px 5px rgba(0, 0, 0, 0.5);
+  -webkit-box-sizing: 7px 5px 5px rgba(0, 0, 0, 0.5);
+  -moz-box-sizing: 7px 5px 5px rgba(0, 0, 0, 0.5);
+  -ms-box-sizing: 7px 5px 5px rgba(0, 0, 0, 0.5);
+  -o-box-sizing: 7px 5px 5px rgba(0, 0, 0, 0.5);
 }
-/* line 17, ../../../src/scss/flickr-badge.scss */
+/* line 18, ../../../src/scss/flickr-badge.scss */
 .flickr_badge_image:hover {
   -webkit-transform: scale(1.25);
   -moz-transform: scale(1.25);
@@ -32,7 +32,7 @@
   position: relative;
   z-index: 5;
 }
-/* line 23, ../../../src/scss/flickr-badge.scss */
+/* line 24, ../../../src/scss/flickr-badge.scss */
 .flickr_badge_image img {
   width: 75px;
   height: 75px;

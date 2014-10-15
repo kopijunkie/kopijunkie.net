@@ -1,18 +1,24 @@
 /* line 4, ../../../src/scss/header.scss */
 .header {
-  height: 260px;
   background: #f7f2f8;
   background-image: -webkit-linear-gradient(-360deg, transparent 79px, #ffdae0 79px, transparent 80px, #ffdae0 81px, transparent 81px), -webkit-linear-gradient( #d5f2ed 0.1em, transparent 0.1em);
   background-image: linear-gradient(90deg, transparent 79px, #ffdae0 79px, transparent 80px, #ffdae0 81px, transparent 81px), linear-gradient( #d5f2ed 0.1em, transparent 0.1em);
   background-size: 100% 1.2em;
+  height: 260px;
 }
-
-/* line 12, ../../../src/scss/header.scss */
-.header--logo {
-  height: 100px;
+/* line 11, ../../../src/scss/header.scss */
+.header h1 {
+  margin: 0;
 }
 
 /* line 16, ../../../src/scss/header.scss */
+.header--logo {
+  background: url(../img/kopijunkie.png) no-repeat;
+  background-size: 350px 84px;
+  height: 100px;
+}
+
+/* line 22, ../../../src/scss/header.scss */
 .header--tagline {
   background: white;
   opacity: 0.55;

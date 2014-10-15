@@ -4,7 +4,7 @@ component: nav-menu
 <nav class="nav-menu">
     <ul class="list--no-bullets" role="navigation">
         {{#each pages}}
-        <li class="list__item list__item--horizontal{{#if this.isCurrentPage}} active{{/if}}">
+        <li class="nav-menu__item list__item list__item--horizontal{{#if this.isCurrentPage}} active{{/if}}">
             <a href="{{relative dest this.dest}}" class="nav-menu__link">{{ data.title }}</a>
         </li>
         {{/each}}

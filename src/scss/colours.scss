@@ -1,8 +1,17 @@
 $primary-colour: #794012;   // Dark Coffee
 $secondary-colour: #123456; // Dark Blue
 
+// 50 shades of coffee (sort of)
+$dark-coffee: #794012;
+
+$milky-coffee: #be864d;
+$tea: saturate(lighten(#ceaa7a, 15%), 10%);
+$milk: #fffae7;
+
+
 // Backgrounds
-$body-bg-colour: #fff9e8;
+$body-bg-colour: $milk;
+$wrapper-bg-colour: $tea;
 $header-bg-colour: #f7f2f8;
 $nav-bg-colour: #794012;
 $footer-bg-colour: #393838;
@@ -10,6 +19,7 @@ $footer-bg-colour: #393838;
 
 // Borders
 $body-border-colour: #f5d3a4;
+$wrapper-border-colour: #be864d;
 $nav-border-colour: #bebdbd;
 $footer-border-colour: #595959;
 
@@ -20,6 +30,7 @@ $link-hover-colour: #d38444;
 $link-visited-colour: #b46c04;
 $nav-link-colour: white;
 $nav-link-hover-colour: #d38444;
+$nav-link-active-colour: #be864d;
 $footer-link-colour: lighten($primary-colour, 10%);
 $footer-link-visited-colour: #fff9e8;
 

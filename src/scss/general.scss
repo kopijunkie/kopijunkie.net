@@ -30,10 +30,16 @@ a {
 
 .wrapper {
     @include outer-container;
+    background: $wrapper-bg-colour;
+    border: 1px solid $wrapper-border-colour;
 }
 
 .container {
     @include clearfix;
+}
+
+.content {
+    padding: em(15px);
 }
 
 

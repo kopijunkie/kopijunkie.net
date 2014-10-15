@@ -1,5 +1,6 @@
 @import "bourbon";
 @import "colours";
+@import "mixins";
 
 
 .social-media {
@@ -11,17 +12,31 @@
     font-weight: bold;
 }
 
+$icon-size: 32px;
 .social-media__icon {
     display: inline-block;
-    $size: 32px;
-    height: $size;
-    width: $size;
-    background: pink;
+    height: $icon-size;
+    width: $icon-size;
+    @include border-radius($icon-size);
+    margin-right: 10px;
 }
+.icon-codepen {
+    background: white url(../img/codepen-btn.png) no-repeat;
+}
+.icon-twitter {
+    background: #36a6ee url(../img/twitter-btn.png) no-repeat;
+}
+.icon-lastfm {
+    background: #d30319 url(../img/lastfm-btn.png) no-repeat;
+}
+
 .social-media__link {
     display: inline-block;
     text-decoration: none;
     color: $link-colour;
+    vertical-align: top;
+    line-height: rem($icon-size);
+    height: $icon-size;
 
     &:visited {
         color: $link-visited-colour;

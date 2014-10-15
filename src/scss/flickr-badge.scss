@@ -1,5 +1,6 @@
 @import "bourbon";
 @import "neat";
+@import "mixins";
 
 .flickr_badge_wrapper {
     width: 76%;
@@ -12,7 +13,7 @@
     border: 5px solid white;
     border-bottom: 20px solid white;
     margin: em(15px) em(25px);
-    @include prefixer(box-shadow, 7px 5px 5px rgba(0,0,0,0.5), webkit moz ms o);
+    @include box-shadow(7px 5px 5px rgba(0,0,0,0.5));
 
     &:hover {
         @include prefixer(transform, scale(1.25), webkit moz ms o);

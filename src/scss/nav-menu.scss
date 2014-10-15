@@ -1,14 +1,26 @@
 @import "bourbon";
+@import "neat";
 @import "colours";
 
 .nav-menu {
     clear: both;
     background: $nav-bg-colour;
+    padding: 0 em(10px);
 }
 
+.nav-menu__item {
+    padding: {
+        left: em(10px);
+        right: em(10px);
+    }
+
+    &.active {
+        border-bottom: 5px solid $nav-link-active-colour;
+    }
+}
 .nav-menu__link {
     font-weight: bold;
-    font-size: 1.25em;  /* 20px */
+    font-size: rem(18px);
     line-height: 1.2em;
     letter-spacing: 5px;
     color: $nav-link-colour;

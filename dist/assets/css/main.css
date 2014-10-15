@@ -63,15 +63,14 @@ a {
   display: table;
   clear: both;
 }
-
-/* line 15, /Users/kimmigan/Development/kopijunkie.net/node_modules/node-bourbon/assets/stylesheets/addons/_clearfix.scss */
-.container:after {
-  content: "";
-  display: table;
-  clear: both;
+/* line 40, ../../../src/scss/general.scss */
+.wrapper .container {
+  width: 100%;
+  display: flex;
+  align-items: stretch;
 }
 
-/* line 45, ../../../src/scss/general.scss */
+/* line 47, ../../../src/scss/general.scss */
 .content {
   float: left;
   display: block;
@@ -84,20 +83,20 @@ a {
 .content:last-child {
   margin-right: 0;
 }
-/* line 50, ../../../src/scss/general.scss */
+/* line 52, ../../../src/scss/general.scss */
 .content a {
   color: #75410d;
 }
-/* line 53, ../../../src/scss/general.scss */
+/* line 55, ../../../src/scss/general.scss */
 .content a:hover {
   color: #d38444;
 }
-/* line 57, ../../../src/scss/general.scss */
+/* line 59, ../../../src/scss/general.scss */
 .content a:visited {
   color: #b46c04;
 }
 
-/* line 64, ../../../src/scss/general.scss */
+/* line 66, ../../../src/scss/general.scss */
 .list--no-bullets {
   list-style: none;
   padding: 0;
@@ -109,12 +108,12 @@ a {
   clear: both;
 }
 
-/* line 70, ../../../src/scss/general.scss */
+/* line 72, ../../../src/scss/general.scss */
 .list__item {
   padding: 0.625em 1.25em;
 }
 
-/* line 73, ../../../src/scss/general.scss */
+/* line 75, ../../../src/scss/general.scss */
 .list__item--horizontal {
   float: left;
 }
@@ -184,15 +183,21 @@ a {
 .header h1 {
   margin: 0;
 }
+/* line 15, /Users/kimmigan/Development/kopijunkie.net/node_modules/node-bourbon/assets/stylesheets/addons/_clearfix.scss */
+.header .container:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
-/* line 19, ../../../src/scss/header.scss */
+/* line 23, ../../../src/scss/header.scss */
 .header--logo {
   background: url(../img/kopijunkie.png) no-repeat;
   background-size: 350px 84px;
   height: 100px;
 }
 
-/* line 25, ../../../src/scss/header.scss */
+/* line 29, ../../../src/scss/header.scss */
 .header--tagline {
   background: white;
   opacity: 0.55;

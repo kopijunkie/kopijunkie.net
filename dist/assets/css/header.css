@@ -26,15 +26,21 @@
 .header h1 {
   margin: 0;
 }
+/* line 15, /Users/kimmigan/Development/kopijunkie.net/node_modules/node-bourbon/assets/stylesheets/addons/_clearfix.scss */
+.header .container:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
-/* line 19, ../../../src/scss/header.scss */
+/* line 23, ../../../src/scss/header.scss */
 .header--logo {
   background: url(../img/kopijunkie.png) no-repeat;
   background-size: 350px 84px;
   height: 100px;
 }
 
-/* line 25, ../../../src/scss/header.scss */
+/* line 29, ../../../src/scss/header.scss */
 .header--tagline {
   background: white;
   opacity: 0.55;

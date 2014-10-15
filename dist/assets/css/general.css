@@ -9,34 +9,40 @@
 body {
   background: #fffae7;
   color: #393838;
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
 }
 
-/* line 10, ../../../src/scss/general.scss */
+/* line 11, ../../../src/scss/general.scss */
+h1, h2 {
+  text-shadow: 1px 2px #c8e3ff;
+}
+
+/* line 14, ../../../src/scss/general.scss */
 h1 {
   color: #123456;
 }
 
-/* line 13, ../../../src/scss/general.scss */
+/* line 17, ../../../src/scss/general.scss */
 h2 {
   color: #0b4d90;
 }
 
-/* line 17, ../../../src/scss/general.scss */
+/* line 21, ../../../src/scss/general.scss */
 a {
   text-decoration: none;
 }
 
-/* line 22, ../../../src/scss/general.scss */
+/* line 26, ../../../src/scss/general.scss */
 .left {
   float: left;
 }
 
-/* line 26, ../../../src/scss/general.scss */
+/* line 30, ../../../src/scss/general.scss */
 .right {
   float: right;
 }
 
-/* line 31, ../../../src/scss/general.scss */
+/* line 35, ../../../src/scss/general.scss */
 .wrapper {
   max-width: 68em;
   margin-left: auto;
@@ -58,12 +64,24 @@ a {
   clear: both;
 }
 
-/* line 41, ../../../src/scss/general.scss */
+/* line 45, ../../../src/scss/general.scss */
 .content {
   padding: 0.9375em;
 }
+/* line 48, ../../../src/scss/general.scss */
+.content a {
+  color: #75410d;
+}
+/* line 51, ../../../src/scss/general.scss */
+.content a:hover {
+  color: #d38444;
+}
+/* line 55, ../../../src/scss/general.scss */
+.content a:visited {
+  color: #b46c04;
+}
 
-/* line 46, ../../../src/scss/general.scss */
+/* line 62, ../../../src/scss/general.scss */
 .list--no-bullets {
   list-style: none;
   padding: 0;
@@ -75,12 +93,12 @@ a {
   clear: both;
 }
 
-/* line 52, ../../../src/scss/general.scss */
+/* line 68, ../../../src/scss/general.scss */
 .list__item {
   padding: 0.625em 1.25em;
 }
 
-/* line 55, ../../../src/scss/general.scss */
+/* line 71, ../../../src/scss/general.scss */
 .list__item--horizontal {
   float: left;
 }

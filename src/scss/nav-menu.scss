@@ -6,9 +6,12 @@
     clear: both;
     background: $nav-bg-colour;
     padding: 0 em(10px);
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.45);
 }
 
 .nav-menu__item {
+    border-top: 5px solid $nav-bg-colour;
+
     padding: {
         left: em(10px);
         right: em(10px);

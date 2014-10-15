@@ -1,42 +1,39 @@
-/* line 6, ../../../src/scss/social-media.scss */
+/* line 5, ../../../src/scss/social-media.scss */
 .social-media {
   font-size: 0.8125rem;
 }
 
-/* line 10, ../../../src/scss/social-media.scss */
+/* line 9, ../../../src/scss/social-media.scss */
 .social-media__action {
   color: #123456;
   font-weight: bold;
 }
 
-/* line 16, ../../../src/scss/social-media.scss */
+/* line 15, ../../../src/scss/social-media.scss */
 .social-media__icon {
   display: inline-block;
   height: 32px;
   width: 32px;
-  -webkit-border-radius: 32px;
-  -moz-border-radius: 32px;
-  -ms-border-radius: 32px;
-  -o-border-radius: 32px;
+  border-radius: 32px;
   margin-right: 10px;
 }
 
-/* line 23, ../../../src/scss/social-media.scss */
+/* line 22, ../../../src/scss/social-media.scss */
 .icon-codepen {
   background: white url(../img/codepen-btn.png) no-repeat;
 }
 
-/* line 26, ../../../src/scss/social-media.scss */
+/* line 25, ../../../src/scss/social-media.scss */
 .icon-twitter {
   background: #36a6ee url(../img/twitter-btn.png) no-repeat;
 }
 
-/* line 29, ../../../src/scss/social-media.scss */
+/* line 28, ../../../src/scss/social-media.scss */
 .icon-lastfm {
   background: #d30319 url(../img/lastfm-btn.png) no-repeat;
 }
 
-/* line 33, ../../../src/scss/social-media.scss */
+/* line 32, ../../../src/scss/social-media.scss */
 .social-media__link {
   display: inline-block;
   text-decoration: none;
@@ -45,11 +42,11 @@
   line-height: 2rem;
   height: 32px;
 }
-/* line 41, ../../../src/scss/social-media.scss */
+/* line 40, ../../../src/scss/social-media.scss */
 .social-media__link:visited {
   color: #b46c04;
 }
-/* line 45, ../../../src/scss/social-media.scss */
+/* line 44, ../../../src/scss/social-media.scss */
 .social-media__link:hover {
   color: #d38444;
 }

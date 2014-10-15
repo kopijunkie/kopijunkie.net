@@ -1,6 +1,5 @@
 @import "bourbon";
 @import "colours";
-@import "mixins";
 
 
 .social-media {
@@ -17,7 +16,7 @@ $icon-size: 32px;
     display: inline-block;
     height: $icon-size;
     width: $icon-size;
-    @include border-radius($icon-size);
+    border-radius: $icon-size;
     margin-right: 10px;
 }
 .icon-codepen {

@@ -1,12 +1,20 @@
-$primary-colour: #794012;   // Dark Coffee
-$secondary-colour: #123456; // Dark Blue
+// COLOUR PALETTES
 
-// 50 shades of coffee (sort of)
+// PRIMARY: 50 shades of coffee (sort of)
+// $black-coffee:
 $dark-coffee: #794012;
-
 $milky-coffee: #be864d;
 $tea: saturate(lighten(#ceaa7a, 15%), 10%);
 $milk: #fffae7;
+
+// SECONDARY: 50 shades of sky blues (not really)
+$dark-blue: #123456;
+$greyish-blue: saturate(#afbac0, 20%);
+$sky-blue: #c8e3ff;
+$light-blue: lighten($greyish-blue, 10%);
+
+// TERTIARY: the whites
+$greyish-white: #ebe8e8;
 
 
 // Backgrounds
@@ -29,18 +37,17 @@ $link-colour: #75410d;
 $link-hover-colour: #d38444;
 $link-visited-colour: #b46c04;
 $nav-link-colour: white;
-$nav-link-hover-colour: #d38444;
-$nav-link-active-colour: #be864d;
-$footer-link-colour: lighten($primary-colour, 10%);
+$nav-link-hover-colour: lighten($milky-coffee, 15%);
+$nav-link-active-colour: $milky-coffee;
+$footer-link-colour: $milky-coffee;
 $footer-link-visited-colour: #fff9e8;
 
 
 // Headings
-$primary-heading-colour: #123456;
-$secondary-heading-colour: #ebe8e8;
-
+$primary-heading-colour: $dark-blue;
+$primary-heading-shadow-colour: $sky-blue;
 
 // Text
 $body-text-colour: #393838;
-$tagline-text-colour: #042849;
-$footer-text-colour: #ebe8e8;
+$tagline-text-colour: $dark-blue;
+$footer-text-colour: $greyish-white;

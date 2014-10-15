@@ -16,34 +16,40 @@
 body {
   background: #fffae7;
   color: #393838;
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
 }
 
-/* line 10, ../../../src/scss/general.scss */
+/* line 11, ../../../src/scss/general.scss */
+h1, h2 {
+  text-shadow: 1px 2px #c8e3ff;
+}
+
+/* line 14, ../../../src/scss/general.scss */
 h1 {
   color: #123456;
 }
 
-/* line 13, ../../../src/scss/general.scss */
+/* line 17, ../../../src/scss/general.scss */
 h2 {
   color: #0b4d90;
 }
 
-/* line 17, ../../../src/scss/general.scss */
+/* line 21, ../../../src/scss/general.scss */
 a {
   text-decoration: none;
 }
 
-/* line 22, ../../../src/scss/general.scss */
+/* line 26, ../../../src/scss/general.scss */
 .left {
   float: left;
 }
 
-/* line 26, ../../../src/scss/general.scss */
+/* line 30, ../../../src/scss/general.scss */
 .right {
   float: right;
 }
 
-/* line 31, ../../../src/scss/general.scss */
+/* line 35, ../../../src/scss/general.scss */
 .wrapper {
   max-width: 68em;
   margin-left: auto;
@@ -65,12 +71,24 @@ a {
   clear: both;
 }
 
-/* line 41, ../../../src/scss/general.scss */
+/* line 45, ../../../src/scss/general.scss */
 .content {
   padding: 0.9375em;
 }
+/* line 48, ../../../src/scss/general.scss */
+.content a {
+  color: #75410d;
+}
+/* line 51, ../../../src/scss/general.scss */
+.content a:hover {
+  color: #d38444;
+}
+/* line 55, ../../../src/scss/general.scss */
+.content a:visited {
+  color: #b46c04;
+}
 
-/* line 46, ../../../src/scss/general.scss */
+/* line 62, ../../../src/scss/general.scss */
 .list--no-bullets {
   list-style: none;
   padding: 0;
@@ -82,12 +100,12 @@ a {
   clear: both;
 }
 
-/* line 52, ../../../src/scss/general.scss */
+/* line 68, ../../../src/scss/general.scss */
 .list__item {
   padding: 0.625em 1.25em;
 }
 
-/* line 55, ../../../src/scss/general.scss */
+/* line 71, ../../../src/scss/general.scss */
 .list__item--horizontal {
   float: left;
 }
@@ -99,25 +117,22 @@ a {
   box-sizing: border-box;
 }
 
-/* line 5, ../../../src/scss/flickr-badge.scss */
+/* line 4, ../../../src/scss/flickr-badge.scss */
 .flickr_badge_wrapper {
   width: 76%;
   margin: 0 auto;
 }
 
-/* line 10, ../../../src/scss/flickr-badge.scss */
+/* line 9, ../../../src/scss/flickr-badge.scss */
 .flickr_badge_image {
   margin: 10px;
   display: inline-block;
   border: 5px solid white;
   border-bottom: 20px solid white;
   margin: 0.9375em 1.5625em;
-  -webkit-box-sizing: 7px 5px 5px rgba(0, 0, 0, 0.5);
-  -moz-box-sizing: 7px 5px 5px rgba(0, 0, 0, 0.5);
-  -ms-box-sizing: 7px 5px 5px rgba(0, 0, 0, 0.5);
-  -o-box-sizing: 7px 5px 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 7px 5px 5px rgba(0, 0, 0, 0.5);
 }
-/* line 18, ../../../src/scss/flickr-badge.scss */
+/* line 17, ../../../src/scss/flickr-badge.scss */
 .flickr_badge_image:hover {
   -webkit-transform: scale(1.25);
   -moz-transform: scale(1.25);
@@ -126,7 +141,7 @@ a {
   position: relative;
   z-index: 5;
 }
-/* line 24, ../../../src/scss/flickr-badge.scss */
+/* line 23, ../../../src/scss/flickr-badge.scss */
 .flickr_badge_image img {
   width: 75px;
   height: 75px;
@@ -138,7 +153,7 @@ a {
   background-image: -webkit-linear-gradient(-360deg, transparent 79px, #ffdae0 79px, transparent 80px, #ffdae0 81px, transparent 81px), -webkit-linear-gradient( #d5f2ed 0.1em, transparent 0.1em);
   background-image: linear-gradient(90deg, transparent 79px, #ffdae0 79px, transparent 80px, #ffdae0 81px, transparent 81px), linear-gradient( #d5f2ed 0.1em, transparent 0.1em);
   background-size: 100% 1.2em;
-  height: 260px;
+  height: 235px;
 }
 /* line 11, ../../../src/scss/header.scss */
 .header h1 {
@@ -156,50 +171,48 @@ a {
 .header--tagline {
   background: white;
   opacity: 0.55;
-  padding: 5px 3.125em;
+  padding: 5px 2.5em;
+  margin-left: 1.875em;
   color: #123456;
   font-size: 1.0625rem;
 }
 
-/* line 6, ../../../src/scss/social-media.scss */
+/* line 5, ../../../src/scss/social-media.scss */
 .social-media {
   font-size: 0.8125rem;
 }
 
-/* line 10, ../../../src/scss/social-media.scss */
+/* line 9, ../../../src/scss/social-media.scss */
 .social-media__action {
   color: #123456;
   font-weight: bold;
 }
 
-/* line 16, ../../../src/scss/social-media.scss */
+/* line 15, ../../../src/scss/social-media.scss */
 .social-media__icon {
   display: inline-block;
   height: 32px;
   width: 32px;
-  -webkit-border-radius: 32px;
-  -moz-border-radius: 32px;
-  -ms-border-radius: 32px;
-  -o-border-radius: 32px;
+  border-radius: 32px;
   margin-right: 10px;
 }
 
-/* line 23, ../../../src/scss/social-media.scss */
+/* line 22, ../../../src/scss/social-media.scss */
 .icon-codepen {
   background: white url(../img/codepen-btn.png) no-repeat;
 }
 
-/* line 26, ../../../src/scss/social-media.scss */
+/* line 25, ../../../src/scss/social-media.scss */
 .icon-twitter {
   background: #36a6ee url(../img/twitter-btn.png) no-repeat;
 }
 
-/* line 29, ../../../src/scss/social-media.scss */
+/* line 28, ../../../src/scss/social-media.scss */
 .icon-lastfm {
   background: #d30319 url(../img/lastfm-btn.png) no-repeat;
 }
 
-/* line 33, ../../../src/scss/social-media.scss */
+/* line 32, ../../../src/scss/social-media.scss */
 .social-media__link {
   display: inline-block;
   text-decoration: none;
@@ -208,11 +221,11 @@ a {
   line-height: 2rem;
   height: 32px;
 }
-/* line 41, ../../../src/scss/social-media.scss */
+/* line 40, ../../../src/scss/social-media.scss */
 .social-media__link:visited {
   color: #b46c04;
 }
-/* line 45, ../../../src/scss/social-media.scss */
+/* line 44, ../../../src/scss/social-media.scss */
 .social-media__link:hover {
   color: #d38444;
 }
@@ -229,19 +242,21 @@ a {
   clear: both;
   background: #794012;
   padding: 0 0.625em;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.45);
 }
 
-/* line 11, ../../../src/scss/nav-menu.scss */
+/* line 12, ../../../src/scss/nav-menu.scss */
 .nav-menu__item {
+  border-top: 5px solid #794012;
   padding-left: 0.625em;
   padding-right: 0.625em;
 }
-/* line 17, ../../../src/scss/nav-menu.scss */
+/* line 20, ../../../src/scss/nav-menu.scss */
 .nav-menu__item.active {
   border-bottom: 5px solid #be864d;
 }
 
-/* line 21, ../../../src/scss/nav-menu.scss */
+/* line 24, ../../../src/scss/nav-menu.scss */
 .nav-menu__link {
   font-weight: bold;
   font-size: 1.125rem;
@@ -250,9 +265,9 @@ a {
   color: white;
   text-shadow: 0 1px 1px black;
 }
-/* line 29, ../../../src/scss/nav-menu.scss */
+/* line 32, ../../../src/scss/nav-menu.scss */
 .nav-menu__link:hover {
-  color: #d38444;
+  color: #d2ac85;
 }
 
 /* line 5, ../../../src/scss/footer.scss */
@@ -304,11 +319,11 @@ a {
 
 /* line 48, ../../../src/scss/footer.scss */
 .site-info__link {
-  color: #a55719;
+  color: #be864d;
 }
 /* line 51, ../../../src/scss/footer.scss */
 .site-info__link:hover {
-  color: #fff9e8;
+  color: #d2ac85;
 }
 
 /*# sourceMappingURL=main.css.map */

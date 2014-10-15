@@ -6,7 +6,7 @@
     @include background-image(linear-gradient(90deg, transparent 79px, #ffdae0 79px, transparent 80px, #ffdae0 81px, transparent 81px),
                                 linear-gradient(#d5f2ed .1em, transparent .1em));
     background-size: 100% 1.2em;
-    height: 260px;
+    height: 235px;
 
     h1 {
         margin: 0;
@@ -22,7 +22,8 @@
 .header--tagline {
     background: white;
     opacity: 0.55;
-    padding: 5px em(50);
-    color: $secondary-colour;
+    padding: 5px em(40px);
+    margin-left: em(30px);
+    color: $tagline-text-colour;
     font-size: rem(17px);
 }

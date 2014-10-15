@@ -10,19 +10,21 @@
   clear: both;
   background: #794012;
   padding: 0 0.625em;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.45);
 }
 
-/* line 11, ../../../src/scss/nav-menu.scss */
+/* line 12, ../../../src/scss/nav-menu.scss */
 .nav-menu__item {
+  border-top: 5px solid #794012;
   padding-left: 0.625em;
   padding-right: 0.625em;
 }
-/* line 17, ../../../src/scss/nav-menu.scss */
+/* line 20, ../../../src/scss/nav-menu.scss */
 .nav-menu__item.active {
   border-bottom: 5px solid #be864d;
 }
 
-/* line 21, ../../../src/scss/nav-menu.scss */
+/* line 24, ../../../src/scss/nav-menu.scss */
 .nav-menu__link {
   font-weight: bold;
   font-size: 1.125rem;
@@ -31,9 +33,9 @@
   color: white;
   text-shadow: 0 1px 1px black;
 }
-/* line 29, ../../../src/scss/nav-menu.scss */
+/* line 32, ../../../src/scss/nav-menu.scss */
 .nav-menu__link:hover {
-  color: #d38444;
+  color: #d2ac85;
 }
 
 /*# sourceMappingURL=nav-menu.css.map */

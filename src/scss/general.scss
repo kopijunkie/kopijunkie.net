@@ -5,8 +5,12 @@
 body {
     background: $body-bg-colour;
     color: $body-text-colour;
+    font-family: $helvetica;
 }
 
+h1, h2 {
+    text-shadow: 1px 2px $primary-heading-shadow-colour;
+}
 h1 {
     color: $primary-heading-colour;
 }
@@ -40,6 +44,18 @@ a {
 
 .content {
     padding: em(15px);
+
+    a {
+        color: $link-colour;
+
+        &:hover {
+            color: $link-hover-colour;
+        }
+
+        &:visited {
+            color: $link-visited-colour;
+        }
+    }
 }
 
 

@@ -66,8 +66,22 @@ a {
 /* line 40, ../../../src/scss/general.scss */
 .wrapper .container {
   width: 100%;
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: stretch;
+  -moz-box-align: stretch;
+  box-align: stretch;
+  -webkit-align-items: stretch;
+  -moz-align-items: stretch;
+  -ms-align-items: stretch;
+  -o-align-items: stretch;
   align-items: stretch;
+  -ms-flex-align: stretch;
 }
 
 /* line 47, ../../../src/scss/general.scss */

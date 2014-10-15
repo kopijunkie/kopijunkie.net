@@ -39,8 +39,8 @@ a {
 
     .container {
         @include fill-parent;
-        display: flex;
-        align-items: stretch;
+        @include display(flex);
+        @include align-items(stretch);
     }
 }
 

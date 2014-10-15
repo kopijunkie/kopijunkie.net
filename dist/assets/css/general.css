@@ -7,7 +7,7 @@
 
 /* line 5, ../../../src/scss/general.scss */
 body {
-  background: #fff9e8;
+  background: #fffae7;
   color: #393838;
 }
 
@@ -41,6 +41,8 @@ a {
   max-width: 68em;
   margin-left: auto;
   margin-right: auto;
+  background: #e8cead;
+  border: 1px solid #be864d;
 }
 /* line 15, /Users/kimmigan/Development/kopijunkie.net/node_modules/node-bourbon/assets/stylesheets/addons/_clearfix.scss */
 .wrapper:after {
@@ -56,12 +58,12 @@ a {
   clear: both;
 }
 
-/* line 39, ../../../src/scss/general.scss */
+/* line 41, ../../../src/scss/general.scss */
 .content {
   padding: 0.9375em;
 }
 
-/* line 44, ../../../src/scss/general.scss */
+/* line 46, ../../../src/scss/general.scss */
 .list--no-bullets {
   list-style: none;
   padding: 0;
@@ -73,12 +75,12 @@ a {
   clear: both;
 }
 
-/* line 50, ../../../src/scss/general.scss */
+/* line 52, ../../../src/scss/general.scss */
 .list__item {
   padding: 0.625em 1.25em;
 }
 
-/* line 53, ../../../src/scss/general.scss */
+/* line 55, ../../../src/scss/general.scss */
 .list__item--horizontal {
   float: left;
 }

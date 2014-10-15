@@ -9,19 +9,17 @@
 .nav-menu {
   clear: both;
   background: #794012;
-}
-/* line 9, ../../../src/scss/nav-menu.scss */
-.nav-menu .list__item {
-  padding-left: 0;
+  padding: 0 0.625em;
 }
 
-/* line 14, ../../../src/scss/nav-menu.scss */
+/* line 11, ../../../src/scss/nav-menu.scss */
 .nav-menu__item {
-  padding-right: 1.25em;
+  padding-left: 0.625em;
+  padding-right: 0.625em;
 }
 /* line 17, ../../../src/scss/nav-menu.scss */
-.nav-menu__item:first-child {
-  padding-left: 1.25em;
+.nav-menu__item.active {
+  border-bottom: 5px solid #be864d;
 }
 
 /* line 21, ../../../src/scss/nav-menu.scss */

@@ -1,0 +1,22 @@
+/* line 2, /Users/kimmigan/Development/kopijunkie.net/node_modules/node-neat/assets/stylesheets/grid/_grid.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 5, ../../../src/scss/sidebar.scss */
+.sidebar {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 27.49666%;
+  margin-right: 0;
+  padding: 0 0.9375em 1.25em;
+}
+/* line 38, /Users/kimmigan/Development/kopijunkie.net/node_modules/node-neat/assets/stylesheets/grid/_span-columns.scss */
+.sidebar:last-child {
+  margin-right: 0;
+}
+
+/*# sourceMappingURL=sidebar.css.map */

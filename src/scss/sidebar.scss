@@ -1,0 +1,9 @@
+@import "bourbon";
+@import "neat";
+@import "colours";
+
+.sidebar {
+    @include span-columns(3.5);
+    @include omega();
+    padding: 0 em(15px) em(20px);
+}

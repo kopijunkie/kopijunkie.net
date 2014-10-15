@@ -14,7 +14,7 @@
 
 /* line 5, ../../../src/scss/general.scss */
 body {
-  background: #fffae7;
+  background: white;
   color: #393838;
   font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
 }
@@ -54,7 +54,7 @@ a {
   max-width: 68em;
   margin-left: auto;
   margin-right: auto;
-  background: #e8cead;
+  background: #fffae7;
   border: 1px solid #be864d;
 }
 /* line 15, /Users/kimmigan/Development/kopijunkie.net/node_modules/node-bourbon/assets/stylesheets/addons/_clearfix.scss */
@@ -73,22 +73,31 @@ a {
 
 /* line 45, ../../../src/scss/general.scss */
 .content {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 70.14568%;
   padding: 0.9375em;
+  border-right: 1px solid #e8cead;
 }
-/* line 48, ../../../src/scss/general.scss */
+/* line 38, /Users/kimmigan/Development/kopijunkie.net/node_modules/node-neat/assets/stylesheets/grid/_span-columns.scss */
+.content:last-child {
+  margin-right: 0;
+}
+/* line 50, ../../../src/scss/general.scss */
 .content a {
   color: #75410d;
 }
-/* line 51, ../../../src/scss/general.scss */
+/* line 53, ../../../src/scss/general.scss */
 .content a:hover {
   color: #d38444;
 }
-/* line 55, ../../../src/scss/general.scss */
+/* line 57, ../../../src/scss/general.scss */
 .content a:visited {
   color: #b46c04;
 }
 
-/* line 62, ../../../src/scss/general.scss */
+/* line 64, ../../../src/scss/general.scss */
 .list--no-bullets {
   list-style: none;
   padding: 0;
@@ -100,12 +109,12 @@ a {
   clear: both;
 }
 
-/* line 68, ../../../src/scss/general.scss */
+/* line 70, ../../../src/scss/general.scss */
 .list__item {
   padding: 0.625em 1.25em;
 }
 
-/* line 71, ../../../src/scss/general.scss */
+/* line 73, ../../../src/scss/general.scss */
 .list__item--horizontal {
   float: left;
 }
@@ -147,27 +156,43 @@ a {
   height: 75px;
 }
 
-/* line 4, ../../../src/scss/header.scss */
+/* line 2, /Users/kimmigan/Development/kopijunkie.net/node_modules/node-neat/assets/stylesheets/grid/_grid.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 5, ../../../src/scss/header.scss */
 .header {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  margin-right: 0;
   background: #f7f2f8;
   background-image: -webkit-linear-gradient(-360deg, transparent 79px, #ffdae0 79px, transparent 80px, #ffdae0 81px, transparent 81px), -webkit-linear-gradient( #d5f2ed 0.1em, transparent 0.1em);
   background-image: linear-gradient(90deg, transparent 79px, #ffdae0 79px, transparent 80px, #ffdae0 81px, transparent 81px), linear-gradient( #d5f2ed 0.1em, transparent 0.1em);
   background-size: 100% 1.2em;
-  height: 235px;
+  height: 258px;
 }
-/* line 11, ../../../src/scss/header.scss */
+/* line 38, /Users/kimmigan/Development/kopijunkie.net/node_modules/node-neat/assets/stylesheets/grid/_span-columns.scss */
+.header:last-child {
+  margin-right: 0;
+}
+/* line 14, ../../../src/scss/header.scss */
 .header h1 {
   margin: 0;
 }
 
-/* line 16, ../../../src/scss/header.scss */
+/* line 19, ../../../src/scss/header.scss */
 .header--logo {
   background: url(../img/kopijunkie.png) no-repeat;
   background-size: 350px 84px;
   height: 100px;
 }
 
-/* line 22, ../../../src/scss/header.scss */
+/* line 25, ../../../src/scss/header.scss */
 .header--tagline {
   background: white;
   opacity: 0.55;
@@ -270,14 +295,51 @@ a {
   color: #d2ac85;
 }
 
-/* line 5, ../../../src/scss/footer.scss */
+/* line 2, /Users/kimmigan/Development/kopijunkie.net/node_modules/node-neat/assets/stylesheets/grid/_grid.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 5, ../../../src/scss/sidebar.scss */
+.sidebar {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 27.49666%;
+  margin-right: 0;
+  padding: 0 0.9375em 1.25em;
+}
+/* line 38, /Users/kimmigan/Development/kopijunkie.net/node_modules/node-neat/assets/stylesheets/grid/_span-columns.scss */
+.sidebar:last-child {
+  margin-right: 0;
+}
+
+/* line 2, /Users/kimmigan/Development/kopijunkie.net/node_modules/node-neat/assets/stylesheets/grid/_grid.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 6, ../../../src/scss/footer.scss */
 .footer {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  margin-right: 0;
   padding: 0.625em;
   background: #393838;
   color: #ebe8e8;
 }
+/* line 38, /Users/kimmigan/Development/kopijunkie.net/node_modules/node-neat/assets/stylesheets/grid/_span-columns.scss */
+.footer:last-child {
+  margin-right: 0;
+}
 
-/* line 12, ../../../src/scss/footer.scss */
+/* line 15, ../../../src/scss/footer.scss */
 .media-wall {
   padding: 0.625em 0 1.875em;
   border-top: 1px solid #595959;
@@ -288,40 +350,40 @@ a {
   display: table;
   clear: both;
 }
-/* line 17, ../../../src/scss/footer.scss */
+/* line 20, ../../../src/scss/footer.scss */
 .media-wall:first-child {
   padding-top: 0;
   border-top: 0;
 }
 
-/* line 22, ../../../src/scss/footer.scss */
+/* line 25, ../../../src/scss/footer.scss */
 .media-wall__heading {
   font-size: 1.5625rem;
   letter-spacing: 3px;
   text-shadow: 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.15);
 }
 
-/* line 36, ../../../src/scss/footer.scss */
+/* line 39, ../../../src/scss/footer.scss */
 .site-info {
   clear: both;
   margin-top: 0.9375em;
   font-size: 0.8125rem;
 }
 
-/* line 41, ../../../src/scss/footer.scss */
+/* line 44, ../../../src/scss/footer.scss */
 .site-info__item {
   padding: 0 10px;
 }
-/* line 44, ../../../src/scss/footer.scss */
+/* line 47, ../../../src/scss/footer.scss */
 .site-info__item:first-child {
   padding-left: 0;
 }
 
-/* line 48, ../../../src/scss/footer.scss */
+/* line 51, ../../../src/scss/footer.scss */
 .site-info__link {
   color: #be864d;
 }
-/* line 51, ../../../src/scss/footer.scss */
+/* line 54, ../../../src/scss/footer.scss */
 .site-info__link:hover {
   color: #d2ac85;
 }

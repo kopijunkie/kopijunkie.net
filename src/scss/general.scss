@@ -43,7 +43,9 @@ a {
 }
 
 .content {
+    @include span-columns(8.5);
     padding: em(15px);
+    border-right: 1px solid $sidebar-border-colour;
 
     a {
         color: $link-colour;

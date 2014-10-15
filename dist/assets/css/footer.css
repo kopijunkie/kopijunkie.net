@@ -1,11 +1,27 @@
-/* line 5, ../../../src/scss/footer.scss */
+/* line 2, /Users/kimmigan/Development/kopijunkie.net/node_modules/node-neat/assets/stylesheets/grid/_grid.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 6, ../../../src/scss/footer.scss */
 .footer {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  margin-right: 0;
   padding: 0.625em;
   background: #393838;
   color: #ebe8e8;
 }
+/* line 38, /Users/kimmigan/Development/kopijunkie.net/node_modules/node-neat/assets/stylesheets/grid/_span-columns.scss */
+.footer:last-child {
+  margin-right: 0;
+}
 
-/* line 12, ../../../src/scss/footer.scss */
+/* line 15, ../../../src/scss/footer.scss */
 .media-wall {
   padding: 0.625em 0 1.875em;
   border-top: 1px solid #595959;
@@ -16,40 +32,40 @@
   display: table;
   clear: both;
 }
-/* line 17, ../../../src/scss/footer.scss */
+/* line 20, ../../../src/scss/footer.scss */
 .media-wall:first-child {
   padding-top: 0;
   border-top: 0;
 }
 
-/* line 22, ../../../src/scss/footer.scss */
+/* line 25, ../../../src/scss/footer.scss */
 .media-wall__heading {
   font-size: 1.5625rem;
   letter-spacing: 3px;
   text-shadow: 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.15);
 }
 
-/* line 36, ../../../src/scss/footer.scss */
+/* line 39, ../../../src/scss/footer.scss */
 .site-info {
   clear: both;
   margin-top: 0.9375em;
   font-size: 0.8125rem;
 }
 
-/* line 41, ../../../src/scss/footer.scss */
+/* line 44, ../../../src/scss/footer.scss */
 .site-info__item {
   padding: 0 10px;
 }
-/* line 44, ../../../src/scss/footer.scss */
+/* line 47, ../../../src/scss/footer.scss */
 .site-info__item:first-child {
   padding-left: 0;
 }
 
-/* line 48, ../../../src/scss/footer.scss */
+/* line 51, ../../../src/scss/footer.scss */
 .site-info__link {
   color: #be864d;
 }
-/* line 51, ../../../src/scss/footer.scss */
+/* line 54, ../../../src/scss/footer.scss */
 .site-info__link:hover {
   color: #d2ac85;
 }

@@ -1,8 +1,11 @@
 @import "bourbon";
+@import "neat";
 @import "colours";
 
 
 .footer {
+    @include span-columns(12);
+    @include omega();
     padding: em(10px);
     background: $footer-bg-colour;
     color: $footer-text-colour;

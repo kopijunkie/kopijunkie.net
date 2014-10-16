@@ -30,16 +30,17 @@
     <div class="wrapper">
         {{> header }}
 
-        <div class="container">
-            <section class="content" role="main">
-                {{> body }}
-            </section>
+        <section class="content" role="main">
+            {{> body }}
+        </section>
 
+        <aside class="sidebar" role="complementary">
             {{> sidebar }}
-        </div>
+        </aside>
 
         {{> footer }}
     </div>
+
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="{{assets}}/libs/jquery/jquery.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->

@@ -1,10 +1,16 @@
 .sidebar {
-    @include span-columns(12);
-    @include omega;
+    display: none;
+
     @include media($mobile) {
         @include span-columns(3.5);
         @include omega;
+        padding: {
+            right: em(15px);
+            bottom: em(20px);
+        }
     }
-    padding-right: em(15px);
-    padding-bottom: em(20px);
+}
+
+.twitter-timeline {
+    height: 350px;
 }

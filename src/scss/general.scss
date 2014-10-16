@@ -9,9 +9,15 @@ h1, h2 {
 }
 h1 {
     color: $primary-heading-colour;
+    font-size: rem(26px);
 }
 h2 {
     color: saturate(lighten($primary-heading-colour, 10%), 20%);
+    font-size: rem(22px);
+}
+
+ul {
+    margin: 0;
 }
 
 a {
@@ -31,7 +37,7 @@ a {
 .wrapper {
     @include outer-container;
     background: $wrapper-bg-colour;
-    border: 1px solid $wrapper-border-colour;
+    // border: 1px solid $wrapper-border-colour;
 
     .container {
         @include fill-parent;

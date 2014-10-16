@@ -4,8 +4,7 @@
     padding: em(10px);
     background: $footer-bg-colour;
     color: $footer-text-colour;
-    font-size: 0.7em;
-    line-height: 0.5em;
+    font-size: rem(14px);
 
     @include media($mobile) {
       font-size: 1em;
@@ -53,6 +52,10 @@
 
     &:first-child {
         padding-left: 0;
+    }
+
+    &:not(.site-info__copyright) {
+      display: none;
     }
 }
 .site-info__link {

@@ -1,7 +1,6 @@
 .header {
     @include span-columns(12);
     @include omega;
-    height: 50px;
 
     @include media($mobile) {
         background: $header-bg-colour url(../img/header.png) no-repeat;

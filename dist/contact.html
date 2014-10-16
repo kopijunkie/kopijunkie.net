@@ -64,30 +64,27 @@
     <ul class="list--no-bullets" role="navigation">
         
         <li class="nav-menu__item list__item list__item--horizontal">
+            <a href="index.html" class="nav-menu__link">Home</a>
+        </li>
+        <li class="nav-menu__item list__item list__item--horizontal">
             <a href="about.html" class="nav-menu__link">About</a>
         </li>
-        
+        <li class="nav-menu__item list__item list__item--horizontal">
+            <a href="work.html" class="nav-menu__link">Work</a>
+        </li>
         <li class="nav-menu__item list__item list__item--horizontal">
             <a href="blog.html" class="nav-menu__link">Blog</a>
         </li>
-        
-        <li class="nav-menu__item list__item list__item--horizontal active">
+        <li class="nav-menu__item list__item list__item--horizontal">
             <a href="contact.html" class="nav-menu__link">Contact</a>
         </li>
-        
-        <li class="nav-menu__item list__item list__item--horizontal">
-            <a href="index.html" class="nav-menu__link">Home</a>
-        </li>
-        
-        
     </ul>
 </nav>
 
 </header>
 
-        <div class="container">
-            <section class="content" role="main">
-                
+        <section class="content" role="main">
+            
 <h1></h1>
 
 <p>Drop me message with the form below.</p>
@@ -107,29 +104,33 @@
 
     <p><input id="submit" name="submit" type="submit" value="Send" /></p>
 </form>
-            </section>
+        </section>
 
+        <aside class="sidebar" role="complementary">
             
-<aside class="sidebar" role="complementary">
-    <h3 class="sidebar--heading">Who Am I?</h3>
+<h3 class="sidebar--heading">Who Am I?</h3>
 
-    <p>
-        <picture>
-            <img src="assets/img/avatar.jpg" alt="Pencil caricature sketch of myself" title="That's me!" />
-        </picture>
-        I'm Kimmi Gan. I'm a Front End Developer. This is my personal website and digital playground for all things web techy.
-    </p>
+<p>
+    <img class="sidebar--picture"
+            src="assets/img/avatar.jpg"
+            alt="Pencil caricature sketch of myself" title="That's me!" />
+    I'm Kimmi Gan. I'm a Front End Developer. This is my personal website and digital playground for all things web techy.
+</p>
 
-    <section class="twitter">
-        <h3 class="twitter--heading">Coffee Fueled Thoughts</h3>
+<section class="twitter">
+    <h3 class="twitter--heading">Coffee Fueled Thoughts</h3>
 
-        <div id="timeline-container" class="twitter--feed">
-            <a class="twitter-timeline" data-dnt=true href="http://www.twitter.com/kopijunkie" data-theme="light" data-widget-id="257130426198532097" height="350">Tweets by @kopijunkie</a>
-            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-        </div>
-    </section>
-</aside>
-        </div>
+    <div id="timeline-container" class="twitter--feed">
+        <a class="twitter-timeline"
+            data-dnt=true href="http://www.twitter.com/kopijunkie"
+            data-theme="light"
+            data-widget-id="257130426198532097">Tweets by @kopijunkie</a>
+        <script>
+            !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+        </script>
+    </div>
+</section>
+        </aside>
 
         
 <footer class="footer" role="footer">
@@ -149,7 +150,7 @@
 
     <section class="site-info" role="contentinfo">
         <ul class="site-info__list list--no-bullets">
-            <li class="site-info__item list__item--horizontal">
+            <li class="site-info__item site-info__copyright list__item--horizontal">
                 Copyright &copy; 2014 Kimmi Gan / KopiJunkie
             </li>
             <li class="site-info__item list__item--horizontal">
@@ -165,6 +166,7 @@
     </section>
 </footer>
     </div>
+
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="assets/libs/jquery/jquery.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->

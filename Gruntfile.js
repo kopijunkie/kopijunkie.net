@@ -30,12 +30,34 @@ module.exports = function(grunt) {
       install: {
           options: {
               targetDir: "dist/assets/libs",
-              install: false,
+              install: true,
               verbose: false,
               cleanTargetDir: false,
               cleanBowerDir: false,
               bowerOptions: {}
           }
+      }
+    },
+
+    imagemin: {
+      dynamic: {
+        options: {
+          optimizationLevel: 7
+        },
+        files: [{
+          expand: true,
+          cwd: "<%= config.src %>/images",
+          src: ["**/*.{png,jpg,gif}"],
+          dest: "<%= config.dist %>/assets/img"
+        }]
+      }
+    },
+
+    jshint: {
+      files: ["Gruntfile.js", "src/js/**/*.js"],
+      options: {
+        jshintrc: ".jshintrc",
+        reporter: require("jshint-stylish")
       }
     },
 
@@ -50,7 +72,7 @@ module.exports = function(grunt) {
         files: [{
           expand: true,
           cwd: "<%= config.src %>/scss",
-          src: ["*.scss"],
+          src: ["main.scss"],
           dest: "<%= config.dist %>/assets/css",
           ext: ".css"
         }]
@@ -137,9 +159,9 @@ module.exports = function(grunt) {
   // Autoload grunt tasks, including "assemble" task.
   require("load-grunt-tasks")(grunt, { pattern: [ "grunt-*", "assemble" ] });
 
-  grunt.registerTask("build", [ "bower", "sass", "clean", "assemble" ]);
+  grunt.registerTask("build", [ "newer:bower", "newer:imagemin", "sass", "clean", "assemble" ]);
 
-  grunt.registerTask("server", [
+  grunt.registerTask("dev", [
     "build",
     "connect:livereload",
     "watch"

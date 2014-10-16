@@ -1,9 +1,4 @@
-@import "bourbon";
-@import "neat";
-@import "colours";
-
 .nav-menu {
-    clear: both;
     background: $nav-bg-colour;
     padding: 0 em(10px);
     box-shadow: 3px 3px 10px rgba(0,0,0,0.45);

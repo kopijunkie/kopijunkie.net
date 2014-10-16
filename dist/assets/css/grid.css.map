@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": ";AACE,CAAE;ECQI,kBAAoB,EDPJ,UAAU;ECY1B,eAAiB,EDZD,UAAU;EC2B1B,UAAY,ED3BI,UAAU",
-"sources": ["../../../node_modules/node-neat/assets/stylesheets/grid/_grid.scss","../../../node_modules/node-bourbon/assets/stylesheets/addons/_prefixer.scss"],
-"names": [],
-"file": "grid.css"
-}

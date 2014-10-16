@@ -1,10 +1,10 @@
-@import "bourbon";
-@import "neat";
-@import "colours";
-
 .sidebar {
-    @include span-columns(3.5);
+    @include span-columns(12);
     @include omega;
+    @include media($mobile) {
+        @include span-columns(3.5);
+        @include omega;
+    }
     padding-right: em(15px);
     padding-bottom: em(20px);
 }

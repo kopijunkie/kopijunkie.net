@@ -30,7 +30,7 @@ module.exports = function(grunt) {
       install: {
           options: {
               targetDir: "dist/assets/libs",
-              install: true,
+              install: false,
               verbose: false,
               cleanTargetDir: false,
               cleanBowerDir: false,

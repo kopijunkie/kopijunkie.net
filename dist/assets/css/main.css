@@ -5,15 +5,12 @@
   box-sizing: border-box;
 }
 
-/*
- *  General Elements
- */
-/* line 5, ../../../src/scss/_general.scss */
+/* line 3, ../../../src/scss/_general.scss */
 html, body {
   height: 100%;
 }
 
-/* line 9, ../../../src/scss/_general.scss */
+/* line 7, ../../../src/scss/_general.scss */
 body {
   background: white;
   color: #393838;
@@ -22,35 +19,35 @@ body {
   line-height: 1.5;
 }
 
-/* line 17, ../../../src/scss/_general.scss */
+/* line 15, ../../../src/scss/_general.scss */
 h1, h2 {
   text-shadow: 1px 2px #c8e3ff;
 }
 
-/* line 20, ../../../src/scss/_general.scss */
+/* line 18, ../../../src/scss/_general.scss */
 h1 {
   color: #123456;
   font-size: 1.625rem;
 }
 
-/* line 24, ../../../src/scss/_general.scss */
+/* line 22, ../../../src/scss/_general.scss */
 h2 {
   color: #0b4d90;
   font-size: 1.375rem;
   padding-top: 1.5625rem;
 }
 
-/* line 30, ../../../src/scss/_general.scss */
+/* line 28, ../../../src/scss/_general.scss */
 ul {
   margin: 0;
 }
 
-/* line 34, ../../../src/scss/_general.scss */
+/* line 32, ../../../src/scss/_general.scss */
 a {
   text-decoration: none;
 }
 
-/* line 38, ../../../src/scss/_general.scss */
+/* line 36, ../../../src/scss/_general.scss */
 blockquote {
   background: #eddac1;
   padding: 0 0.9375em;
@@ -58,7 +55,7 @@ blockquote {
   border-radius: 8px;
 }
 
-/* line 45, ../../../src/scss/_general.scss */
+/* line 43, ../../../src/scss/_general.scss */
 pre {
   color: #1cad1e;
   background: #393838;
@@ -66,17 +63,17 @@ pre {
   border-radius: 5px;
 }
 
-/* line 53, ../../../src/scss/_general.scss */
+/* line 51, ../../../src/scss/_general.scss */
 .left {
   float: left;
 }
 
-/* line 57, ../../../src/scss/_general.scss */
+/* line 55, ../../../src/scss/_general.scss */
 .right {
   float: right;
 }
 
-/* line 62, ../../../src/scss/_general.scss */
+/* line 60, ../../../src/scss/_general.scss */
 .button {
   border: 1px solid #3e1f06;
   border-radius: 3px;
@@ -113,13 +110,13 @@ pre {
   cursor: not-allowed;
 }
 
-/* line 68, ../../../src/scss/_general.scss */
+/* line 66, ../../../src/scss/_general.scss */
 .definition-list__title {
   color: #3f2108;
   font-weight: bold;
 }
 
-/* line 74, ../../../src/scss/_general.scss */
+/* line 72, ../../../src/scss/_general.scss */
 .list--no-bullets {
   list-style: none;
   padding: 0;
@@ -131,20 +128,18 @@ pre {
   clear: both;
 }
 
-/* line 80, ../../../src/scss/_general.scss */
+/* line 78, ../../../src/scss/_general.scss */
 .list__item {
   padding: 0.625em 1.25em;
 }
 
-/* line 83, ../../../src/scss/_general.scss */
-.list__item--horizontal {
-  float: left;
+@media screen and (min-width: 900px) {
+  /* line 84, ../../../src/scss/_general.scss */
+  .list__item--horizontal {
+    float: left;
+  }
 }
-
-/*
- *  General (Overall) Layout
- */
-/* line 93, ../../../src/scss/_general.scss */
+/* line 94, ../../../src/scss/_general.scss */
 .wrapper {
   max-width: 68em;
   margin-left: auto;
@@ -159,14 +154,14 @@ pre {
   clear: both;
 }
 @media screen and (min-width: 1280px) {
-  /* line 93, ../../../src/scss/_general.scss */
+  /* line 94, ../../../src/scss/_general.scss */
   .wrapper {
     border-left: 1px solid #be864d;
     border-right: 1px solid #be864d;
   }
 }
 
-/* line 107, ../../../src/scss/_general.scss */
+/* line 108, ../../../src/scss/_general.scss */
 .wrapper--inner {
   width: 100%;
   display: -webkit-box;
@@ -187,7 +182,7 @@ pre {
   -ms-flex-align: stretch;
 }
 
-/* line 113, ../../../src/scss/_general.scss */
+/* line 114, ../../../src/scss/_general.scss */
 .content {
   float: left;
   display: block;
@@ -203,7 +198,7 @@ pre {
   margin-right: 0;
 }
 @media screen and (min-width: 900px) {
-  /* line 113, ../../../src/scss/_general.scss */
+  /* line 114, ../../../src/scss/_general.scss */
   .content {
     float: left;
     display: block;
@@ -216,15 +211,15 @@ pre {
     margin-right: 0;
   }
 }
-/* line 127, ../../../src/scss/_general.scss */
+/* line 128, ../../../src/scss/_general.scss */
 .content a {
   color: #75410d;
 }
-/* line 130, ../../../src/scss/_general.scss */
+/* line 131, ../../../src/scss/_general.scss */
 .content a:hover {
   color: #d38444;
 }
-/* line 134, ../../../src/scss/_general.scss */
+/* line 135, ../../../src/scss/_general.scss */
 .content a:visited {
   color: #b46c04;
 }
@@ -259,13 +254,13 @@ pre {
 }
 
 /* line 22, ../../../src/scss/partials/_header.scss */
-.header--logo {
+.header__logo {
   margin: 0;
   display: none;
 }
 @media screen and (min-width: 900px) {
   /* line 22, ../../../src/scss/partials/_header.scss */
-  .header--logo {
+  .header__logo {
     overflow: hidden;
     display: block;
     height: 80px;
@@ -275,13 +270,13 @@ pre {
     background-size: 350px 84px;
   }
   /* line 15, /Users/kimmigan/Development/kopijunkie.net/node_modules/node-bourbon/assets/stylesheets/addons/_clearfix.scss */
-  .header--logo:after {
+  .header__logo:after {
     content: "";
     display: table;
     clear: both;
   }
   /* line 4, /Users/kimmigan/Development/kopijunkie.net/node_modules/node-bourbon/assets/stylesheets/addons/_hide-text.scss */
-  .header--logo:before {
+  .header__logo:before {
     content: "";
     display: block;
     width: 0;
@@ -290,23 +285,23 @@ pre {
 }
 @media screen and (min-width: 1280px) {
   /* line 22, ../../../src/scss/partials/_header.scss */
-  .header--logo {
+  .header__logo {
     background-image: none;
     height: 175px;
   }
 }
 
 /* line 49, ../../../src/scss/partials/_header.scss */
-.header--subsection {
+.header__subsection {
   display: none;
 }
 @media screen and (min-width: 900px) {
   /* line 49, ../../../src/scss/partials/_header.scss */
-  .header--subsection {
+  .header__subsection {
     display: block;
   }
   /* line 15, /Users/kimmigan/Development/kopijunkie.net/node_modules/node-bourbon/assets/stylesheets/addons/_clearfix.scss */
-  .header--subsection:after {
+  .header__subsection:after {
     content: "";
     display: table;
     clear: both;
@@ -314,7 +309,7 @@ pre {
 }
 
 /* line 59, ../../../src/scss/partials/_header.scss */
-.header--tagline {
+.header__tagline {
   padding: 10px 2.5em;
   margin-left: 3.125em;
   color: #123456;
@@ -323,7 +318,7 @@ pre {
 }
 @media screen and (min-width: 1280px) {
   /* line 59, ../../../src/scss/partials/_header.scss */
-  .header--tagline {
+  .header__tagline {
     background: white;
     opacity: 0.55;
     line-height: 1;
@@ -360,19 +355,72 @@ pre {
   }
 }
 
-/* line 17, ../../../src/scss/partials/_nav-menu.scss */
+/* line 18, ../../../src/scss/partials/_nav-menu.scss */
+.nav-menu__trigger,
+.nav-menu__icon {
+  width: 32px;
+  height: 32px;
+}
+
+/* line 25, ../../../src/scss/partials/_nav-menu.scss */
+.nav-menu__trigger {
+  display: inline-block;
+}
+@media screen and (min-width: 900px) {
+  /* line 25, ../../../src/scss/partials/_nav-menu.scss */
+  .nav-menu__trigger {
+    display: none;
+  }
+}
+
+/* line 35, ../../../src/scss/partials/_nav-menu.scss */
+.header__logo--mobile {
+  display: inline-block;
+  margin: 0;
+  margin-top: 5px;
+  height: 32px;
+  overflow: hidden;
+  background: url(../img/kopijunkie.png) no-repeat;
+  background-size: 127px 32px;
+}
+/* line 4, /Users/kimmigan/Development/kopijunkie.net/node_modules/node-bourbon/assets/stylesheets/addons/_hide-text.scss */
+.header__logo--mobile:before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 100%;
+}
+@media screen and (min-width: 900px) {
+  /* line 35, ../../../src/scss/partials/_nav-menu.scss */
+  .header__logo--mobile {
+    display: none;
+  }
+}
+
+/* line 53, ../../../src/scss/partials/_nav-menu.scss */
+.nav-menu__list {
+  display: none;
+}
+@media screen and (min-width: 900px) {
+  /* line 53, ../../../src/scss/partials/_nav-menu.scss */
+  .nav-menu__list {
+    display: block;
+  }
+}
+
+/* line 63, ../../../src/scss/partials/_nav-menu.scss */
 .nav-menu__item {
   border-top: 6px solid #794012;
   border-bottom: 5px solid #794012;
-  padding-left: 0.625em;
-  padding-right: 0.625em;
+  padding-left: 0.9375em;
+  padding-right: 0.9375em;
 }
-/* line 28, ../../../src/scss/partials/_nav-menu.scss */
+/* line 74, ../../../src/scss/partials/_nav-menu.scss */
 .nav-menu__item.active {
   border-bottom: 5px solid #be864d;
 }
 
-/* line 32, ../../../src/scss/partials/_nav-menu.scss */
+/* line 79, ../../../src/scss/partials/_nav-menu.scss */
 .nav-menu__link {
   font-weight: bold;
   font-size: 1.125rem;
@@ -381,7 +429,7 @@ pre {
   color: white;
   text-shadow: 0 1px 1px black;
 }
-/* line 40, ../../../src/scss/partials/_nav-menu.scss */
+/* line 87, ../../../src/scss/partials/_nav-menu.scss */
 .nav-menu__link:hover {
   color: #d2ac85;
 }

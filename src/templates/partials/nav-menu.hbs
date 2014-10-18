@@ -2,7 +2,15 @@
 component: nav-menu
 ---
 <nav class="nav-menu">
-    <ul class="list--no-bullets" role="navigation">
+    <a href="#" class="nav-menu__trigger" title="Show menu">
+        <img src="{{assets}}/img/icon--menu.jpg" class="nav-menu__icon" alt="Mobile Menu icon" />
+    </a>
+
+    <h1 class="header__logo--mobile" role="banner">
+        <a href="{{site.url}}">KopiJunkie</a>
+    </h1>
+
+    <ul class="nav-menu__list list--no-bullets" role="navigation">
         <li class="nav-menu__item list__item list__item--horizontal">
             <a href="index.html" class="nav-menu__link">Home</a>
         </li>

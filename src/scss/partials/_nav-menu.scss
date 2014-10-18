@@ -15,7 +15,10 @@
 }
 
 .nav-menu__item {
-    border-top: 5px solid $nav-bg-colour;
+    border: {
+        top: 6px solid $nav-bg-colour;
+        bottom: 5px solid $nav-bg-colour;
+    }
 
     padding: {
         left: em(10px);

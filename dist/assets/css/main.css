@@ -358,16 +358,17 @@ a {
 
 /* line 17, ../../../src/scss/partials/_nav-menu.scss */
 .nav-menu__item {
-  border-top: 5px solid #794012;
+  border-top: 6px solid #794012;
+  border-bottom: 5px solid #794012;
   padding-left: 0.625em;
   padding-right: 0.625em;
 }
-/* line 25, ../../../src/scss/partials/_nav-menu.scss */
+/* line 28, ../../../src/scss/partials/_nav-menu.scss */
 .nav-menu__item.active {
   border-bottom: 5px solid #be864d;
 }
 
-/* line 29, ../../../src/scss/partials/_nav-menu.scss */
+/* line 32, ../../../src/scss/partials/_nav-menu.scss */
 .nav-menu__link {
   font-weight: bold;
   font-size: 1.125rem;
@@ -376,7 +377,7 @@ a {
   color: white;
   text-shadow: 0 1px 1px black;
 }
-/* line 37, ../../../src/scss/partials/_nav-menu.scss */
+/* line 40, ../../../src/scss/partials/_nav-menu.scss */
 .nav-menu__link:hover {
   color: #d2ac85;
 }

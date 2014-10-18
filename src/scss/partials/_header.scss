@@ -61,11 +61,13 @@
     margin-left: em(50px);
     color: $tagline-text-colour;
     font-size: rem(17px);
+    line-height: 2;
 
     @include media($desktop) {
 
         background: white;
         opacity: 0.55;
+        line-height: 1;
 
     }
 }

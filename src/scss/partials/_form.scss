@@ -1,17 +1,18 @@
 .form {
     @include clearfix;
     border-radius: 8px;
-    padding: em(15px);
-    margin: em(20px) em(40px);
+
+    @include media($tablet) {
+
+        margin: em(20px) em(40px);
+        padding: em(15px);
+
+    }
 }
 
 .form--fieldset {
     border: 0;
     padding: em(15px) em(10px);
-
-    &:last-child {
-        margin-bottom: 30px;
-    }
 }
 
 .form--label,
@@ -20,12 +21,26 @@
 }
 
 .form--label {
-    @include span-columns(2.5 of 8.5);
+    @include fill-parent;
+
+    @include media($tablet) {
+
+        @include span-columns(2.5 of 8.5);
+
+    }
 }
 
 .form--input {
-    @include span-columns(6 of 8.5);
-    @include omega;
+    @include fill-parent;
+    margin-top: 5px;
+
+    @include media($tablet) {
+
+        @include span-columns(6 of 8.5);
+        @include omega;
+        margin-top: 0;
+
+    }
 
     color: $black-coffee;
     @include placeholder {
@@ -42,4 +57,7 @@
     &:focus {
         background: $form-input-bg-colour;
     }
+}
+.form--textarea {
+    height: 200px;
 }

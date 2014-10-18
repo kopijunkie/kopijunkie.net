@@ -5,12 +5,15 @@
   box-sizing: border-box;
 }
 
-/* line 1, ../../../src/scss/_general.scss */
+/*
+ *  General Elements
+ */
+/* line 5, ../../../src/scss/_general.scss */
 html, body {
   height: 100%;
 }
 
-/* line 5, ../../../src/scss/_general.scss */
+/* line 9, ../../../src/scss/_general.scss */
 body {
   background: white;
   color: #393838;
@@ -19,44 +22,129 @@ body {
   line-height: 1.5;
 }
 
-/* line 13, ../../../src/scss/_general.scss */
+/* line 17, ../../../src/scss/_general.scss */
 h1, h2 {
   text-shadow: 1px 2px #c8e3ff;
 }
 
-/* line 16, ../../../src/scss/_general.scss */
+/* line 20, ../../../src/scss/_general.scss */
 h1 {
   color: #123456;
   font-size: 1.625rem;
 }
 
-/* line 20, ../../../src/scss/_general.scss */
+/* line 24, ../../../src/scss/_general.scss */
 h2 {
   color: #0b4d90;
   font-size: 1.375rem;
+  padding-top: 1.5625rem;
 }
 
-/* line 25, ../../../src/scss/_general.scss */
+/* line 30, ../../../src/scss/_general.scss */
 ul {
   margin: 0;
 }
 
-/* line 29, ../../../src/scss/_general.scss */
+/* line 34, ../../../src/scss/_general.scss */
 a {
   text-decoration: none;
 }
 
-/* line 34, ../../../src/scss/_general.scss */
+/* line 38, ../../../src/scss/_general.scss */
+blockquote {
+  background: #eddac1;
+  padding: 0 0.9375em;
+  border: 2px solid #cc9f72;
+  border-radius: 8px;
+}
+
+/* line 45, ../../../src/scss/_general.scss */
+pre {
+  color: #1cad1e;
+  background: #393838;
+  padding: 0.9375em 1.25em;
+  border-radius: 5px;
+}
+
+/* line 53, ../../../src/scss/_general.scss */
 .left {
   float: left;
 }
 
-/* line 38, ../../../src/scss/_general.scss */
+/* line 57, ../../../src/scss/_general.scss */
 .right {
   float: right;
 }
 
-/* line 43, ../../../src/scss/_general.scss */
+/* line 62, ../../../src/scss/_general.scss */
+.button {
+  border: 1px solid #3e1f06;
+  border-radius: 3px;
+  box-shadow: inset 0 1px 0 0 #b36425;
+  color: white;
+  display: inline-block;
+  font-size: inherit;
+  font-weight: bold;
+  background-color: #794012;
+  background-image: -webkit-linear-gradient(#794012, #4c2607);
+  background-image: linear-gradient(#794012, #4c2607);
+  padding: 7px 18px;
+  text-decoration: none;
+  text-shadow: 0 1px 0 #2d1503;
+  background-clip: padding-box;
+  margin: 25px 30px;
+}
+/* line 131, /Users/kimmigan/Development/kopijunkie.net/node_modules/node-bourbon/assets/stylesheets/addons/_button.scss */
+.button:hover:not(:disabled) {
+  box-shadow: inset 0 1px 0 0 #894c1b;
+  cursor: pointer;
+  background-color: #613511;
+  background-image: -webkit-linear-gradient(#613511, #3e1f06);
+  background-image: linear-gradient(#613511, #3e1f06);
+}
+/* line 147, /Users/kimmigan/Development/kopijunkie.net/node_modules/node-bourbon/assets/stylesheets/addons/_button.scss */
+.button:active:not(:disabled), .button:focus:not(:disabled) {
+  border: 1px solid #3e1f06;
+  box-shadow: inset 0 0 8px 4px #2f1805, inset 0 0 8px 4px #2f1805;
+}
+/* line 51, /Users/kimmigan/Development/kopijunkie.net/node_modules/node-bourbon/assets/stylesheets/addons/_button.scss */
+.button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* line 68, ../../../src/scss/_general.scss */
+.definition-list__title {
+  color: #3f2108;
+  font-weight: bold;
+}
+
+/* line 74, ../../../src/scss/_general.scss */
+.list--no-bullets {
+  list-style: none;
+  padding: 0;
+}
+/* line 15, /Users/kimmigan/Development/kopijunkie.net/node_modules/node-bourbon/assets/stylesheets/addons/_clearfix.scss */
+.list--no-bullets:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* line 80, ../../../src/scss/_general.scss */
+.list__item {
+  padding: 0.625em 1.25em;
+}
+
+/* line 83, ../../../src/scss/_general.scss */
+.list__item--horizontal {
+  float: left;
+}
+
+/*
+ *  General (Overall) Layout
+ */
+/* line 93, ../../../src/scss/_general.scss */
 .wrapper {
   max-width: 68em;
   margin-left: auto;
@@ -71,14 +159,14 @@ a {
   clear: both;
 }
 @media screen and (min-width: 1280px) {
-  /* line 43, ../../../src/scss/_general.scss */
+  /* line 93, ../../../src/scss/_general.scss */
   .wrapper {
     border-left: 1px solid #be864d;
     border-right: 1px solid #be864d;
   }
 }
 
-/* line 57, ../../../src/scss/_general.scss */
+/* line 107, ../../../src/scss/_general.scss */
 .wrapper--inner {
   width: 100%;
   display: -webkit-box;
@@ -99,14 +187,14 @@ a {
   -ms-flex-align: stretch;
 }
 
-/* line 63, ../../../src/scss/_general.scss */
+/* line 113, ../../../src/scss/_general.scss */
 .content {
   float: left;
   display: block;
   margin-right: 2.35765%;
   width: 100%;
   margin-right: 0;
-  padding: 2.35765%;
+  padding: 12px;
   min-height: 100%;
   border-right: 1px solid #e8cead;
 }
@@ -115,116 +203,30 @@ a {
   margin-right: 0;
 }
 @media screen and (min-width: 900px) {
-  /* line 63, ../../../src/scss/_general.scss */
+  /* line 113, ../../../src/scss/_general.scss */
   .content {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 70.14568%;
+    padding: 1.5em;
   }
   /* line 38, /Users/kimmigan/Development/kopijunkie.net/node_modules/node-neat/assets/stylesheets/grid/_span-columns.scss */
   .content:last-child {
     margin-right: 0;
   }
 }
-/* line 76, ../../../src/scss/_general.scss */
+/* line 127, ../../../src/scss/_general.scss */
 .content a {
   color: #75410d;
 }
-/* line 79, ../../../src/scss/_general.scss */
+/* line 130, ../../../src/scss/_general.scss */
 .content a:hover {
   color: #d38444;
 }
-/* line 83, ../../../src/scss/_general.scss */
+/* line 134, ../../../src/scss/_general.scss */
 .content a:visited {
   color: #b46c04;
-}
-
-/* line 90, ../../../src/scss/_general.scss */
-.list--no-bullets {
-  list-style: none;
-  padding: 0;
-}
-/* line 15, /Users/kimmigan/Development/kopijunkie.net/node_modules/node-bourbon/assets/stylesheets/addons/_clearfix.scss */
-.list--no-bullets:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* line 96, ../../../src/scss/_general.scss */
-.list__item {
-  padding: 0.625em 1.25em;
-}
-
-/* line 99, ../../../src/scss/_general.scss */
-.list__item--horizontal {
-  float: left;
-}
-
-/* line 103, ../../../src/scss/_general.scss */
-.button {
-  border: 1px solid #6f5f50;
-  border-color: #6f5f50 #64533c #5b4a2b;
-  border-radius: 16px;
-  box-shadow: inset 0 1px 0 0 #c79668;
-  color: white;
-  display: inline-block;
-  font-size: inherit;
-  font-weight: normal;
-  line-height: 1;
-  background-color: #be864d;
-  background-image: -webkit-linear-gradient(#be864d, #ad7e2b);
-  background-image: linear-gradient(#be864d, #ad7e2b);
-  padding: 7px 18px;
-  text-align: center;
-  text-decoration: none;
-  text-shadow: 0 -1px 1px #796445;
-  background-clip: padding-box;
-  margin: 25px 30px;
-}
-/* line 278, /Users/kimmigan/Development/kopijunkie.net/node_modules/node-bourbon/assets/stylesheets/addons/_button.scss */
-.button:hover:not(:disabled) {
-  border: 1px solid #684f38;
-  border-color: #684f38 #5d4524 #533c15;
-  box-shadow: inset 0 1px 0 0 #c18e59;
-  cursor: pointer;
-  background-color: #b37b41;
-  background-image: -webkit-linear-gradient(#b37b41, #866936);
-  background-image: linear-gradient(#b37b41, #866936);
-  text-shadow: 0 -1px 1px #6e532d;
-  background-clip: padding-box;
-}
-/* line 306, /Users/kimmigan/Development/kopijunkie.net/node_modules/node-bourbon/assets/stylesheets/addons/_button.scss */
-.button:active:not(:disabled), .button:focus:not(:disabled) {
-  background: #917147;
-  border: 1px solid #523e20;
-  border-bottom: 1px solid #53411a;
-  box-shadow: inset 0 0 6px 3px #755a29;
-  text-shadow: 0 -1px 1px #6a5334;
-}
-/* line 51, /Users/kimmigan/Development/kopijunkie.net/node_modules/node-bourbon/assets/stylesheets/addons/_button.scss */
-.button:disabled {
-  opacity: 0.5;
-  cursor: not-allowed;
-}
-
-/* line 109, ../../../src/scss/_general.scss */
-.blockquote {
-  background: #eddac1;
-  padding: 0 0.9375em;
-}
-
-/* line 113, ../../../src/scss/_general.scss */
-.blockquote--bordered {
-  border: 2px solid #cc9f72;
-  border-radius: 8px;
-}
-
-/* line 119, ../../../src/scss/_general.scss */
-.definition-list__title {
-  color: #3f2108;
-  font-weight: bold;
 }
 
 /* line 1, ../../../src/scss/partials/_header.scss */
@@ -317,12 +319,14 @@ a {
   margin-left: 3.125em;
   color: #123456;
   font-size: 1.0625rem;
+  line-height: 2;
 }
 @media screen and (min-width: 1280px) {
   /* line 59, ../../../src/scss/partials/_header.scss */
   .header--tagline {
     background: white;
     opacity: 0.55;
+    line-height: 1;
   }
 }
 
@@ -385,6 +389,7 @@ a {
 /* line 1, ../../../src/scss/partials/_sidebar.scss */
 .sidebar {
   display: none;
+  font-size: 0.875rem;
 }
 @media screen and (min-width: 900px) {
   /* line 1, ../../../src/scss/partials/_sidebar.scss */
@@ -394,7 +399,7 @@ a {
     margin-right: 2.35765%;
     width: 27.49666%;
     margin-right: 0;
-    padding-right: 0.9375em;
+    padding-right: 1.6875em;
     padding-bottom: 1.25em;
   }
   /* line 38, /Users/kimmigan/Development/kopijunkie.net/node_modules/node-neat/assets/stylesheets/grid/_span-columns.scss */
@@ -403,7 +408,7 @@ a {
   }
 }
 
-/* line 17, ../../../src/scss/partials/_sidebar.scss */
+/* line 18, ../../../src/scss/partials/_sidebar.scss */
 .twitter-timeline {
   height: 350px;
 }
@@ -488,8 +493,6 @@ a {
 /* line 1, ../../../src/scss/partials/_form.scss */
 .form {
   border-radius: 8px;
-  padding: 0.9375em;
-  margin: 1.25em 2.5em;
 }
 /* line 15, /Users/kimmigan/Development/kopijunkie.net/node_modules/node-bourbon/assets/stylesheets/addons/_clearfix.scss */
 .form:after {
@@ -497,42 +500,48 @@ a {
   display: table;
   clear: both;
 }
+@media screen and (min-width: 900px) {
+  /* line 1, ../../../src/scss/partials/_form.scss */
+  .form {
+    margin: 1.25em 2.5em;
+    padding: 0.9375em;
+  }
+}
 
-/* line 8, ../../../src/scss/partials/_form.scss */
+/* line 13, ../../../src/scss/partials/_form.scss */
 .form--fieldset {
   border: 0;
   padding: 0.9375em 0.625em;
 }
-/* line 12, ../../../src/scss/partials/_form.scss */
-.form--fieldset:last-child {
-  margin-bottom: 30px;
-}
 
-/* line 17, ../../../src/scss/partials/_form.scss */
+/* line 18, ../../../src/scss/partials/_form.scss */
 .form--label,
 .form--input {
   padding: 7px 0;
 }
 
-/* line 22, ../../../src/scss/partials/_form.scss */
+/* line 23, ../../../src/scss/partials/_form.scss */
 .form--label {
-  float: left;
-  display: block;
-  margin-right: 3.36108%;
-  width: 27.03924%;
+  width: 100%;
 }
-/* line 38, /Users/kimmigan/Development/kopijunkie.net/node_modules/node-neat/assets/stylesheets/grid/_span-columns.scss */
-.form--label:last-child {
-  margin-right: 0;
+@media screen and (min-width: 900px) {
+  /* line 23, ../../../src/scss/partials/_form.scss */
+  .form--label {
+    float: left;
+    display: block;
+    margin-right: 3.36108%;
+    width: 27.03924%;
+  }
+  /* line 38, /Users/kimmigan/Development/kopijunkie.net/node_modules/node-neat/assets/stylesheets/grid/_span-columns.scss */
+  .form--label:last-child {
+    margin-right: 0;
+  }
 }
 
-/* line 26, ../../../src/scss/partials/_form.scss */
+/* line 33, ../../../src/scss/partials/_form.scss */
 .form--input {
-  float: left;
-  display: block;
-  margin-right: 3.36108%;
-  width: 69.59968%;
-  margin-right: 0;
+  width: 100%;
+  margin-top: 5px;
   color: #3f2108;
   background: #e8cead;
   border: 2px solid #cc9f72;
@@ -540,9 +549,20 @@ a {
   padding-left: 10px;
   padding-right: 10px;
 }
-/* line 38, /Users/kimmigan/Development/kopijunkie.net/node_modules/node-neat/assets/stylesheets/grid/_span-columns.scss */
-.form--input:last-child {
-  margin-right: 0;
+@media screen and (min-width: 900px) {
+  /* line 33, ../../../src/scss/partials/_form.scss */
+  .form--input {
+    float: left;
+    display: block;
+    margin-right: 3.36108%;
+    width: 69.59968%;
+    margin-right: 0;
+    margin-top: 0;
+  }
+  /* line 38, /Users/kimmigan/Development/kopijunkie.net/node_modules/node-neat/assets/stylesheets/grid/_span-columns.scss */
+  .form--input:last-child {
+    margin-right: 0;
+  }
 }
 /* line 4, /Users/kimmigan/Development/kopijunkie.net/node_modules/node-bourbon/assets/stylesheets/css3/_placeholder.scss */
 .form--input::-webkit-input-placeholder {
@@ -560,14 +580,19 @@ a {
 .form--input:-ms-input-placeholder {
   color: #907c6b;
 }
-/* line 42, ../../../src/scss/partials/_form.scss */
+/* line 57, ../../../src/scss/partials/_form.scss */
 .form--input:focus {
   background: #f5d3a4;
 }
 
+/* line 61, ../../../src/scss/partials/_form.scss */
+.form--textarea {
+  height: 200px;
+}
+
 /* line 1, ../../../src/scss/partials/_social-media.scss */
 .social-media {
-  padding-top: 7px;
+  padding-top: 12px;
   font-size: 0.8125rem;
 }
 @media screen and (min-width: 1280px) {

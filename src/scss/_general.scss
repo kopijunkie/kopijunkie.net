@@ -1,3 +1,7 @@
+/*
+ *  General Elements
+ */
+
 html, body {
     height: 100%;
 }
@@ -20,6 +24,7 @@ h1 {
 h2 {
     color: saturate(lighten($primary-heading-colour, 10%), 20%);
     font-size: rem(22px);
+    padding-top: rem(25px);
 }
 
 ul {
@@ -28,6 +33,20 @@ ul {
 
 a {
     text-decoration: none;
+}
+
+blockquote {
+    background: $block-bg-colour;
+    padding: 0 em(15px);
+    border: 2px solid $border-colour;
+    border-radius: 8px;
+}
+
+pre {
+    color: $code-text-colour;
+    background: $codeblock-bg-colour;
+    padding: em(15px) em(20px);
+    border-radius: 5px;
 }
 
 
@@ -39,6 +58,37 @@ a {
     float: right;
 }
 
+
+.button {
+    @include button(simple, $dark-coffee);
+    margin: 25px 30px;
+}
+
+
+.definition-list__title {
+    color: $definition-list-title-colour;
+    font-weight: bold;
+}
+
+
+.list--no-bullets {
+    @include clearfix;
+    list-style: none;
+    padding: 0;
+}
+
+.list__item {
+    padding: em(10) em(20);
+}
+.list__item--horizontal {
+    float: left;
+}
+
+
+
+/*
+ *  General (Overall) Layout
+ */
 
 .wrapper {
     @include outer-container;
@@ -63,13 +113,14 @@ a {
 .content {
     @include span-columns(12);
     @include omega;
-    @include pad();
+    @include pad(12px);
     min-height: 100%;
     border-right: 1px solid $sidebar-border-colour;
 
     @include media($tablet) {
 
         @include span-columns(8.5);
+        @include pad(1.5em);
 
     }
 
@@ -84,39 +135,4 @@ a {
             color: $link-visited-colour;
         }
     }
-}
-
-
-.list--no-bullets {
-    @include clearfix;
-    list-style: none;
-    padding: 0;
-}
-
-.list__item {
-    padding: em(10) em(20);
-}
-.list__item--horizontal {
-    float: left;
-}
-
-.button {
-    @include button(pill, $milky-coffee);
-    margin: 25px 30px;
-}
-
-
-.blockquote {
-    background: $blockquote-bg-colour;
-    padding: 0 em(15px);
-}
-.blockquote--bordered {
-    border: 2px solid $border-colour;
-    border-radius: 8px;
-}
-
-
-.definition-list__title {
-    color: $definition-list-title-colour;
-    font-weight: bold;
 }

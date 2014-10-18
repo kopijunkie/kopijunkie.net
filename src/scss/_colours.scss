@@ -15,6 +15,7 @@ $light-blue: lighten($greyish-blue, 10%);
 
 // TERTIARY: the whites
 $greyish-white: #ebe8e8;
+$dark-grey: #393838;
 
 
 // Backgrounds
@@ -22,9 +23,10 @@ $body-bg-colour: white;
 $wrapper-bg-colour: $milk;
 $header-bg-colour: #f7f2f8;
 $nav-bg-colour: $dark-coffee;
-$footer-bg-colour: #393838;
+$footer-bg-colour: $dark-grey;
 $form-input-bg-colour: #f5d3a4;
-$blockquote-bg-colour: lighten($tea, 5%);
+$block-bg-colour: lighten($tea, 5%);
+$codeblock-bg-colour: $dark-grey;
 
 
 // Borders
@@ -35,7 +37,6 @@ $sidebar-border-colour: $tea;
 $nav-border-colour: #bebdbd;
 $footer-border-colour: #595959;
 $form-input-border-colour: $border-colour;
-$blockquote-border-colour: $border-colour;
 
 
 // Links
@@ -54,7 +55,8 @@ $primary-heading-colour: $dark-blue;
 $primary-heading-shadow-colour: $sky-blue;
 
 // Text
-$body-text-colour: #393838;
+$body-text-colour: $dark-grey;
 $tagline-text-colour: $dark-blue;
 $definition-list-title-colour: $black-coffee;
+$code-text-colour: #1cad1e;
 $footer-text-colour: $greyish-white;

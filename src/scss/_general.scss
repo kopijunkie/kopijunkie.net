@@ -15,10 +15,12 @@ body {
 h1, h2 {
     text-shadow: 1px 2px $primary-heading-shadow-colour;
 }
+
 h1 {
     color: $primary-heading-colour;
     font-size: rem(26px);
 }
+
 h2 {
     color: saturate(lighten($primary-heading-colour, 10%), 20%);
     font-size: rem(22px);

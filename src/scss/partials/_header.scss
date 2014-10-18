@@ -19,7 +19,7 @@
     }
 }
 
-.header--logo {
+.header__logo {
     margin: 0;
     display: none;
 
@@ -46,7 +46,7 @@
     }
 }
 
-.header--subsection {
+.header__subsection {
     display: none;
 
     @include media($tablet) {
@@ -56,7 +56,7 @@
 
     }
 }
-.header--tagline {
+.header__tagline {
     padding: 10px em(40px);
     margin-left: em(50px);
     color: $tagline-text-colour;

@@ -1,0 +1,45 @@
+.form {
+    @include clearfix;
+    border-radius: 8px;
+    padding: em(15px);
+    margin: em(20px) em(40px);
+}
+
+.form--fieldset {
+    border: 0;
+    padding: em(15px) em(10px);
+
+    &:last-child {
+        margin-bottom: 30px;
+    }
+}
+
+.form--label,
+.form--input {
+    padding: 7px 0;
+}
+
+.form--label {
+    @include span-columns(2.5 of 8.5);
+}
+
+.form--input {
+    @include span-columns(6 of 8.5);
+    @include omega;
+
+    color: $black-coffee;
+    @include placeholder {
+        color: #907c6b;
+    }
+    background: $tea;
+    border: 2px solid $border-colour;
+    border-radius: 5px;
+    padding: {
+        left: 10px;
+        right: 10px;
+    }
+
+    &:focus {
+        background: $form-input-bg-colour;
+    }
+}

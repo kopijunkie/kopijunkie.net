@@ -47,7 +47,10 @@ a {
 
     @include media($desktop) {
 
-        border: 1px solid $wrapper-border-colour;
+        border: {
+            left: 1px solid $wrapper-border-colour;
+            right: 1px solid $wrapper-border-colour;
+        }
 
     }
 }
@@ -97,13 +100,18 @@ a {
     float: left;
 }
 
+.button {
+    @include button(pill, $milky-coffee);
+    margin: 25px 30px;
+}
+
 
 .blockquote {
     background: $blockquote-bg-colour;
     padding: 0 em(15px);
 }
 .blockquote--bordered {
-    border: 2px solid $blockquote-border-colour;
+    border: 2px solid $border-colour;
     border-radius: 8px;
 }
 

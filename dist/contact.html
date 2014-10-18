@@ -90,28 +90,28 @@
 <p>Drop me a message with the form below.</p>
 
 
-<form id="contact-form" class="form contact-form" action="contact.php" method="POST">
+<form id="contact-form" class="form form__bordered contact-form" action="contact.php" method="POST">
     <fieldset class="form--fieldset">
         <label class="form--label" for="name">Name</label>
-        <input type="text" class="form--input" id="name" name="name" placeholder="Your name" />
+        <input type="text" class="form--input" name="name" placeholder="Your name" />
     </fieldset>
 
     <fieldset class="form--fieldset">
         <label class="form--label" for="email">Email</label>
-        <input type="text" class="form--input" id="email" name="email" placeholder="Your email" />
+        <input type="text" class="form--input" name="email" placeholder="Your email" />
     </fieldset>
 
     <fieldset class="form--fieldset">
         <label class="form--label" for="message">Message</label>
-        <textarea id="message" name="message" placeholder="Your message"></textarea>
+        <textarea class="form--input" name="message" placeholder="Your message"></textarea>
     </fieldset>
 
     <fieldset class="form--fieldset">
         <label class="form--label" for="spam">What's 5 + 2?</label>
-        <input type="text" class="form--input" id="spam" name="spam" placeholder="The answer is..." />
+        <input type="text" class="form--input" name="spam" placeholder="The answer is..." />
     </fieldset>
 
-    <input type="submit" class="right" id="submit-form" name="submit" value="Send" />
+    <input type="submit" class="button form--button right" id="submit-form" name="submit" value="Send" />
 </form>
             </section>
 

@@ -9,10 +9,11 @@
 
 @import "general";
 
-@import "header";
-@import "social-media";
-@import "nav-menu";
-@import "sidebar";
-@import "footer";
+// Partials
+@import "partials/header";
+@import "partials/nav-menu";
+@import "partials/sidebar";
+@import "partials/footer";
 
-@import "flickr-badge";
+@import "partials/social-media";
+@import "partials/flickr-badge";

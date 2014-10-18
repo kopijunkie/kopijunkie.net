@@ -1,7 +1,7 @@
 // COLOUR PALETTES
 
 // PRIMARY: 50 shades of coffee (sort of)
-// $black-coffee:
+$black-coffee: #3f2108;
 $dark-coffee: #794012;
 $milky-coffee: #be864d;
 $tea: saturate(lighten(#ceaa7a, 15%), 10%);
@@ -23,6 +23,7 @@ $wrapper-bg-colour: $milk;
 $header-bg-colour: #f7f2f8;
 $nav-bg-colour: $dark-coffee;
 $footer-bg-colour: #393838;
+$blockquote-bg-colour: lighten($tea, 5%);
 
 
 // Borders
@@ -31,6 +32,7 @@ $wrapper-border-colour: #be864d;
 $sidebar-border-colour: $tea;
 $nav-border-colour: #bebdbd;
 $footer-border-colour: #595959;
+$blockquote-border-colour: lighten($milky-coffee, 10%);
 
 
 // Links
@@ -51,4 +53,5 @@ $primary-heading-shadow-colour: $sky-blue;
 // Text
 $body-text-colour: #393838;
 $tagline-text-colour: $dark-blue;
+$definition-list-title-colour: $black-coffee;
 $footer-text-colour: $greyish-white;

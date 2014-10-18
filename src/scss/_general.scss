@@ -6,6 +6,8 @@ body {
     background: $body-bg-colour;
     color: $body-text-colour;
     font-family: $helvetica;
+    font-size: rem(17px);
+    line-height: 1.5;
 }
 
 h1, h2 {
@@ -93,4 +95,20 @@ a {
 }
 .list__item--horizontal {
     float: left;
+}
+
+
+.blockquote {
+    background: $blockquote-bg-colour;
+    padding: 0 em(15px);
+}
+.blockquote--bordered {
+    border: 2px solid $blockquote-border-colour;
+    border-radius: 8px;
+}
+
+
+.definition-list__title {
+    color: $definition-list-title-colour;
+    font-weight: bold;
 }

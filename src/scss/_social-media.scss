@@ -3,7 +3,14 @@
 
 
 .social-media {
+    padding-top: 7px;
     font-size: rem(13px);
+
+    @include media($desktop) {
+
+        padding-top: 0;
+
+    }
 }
 
 .social-media__action {
@@ -29,6 +36,15 @@ $icon-size: 32px;
     background: #d30319 url(../img/lastfm-btn.png) no-repeat;
 }
 
+.social-media__list {
+    padding-top: 7px;
+
+    @include media($desktop) {
+
+        padding-top: 0;
+
+    }
+}
 .social-media__link {
     display: inline-block;
     text-decoration: none;

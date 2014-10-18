@@ -1,13 +1,16 @@
 .sidebar {
     display: none;
 
-    @include media($mobile) {
+    @include media($tablet) {
+
         @include span-columns(3.5);
         @include omega;
+
         padding: {
             right: em(15px);
             bottom: em(20px);
         }
+
     }
 }
 

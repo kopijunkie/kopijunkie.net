@@ -30,13 +30,17 @@
     <div class="wrapper">
         {{> header }}
 
-        <section class="content" role="main">
-            {{> body }}
-        </section>
+        {{> nav-menu }}
 
-        <aside class="sidebar" role="complementary">
-            {{> sidebar }}
-        </aside>
+        <div class="wrapper--inner">
+            <section class="content" role="main">
+                {{> body }}
+            </section>
+
+            <aside class="sidebar" role="complementary">
+                {{> sidebar }}
+            </aside>
+        </div>
 
         {{> footer }}
     </div>

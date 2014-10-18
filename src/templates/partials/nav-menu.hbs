@@ -3,24 +3,19 @@ component: nav-menu
 ---
 <nav class="nav-menu">
     <ul class="list--no-bullets" role="navigation">
-        {{!-- {{#each pages}}
-        <li class="nav-menu__item list__item list__item--horizontal{{#if this.isCurrentPage}} active{{/if}}">
-            <a href="{{relative dest this.dest}}" class="nav-menu__link">{{ data.title }}</a>
-        </li>
-        {{/each}} --}}
-        <li class="nav-menu__item list__item list__item--horizontal{{#if active_Home}} active{{/if}}">
+        <li class="nav-menu__item list__item list__item--horizontal">
             <a href="index.html" class="nav-menu__link">Home</a>
         </li>
-        <li class="nav-menu__item list__item list__item--horizontal{{#if active_About}} active{{/if}}">
+        <li class="nav-menu__item list__item list__item--horizontal">
             <a href="about.html" class="nav-menu__link">About</a>
         </li>
-        <li class="nav-menu__item list__item list__item--horizontal{{#if active_Work}} active{{/if}}">
+        <li class="nav-menu__item list__item list__item--horizontal">
             <a href="work.html" class="nav-menu__link">Work</a>
         </li>
-        <li class="nav-menu__item list__item list__item--horizontal{{#if active_Blog}} active{{/if}}">
+        <li class="nav-menu__item list__item list__item--horizontal">
             <a href="blog.html" class="nav-menu__link">Blog</a>
         </li>
-        <li class="nav-menu__item list__item list__item--horizontal{{#if active_Contact}} active{{/if}}">
+        <li class="nav-menu__item list__item list__item--horizontal">
             <a href="contact.html" class="nav-menu__link">Contact</a>
         </li>
     </ul>

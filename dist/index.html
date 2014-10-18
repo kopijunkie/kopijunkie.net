@@ -32,14 +32,14 @@
 <header class="header" role="banner">
     <h1 class="header--logo"><a href="http://kopijunkie.net">KopiJunkie</a></h1>
 
-    <div class="sub-header">
+    <div class="header--subsection">
         <h2 class="header--tagline left">The online home of a web developing coffee junkie</h2>
 
         
 <section class="social-media right">
     <span class="social-media__action">Follow Me On</span>
 
-    <ul class="list--no-bullets">
+    <ul class="social-media__list list--no-bullets">
         <li class="list__item list__item--horizontal">
             <a class="social-media__link" href="http://codepen.io/kopijunkie" title="Codepen" target="_blank">
                 <i class="social-media__icon icon-codepen"></i>Codepen
@@ -58,11 +58,11 @@
     </ul>
 </section>
     </div>
+</header>
 
-    
+        
 <nav class="nav-menu">
     <ul class="list--no-bullets" role="navigation">
-        
         <li class="nav-menu__item list__item list__item--horizontal">
             <a href="index.html" class="nav-menu__link">Home</a>
         </li>
@@ -81,10 +81,10 @@
     </ul>
 </nav>
 
-</header>
 
-        <section class="content" role="main">
-            
+        <div class="wrapper--inner">
+            <section class="content" role="main">
+                
 <h1>KopiJunkie &#61; a coffee junkie who builds web sites and apps.</h1>
 
 <h2>Welcome to my home on the interwebz.</h2>
@@ -97,18 +97,20 @@
     Modern web technologies is a passion of mine along with arts and social science. Web technologies allow me to bring arts, social science and technology together to create engaging and informative story narratives and data visualisations as well as an enjoyable and equally engaging user experience. <strong>Kopijunkie.net</strong> is my personal web site, portfolio, and blog.
 </p>
 
-        </section>
+            </section>
 
-        <aside class="sidebar" role="complementary">
-            
+            <aside class="sidebar" role="complementary">
+                
 <h3 class="sidebar--heading">Who Am I?</h3>
 
-<p>
+<section class="sidebar--about">
     <img class="sidebar--picture"
             src="assets/img/avatar.jpg"
             alt="Pencil caricature sketch of myself" title="That's me!" />
-    I'm Kimmi Gan. I'm a Front End Developer. This is my personal website and digital playground for all things web techy.
-</p>
+    <p>
+        I'm Kimmi Gan. I'm a Front End Developer by trade. This is my personal website, blog and digital playground for all things web techy.
+    </p>
+</section>
 
 <section class="twitter">
     <h3 class="twitter--heading">Coffee Fueled Thoughts</h3>
@@ -123,7 +125,8 @@
         </script>
     </div>
 </section>
-        </aside>
+            </aside>
+        </div>
 
         
 <footer class="footer" role="footer">

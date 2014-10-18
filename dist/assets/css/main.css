@@ -5,56 +5,62 @@
   box-sizing: border-box;
 }
 
-/* line 1, ../../../src/scss/general.scss */
+/* line 1, ../../../src/scss/_general.scss */
+html, body {
+  height: 100%;
+}
+
+/* line 5, ../../../src/scss/_general.scss */
 body {
   background: white;
   color: #393838;
   font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
 }
 
-/* line 7, ../../../src/scss/general.scss */
+/* line 11, ../../../src/scss/_general.scss */
 h1, h2 {
   text-shadow: 1px 2px #c8e3ff;
 }
 
-/* line 10, ../../../src/scss/general.scss */
+/* line 14, ../../../src/scss/_general.scss */
 h1 {
   color: #123456;
   font-size: 1.625rem;
 }
 
-/* line 14, ../../../src/scss/general.scss */
+/* line 18, ../../../src/scss/_general.scss */
 h2 {
   color: #0b4d90;
   font-size: 1.375rem;
 }
 
-/* line 19, ../../../src/scss/general.scss */
+/* line 23, ../../../src/scss/_general.scss */
 ul {
   margin: 0;
 }
 
-/* line 23, ../../../src/scss/general.scss */
+/* line 27, ../../../src/scss/_general.scss */
 a {
   text-decoration: none;
 }
 
-/* line 28, ../../../src/scss/general.scss */
+/* line 32, ../../../src/scss/_general.scss */
 .left {
   float: left;
 }
 
-/* line 32, ../../../src/scss/general.scss */
+/* line 36, ../../../src/scss/_general.scss */
 .right {
   float: right;
 }
 
-/* line 37, ../../../src/scss/general.scss */
+/* line 41, ../../../src/scss/_general.scss */
 .wrapper {
   max-width: 68em;
   margin-left: auto;
   margin-right: auto;
   background: #fffae7;
+  min-height: 100%;
 }
 /* line 15, /Users/kimmigan/Development/kopijunkie.net/node_modules/node-bourbon/assets/stylesheets/addons/_clearfix.scss */
 .wrapper:after {
@@ -62,8 +68,15 @@ a {
   display: table;
   clear: both;
 }
-/* line 42, ../../../src/scss/general.scss */
-.wrapper .container {
+@media screen and (min-width: 1280px) {
+  /* line 41, ../../../src/scss/_general.scss */
+  .wrapper {
+    border: 1px solid #be864d;
+  }
+}
+
+/* line 52, ../../../src/scss/_general.scss */
+.wrapper--inner {
   width: 100%;
   display: -webkit-box;
   display: -moz-box;
@@ -83,7 +96,7 @@ a {
   -ms-flex-align: stretch;
 }
 
-/* line 49, ../../../src/scss/general.scss */
+/* line 58, ../../../src/scss/_general.scss */
 .content {
   float: left;
   display: block;
@@ -91,26 +104,40 @@ a {
   width: 100%;
   margin-right: 0;
   padding: 2.35765%;
+  min-height: 100%;
   border-right: 1px solid #e8cead;
 }
 /* line 38, /Users/kimmigan/Development/kopijunkie.net/node_modules/node-neat/assets/stylesheets/grid/_span-columns.scss */
 .content:last-child {
   margin-right: 0;
 }
-/* line 58, ../../../src/scss/general.scss */
+@media screen and (min-width: 900px) {
+  /* line 58, ../../../src/scss/_general.scss */
+  .content {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 70.14568%;
+  }
+  /* line 38, /Users/kimmigan/Development/kopijunkie.net/node_modules/node-neat/assets/stylesheets/grid/_span-columns.scss */
+  .content:last-child {
+    margin-right: 0;
+  }
+}
+/* line 71, ../../../src/scss/_general.scss */
 .content a {
   color: #75410d;
 }
-/* line 61, ../../../src/scss/general.scss */
+/* line 74, ../../../src/scss/_general.scss */
 .content a:hover {
   color: #d38444;
 }
-/* line 65, ../../../src/scss/general.scss */
+/* line 78, ../../../src/scss/_general.scss */
 .content a:visited {
   color: #b46c04;
 }
 
-/* line 72, ../../../src/scss/general.scss */
+/* line 85, ../../../src/scss/_general.scss */
 .list--no-bullets {
   list-style: none;
   padding: 0;
@@ -122,47 +149,17 @@ a {
   clear: both;
 }
 
-/* line 78, ../../../src/scss/general.scss */
+/* line 91, ../../../src/scss/_general.scss */
 .list__item {
   padding: 0.625em 1.25em;
 }
 
-/* line 81, ../../../src/scss/general.scss */
+/* line 94, ../../../src/scss/_general.scss */
 .list__item--horizontal {
   float: left;
 }
 
-/* line 1, ../../../src/scss/flickr-badge.scss */
-.flickr_badge_wrapper {
-  width: 76%;
-  margin: 0 auto;
-}
-
-/* line 6, ../../../src/scss/flickr-badge.scss */
-.flickr_badge_image {
-  margin: 10px;
-  display: inline-block;
-  border: 5px solid white;
-  border-bottom: 20px solid white;
-  margin: 0.9375em 1.5625em;
-  box-shadow: 7px 5px 5px rgba(0, 0, 0, 0.5);
-}
-/* line 14, ../../../src/scss/flickr-badge.scss */
-.flickr_badge_image:hover {
-  -webkit-transform: scale(1.25);
-  -moz-transform: scale(1.25);
-  -ms-transform: scale(1.25);
-  -o-transform: scale(1.25);
-  position: relative;
-  z-index: 5;
-}
-/* line 20, ../../../src/scss/flickr-badge.scss */
-.flickr_badge_image img {
-  width: 75px;
-  height: 75px;
-}
-
-/* line 1, ../../../src/scss/header.scss */
+/* line 1, ../../../src/scss/_header.scss */
 .header {
   float: left;
   display: block;
@@ -174,76 +171,112 @@ a {
 .header:last-child {
   margin-right: 0;
 }
-@media screen and (min-width: 768px) {
-  /* line 1, ../../../src/scss/header.scss */
+@media screen and (min-width: 900px) {
+  /* line 1, ../../../src/scss/_header.scss */
   .header {
-    background: #f7f2f8 url(../img/header.png) no-repeat;
+    background: #f7f2f8;
+    background-image: -webkit-linear-gradient(-360deg, transparent 79px, #ffdae0 79px, transparent 80px, #ffdae0 81px, transparent 81px), -webkit-linear-gradient( #d5f2ed 0.1em, transparent 0.1em);
+    background-image: linear-gradient(90deg, transparent 79px, #ffdae0 79px, transparent 80px, #ffdae0 81px, transparent 81px), linear-gradient( #d5f2ed 0.1em, transparent 0.1em);
+    background-size: 100% 1.2em;
+  }
+}
+@media screen and (min-width: 1280px) {
+  /* line 1, ../../../src/scss/_header.scss */
+  .header {
+    background: transparent url(../img/header.png) no-repeat 90% 50%;
     height: 258px;
   }
 }
-/* line 10, ../../../src/scss/header.scss */
-.header h1 {
+
+/* line 22, ../../../src/scss/_header.scss */
+.header--logo {
   margin: 0;
   display: none;
 }
-@media screen and (min-width: 768px) {
-  /* line 10, ../../../src/scss/header.scss */
-  .header h1 {
+@media screen and (min-width: 900px) {
+  /* line 22, ../../../src/scss/_header.scss */
+  .header--logo {
+    overflow: hidden;
     display: block;
+    height: 80px;
+    margin-top: 10px;
+    margin-left: 1.25em;
+    background: url(../img/kopijunkie.png) no-repeat;
+    background-size: 350px 84px;
+  }
+  /* line 15, /Users/kimmigan/Development/kopijunkie.net/node_modules/node-bourbon/assets/stylesheets/addons/_clearfix.scss */
+  .header--logo:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  /* line 4, /Users/kimmigan/Development/kopijunkie.net/node_modules/node-bourbon/assets/stylesheets/addons/_hide-text.scss */
+  .header--logo:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 100%;
   }
 }
-/* line 19, ../../../src/scss/header.scss */
-.header .sub-header {
+@media screen and (min-width: 1280px) {
+  /* line 22, ../../../src/scss/_header.scss */
+  .header--logo {
+    background-image: none;
+    height: 175px;
+  }
+}
+
+/* line 49, ../../../src/scss/_header.scss */
+.header--subsection {
   display: none;
 }
-@media screen and (min-width: 768px) {
-  /* line 19, ../../../src/scss/header.scss */
-  .header .sub-header {
+@media screen and (min-width: 900px) {
+  /* line 49, ../../../src/scss/_header.scss */
+  .header--subsection {
     display: block;
   }
   /* line 15, /Users/kimmigan/Development/kopijunkie.net/node_modules/node-bourbon/assets/stylesheets/addons/_clearfix.scss */
-  .header .sub-header:after {
+  .header--subsection:after {
     content: "";
     display: table;
     clear: both;
   }
 }
 
-/* line 29, ../../../src/scss/header.scss */
-.header--logo {
-  overflow: hidden;
-  height: 100px;
-}
-/* line 4, /Users/kimmigan/Development/kopijunkie.net/node_modules/node-bourbon/assets/stylesheets/addons/_hide-text.scss */
-.header--logo:before {
-  content: "";
-  display: block;
-  width: 0;
-  height: 100%;
-}
-
-/* line 36, ../../../src/scss/header.scss */
+/* line 59, ../../../src/scss/_header.scss */
 .header--tagline {
-  background: white;
-  opacity: 0.55;
-  padding: 5px 2.5em;
-  margin-left: 1.875em;
+  padding: 10px 2.5em;
+  margin-left: 3.125em;
   color: #123456;
   font-size: 1.0625rem;
 }
-
-/* line 5, ../../../src/scss/social-media.scss */
-.social-media {
-  font-size: 0.8125rem;
+@media screen and (min-width: 1280px) {
+  /* line 59, ../../../src/scss/_header.scss */
+  .header--tagline {
+    background: white;
+    opacity: 0.55;
+  }
 }
 
-/* line 9, ../../../src/scss/social-media.scss */
+/* line 5, ../../../src/scss/_social-media.scss */
+.social-media {
+  padding-top: 7px;
+  font-size: 0.8125rem;
+}
+@media screen and (min-width: 1280px) {
+  /* line 5, ../../../src/scss/_social-media.scss */
+  .social-media {
+    padding-top: 0;
+  }
+}
+
+/* line 16, ../../../src/scss/_social-media.scss */
 .social-media__action {
   color: #123456;
   font-weight: bold;
 }
 
-/* line 15, ../../../src/scss/social-media.scss */
+/* line 22, ../../../src/scss/_social-media.scss */
 .social-media__icon {
   display: inline-block;
   height: 32px;
@@ -252,22 +285,33 @@ a {
   margin-right: 10px;
 }
 
-/* line 22, ../../../src/scss/social-media.scss */
+/* line 29, ../../../src/scss/_social-media.scss */
 .icon-codepen {
   background: white url(../img/codepen-btn.png) no-repeat;
 }
 
-/* line 25, ../../../src/scss/social-media.scss */
+/* line 32, ../../../src/scss/_social-media.scss */
 .icon-twitter {
   background: #36a6ee url(../img/twitter-btn.png) no-repeat;
 }
 
-/* line 28, ../../../src/scss/social-media.scss */
+/* line 35, ../../../src/scss/_social-media.scss */
 .icon-lastfm {
   background: #d30319 url(../img/lastfm-btn.png) no-repeat;
 }
 
-/* line 32, ../../../src/scss/social-media.scss */
+/* line 39, ../../../src/scss/_social-media.scss */
+.social-media__list {
+  padding-top: 7px;
+}
+@media screen and (min-width: 1280px) {
+  /* line 39, ../../../src/scss/_social-media.scss */
+  .social-media__list {
+    padding-top: 0;
+  }
+}
+
+/* line 48, ../../../src/scss/_social-media.scss */
 .social-media__link {
   display: inline-block;
   text-decoration: none;
@@ -276,34 +320,57 @@ a {
   line-height: 2rem;
   height: 32px;
 }
-/* line 40, ../../../src/scss/social-media.scss */
+/* line 56, ../../../src/scss/_social-media.scss */
 .social-media__link:visited {
   color: #b46c04;
 }
-/* line 44, ../../../src/scss/social-media.scss */
+/* line 60, ../../../src/scss/_social-media.scss */
 .social-media__link:hover {
   color: #d38444;
 }
 
-/* line 1, ../../../src/scss/nav-menu.scss */
+/* line 1, ../../../src/scss/_nav-menu.scss */
 .nav-menu {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  margin-right: 0;
   background: #794012;
   padding: 0 0.625em;
   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.45);
 }
+/* line 38, /Users/kimmigan/Development/kopijunkie.net/node_modules/node-neat/assets/stylesheets/grid/_span-columns.scss */
+.nav-menu:last-child {
+  margin-right: 0;
+}
+@media screen and (min-width: 1280px) {
+  /* line 1, ../../../src/scss/_nav-menu.scss */
+  .nav-menu {
+    margin-left: 25.58941%;
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 65.88078%;
+  }
+  /* line 38, /Users/kimmigan/Development/kopijunkie.net/node_modules/node-neat/assets/stylesheets/grid/_span-columns.scss */
+  .nav-menu:last-child {
+    margin-right: 0;
+  }
+}
 
-/* line 7, ../../../src/scss/nav-menu.scss */
+/* line 17, ../../../src/scss/_nav-menu.scss */
 .nav-menu__item {
   border-top: 5px solid #794012;
   padding-left: 0.625em;
   padding-right: 0.625em;
 }
-/* line 15, ../../../src/scss/nav-menu.scss */
+/* line 25, ../../../src/scss/_nav-menu.scss */
 .nav-menu__item.active {
   border-bottom: 5px solid #be864d;
 }
 
-/* line 19, ../../../src/scss/nav-menu.scss */
+/* line 29, ../../../src/scss/_nav-menu.scss */
 .nav-menu__link {
   font-weight: bold;
   font-size: 1.125rem;
@@ -312,17 +379,17 @@ a {
   color: white;
   text-shadow: 0 1px 1px black;
 }
-/* line 27, ../../../src/scss/nav-menu.scss */
+/* line 37, ../../../src/scss/_nav-menu.scss */
 .nav-menu__link:hover {
   color: #d2ac85;
 }
 
-/* line 1, ../../../src/scss/sidebar.scss */
+/* line 1, ../../../src/scss/_sidebar.scss */
 .sidebar {
   display: none;
 }
-@media screen and (min-width: 768px) {
-  /* line 1, ../../../src/scss/sidebar.scss */
+@media screen and (min-width: 900px) {
+  /* line 1, ../../../src/scss/_sidebar.scss */
   .sidebar {
     float: left;
     display: block;
@@ -338,12 +405,12 @@ a {
   }
 }
 
-/* line 14, ../../../src/scss/sidebar.scss */
+/* line 17, ../../../src/scss/_sidebar.scss */
 .twitter-timeline {
   height: 350px;
 }
 
-/* line 1, ../../../src/scss/footer.scss */
+/* line 1, ../../../src/scss/_footer.scss */
 .footer {
   float: left;
   display: block;
@@ -353,21 +420,14 @@ a {
   padding: 0.625em;
   background: #393838;
   color: #ebe8e8;
-  font-size: 0.875rem;
+  font-size: 1rem;
 }
 /* line 38, /Users/kimmigan/Development/kopijunkie.net/node_modules/node-neat/assets/stylesheets/grid/_span-columns.scss */
 .footer:last-child {
   margin-right: 0;
 }
-@media screen and (min-width: 768px) {
-  /* line 1, ../../../src/scss/footer.scss */
-  .footer {
-    font-size: 1em;
-    line-height: 1em;
-  }
-}
 
-/* line 16, ../../../src/scss/footer.scss */
+/* line 11, ../../../src/scss/_footer.scss */
 .media-wall {
   display: none;
   padding: 0.625em 0 1.875em;
@@ -379,52 +439,82 @@ a {
   display: table;
   clear: both;
 }
-@media screen and (min-width: 768px) {
-  /* line 16, ../../../src/scss/footer.scss */
+@media screen and (min-width: 1280px) {
+  /* line 11, ../../../src/scss/_footer.scss */
   .media-wall {
     display: block;
   }
 }
-/* line 26, ../../../src/scss/footer.scss */
+/* line 23, ../../../src/scss/_footer.scss */
 .media-wall:first-child {
   padding-top: 0;
   border-top: 0;
 }
 
-/* line 31, ../../../src/scss/footer.scss */
+/* line 28, ../../../src/scss/_footer.scss */
 .media-wall__heading {
   font-size: 1.5625rem;
   letter-spacing: 3px;
   text-shadow: 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.15);
 }
 
-/* line 45, ../../../src/scss/footer.scss */
+/* line 42, ../../../src/scss/_footer.scss */
 .site-info {
   clear: both;
   margin-top: 0.9375em;
   font-size: 0.8125rem;
 }
 
-/* line 50, ../../../src/scss/footer.scss */
+/* line 47, ../../../src/scss/_footer.scss */
 .site-info__item {
   padding: 0 10px;
 }
-/* line 53, ../../../src/scss/footer.scss */
+/* line 50, ../../../src/scss/_footer.scss */
 .site-info__item:first-child {
   padding-left: 0;
 }
-/* line 57, ../../../src/scss/footer.scss */
+/* line 54, ../../../src/scss/_footer.scss */
 .site-info__item:not(.site-info__copyright) {
   display: none;
 }
 
-/* line 61, ../../../src/scss/footer.scss */
+/* line 58, ../../../src/scss/_footer.scss */
 .site-info__link {
   color: #be864d;
 }
-/* line 64, ../../../src/scss/footer.scss */
+/* line 61, ../../../src/scss/_footer.scss */
 .site-info__link:hover {
   color: #d2ac85;
+}
+
+/* line 1, ../../../src/scss/_flickr-badge.scss */
+.flickr_badge_wrapper {
+  width: 76%;
+  margin: 0 auto;
+}
+
+/* line 6, ../../../src/scss/_flickr-badge.scss */
+.flickr_badge_image {
+  margin: 10px;
+  display: inline-block;
+  border: 5px solid white;
+  border-bottom: 20px solid white;
+  margin: 0.9375em 1.5625em;
+  box-shadow: 7px 5px 5px rgba(0, 0, 0, 0.5);
+}
+/* line 14, ../../../src/scss/_flickr-badge.scss */
+.flickr_badge_image:hover {
+  -webkit-transform: scale(1.25);
+  -moz-transform: scale(1.25);
+  -ms-transform: scale(1.25);
+  -o-transform: scale(1.25);
+  position: relative;
+  z-index: 5;
+}
+/* line 20, ../../../src/scss/_flickr-badge.scss */
+.flickr_badge_image img {
+  width: 75px;
+  height: 75px;
 }
 
 /*# sourceMappingURL=main.css.map */

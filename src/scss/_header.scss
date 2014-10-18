@@ -1,0 +1,71 @@
+.header {
+    @include span-columns(12);
+    @include omega;
+
+    @include media($tablet) {
+
+        background: $header-bg-colour;
+        @include background-image(linear-gradient(90deg, transparent 79px, #ffdae0 79px, transparent 80px, #ffdae0 81px, transparent 81px),
+                                    linear-gradient(#d5f2ed .1em, transparent .1em));
+        background-size: 100% 1.2em;
+
+    }
+
+    @include media($desktop) {
+
+        background: transparent url(../img/header.png) no-repeat 90% 50%;
+        height: 258px;
+
+    }
+}
+
+.header--logo {
+    margin: 0;
+    display: none;
+
+    @include media($tablet) {
+
+        @include clearfix;
+        @include hide-text;
+        display: block;
+        height: 80px;
+        margin: {
+            top: 10px;
+            left: em(20px);
+        }
+        background: url(../img/kopijunkie.png) no-repeat;
+        background-size: 350px 84px;
+
+    }
+
+    @include media($desktop) {
+
+        background-image: none;
+        height: 175px;
+
+    }
+}
+
+.header--subsection {
+    display: none;
+
+    @include media($tablet) {
+
+        @include clearfix;
+        display: block;
+
+    }
+}
+.header--tagline {
+    padding: 10px em(40px);
+    margin-left: em(50px);
+    color: $tagline-text-colour;
+    font-size: rem(17px);
+
+    @include media($desktop) {
+
+        background: white;
+        opacity: 0.55;
+
+    }
+}

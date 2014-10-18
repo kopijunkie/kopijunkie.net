@@ -1,1 +1,7 @@
-$mobile: 768px;
+$mobile-max-width: 768px;
+$tablet-min-width: 900px;
+$desktop-min-width: 1280px;
+
+$mobile: new-breakpoint(max-width 768px);
+$tablet: new-breakpoint(min-width 900px);
+$desktop: new-breakpoint(min-width 1280px);

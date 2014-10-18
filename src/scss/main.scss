@@ -1,19 +1,18 @@
 @import "bourbon";
-@import "neat";
 
-// Partials
-@import "grid";     // Grid
+// Neat grid framework settings
+@import "grid-settings";
+@import "neat";
+@import "media-queries";
+
 @import "colours";  // Colour palettes
-@import "media-queries";    // Media query breakpoints
 
 @import "general";
-
-// Widget styling customisations
-@import "flickr-badge";
-
 
 @import "header";
 @import "social-media";
 @import "nav-menu";
 @import "sidebar";
 @import "footer";
+
+@import "flickr-badge";

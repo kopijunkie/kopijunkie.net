@@ -4,12 +4,7 @@
     padding: em(10px);
     background: $footer-bg-colour;
     color: $footer-text-colour;
-    font-size: rem(14px);
-
-    @include media($mobile) {
-      font-size: 1em;
-      line-height: 1em;
-    }
+    font-size: rem(16px);
 }
 
 
@@ -19,8 +14,10 @@
     padding: em(10px) 0 em(30px);
     border-top: 1px solid $footer-border-colour;
 
-    @include media($mobile) {
+    @include media($desktop) {
+
         display: block;
+
     }
 
     &:first-child {

@@ -1,3 +1,7 @@
+html, body {
+    height: 100%;
+}
+
 body {
     background: $body-bg-colour;
     color: $body-text-colour;
@@ -37,23 +41,32 @@ a {
 .wrapper {
     @include outer-container;
     background: $wrapper-bg-colour;
-    // border: 1px solid $wrapper-border-colour;
+    min-height: 100%;
 
-    .container {
-        @include fill-parent;
-        @include display(flex);
-        @include align-items(stretch);
+    @include media($desktop) {
+
+        border: 1px solid $wrapper-border-colour;
+
     }
+}
+.wrapper--inner {
+    @include fill-parent;
+    @include display(flex);
+    @include align-items(stretch);
 }
 
 .content {
     @include span-columns(12);
     @include omega;
-    // @include media($mobile) {
-    //     @include span-columns(8.5);
-    // }
     @include pad();
+    min-height: 100%;
     border-right: 1px solid $sidebar-border-colour;
+
+    @include media($tablet) {
+
+        @include span-columns(8.5);
+
+    }
 
     a {
         color: $link-colour;

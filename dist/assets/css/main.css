@@ -59,22 +59,23 @@ blockquote {
 /* line 46, ../../../src/scss/_general.scss */
 pre {
   color: #1cad1e;
+  text-shadow: none;
   background: #393838;
   padding: 0.9375em 1.25em;
   border-radius: 5px;
 }
 
-/* line 54, ../../../src/scss/_general.scss */
+/* line 55, ../../../src/scss/_general.scss */
 .left {
   float: left;
 }
 
-/* line 58, ../../../src/scss/_general.scss */
+/* line 59, ../../../src/scss/_general.scss */
 .right {
   float: right;
 }
 
-/* line 63, ../../../src/scss/_general.scss */
+/* line 64, ../../../src/scss/_general.scss */
 .button {
   border: 1px solid #3e1f06;
   border-radius: 3px;
@@ -111,13 +112,13 @@ pre {
   cursor: not-allowed;
 }
 
-/* line 69, ../../../src/scss/_general.scss */
+/* line 70, ../../../src/scss/_general.scss */
 .definition-list__title {
   color: #3f2108;
   font-weight: bold;
 }
 
-/* line 75, ../../../src/scss/_general.scss */
+/* line 76, ../../../src/scss/_general.scss */
 .list--no-bullets {
   list-style: none;
   padding: 0;
@@ -129,18 +130,18 @@ pre {
   clear: both;
 }
 
-/* line 81, ../../../src/scss/_general.scss */
+/* line 82, ../../../src/scss/_general.scss */
 .list__item {
   padding: 0.625em 1.25em;
 }
 
 @media screen and (min-width: 900px) {
-  /* line 87, ../../../src/scss/_general.scss */
+  /* line 88, ../../../src/scss/_general.scss */
   .list__item--horizontal {
     float: left;
   }
 }
-/* line 97, ../../../src/scss/_general.scss */
+/* line 98, ../../../src/scss/_general.scss */
 .wrapper {
   max-width: 68em;
   margin-left: auto;
@@ -155,14 +156,14 @@ pre {
   clear: both;
 }
 @media screen and (min-width: 1280px) {
-  /* line 97, ../../../src/scss/_general.scss */
+  /* line 98, ../../../src/scss/_general.scss */
   .wrapper {
     border-left: 1px solid #be864d;
     border-right: 1px solid #be864d;
   }
 }
 
-/* line 111, ../../../src/scss/_general.scss */
+/* line 112, ../../../src/scss/_general.scss */
 .wrapper--inner {
   width: 100%;
   display: -webkit-box;
@@ -183,7 +184,7 @@ pre {
   -ms-flex-align: stretch;
 }
 
-/* line 117, ../../../src/scss/_general.scss */
+/* line 118, ../../../src/scss/_general.scss */
 .content {
   float: left;
   display: block;
@@ -199,7 +200,7 @@ pre {
   margin-right: 0;
 }
 @media screen and (min-width: 900px) {
-  /* line 117, ../../../src/scss/_general.scss */
+  /* line 118, ../../../src/scss/_general.scss */
   .content {
     float: left;
     display: block;
@@ -212,15 +213,15 @@ pre {
     margin-right: 0;
   }
 }
-/* line 131, ../../../src/scss/_general.scss */
+/* line 132, ../../../src/scss/_general.scss */
 .content a {
   color: #75410d;
 }
-/* line 134, ../../../src/scss/_general.scss */
+/* line 135, ../../../src/scss/_general.scss */
 .content a:hover {
   color: #d38444;
 }
-/* line 138, ../../../src/scss/_general.scss */
+/* line 139, ../../../src/scss/_general.scss */
 .content a:visited {
   color: #b46c04;
 }

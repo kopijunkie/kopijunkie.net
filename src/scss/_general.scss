@@ -45,6 +45,7 @@ blockquote {
 
 pre {
     color: $code-text-colour;
+    text-shadow: none;
     background: $codeblock-bg-colour;
     padding: em(15px) em(20px);
     border-radius: 5px;

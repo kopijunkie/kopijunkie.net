@@ -139,14 +139,25 @@ module.exports = function(grunt) {
         assets: "<%= config.dist %>/assets",
         layout: "<%= config.src %>/templates/layouts/default.hbs",
         partials: "<%= config.src %>/templates/partials/*.hbs",
+        data: "<%= config.src %>/data/*.{json,yml}",
         plugins: [ "assemble-contrib-permalinks", "assemble-contrib-sitemap" ]
       },
       pages: {
+        files: {
+          "<%= config.dist %>/": [ "<%= config.src %>/content/pages/*.hbs" ]
+        }
+      },
+      posts: {
         options: {
-          data: "<%= config.src %>/data/*.{json,yml}"
+          collections: [{
+            title: "blog",
+            inflection: "post",
+            sortby: "posted",
+            sortorder: "descending"
+          }]
         },
         files: {
-          "<%= config.dist %>/": [ "<%= config.src %>/templates/pages/*.hbs" ]
+          "<%= config.dist %>/": [ "<%= config.src %>/content/blog/*.md" ]
         }
       }
     },

@@ -135,6 +135,12 @@ module.exports = function(grunt) {
 
     assemble: {
       options: {
+        collections: [{
+          name: "blog",
+          inflection: "post",
+          sortby: "posted",
+          sortorder: "descending"
+        }],
         flatten: true,
         assets: "<%= config.dist %>/assets",
         layout: "<%= config.src %>/templates/layouts/default.hbs",
@@ -143,22 +149,11 @@ module.exports = function(grunt) {
         plugins: [ "assemble-contrib-permalinks", "assemble-contrib-sitemap" ]
       },
       pages: {
-        files: {
+        files: [{
           "<%= config.dist %>/": [ "<%= config.src %>/content/pages/*.hbs" ]
-        }
-      },
-      posts: {
-        options: {
-          collections: [{
-            title: "blog",
-            inflection: "post",
-            sortby: "posted",
-            sortorder: "desc"
-          }]
-        },
-        files: {
+        },{
           "<%= config.dist %>/": [ "<%= config.src %>/content/blog/*.md" ]
-        }
+        }]
       }
     },
 

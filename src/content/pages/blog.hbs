@@ -1,26 +1,25 @@
 ---
 title: Blog
-posts: ["README.md", "src/content/markdown.md", "src/content/blog/hello-world.md"]
+posts: ["README.md", "src/content/markdown.md"]
 ---
 
 <h1>Blog</h1>
 
-<ul>
-    {{#each tags}}
-        {{#is tag "blog"}}
-            <h1>{{tag}}</h1>
-
-            <ul>
-            {{#withSort pages "data.posted"}}
-                <li>{{data.title}}</li>
-            {{/withSort}}
-            </ul>
-        {{/is}}
+{{#withSort blog "data.posted"}}
+    {{#each this.pages }}
+        <article class="blog-post">
+            <h2 class="blog-post__title">{{ this.data.title }}</h2>
+            <h3 class="blog-post__date">{{ this.data.posted }}</h3>
+            {{#markdown}}
+                {{ this.page }}
+            {{/markdown}}
+        </article>
     {{/each}}
-</ul>
+{{/withSort}}
 
+{{!-- TODO: remove when done debugging/developing --}}
 {{#each posts}}
-    <article class="blog__post">
+    <article class="blog-post">
     {{md this}}
     </article>
 {{/each}}

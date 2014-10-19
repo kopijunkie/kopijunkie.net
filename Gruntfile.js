@@ -134,14 +134,16 @@ module.exports = function(grunt) {
     },
 
     assemble: {
+      options: {
+        flatten: true,
+        assets: "<%= config.dist %>/assets",
+        layout: "<%= config.src %>/templates/layouts/default.hbs",
+        partials: "<%= config.src %>/templates/partials/*.hbs",
+        plugins: [ "assemble-contrib-permalinks", "assemble-contrib-sitemap" ]
+      },
       pages: {
         options: {
-          flatten: true,
-          assets: "<%= config.dist %>/assets",
-          layout: "<%= config.src %>/templates/layouts/default.hbs",
-          data: "<%= config.src %>/data/*.{json,yml}",
-          partials: "<%= config.src %>/templates/partials/*.hbs",
-          plugins: [ "assemble-contrib-permalinks", "assemble-contrib-sitemap" ],
+          data: "<%= config.src %>/data/*.{json,yml}"
         },
         files: {
           "<%= config.dist %>/": [ "<%= config.src %>/templates/pages/*.hbs" ]

@@ -153,7 +153,7 @@ module.exports = function(grunt) {
             title: "blog",
             inflection: "post",
             sortby: "posted",
-            sortorder: "descending"
+            sortorder: "desc"
           }]
         },
         files: {

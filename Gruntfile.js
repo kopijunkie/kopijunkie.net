@@ -28,22 +28,22 @@ module.exports = function(grunt) {
 
     bower: {
       install: {
-          options: {
-              targetDir: "dist/assets/libs",
-              install: true,
-              verbose: false,
-              cleanTargetDir: false,
-              cleanBowerDir: false,
-              bowerOptions: {}
-          }
+        options: {
+          targetDir: "dist/assets/libs",
+          install: false,
+          verbose: false,
+          cleanTargetDir: false,
+          cleanBowerDir: false,
+          bowerOptions: {}
+        }
       }
     },
 
     imagemin: {
-      dynamic: {
-        options: {
-          optimizationLevel: 7
-        },
+      options: {
+        optimizationLevel: 7
+      },
+      dist: {
         files: [{
           expand: true,
           cwd: "<%= config.src %>/images",
@@ -81,19 +81,19 @@ module.exports = function(grunt) {
 
     concat: {
       dist: {
-          src: [
-            "<%= config.src %>/assets/js/*.js",
-            "<%= config.src %>/assets/libs/*.js"
-          ],
-          dest: "<%= config.dist %>/assets/js/site.js"
+        src: [
+          "<%= config.src %>/assets/js/*.js",
+          "<%= config.src %>/assets/libs/*.js"
+        ],
+        dest: "<%= config.dist %>/assets/js/site.js"
       }
     },
 
     uglify: {
-        build: {
-            src: "<%= config.dist %>/assets/js/site.js",
-            dest: "<%= config.dist %>/assets/js/site.min.js"
-        }
+      build: {
+        src: "<%= config.dist %>/assets/js/site.js",
+        dest: "<%= config.dist %>/assets/js/site.min.js"
+      }
     },
 
     watch: {
@@ -167,7 +167,7 @@ module.exports = function(grunt) {
 
   grunt.registerTask("build", [
     "newer:bower",
-    "newer:imagemin",
+    "imagemin",
     "sass",
     "clean",
     "assemble"

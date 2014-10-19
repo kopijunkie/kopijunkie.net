@@ -333,6 +333,7 @@ pre {
   display: block;
   margin-right: 2.35765%;
   width: 100%;
+  height: 45px;
   margin-right: 0;
   background: #794012;
   padding: 0 0.625em;
@@ -350,6 +351,7 @@ pre {
     display: block;
     margin-right: 2.35765%;
     width: 65.88078%;
+    height: auto;
   }
   /* line 38, /Users/kimmigan/Development/kopijunkie.net/node_modules/node-neat/assets/stylesheets/grid/_span-columns.scss */
   .nav-menu:last-child {
@@ -357,33 +359,40 @@ pre {
   }
 }
 
-/* line 18, ../../../src/scss/partials/_nav-menu.scss */
-.nav-menu__trigger,
+/* line 20, ../../../src/scss/partials/_nav-menu.scss */
 .nav-menu__icon {
+  display: inline-block;
+  background-image: url(../img/ic_menu_white_24dp.png);
+  background-color: transparent;
+  background-position: 50% 75%;
+  border: 0;
+  overflow: hidden;
   width: 32px;
   height: 32px;
 }
-
-/* line 25, ../../../src/scss/partials/_nav-menu.scss */
-.nav-menu__trigger {
-  display: inline-block;
+/* line 4, /Users/kimmigan/Development/kopijunkie.net/node_modules/node-bourbon/assets/stylesheets/addons/_hide-text.scss */
+.nav-menu__icon:before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 100%;
 }
 @media screen and (min-width: 900px) {
-  /* line 25, ../../../src/scss/partials/_nav-menu.scss */
-  .nav-menu__trigger {
+  /* line 20, ../../../src/scss/partials/_nav-menu.scss */
+  .nav-menu__icon {
     display: none;
   }
 }
 
-/* line 35, ../../../src/scss/partials/_nav-menu.scss */
+/* line 40, ../../../src/scss/partials/_nav-menu.scss */
 .header__logo--mobile {
-  display: inline-block;
-  margin: 0;
-  margin-top: 5px;
-  height: 32px;
   overflow: hidden;
-  background: url(../img/kopijunkie.png) no-repeat;
-  background-size: 127px 32px;
+  display: inline-block;
+  margin-top: 0;
+  margin-left: 15px;
+  height: 40px;
+  background: url(../img/kopijunkie.png) no-repeat 50% 2px;
+  background-size: 139px 40px;
 }
 /* line 4, /Users/kimmigan/Development/kopijunkie.net/node_modules/node-bourbon/assets/stylesheets/addons/_hide-text.scss */
 .header__logo--mobile:before {
@@ -393,36 +402,36 @@ pre {
   height: 100%;
 }
 @media screen and (min-width: 900px) {
-  /* line 35, ../../../src/scss/partials/_nav-menu.scss */
+  /* line 40, ../../../src/scss/partials/_nav-menu.scss */
   .header__logo--mobile {
     display: none;
   }
 }
 
-/* line 53, ../../../src/scss/partials/_nav-menu.scss */
+/* line 59, ../../../src/scss/partials/_nav-menu.scss */
 .nav-menu__list {
   display: none;
 }
 @media screen and (min-width: 900px) {
-  /* line 53, ../../../src/scss/partials/_nav-menu.scss */
+  /* line 59, ../../../src/scss/partials/_nav-menu.scss */
   .nav-menu__list {
     display: block;
   }
 }
 
-/* line 63, ../../../src/scss/partials/_nav-menu.scss */
+/* line 69, ../../../src/scss/partials/_nav-menu.scss */
 .nav-menu__item {
   border-top: 6px solid #794012;
   border-bottom: 5px solid #794012;
   padding-left: 0.9375em;
   padding-right: 0.9375em;
 }
-/* line 74, ../../../src/scss/partials/_nav-menu.scss */
+/* line 80, ../../../src/scss/partials/_nav-menu.scss */
 .nav-menu__item.active {
   border-bottom: 5px solid #be864d;
 }
 
-/* line 79, ../../../src/scss/partials/_nav-menu.scss */
+/* line 85, ../../../src/scss/partials/_nav-menu.scss */
 .nav-menu__link {
   font-weight: bold;
   font-size: 1.125rem;
@@ -431,7 +440,7 @@ pre {
   color: white;
   text-shadow: 0 1px 1px black;
 }
-/* line 87, ../../../src/scss/partials/_nav-menu.scss */
+/* line 93, ../../../src/scss/partials/_nav-menu.scss */
 .nav-menu__link:hover {
   color: #d2ac85;
 }

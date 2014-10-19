@@ -9,6 +9,7 @@ $milk: #fffae7;
 
 // SECONDARY: 50 shades of sky blues (not really)
 $dark-blue: #123456;
+$blueprint-blue: #5588cc;
 $greyish-blue: saturate(#afbac0, 20%);
 $sky-blue: #c8e3ff;
 $light-blue: lighten($greyish-blue, 10%);
@@ -46,6 +47,9 @@ $link-visited-colour: #b46c04;
 $nav-link-colour: white;
 $nav-link-hover-colour: lighten($milky-coffee, 15%);
 $nav-link-active-colour: $milky-coffee;
+$nav-link-visited-colour: $milky-coffee;
+$blog-link-colour: $link-colour;
+$blog-link-hover-colour: $greyish-blue;
 $footer-link-colour: $milky-coffee;
 $footer-link-visited-colour: #fff9e8;
 

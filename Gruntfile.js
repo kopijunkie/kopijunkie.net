@@ -47,14 +47,14 @@ module.exports = function(grunt) {
         files: [{
           expand: true,
           cwd: "<%= config.src %>/images",
-          src: ["**/*.{png,jpg,gif}"],
+          src: [ "**/*.{png,jpg,gif}" ],
           dest: "<%= config.dist %>/assets/img"
         }]
       }
     },
 
     jshint: {
-      files: ["Gruntfile.js", "src/js/**/*.js"],
+      files: [ "Gruntfile.js", "src/js/**/*.js" ],
       options: {
         jshintrc: ".jshintrc",
         reporter: require("jshint-stylish")
@@ -72,7 +72,7 @@ module.exports = function(grunt) {
         files: [{
           expand: true,
           cwd: "<%= config.src %>/scss",
-          src: ["main.scss"],
+          src: [ "main.scss" ],
           dest: "<%= config.dist %>/assets/css",
           ext: ".css"
         }]
@@ -98,12 +98,12 @@ module.exports = function(grunt) {
 
     watch: {
       sass: {
-        files: ["**/*.scss"],
-        tasks: ["sass"]
+        files: [ "**/*.scss" ],
+        tasks: [ "sass" ]
       },
       assemble: {
-        files: ["<%= config.src %>/{content,data,templates}/{,*/}*.{md,hbs,yml}"],
-        tasks: ["assemble"]
+        files: [ "<%= config.src %>/{content,data,templates}/{,*/}*.{md,hbs,yml}" ],
+        tasks: [ "assemble" ]
       },
       livereload: {
         options: {
@@ -128,9 +128,7 @@ module.exports = function(grunt) {
       livereload: {
         options: {
           open: true,
-          base: [
-            "<%= config.dist %>"
-          ]
+          base: [ "<%= config.dist %>" ]
         }
       }
     },
@@ -143,23 +141,29 @@ module.exports = function(grunt) {
           layout: "<%= config.src %>/templates/layouts/default.hbs",
           data: "<%= config.src %>/data/*.{json,yml}",
           partials: "<%= config.src %>/templates/partials/*.hbs",
-          plugins: ["assemble-contrib-permalinks","assemble-contrib-sitemap"],
+          plugins: [ "assemble-contrib-permalinks", "assemble-contrib-sitemap" ],
         },
         files: {
-          "<%= config.dist %>/": ["<%= config.src %>/templates/pages/*.hbs"]
+          "<%= config.dist %>/": [ "<%= config.src %>/templates/pages/*.hbs" ]
         }
       }
     },
 
     // Before generating any new files, remove any previously created files.
-    clean: ["<%= config.dist %>/**/*.{html,xml}"]
+    clean: [ "<%= config.dist %>/**/*.{html,xml}" ]
 
   });
 
   // Autoload grunt tasks, including "assemble" task.
   require("load-grunt-tasks")(grunt, { pattern: [ "grunt-*", "assemble" ] });
 
-  grunt.registerTask("build", [ "newer:bower", "newer:imagemin", "sass", "clean", "assemble" ]);
+  grunt.registerTask("build", [
+    "newer:bower",
+    "newer:imagemin",
+    "sass",
+    "clean",
+    "assemble"
+  ]);
 
   grunt.registerTask("dev", [
     "build",

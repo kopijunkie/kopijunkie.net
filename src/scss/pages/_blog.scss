@@ -1,0 +1,37 @@
+.blog__post {
+    padding-bottom: em(40px);
+
+    &:last-child {
+        border-bottom: 0;
+    }
+
+    h1 {
+        margin-top: em(15px);
+        background: $blueprint-blue;
+        @include background-image(linear-gradient($greyish-blue 2px, transparent 2px),
+                                    linear-gradient(90deg, $greyish-blue 2px, transparent 2px),
+                                    linear-gradient(rgba(255,255,255,.3) 1px, transparent 1px),
+                                    linear-gradient(90deg, rgba(255,255,255,.3) 1px, transparent 1px));
+        background-size: 50px 50px, 50px 50px, 10px 10px, 10px 10px;
+        box-shadow: 5px 5px 3px 0px rgba(65, 60, 50, 0.75);
+
+        padding: 10px em(15px);
+        color: white;
+        text-shadow: 1px 2px 3px $dark-blue;
+    }
+
+    a {
+        color: $blog-link-colour;
+
+        &:hover {
+            color: $blog-link-hover-colour;
+            text-decoration: underline;
+        }
+    }
+
+    pre {
+        box-shadow: 0px 0px 15px 2px #808080 inset;
+        border: 2px solid #265124;
+    }
+
+}

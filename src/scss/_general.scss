@@ -24,7 +24,7 @@ h1 {
 h2 {
     color: saturate(lighten($primary-heading-colour, 10%), 20%);
     font-size: rem(22px);
-    padding-top: rem(25px);
+    padding-top: em(25px);
 }
 
 ul {

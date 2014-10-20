@@ -1,7 +1,13 @@
 "use strict";
 
-(function($) {
+$(function() {
 
-    $.PortfolioFilter.init();
+    var portfolioFilter = $.listFilter({
+        filterOptionsList: $("#filter-list"),
+        listToFilter: $("#portfolio-list"),
+        animate: true,
+        speed: "slow"
+    });
+    portfolioFilter.init();
 
-})(jQuery);
+});

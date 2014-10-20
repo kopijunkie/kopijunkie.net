@@ -91,14 +91,18 @@ module.exports = function(grunt) {
 
     uglify: {
       build: {
-        src: "<%= config.dist %>/assets/js/production.js",
-        dest: "<%= config.dist %>/assets/js/production.min.js"
+        src: "<%= config.dist %>/assets/js/site.js",
+        dest: "<%= config.dist %>/assets/js/site.min.js"
       }
     },
 
     watch: {
+      jshint: {
+        files: [ "<%= config.src %>/js/**/*.js"],
+        tasks: [ "jshint", "concat" ]
+      },
       sass: {
-        files: [ "**/*.scss" ],
+        files: [ "<%= config.src %>/scss/**/*.scss" ],
         tasks: [ "sass" ]
       },
       assemble: {
@@ -110,9 +114,9 @@ module.exports = function(grunt) {
           livereload: "<%= connect.options.livereload %>"
         },
         files: [
+          "<%= config.src %>/js/{,*/}*.js",
           "<%= config.dist %>/{,*/}*.html",
           "<%= config.dist %>/assets/{,*/}*.css",
-          "<%= config.dist %>/assets/{,*/}*.js",
           "<%= config.dist %>/assets/{,*/}*.{png,jpg,jpeg,gif,webp,svg}"
         ]
       }

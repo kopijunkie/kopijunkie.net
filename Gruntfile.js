@@ -82,8 +82,8 @@ module.exports = function(grunt) {
     concat: {
       dist: {
         src: [
-          "<%= config.src %>/assets/js/*.js",
-          "<%= config.src %>/assets/libs/*.js"
+          "<%= config.src %>/js/*.js",
+          // "<%= config.src %>/assets/libs/*.js"
         ],
         dest: "<%= config.dist %>/assets/js/site.js"
       }
@@ -91,8 +91,8 @@ module.exports = function(grunt) {
 
     uglify: {
       build: {
-        src: "<%= config.dist %>/assets/js/site.js",
-        dest: "<%= config.dist %>/assets/js/site.min.js"
+        src: "<%= config.dist %>/assets/js/production.js",
+        dest: "<%= config.dist %>/assets/js/production.min.js"
       }
     },
 
@@ -166,9 +166,10 @@ module.exports = function(grunt) {
   require("load-grunt-tasks")(grunt, { pattern: [ "grunt-*", "assemble" ] });
 
   grunt.registerTask("build", [
-    "newer:bower",
-    "imagemin",
+    "jshint",
     "sass",
+    "concat",
+    "uglify",
     "clean",
     "assemble"
   ]);

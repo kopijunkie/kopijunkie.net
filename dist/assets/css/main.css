@@ -444,11 +444,11 @@ pre {
   padding-right: 0.9375em;
 }
 /* line 80, ../../../src/scss/partials/_nav-menu.scss */
-.nav-menu__item.active {
+.nav-menu__item:hover, .nav-menu__item.active {
   border-bottom: 5px solid #be864d;
 }
 
-/* line 85, ../../../src/scss/partials/_nav-menu.scss */
+/* line 86, ../../../src/scss/partials/_nav-menu.scss */
 .nav-menu__link {
   font-weight: bold;
   font-size: 1.125rem;
@@ -457,7 +457,7 @@ pre {
   color: white;
   text-shadow: 0 1px 1px black;
 }
-/* line 93, ../../../src/scss/partials/_nav-menu.scss */
+/* line 94, ../../../src/scss/partials/_nav-menu.scss */
 .nav-menu__link:hover {
   color: #d2ac85;
 }

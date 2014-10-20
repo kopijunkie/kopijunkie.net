@@ -67,6 +67,26 @@ pre {
 }
 
 
+$icon-size: 32px;
+.info {
+    display: block;
+    padding-left: $icon-size;
+    margin: em(15px) {
+        bottom: em(20px);
+    }
+}
+.info__icon {
+    background: {
+        image: url(../img/ic_info_outline_grey_24dp.png);
+        color: transparent;
+        position: 50% 75%;
+    }
+
+    width: $icon-size;
+    height: $icon-size;
+}
+
+
 .definition-list__title {
     color: $definition-list-title-colour;
     font-weight: bold;

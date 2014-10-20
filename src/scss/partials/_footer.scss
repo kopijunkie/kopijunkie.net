@@ -5,8 +5,8 @@
     background: $footer-bg-colour;
     color: $footer-text-colour;
     font-size: rem(16px);
+    text-shadow: none;
 }
-
 
 .media-wall {
     @include clearfix;

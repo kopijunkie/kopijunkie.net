@@ -13,6 +13,11 @@
 
     <link href="favicon.ico" type="image/x-icon" rel="shortcut icon">
     <link href="favicon.ico" type="image/x-icon" rel="icon">
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="assets/img/kopijunkie-icon-57.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/img/kopijunkie-icon-72.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/img/kopijunkie-icon-114.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/img/kopijunkie-icon.png" />
+    <link rel="apple-touch-icon-precomposed" href="assets/img/kopijunkie-icon.png" />
 
     <link href="assets/libs/normalize.css/normalize.css" rel="stylesheet">
 
@@ -99,10 +104,10 @@
         <a href="#" title="Show All">All</a>
     </li>
     <li class="list__item list__item--horizontal">
-        <a href="#" title="Show only Desktop work">Desktop</a>
+        <a href="#" title="Show only Web Site or App work">Web</a>
     </li>
     <li class="list__item list__item--horizontal">
-        <a href="#" title="Show only Mobile work">Mobile</a>
+        <a href="#" title="Show only Mobile App work">Mobile</a>
     </li>
     <li class="list__item list__item--horizontal">
         <a href="#" title="Show only Emailers work">Emailers</a>
@@ -112,7 +117,9 @@
     </li>
 </ul>
 
-<p><em>Click on the image previews to see the full image</em></p>
+<em class="info">
+    <i class="info__icon"></i>Click on the image previews to see the full image
+</em>
 
 <ul id="portfolio-list" class="list--no-bullets">
     <li class="mobile web">
@@ -126,7 +133,7 @@
             <a href="http://m.twckts.com/" title="Twickets mobile web app" target="_blank"><strong>Twickets mobile web app</strong></a>
             <br />
             <a href="https://itunes.apple.com/gb/app/twickets/id597910528?mt=8&uo=4" title="Get Twickets iPhone App" target="itunes_store">
-                <img class="appstore-badge" src="images/badge_ios.png" alt="Twickets App - Available on the App Store" />
+                <img class="appstore-badge" src="assets/img/badge_ios.png" alt="Twickets App - Available on the App Store" />
             </a>
         </p>
 
@@ -428,6 +435,10 @@
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="assets/libs/jquery/jquery.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="assets/js/production.js"></script>
+    <script src="assets/js/site.js"></script>
+    <!-- build:js assets/js/site.js -->
+    <!--<script src="assets/js/Main.js"></script>
+    <script src="assets/js/PortfolioFilter.js"></script>
+    <!-- endbuild -->
   </body>
 </html>

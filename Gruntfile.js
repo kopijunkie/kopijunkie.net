@@ -39,6 +39,13 @@ module.exports = function(grunt) {
       }
     },
 
+    useminPrepare: {
+      html: "<%= config.dist %>/index.html"
+    },
+    usemin: {
+      html: "<%= config.dist %>/index.html"
+    },
+
     imagemin: {
       options: {
         optimizationLevel: 7
@@ -183,7 +190,7 @@ module.exports = function(grunt) {
     "sass",
     "concat",
     "clean",
-    "assemble"
+    "assemble",
     "connect:livereload",
     "watch"
   ]);

@@ -179,7 +179,11 @@ module.exports = function(grunt) {
   ]);
 
   grunt.registerTask("dev", [
-    "build",
+    "jshint",
+    "sass",
+    "concat",
+    "clean",
+    "assemble"
     "connect:livereload",
     "watch"
   ]);

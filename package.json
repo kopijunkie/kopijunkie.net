@@ -1,7 +1,7 @@
 {
   "name": "kopijunkie.net",
   "description": "Online home of Kimmi Gan - front end web developer.",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "homepage": "https://github.com/kopijunkie/kopijunkienet",
   "author": {
     "name": "Kimmi G.",
@@ -39,7 +39,8 @@
     "grunt-contrib-jshint": "~0.10.0",
     "jshint-stylish": "~1.0.0",
     "grunt-contrib-concat": "~0.5.0",
-    "grunt-contrib-uglify": "~0.6.0"
+    "grunt-contrib-uglify": "~0.6.0",
+    "grunt-usemin": "~2.4.0"
   },
   "licenses": [
     {

@@ -97,23 +97,6 @@ module.exports = function(grunt) {
       html: "<%= config.dist %>/index.html"
     },
 
-    // concat: {
-    //   dist: {
-    //     src: [
-    //       "<%= config.src %>/js/*.js",
-    //       "<%= config.src %>/assets/libs/*.js"
-    //     ],
-    //     dest: "<%= config.dist %>/assets/js/site.js"
-    //   }
-    // },
-
-    // uglify: {
-    //   build: {
-    //     src: "<%= config.dist %>/assets/js/site.js",
-    //     dest: "<%= config.dist %>/assets/js/site.min.js"
-    //   }
-    // },
-
     watch: {
       jshint: {
         files: [ "<%= config.src %>/js/**/*.js"],
@@ -180,33 +163,36 @@ module.exports = function(grunt) {
     },
 
     // Before generating any new files, remove any previously created files.
-    clean: [ "<%= config.dist %>/**/*.{html,xml}" ]
+    clean: [
+      "<%= config.dist %>/**/*.{html,xml}",
+      "<%= config.dist %>/assets/js/*.js"
+    ]
 
   });
 
   // Autoload grunt tasks, including "assemble" task.
   require("load-grunt-tasks")(grunt, { pattern: [ "grunt-*", "assemble" ] });
 
-  grunt.registerTask("build", [
+  grunt.registerTask("stage", [
     "jshint",
     "sass",
-    "copy",
-    "useminPrepare",
-    "concat",
-    "uglify",
-    "usemin",
     "clean",
-    "assemble"
-  ]);
-
-  grunt.registerTask("dev", [
-    "jshint",
-    "sass",
     "copy",
-    "clean",
     "assemble",
     "connect:livereload",
     "watch"
+  ]);
+
+  grunt.registerTask("build", [
+    "jshint",
+    "sass",
+    "clean",
+    "copy",
+    "assemble",
+    "useminPrepare",
+    "concat",
+    "uglify",
+    "usemin"
   ]);
 
   grunt.registerTask("default", [ "build" ]);

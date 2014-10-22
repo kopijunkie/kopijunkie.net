@@ -39,13 +39,6 @@ module.exports = function(grunt) {
       }
     },
 
-    useminPrepare: {
-      html: "<%= config.dist %>/index.html"
-    },
-    usemin: {
-      html: "<%= config.dist %>/index.html"
-    },
-
     imagemin: {
       options: {
         optimizationLevel: 7
@@ -57,14 +50,6 @@ module.exports = function(grunt) {
           src: [ "**/*.{png,jpg,gif}" ],
           dest: "<%= config.dist %>/assets/img"
         }]
-      }
-    },
-
-    jshint: {
-      files: [ "Gruntfile.js", "src/js/**/*.js" ],
-      options: {
-        jshintrc: ".jshintrc",
-        reporter: require("jshint-stylish")
       }
     },
 
@@ -86,27 +71,53 @@ module.exports = function(grunt) {
       }
     },
 
-    concat: {
-      dist: {
-        src: [
-          "<%= config.src %>/js/*.js",
-          // "<%= config.src %>/assets/libs/*.js"
-        ],
-        dest: "<%= config.dist %>/assets/js/site.js"
+    jshint: {
+      files: [ "Gruntfile.js", "src/js/**/*.js" ],
+      options: {
+        jshintrc: ".jshintrc",
+        reporter: require("jshint-stylish")
       }
     },
 
-    uglify: {
-      build: {
-        src: "<%= config.dist %>/assets/js/site.js",
-        dest: "<%= config.dist %>/assets/js/site.min.js"
+    copy: {
+      main: {
+        expand: true,
+        cwd: "<%= config.src %>/js",
+        src: "**",
+        dest: "<%= config.dist %>/assets/js",
+        flatten: true,
+        filter: "isFile",
       }
     },
+
+    useminPrepare: {
+      html: "<%= config.dist %>/index.html"
+    },
+    usemin: {
+      html: "<%= config.dist %>/index.html"
+    },
+
+    // concat: {
+    //   dist: {
+    //     src: [
+    //       "<%= config.src %>/js/*.js",
+    //       "<%= config.src %>/assets/libs/*.js"
+    //     ],
+    //     dest: "<%= config.dist %>/assets/js/site.js"
+    //   }
+    // },
+
+    // uglify: {
+    //   build: {
+    //     src: "<%= config.dist %>/assets/js/site.js",
+    //     dest: "<%= config.dist %>/assets/js/site.min.js"
+    //   }
+    // },
 
     watch: {
       jshint: {
         files: [ "<%= config.src %>/js/**/*.js"],
-        tasks: [ "jshint", "concat" ]
+        tasks: [ "jshint", "copy" ]
       },
       sass: {
         files: [ "<%= config.src %>/scss/**/*.scss" ],
@@ -179,8 +190,11 @@ module.exports = function(grunt) {
   grunt.registerTask("build", [
     "jshint",
     "sass",
+    "copy",
+    "useminPrepare",
     "concat",
     "uglify",
+    "usemin",
     "clean",
     "assemble"
   ]);
@@ -188,7 +202,7 @@ module.exports = function(grunt) {
   grunt.registerTask("dev", [
     "jshint",
     "sass",
-    "concat",
+    "copy",
     "clean",
     "assemble",
     "connect:livereload",

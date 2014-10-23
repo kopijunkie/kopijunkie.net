@@ -13,13 +13,19 @@
 
     <link href="favicon.ico" type="image/x-icon" rel="shortcut icon">
     <link href="favicon.ico" type="image/x-icon" rel="icon">
+
+    <!-- TODO: iDevices icons
     <link rel="apple-touch-icon-precomposed" sizes="57x57" href="assets/img/kopijunkie-icon-57.png" />
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/img/kopijunkie-icon-72.png" />
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/img/kopijunkie-icon-114.png" />
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/img/kopijunkie-icon.png" />
     <link rel="apple-touch-icon-precomposed" href="assets/img/kopijunkie-icon.png" />
+    -->
 
-    <link rel="stylesheet" href="assets/css/style.min.css">
+    <!-- build:css(dist) assets/css/style.min.css -->
+    <link href="assets/libs/normalize.css/normalize.css" rel="stylesheet">
+    <link href="assets/css/main.css" rel="stylesheet">
+    <!-- endbuild -->
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -118,7 +124,7 @@
             src="assets/img/avatar.jpg"
             alt="Pencil caricature sketch of myself" title="That's me!" />
     <p>
-        I'm Kimmi Gan. A Front End Developer by trade. This is my personal website, blog and digital playground for all things web techy.
+        I'm Kimmi Gan. A Front End Developer by trade. This is my personal web site, blog and digital playground for all things web techy.
     </p>
 </section>
 
@@ -185,8 +191,13 @@
 
     </script>
 
-    <script src="assets/js/libs.min.js"></script>
+    <!-- build:js(dist) assets/js/libs.min.js -->
+    <script src="assets/libs/jquery/jquery.js"></script>
+    <!-- endbuild -->
 
-    <script src="assets/js/site.min.js"></script>
+    <!-- build:js(dist) assets/js/site.min.js -->
+    <script src="assets/js/Main.js"></script>
+    <script src="assets/js/ListFilter.js"></script>
+    <!-- endbuild -->
   </body>
 </html>

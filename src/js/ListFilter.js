@@ -6,7 +6,7 @@
 
         var filterList = {
 
-            options: $.extend({
+            settings: $.extend({
                 animate: false,
                 filterOptionsList: $("ul#filter-list"),
                 listToFilter: $("ul#list")
@@ -14,17 +14,17 @@
 
             init: function() {
                 if (window.console) {
-                    if (filterList.options.filterOptionsList.length < 1) {
+                    if (filterList.settings.filterOptionsList.length < 1) {
                         console.log("ERROR (listFilter): filterOptionsList option element not found");
                         return;
                     }
-                    if (filterList.options.listToFilter.length < 1) {
+                    if (filterList.settings.listToFilter.length < 1) {
                         console.log("ERROR (listFilter): listToFilter option element not found");
                         return;
                     }
                 }
 
-                var filterOptions = filterList.options.filterOptionsList.find("li");
+                var filterOptions = filterList.settings.filterOptionsList.find("li");
                 if (window.console && filterOptions.length < 1) {
                     console.log("WARNING (listFilter): filterOptionsList option does not have any <li> elements");
                 }
@@ -38,22 +38,22 @@
             },
 
             filterListBy: function(filterString) {
-                var $list = filterList.options.listToFilter;
+                var $list = filterList.settings.listToFilter;
 
                 if (window.console && $list.length < 1) {
                     console.log("WARNING (listFilter): listToFilter option does not have any <li> elements");
                 }
 
-                if (filterList.options.animate) {
+                if (filterList.settings.animate) {
                     if (filterString === "all") {
-                        $list.find("li").fadeIn(filterList.options.speed);
+                        $list.find("li").fadeIn(filterList.settings.speed);
                     } else {
                         $list.find("li").each(function() {
                             var $currentListItem = $(this);
                             if ($currentListItem.hasClass(filterString)) {
-                                $currentListItem.fadeIn(filterList.options.speed);
+                                $currentListItem.fadeIn(filterList.settings.speed);
                             } else {
-                                $currentListItem.fadeOut(filterList.options.speed);
+                                $currentListItem.fadeOut(filterList.settings.speed);
                             }
                         });
                     }

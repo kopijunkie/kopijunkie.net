@@ -32,7 +32,7 @@ module.exports = function(grunt) {
           targetDir: "dist/assets/libs",
           install: false,
           verbose: false,
-          cleanTargetDir: false,
+          cleanTargetDir: true,
           cleanBowerDir: false,
           bowerOptions: {}
         }
@@ -174,6 +174,7 @@ module.exports = function(grunt) {
   require("load-grunt-tasks")(grunt, { pattern: [ "grunt-*", "assemble" ] });
 
   grunt.registerTask("stage", [
+    "bower",
     "jshint",
     "sass",
     "clean",
@@ -184,6 +185,7 @@ module.exports = function(grunt) {
   ]);
 
   grunt.registerTask("build", [
+    "bower",
     "jshint",
     "sass",
     "clean",

@@ -8,24 +8,23 @@
 
             options: $.extend({
                 animate: false,
-                speed: "slow",
                 filterOptionsList: $("ul#filter-list"),
                 listToFilter: $("ul#list")
             }, options),
 
             init: function() {
                 if (window.console) {
-                    if (options.filterOptionsList.length < 1) {
+                    if (filterList.options.filterOptionsList.length < 1) {
                         console.log("ERROR (listFilter): filterOptionsList option element not found");
                         return;
                     }
-                    if (options.listToFilter.length < 1) {
+                    if (filterList.options.listToFilter.length < 1) {
                         console.log("ERROR (listFilter): listToFilter option element not found");
                         return;
                     }
                 }
 
-                var filterOptions = options.filterOptionsList.find("li");
+                var filterOptions = filterList.options.filterOptionsList.find("li");
                 if (window.console && filterOptions.length < 1) {
                     console.log("WARNING (listFilter): filterOptionsList option does not have any <li> elements");
                 }
@@ -39,32 +38,38 @@
             },
 
             filterListBy: function(filterString) {
-                var list = options.listToFilter;
+                var $list = filterList.options.listToFilter;
 
-                if (window.console && list.length < 1) {
+                if (window.console && $list.length < 1) {
                     console.log("WARNING (listFilter): listToFilter option does not have any <li> elements");
                 }
 
-                if (filterString === "all") {
-                    list.find("li").show(options.speed);
+                if (filterList.options.animate) {
+                    if (filterString === "all") {
+                        $list.find("li").fadeIn(filterList.options.speed);
+                    } else {
+                        $list.find("li").each(function() {
+                            var $currentListItem = $(this);
+                            if ($currentListItem.hasClass(filterString)) {
+                                $currentListItem.fadeIn(filterList.options.speed);
+                            } else {
+                                $currentListItem.fadeOut(filterList.options.speed);
+                            }
+                        });
+                    }
                 } else {
-                    list.find("li").each(function() {
-                        var currentListItem = $(this);
-
-                        if (currentListItem.hasClass(filterString)) {
-                            if (options.animate) {
-                                currentListItem.fadeIn(options.speed);
+                    if (filterString === "all") {
+                        $list.find("li").show();
+                    } else {
+                        $list.find("li").each(function() {
+                            var $currentListItem = $(this);
+                            if ($currentListItem.hasClass(filterString)) {
+                                $currentListItem.show();
                             } else {
-                                currentListItem.show();
+                                $currentListItem.hide();
                             }
-                        } else {
-                            if (options.animate) {
-                                currentListItem.fadeOut(options.speed);
-                            } else {
-                                currentListItem.hide();
-                            }
-                        }
-                    });
+                        });
+                    }
                 }
             }
 

@@ -3,10 +3,10 @@
 $(function() {
 
     var portfolioFilter = $.listFilter({
-        filterOptionsList: $("#filter-list"),
-        listToFilter: $("#portfolio-list"),
         animate: true,
-        speed: "slow"
+        speed: "slow",
+        filterOptionsList: $("#filter-list"),
+        listToFilter: $("#portfolio-list")
     });
     portfolioFilter.init();
 

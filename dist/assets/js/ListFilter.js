@@ -24,12 +24,12 @@
                     }
                 }
 
-                var filterOptions = filterList.settings.filterOptionsList.find("li");
-                if (window.console && filterOptions.length < 1) {
+                var $filterOptions = filterList.settings.filterOptionsList.find("li");
+                if (window.console && $filterOptions.length < 1) {
                     console.log("WARNING (listFilter): filterOptionsList option does not have any <li> elements");
                 }
 
-                filterOptions.on("click", function(event) {
+                $filterOptions.on("click", function(event) {
                     event.preventDefault();
 
                     var filterString = $(this).text().trim().toLowerCase().replace(" ", "-");

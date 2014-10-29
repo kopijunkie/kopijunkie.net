@@ -8,7 +8,7 @@
 
             settings: $.extend({
                 slideWidth: 480,
-                slideHeight: 162,
+                slideHeight: 170,
                 speed: "slow",
                 container: $("#carousel")
             }, options),
@@ -23,41 +23,50 @@
                 $carouselControls.on("click", function(event) {
                     if ($(this).attr("id") === "next") {
                         currentPosition++;
-                    } else {
+                    }
+                    if ($(this).attr("id") === "prev") {
                         currentPosition--;
                     }
                     carousel.manageControls(currentPosition);
-                    console.log(currentPosition);
-                    // FIXME: has bug
+
                     $(".carousel__slides").animate({
-                        "marginLeft" : carousel.settings.slideWidth * currentPosition
+                        "marginLeft" : carousel.settings.slideWidth * (-currentPosition)
                     });
                 });
             },
 
             initialiseCarousel: function() {
                 var $carousel = carousel.settings.container;
-                $carousel.width(carousel.settings.slideWidth);
-                $carousel.height(carousel.settings.slideHeight);
+                $carousel.width(carousel.settings.slideWidth + 1);
+                $carousel.height(carousel.settings.slideHeight + 1);
+
                 var $slides = $carousel.find("li");
                 $slides.wrapAll("<div class='carousel__slides'></div>")
-                        .css("width", carousel.settings.slideWidth);
+                        .css({
+                            "width": carousel.settings.slideWidth,
+                            "height": carousel.settings.slideHeight
+                        });
                 $(".carousel__slides").css("width", carousel.settings.slideWidth * $slides.length);
 
-                $carousel.prepend("<button class='control-btn control-btn--prev'>Previous</button>")
-                            .append("<button class='control-btn control-btn--next'>Next</button>");
+                $carousel.prepend("<button class='control-btn control-btn--prev' id='prev'>Previous</button>")
+                            .append("<button class='control-btn control-btn--next' id='next'>Next</button>");
             },
 
             manageControls: function(position) {
+                var $prevButton = $(".control-btn--prev");
+                var $nextButton = $(".control-btn--next");
+                var $slides = carousel.settings.container.find("li");
+                var slidesCount = $slides.length;
+
                 if (position === 0) {
-                    $(".control-btn--prev").hide();
+                    $prevButton.hide();
                 } else {
-                    $(".control-btn--prev").show();
+                    $prevButton.show();
                 }
-                if (position === this.slidesCount - 1) {
-                    $(".control-btn--next").hide();
+                if (position === slidesCount - 1) {
+                    $nextButton.hide();
                 } else {
-                    $(".control-btn--next").show();
+                    $nextButton.show();
                 }
             }
 

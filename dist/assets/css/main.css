@@ -680,13 +680,27 @@ pre {
   display: table;
   clear: both;
 }
-
-/* line 9, ../../../src/scss/partials/_carousel.scss */
-.carousel__slide {
-  float: left;
+/* line 8, ../../../src/scss/partials/_carousel.scss */
+.carousel .control-btn {
+  border: 1px solid #9c9f9f;
 }
 
-/* line 14, ../../../src/scss/partials/_carousel.scss */
+/* line 13, ../../../src/scss/partials/_carousel.scss */
+.carousel__slide {
+  float: left;
+  border: 1px solid #9c9f9f;
+}
+/* line 17, ../../../src/scss/partials/_carousel.scss */
+.carousel__slide a, .carousel__slide img {
+  height: inherit;
+  width: inherit;
+}
+/* line 22, ../../../src/scss/partials/_carousel.scss */
+.carousel__slide a {
+  display: block;
+}
+
+/* line 28, ../../../src/scss/partials/_carousel.scss */
 .control-btn {
   overflow: hidden;
   display: block;
@@ -695,7 +709,6 @@ pre {
   margin: 62px 0;
   position: absolute;
   z-index: 10;
-  border: 1px solid #9c9f9f;
 }
 /* line 4, /Users/kimmigan/Development/kopijunkie.net/node_modules/node-bourbon/assets/stylesheets/addons/_hide-text.scss */
 .control-btn:before {
@@ -705,13 +718,13 @@ pre {
   height: 100%;
 }
 
-/* line 24, ../../../src/scss/partials/_carousel.scss */
+/* line 37, ../../../src/scss/partials/_carousel.scss */
 .control-btn--prev {
   left: 16%;
   background: transparent url(../img/control_prev.png) no-repeat -31px -1px;
 }
 
-/* line 28, ../../../src/scss/partials/_carousel.scss */
+/* line 41, ../../../src/scss/partials/_carousel.scss */
 .control-btn--next {
   left: 54.3%;
   background: transparent url(../img/control_next.png) no-repeat -1px -1px;

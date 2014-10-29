@@ -4,10 +4,24 @@
     overflow: hidden;
     margin: 0 auto;
     padding: 0;
+
+    .control-btn {
+        border: 1px solid #9c9f9f;
+    }
 }
 
 .carousel__slide {
     float: left;
+    border: 1px solid #9c9f9f;
+
+    a, img {
+        height: inherit;
+        width: inherit;
+    }
+
+    a {
+        display: block;
+    }
 }
 
 
@@ -19,7 +33,6 @@
     margin: 62px 0;
     position: absolute;
     z-index: 10;
-    border: 1px solid #9c9f9f;
 }
 .control-btn--prev {
     left: 16%;

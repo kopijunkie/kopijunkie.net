@@ -20,5 +20,10 @@
     "normalize.css": "~3.0.2",
     "momentjs": "~2.8.3",
     "lightbox": "~2.7.1"
+  },
+  "exportsOverride": {
+    "lightbox": {
+      "/": "./"
+    }
   }
 }

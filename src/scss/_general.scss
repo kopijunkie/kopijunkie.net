@@ -9,7 +9,6 @@ body {
     color: $body-text-colour;
     font-family: $helvetica;
     font-size: rem(17px);
-    text-shadow: 1px 1px #c9cdcd;
     line-height: 1.5;
 }
 
@@ -67,23 +66,28 @@ pre {
 }
 
 
-$icon-size: 32px;
+$icon-size: 18px;
 .info {
+    font-size: rem(14px);
+    color: $light-grey;
+    text-shadow: 1px 1px 1px $greyish-white;
     display: block;
-    padding-left: $icon-size;
     margin: em(15px) {
         bottom: em(20px);
     }
 }
 .info__icon {
     background: {
-        image: url(../img/ic_info_outline_grey_24dp.png);
+        image: url(../img/ic_info_outline_grey600_18dp.png);
         color: transparent;
         position: 50% 75%;
+        size: $icon-size;
     }
 
     width: $icon-size;
     height: $icon-size;
+    display: inline-block;
+    margin-right: 8px;
 }
 
 
@@ -119,6 +123,7 @@ $icon-size: 32px;
     @include outer-container;
     background: $wrapper-bg-colour;
     min-height: 100%;
+    text-shadow: 1px 1px #c9cdcd;
 
     @include media($desktop) {
 

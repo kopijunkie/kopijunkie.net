@@ -9,21 +9,21 @@ filters: ["All", "Web", "Mobile", "Emailers", "Graphic Design"]
 
 <p>But otherwise, here's a portfolio of work I've done so far.</p>
 
-<ul id="filter-list" class="list--no-bullets">
-    <li class="current filter-list__item list__item list__item--horizontal">
+<ul id="filter-list" class="filter-list list--no-bullets">
+    <li class="active filter-list__item list__item list__item--horizontal">
         <a href="#" title="Show All">All</a>
     </li>
-    <li class="list__item list__item--horizontal">
-        <a href="#" title="Show only Web Site or App work">Web</a>
+    <li class="filter-list__item list__item list__item--horizontal">
+        <a href="#" title="Show Web Site or App work">Web</a>
     </li>
-    <li class="list__item list__item--horizontal">
-        <a href="#" title="Show only Mobile App work">Mobile</a>
+    <li class="filter-list__item list__item list__item--horizontal">
+        <a href="#" title="Show Mobile App work">Mobile</a>
     </li>
-    <li class="list__item list__item--horizontal">
-        <a href="#" title="Show only Emailers work">Emailers</a>
+    <li class="filter-list__item list__item list__item--horizontal">
+        <a href="#" title="Show Emailers work">Emailers</a>
     </li>
-    <li class="list__item list__item--horizontal">
-        <a href="#" title="Show only Graphic Design work">Graphic Design</a>
+    <li class="filter-list__item list__item list__item--horizontal">
+        <a href="#" title="Show Graphic Design work">Graphic Design</a>
     </li>
 </ul>
 
@@ -33,7 +33,7 @@ filters: ["All", "Web", "Mobile", "Emailers", "Graphic Design"]
 
 <ul id="portfolio-list" class="list--no-bullets portfolio-list">
     <li class="mobile web">
-        <a href="{{assets}}/img/portfolio/twickets-apps.png" title="Twickets apps" class="preview" >
+        <a href="{{assets}}/img/portfolio/twickets-apps.png" data-lightbox="twickets-apps" data-title="Twickets apps" title="Twickets apps" class="preview" >
             <img class="portfolio-list__image" src="{{assets}}/img/portfolio/twickets-thumb.png" alt="Twickets apps preview"/>
         </a>
 
@@ -64,7 +64,7 @@ filters: ["All", "Web", "Mobile", "Emailers", "Graphic Design"]
         </dl>
     </li>
     <li class="web">
-        <a href="{{assets}}/img/portfolio/dominos-ukie.png" title="Domino's Pizza UK and Ireland" class="preview" >
+        <a href="{{assets}}/img/portfolio/dominos-ukie.png" data-lightbox="dominos-pizza" data-title="Domino's Pizza UK and Ireland" title="Domino's Pizza UK and Ireland" class="preview" >
             <img class="portfolio-list__image" src="{{assets}}/img/portfolio/dominos-ukie-thumb.png" alt="Domino's Pizza UK and Ireland preview"/>
         </a>
         <br />
@@ -80,7 +80,6 @@ filters: ["All", "Web", "Mobile", "Emailers", "Graphic Design"]
             <li>user interface for My Domino's (registered users area, including related functionality throughout each site)</li>
             <li>built layout for Store Locator page in Domino's Germany site</li>
             <li>Domino's Movies front end</li>
-            <li>QA testing (manual and automated using Selenium and building on existing C# code base from client)</li>
         </ul>
 
         <dl>
@@ -94,29 +93,29 @@ filters: ["All", "Web", "Mobile", "Emailers", "Graphic Design"]
     <li class="web">
         <ul id="devere-carousel" class="carousel">
             <li class="carousel__slide">
-                <a href="{{assets}}/img/portfolio/devere-main.png" title="De Vere (main)" class="preview" >
+                <a href="{{assets}}/img/portfolio/devere-main.png" data-lightbox="devere-sites" data-title="De Vere Group" title="De Vere Group" class="preview" >
                     <img src="{{assets}}/img/portfolio/devere-main-thumb.png" alt="De Vere (main) preview"/>
                 </a>
             </li>
             <li class="carousel__slide">
-                <a href="{{assets}}/img/portfolio/devere-hotels.png" title="De Vere Hotels" class="preview" >
+                <a href="{{assets}}/img/portfolio/devere-hotels.png" data-lightbox="devere-sites" data-title="De Vere Group" title="De Vere Hotels" class="preview" >
                     <img src="{{assets}}/img/portfolio/devere-hotels-thumb.png" alt="De Vere Hotels preview"/>
                 </a>
             </li>
             <li class="carousel__slide">
-                <a href="{{assets}}/img/portfolio/devere-venues.png" title="De Vere Venues" class="preview" >
+                <a href="{{assets}}/img/portfolio/devere-venues.png" data-lightbox="devere-sites" data-title="De Vere Group" title="De Vere Venues" class="preview" >
                     <img src="{{assets}}/img/portfolio/devere-venues-thumb.png" alt="De Vere Venues preview"/>
                 </a>
             </li>
             <li class="carousel__slide">
-                <a href="{{assets}}/img/portfolio/devere-booking.png" title="De Vere Booking Engine (main)" class="preview" >
-                    <img src="{{assets}}/img/portfolio/devere-booking-thumb.png" alt="De Vere Booking Engine (main) preview"/>
+                <a href="{{assets}}/img/portfolio/devere-booking.png" data-lightbox="devere-sites" data-title="De Vere Booking Engine" title="De Vere Booking Engine" class="preview" >
+                    <img src="{{assets}}/img/portfolio/devere-booking-thumb.png" alt="De Vere Booking Engine preview"/>
                 </a>
             </li>
         </ul>
 
         <p>
-            <a href="http://www.devere.co.uk/" title="De Vere (main)">
+            <a href="http://www.devere.co.uk/" title="De Vere Group">
                 <strong>www.devere.co.uk</strong>
             </a> /
             <a href="http://www.deverevenues.co.uk/" title="De Vere Venues">
@@ -138,9 +137,8 @@ filters: ["All", "Web", "Mobile", "Emailers", "Graphic Design"]
         <ul class="work-done">
             <li>booking panel interface and My De Vere registered user area on De Vere Hotels, Venues and Luxury Lodges sites</li>
             <li>front end for De Vere Venues</li>
-            <li>layout templates and brand specific styling for De Vere (main), Hotels, Venues sites' respective online booking engine</li>
-            <li>brand specific HTML email templates for booking confirmation</li>
-            <li>QA testing</li>
+            <li>layout templates and brand specific styling for De Vere Group, Hotels, Venues sites' respective online booking engine</li>
+            <li>brand specific HTML email templates for booking confirmation emails</li>
         </ul>
 
         <dl>
@@ -152,7 +150,7 @@ filters: ["All", "Web", "Mobile", "Emailers", "Graphic Design"]
         </dl>
     </li>
     <li class="web">
-        <a href="{{assets}}/img/portfolio/webtech-assignment1.jpg" title="Web Technologies - Assignment 1" class="preview" >
+        <a href="{{assets}}/img/portfolio/webtech-assignment1.jpg" data-lightbox="web-techs-1" data-title="Web Technologies - Assignment 1" title="Web Technologies - Assignment 1" class="preview" >
             <img class="portfolio-list__image" src="{{assets}}/img/portfolio/webtech-assignment1-thumb.jpg" alt="Web Technologies - Assignment 1 preview"/>
         </a>
         <br />
@@ -171,7 +169,7 @@ filters: ["All", "Web", "Mobile", "Emailers", "Graphic Design"]
         </dl>
     </li>
     <li class="web graphic-design">
-        <a href="{{assets}}/img/portfolio/webtech-assignment2.jpg" title="Web Technologies - Assignment 2" class="preview" >
+        <a href="{{assets}}/img/portfolio/webtech-assignment2.jpg" data-lightbox="web-techs-2" data-title="Web Technologies - Assignment 2" title="Web Technologies - Assignment 2" class="preview" >
             <img class="portfolio-list__image" src="{{assets}}/img/portfolio/webtech-assignment2-thumb.jpg" alt="Web Technologies - Assignment 2 preview"/>
         </a>
         <br />
@@ -190,8 +188,8 @@ filters: ["All", "Web", "Mobile", "Emailers", "Graphic Design"]
         </dl>
     </li>
     <li class="graphic-design">
-        <a href="{{assets}}/img/portfolio/gigposter.png" title="Gig Poster Concept Artwork/Design" class="preview" >
-            <img class="portfolio-list__image" src="{{assets}}/img/portfolio/gigposter-thumb.jpg" alt="Gig Poster Concept Artwork/Design preview"/>
+        <a href="{{assets}}/img/portfolio/gigposter.png" data-lightbox="gig-poster" data-title="Gig Poster Concept Artwork" title="Gig Poster Concept Artwork" class="preview" >
+            <img class="portfolio-list__image" src="{{assets}}/img/portfolio/gigposter-thumb.jpg" alt="Gig Poster Concept Artwork preview"/>
         </a>
         <br />
 
@@ -207,7 +205,7 @@ filters: ["All", "Web", "Mobile", "Emailers", "Graphic Design"]
         </dl>
     </li>
     <li class="emailers graphic-design">
-        <a href="{{assets}}/img/portfolio/umm-tokiohotelemailer.jpg" title="Universal Music Malaysia - Tokio Hotel Contest Emailer" class="preview" >
+        <a href="{{assets}}/img/portfolio/umm-tokiohotelemailer.jpg" data-lightbox="um-malaysia-emailer" data-title="Universal Music Malaysia - Tokio Hotel Contest Emailer" title="Universal Music Malaysia - Tokio Hotel Contest Emailer" class="preview" >
             <img class="portfolio-list__image" src="{{assets}}/img/portfolio/umm-tokiohotelemailer-thumb.jpg" alt="Universal Music Malaysia - Tokio Hotel Contest Emailer preview"/>
         </a>
         <br />
@@ -223,7 +221,7 @@ filters: ["All", "Web", "Mobile", "Emailers", "Graphic Design"]
         </dl>
     </li>
     <li class="graphic-design">
-        <a href="{{assets}}/img/portfolio/umm-tokiohotelprizes.jpg" title="Universal Music Malaysia - Tokio Hotel Contest Banner" class="preview" >
+        <a href="{{assets}}/img/portfolio/umm-tokiohotelprizes.jpg" data-lightbox="um-malaysia-banner" data-title="Universal Music Malaysia - Tokio Hotel Contest Emailer" title="Universal Music Malaysia - Tokio Hotel Contest Banner" class="preview" >
             <img class="portfolio-list__image" src="{{assets}}/img/portfolio/umm-tokiohotelprizes-thumb.jpg" alt="Universal Music Malaysia - Tokio Hotel Contest Banner preview"/>
         </a>
         <br />
@@ -239,7 +237,7 @@ filters: ["All", "Web", "Mobile", "Emailers", "Graphic Design"]
         </dl>
     </li>
     <li class="graphic-design">
-        <a href="{{assets}}/img/portfolio/umm-bestofbestofs.jpg" title="Universal Music Malaysia - Best Of Best Ofs Promo" class="preview" >
+        <a href="{{assets}}/img/portfolio/umm-bestofbestofs.jpg" data-lightbox="um-malaysia-bestof" data-title="Universal Music Malaysia - Best Of Best Ofs Promo Advert" title="Universal Music Malaysia - Best Of Best Ofs Promo Advert" class="preview" >
             <img class="portfolio-list__image" src="{{assets}}/img/portfolio/umm-bestofbestofs-thumb.jpg" alt="Universal Music Malaysia - Best Of Best Ofs Promo preview"/>
         </a>
         <br />
@@ -255,7 +253,7 @@ filters: ["All", "Web", "Mobile", "Emailers", "Graphic Design"]
         </dl>
     </li>
     <li class="graphic-design">
-        <a href="{{assets}}/img/portfolio/cping-nametag.jpg" title="Coldplaying.com Boat Trip Name Tag" class="preview" >
+        <a href="{{assets}}/img/portfolio/cping-nametag.jpg" data-lightbox="coldplaying-nametag" data-title="Coldplaying.com Boat Trip Name Tag" title="Coldplaying.com Boat Trip Name Tag" class="preview" >
             <img class="portfolio-list__image" src="{{assets}}/img/portfolio/cping-nametag-thumb.jpg" alt="Coldplaying.com Boat Trip Name Tag preview"/>
         </a>
         <br />

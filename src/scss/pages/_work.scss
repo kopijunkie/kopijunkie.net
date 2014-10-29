@@ -1,6 +1,32 @@
+.filter-list__item {
+    border-right: 1px solid $light-grey;
+    padding: 0 20px;
+
+    &:last-child {
+        border-right: none;
+    }
+
+    a, a:visited {
+        color: $list-filter-link-colour;
+    }
+    a {
+        font-size: rem(16px);
+        letter-spacing: 3px;
+        text-shadow: 1px 1px 2px #0D4242;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    &.active a {
+        color: $list-filter-link-active-colour;
+    }
+}
+
+
 $preview-height: 160px;
 $preview-width: 478px;
-
 .portfolio-list {
 
     .preview {
@@ -11,7 +37,6 @@ $preview-width: 478px;
     }
 
 }
-
 .portfolio-list__image {
     height: $preview-height;
     width: $preview-width;

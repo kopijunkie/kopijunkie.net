@@ -9,6 +9,10 @@
 
 @import "general";
 
+// Pages
+@import "pages/work";
+@import "pages/blog";
+
 // Partials
 @import "partials/header";
 @import "partials/nav-menu";
@@ -20,6 +24,3 @@
 @import "partials/social-media";
 @import "partials/flickr-badge";
 
-// Pages
-@import "pages/work";
-@import "pages/blog";

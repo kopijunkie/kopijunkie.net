@@ -29,8 +29,15 @@
                     console.log("WARNING (listFilter): filterOptionsList option does not have any <li> elements");
                 }
 
+                var $initialActiveFilter = filterList.settings.filterOptionsList.find("li.active");
+                var initialFilterString = $initialActiveFilter.text().trim().toLowerCase().replace(" ", "-");
+                filterList.filterListBy(initialFilterString);
+
                 $filterOptions.on("click", function(event) {
                     event.preventDefault();
+
+                    filterList.settings.filterOptionsList.find("li").removeClass("active");
+                    $(this).addClass("active");
 
                     var filterString = $(this).text().trim().toLowerCase().replace(" ", "-");
                     filterList.filterListBy(filterString);

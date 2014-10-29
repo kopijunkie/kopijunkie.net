@@ -10,6 +10,22 @@ $preview-width: 478px;
     }
 
 }
+.portfolio-list__item {
+    background: pink;
+    padding: 10px;
+    margin: 0 10px 10px 0;
+    background: lighten($light-grey, 20%);
+    border-radius: 10px;
+
+    a {
+        color: $portfolio-link-colour;
+
+        &:hover {
+            color: $portfolio-link-hover-colour;
+            text-shadow: 1px 1px 2px #0D4242;
+        }
+    }
+}
 .portfolio-list__image {
     height: $preview-height;
     width: $preview-width;

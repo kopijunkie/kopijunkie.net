@@ -45,9 +45,18 @@ ul {
 /* line 34, ../../../src/scss/_general.scss */
 a {
   text-decoration: none;
+  color: #75410d;
+}
+/* line 38, ../../../src/scss/_general.scss */
+a:hover {
+  color: #d38444;
+}
+/* line 42, ../../../src/scss/_general.scss */
+a:visited {
+  color: #b46c04;
 }
 
-/* line 38, ../../../src/scss/_general.scss */
+/* line 47, ../../../src/scss/_general.scss */
 blockquote {
   background: #eddac1;
   padding: 0 0.9375em;
@@ -55,7 +64,7 @@ blockquote {
   border-radius: 8px;
 }
 
-/* line 45, ../../../src/scss/_general.scss */
+/* line 54, ../../../src/scss/_general.scss */
 pre {
   color: #1cad1e;
   text-shadow: none;
@@ -64,17 +73,17 @@ pre {
   border-radius: 5px;
 }
 
-/* line 54, ../../../src/scss/_general.scss */
+/* line 63, ../../../src/scss/_general.scss */
 .left {
   float: left;
 }
 
-/* line 58, ../../../src/scss/_general.scss */
+/* line 67, ../../../src/scss/_general.scss */
 .right {
   float: right;
 }
 
-/* line 63, ../../../src/scss/_general.scss */
+/* line 72, ../../../src/scss/_general.scss */
 .button {
   border: 1px solid #3e1f06;
   border-radius: 3px;
@@ -111,7 +120,7 @@ pre {
   cursor: not-allowed;
 }
 
-/* line 70, ../../../src/scss/_general.scss */
+/* line 79, ../../../src/scss/_general.scss */
 .info {
   font-size: 0.875rem;
   color: #9c9f9f;
@@ -121,7 +130,7 @@ pre {
   margin-bottom: 1.25em;
 }
 
-/* line 79, ../../../src/scss/_general.scss */
+/* line 88, ../../../src/scss/_general.scss */
 .info__icon {
   background-image: url(../img/ic_info_outline_grey600_18dp.png);
   background-color: transparent;
@@ -133,7 +142,7 @@ pre {
   margin-right: 8px;
 }
 
-/* line 94, ../../../src/scss/_general.scss */
+/* line 103, ../../../src/scss/_general.scss */
 .appstore-badge {
   width: 112px;
   height: auto;
@@ -142,13 +151,13 @@ pre {
   border-radius: 5px;
 }
 
-/* line 103, ../../../src/scss/_general.scss */
+/* line 112, ../../../src/scss/_general.scss */
 .definition-list__title {
   color: #3f2108;
   font-weight: bold;
 }
 
-/* line 109, ../../../src/scss/_general.scss */
+/* line 118, ../../../src/scss/_general.scss */
 .list--no-bullets {
   list-style: none;
   padding: 0;
@@ -160,18 +169,18 @@ pre {
   clear: both;
 }
 
-/* line 115, ../../../src/scss/_general.scss */
+/* line 124, ../../../src/scss/_general.scss */
 .list__item {
   padding: 0.625em 1.25em;
 }
 
 @media screen and (min-width: 900px) {
-  /* line 121, ../../../src/scss/_general.scss */
+  /* line 130, ../../../src/scss/_general.scss */
   .list__item--horizontal {
     float: left;
   }
 }
-/* line 131, ../../../src/scss/_general.scss */
+/* line 140, ../../../src/scss/_general.scss */
 .wrapper {
   max-width: 68em;
   margin-left: auto;
@@ -187,14 +196,14 @@ pre {
   clear: both;
 }
 @media screen and (min-width: 1280px) {
-  /* line 131, ../../../src/scss/_general.scss */
+  /* line 140, ../../../src/scss/_general.scss */
   .wrapper {
     border-left: 1px solid #be864d;
     border-right: 1px solid #be864d;
   }
 }
 
-/* line 146, ../../../src/scss/_general.scss */
+/* line 155, ../../../src/scss/_general.scss */
 .wrapper--inner {
   width: 100%;
   display: -webkit-box;
@@ -215,7 +224,7 @@ pre {
   -ms-flex-align: stretch;
 }
 
-/* line 152, ../../../src/scss/_general.scss */
+/* line 161, ../../../src/scss/_general.scss */
 .content {
   float: left;
   display: block;
@@ -231,7 +240,7 @@ pre {
   margin-right: 0;
 }
 @media screen and (min-width: 900px) {
-  /* line 152, ../../../src/scss/_general.scss */
+  /* line 161, ../../../src/scss/_general.scss */
   .content {
     float: left;
     display: block;
@@ -243,18 +252,6 @@ pre {
   .content:last-child {
     margin-right: 0;
   }
-}
-/* line 166, ../../../src/scss/_general.scss */
-.content a {
-  color: #75410d;
-}
-/* line 169, ../../../src/scss/_general.scss */
-.content a:hover {
-  color: #d38444;
-}
-/* line 173, ../../../src/scss/_general.scss */
-.content a:visited {
-  color: #b46c04;
 }
 
 /* line 1, ../../../src/scss/pages/_blog.scss */
@@ -832,6 +829,24 @@ pre {
 }
 
 /* line 13, ../../../src/scss/partials/_portfolio.scss */
+.portfolio-list__item {
+  background: pink;
+  padding: 10px;
+  margin: 0 10px 10px 0;
+  background: #d0d1d1;
+  border-radius: 10px;
+}
+/* line 20, ../../../src/scss/partials/_portfolio.scss */
+.portfolio-list__item a {
+  color: #0f6c8d;
+}
+/* line 23, ../../../src/scss/partials/_portfolio.scss */
+.portfolio-list__item a:hover {
+  color: #66cccc;
+  text-shadow: 1px 1px 2px #0D4242;
+}
+
+/* line 29, ../../../src/scss/partials/_portfolio.scss */
 .portfolio-list__image {
   height: 160px;
   width: 478px;

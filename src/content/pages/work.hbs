@@ -9,16 +9,7 @@ filters: [ "Sites", "Mobile", "Emailers", "Graphic Design" ]
 
 <p>But otherwise, here's a portfolio of work I've done so far.</p>
 
-<ul id="filter-list" class="filter-list list--no-bullets">
-    <li class="active filter-list__item list__item list__item--horizontal">
-        <a href="#" title="Show All">All</a>
-    </li>
-{{#each filters}}
-    <li class="filter-list__item list__item list__item--horizontal">
-        <a href="#" title="Show {{this}} work">{{this}}</a>
-    </li>
-{{/each}}
-</ul>
+{{> filters-list }}
 
 <em class="info">
     <i class="info__icon"></i>Click on the image previews to see the full image

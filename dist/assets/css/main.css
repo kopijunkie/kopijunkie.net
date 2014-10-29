@@ -302,6 +302,39 @@ pre {
   text-shadow: 1px 2px 3px #123456;
 }
 
+/* line 5, ../../../src/scss/pages/_work.scss */
+.portfolio-list .preview {
+  display: block;
+  height: 160px;
+  width: 478px;
+  margin: 0 auto;
+}
+
+/* line 13, ../../../src/scss/pages/_work.scss */
+.portfolio-list__item {
+  padding: 10px;
+  margin: 0 10px 10px 0;
+  background: #d0d1d1;
+  border-radius: 10px;
+}
+/* line 19, ../../../src/scss/pages/_work.scss */
+.portfolio-list__item a {
+  color: #0f6c8d;
+}
+/* line 22, ../../../src/scss/pages/_work.scss */
+.portfolio-list__item a:hover {
+  color: #66cccc;
+  text-shadow: 1px 1px 2px #0D4242;
+}
+
+/* line 28, ../../../src/scss/pages/_work.scss */
+.portfolio-list__image {
+  height: 160px;
+  width: 478px;
+  border: 1px solid #9c9f9f;
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.3);
+}
+
 /* line 1, ../../../src/scss/partials/_header.scss */
 .header {
   float: left;
@@ -825,40 +858,6 @@ pre {
 /* line 22, ../../../src/scss/partials/_list-filter.scss */
 .filter-list__item.active a {
   color: #0f6c8d;
-}
-
-/* line 5, ../../../src/scss/partials/_portfolio.scss */
-.portfolio-list .preview {
-  display: block;
-  height: 160px;
-  width: 478px;
-  margin: 0 auto;
-}
-
-/* line 13, ../../../src/scss/partials/_portfolio.scss */
-.portfolio-list__item {
-  background: pink;
-  padding: 10px;
-  margin: 0 10px 10px 0;
-  background: #d0d1d1;
-  border-radius: 10px;
-}
-/* line 20, ../../../src/scss/partials/_portfolio.scss */
-.portfolio-list__item a {
-  color: #0f6c8d;
-}
-/* line 23, ../../../src/scss/partials/_portfolio.scss */
-.portfolio-list__item a:hover {
-  color: #66cccc;
-  text-shadow: 1px 1px 2px #0D4242;
-}
-
-/* line 29, ../../../src/scss/partials/_portfolio.scss */
-.portfolio-list__image {
-  height: 160px;
-  width: 478px;
-  border: 1px solid #9c9f9f;
-  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.3);
 }
 
 /* line 1, ../../../src/scss/partials/_social-media.scss */

@@ -1,0 +1,13 @@
+---
+component: filters-list
+---
+<ul id="filter-list" class="filter-list list--no-bullets">
+    <li class="active filter-list__item list__item list__item--horizontal">
+        <a href="#" title="Show All">All</a>
+    </li>
+{{#each filters}}
+    <li class="filter-list__item list__item list__item--horizontal">
+        <a href="#" title="Show only {{this}}">{{this}}</a>
+    </li>
+{{/each}}
+</ul>

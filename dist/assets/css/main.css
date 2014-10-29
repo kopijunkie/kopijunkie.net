@@ -688,19 +688,22 @@ pre {
 /* line 13, ../../../src/scss/partials/_carousel.scss */
 .carousel__slide {
   float: left;
-  border: 1px solid #9c9f9f;
 }
-/* line 17, ../../../src/scss/partials/_carousel.scss */
+/* line 16, ../../../src/scss/partials/_carousel.scss */
 .carousel__slide a, .carousel__slide img {
   height: inherit;
   width: inherit;
 }
-/* line 22, ../../../src/scss/partials/_carousel.scss */
+/* line 21, ../../../src/scss/partials/_carousel.scss */
 .carousel__slide a {
   display: block;
 }
+/* line 25, ../../../src/scss/partials/_carousel.scss */
+.carousel__slide img {
+  border: 1px solid #9c9f9f;
+}
 
-/* line 28, ../../../src/scss/partials/_carousel.scss */
+/* line 31, ../../../src/scss/partials/_carousel.scss */
 .control-btn {
   overflow: hidden;
   display: block;
@@ -718,13 +721,13 @@ pre {
   height: 100%;
 }
 
-/* line 37, ../../../src/scss/partials/_carousel.scss */
+/* line 40, ../../../src/scss/partials/_carousel.scss */
 .control-btn--prev {
   left: 16%;
   background: transparent url(../img/control_prev.png) no-repeat -31px -1px;
 }
 
-/* line 41, ../../../src/scss/partials/_carousel.scss */
+/* line 44, ../../../src/scss/partials/_carousel.scss */
 .control-btn--next {
   left: 54.3%;
   background: transparent url(../img/control_next.png) no-repeat -1px -1px;
@@ -829,6 +832,22 @@ pre {
 .flickr_badge_image img {
   width: 75px;
   height: 75px;
+}
+
+/* line 6, ../../../src/scss/pages/_work.scss */
+.portfolio-list .preview {
+  display: block;
+  height: 160px;
+  width: 478px;
+  margin: 0 auto;
+}
+
+/* line 15, ../../../src/scss/pages/_work.scss */
+.portfolio-list__image {
+  height: 160px;
+  width: 478px;
+  border: 1px solid #9c9f9f;
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.3);
 }
 
 /* line 1, ../../../src/scss/pages/_blog.scss */

@@ -6,13 +6,12 @@
     padding: 0;
 
     .control-btn {
-        border: 1px solid #9c9f9f;
+        border: 1px solid $light-grey;
     }
 }
 
 .carousel__slide {
     float: left;
-    border: 1px solid #9c9f9f;
 
     a, img {
         height: inherit;
@@ -21,6 +20,10 @@
 
     a {
         display: block;
+    }
+
+    img {
+        border: 1px solid $image-border-colour;
     }
 }
 

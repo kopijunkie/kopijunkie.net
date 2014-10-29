@@ -191,34 +191,30 @@
         </dl>
     </li>
     <li class="web">
-        <div class="previews-slide">
-            <div class="slides-container">
-                <div class="slide">
-                    <a href="assets/img/portfolio/devere-main.png" title="De Vere (main)" class="preview" >
-                        <img src="assets/img/portfolio/devere-main-thumb.png" alt="De Vere (main) preview"/>
-                    </a>
-                </div>
-                <div class="slide">
-                    <a href="assets/img/portfolio/devere-hotels.png" title="De Vere Hotels" class="preview" >
-                        <img src="assets/img/portfolio/devere-hotels-thumb.png" alt="De Vere Hotels preview"/>
-                    </a>
-                </div>
-                <div class="slide">
-                    <a href="assets/img/portfolio/devere-venues.png" title="De Vere Venues" class="preview" >
-                        <img src="assets/img/portfolio/devere-venues-thumb.png" alt="De Vere Venues preview"/>
-                    </a>
-                </div>
-                <div class="slide">
-                    <a href="assets/img/portfolio/devere-booking.png" title="De Vere Booking Engine (main)" class="preview" >
-                        <img src="assets/img/portfolio/devere-booking-thumb.png" alt="De Vere Booking Engine (main) preview"/>
-                    </a>
-                </div>
-            </div>
-        </div>
+        <ul id="devere-carousel" class="carousel">
+            <li class="carousel__slide">
+                <a href="assets/img/portfolio/devere-main.png" title="De Vere (main)" class="preview" >
+                    <img src="assets/img/portfolio/devere-main-thumb.png" alt="De Vere (main) preview"/>
+                </a>
+            </li>
+            <li class="carousel__slide">
+                <a href="assets/img/portfolio/devere-hotels.png" title="De Vere Hotels" class="preview" >
+                    <img src="assets/img/portfolio/devere-hotels-thumb.png" alt="De Vere Hotels preview"/>
+                </a>
+            </li>
+            <li class="carousel__slide">
+                <a href="assets/img/portfolio/devere-venues.png" title="De Vere Venues" class="preview" >
+                    <img src="assets/img/portfolio/devere-venues-thumb.png" alt="De Vere Venues preview"/>
+                </a>
+            </li>
+            <li class="carousel__slide">
+                <a href="assets/img/portfolio/devere-booking.png" title="De Vere Booking Engine (main)" class="preview" >
+                    <img src="assets/img/portfolio/devere-booking-thumb.png" alt="De Vere Booking Engine (main) preview"/>
+                </a>
+            </li>
+        </ul>
 
-        <br />
-
-        <p class="clearBoth">
+        <p>
             <a href="http://www.devere.co.uk/" title="De Vere (main)">
                 <strong>www.devere.co.uk</strong>
             </a> /
@@ -449,7 +445,6 @@
 
         ga('create', 'UA-55983542-1', 'auto');
         ga('send', 'pageview');
-
     </script>
 
     <!-- build:js(dist) assets/js/libs.min.js -->
@@ -459,6 +454,7 @@
     <!-- build:js(dist) assets/js/site.min.js -->
     <script src="assets/js/Main.js"></script>
     <script src="assets/js/ListFilter.js"></script>
+    <script src="assets/js/ImageCarousel.js"></script>
     <!-- endbuild -->
   </body>
 </html>

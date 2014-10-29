@@ -10,4 +10,9 @@ $(function() {
     });
     portfolioFilter.init();
 
+    var imageCarousel = $.imageCarousel({
+        container: $("#devere-carousel")
+    });
+    imageCarousel.init();
+
 });

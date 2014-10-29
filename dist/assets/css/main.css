@@ -667,6 +667,56 @@ pre {
   height: 200px;
 }
 
+/* line 1, ../../../src/scss/partials/_carousel.scss */
+.carousel {
+  list-style: none;
+  overflow: hidden;
+  margin: 0 auto;
+  padding: 0;
+}
+/* line 15, /Users/kimmigan/Development/kopijunkie.net/node_modules/node-bourbon/assets/stylesheets/addons/_clearfix.scss */
+.carousel:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* line 9, ../../../src/scss/partials/_carousel.scss */
+.carousel__slide {
+  float: left;
+}
+
+/* line 14, ../../../src/scss/partials/_carousel.scss */
+.control-btn {
+  overflow: hidden;
+  display: block;
+  width: 30px;
+  height: 37px;
+  margin: 62px 0;
+  position: absolute;
+  z-index: 10;
+  border: 1px solid #9c9f9f;
+}
+/* line 4, /Users/kimmigan/Development/kopijunkie.net/node_modules/node-bourbon/assets/stylesheets/addons/_hide-text.scss */
+.control-btn:before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 100%;
+}
+
+/* line 24, ../../../src/scss/partials/_carousel.scss */
+.control-btn--prev {
+  left: 16%;
+  background: transparent url(../img/control_prev.png) no-repeat -31px -1px;
+}
+
+/* line 28, ../../../src/scss/partials/_carousel.scss */
+.control-btn--next {
+  left: 54.3%;
+  background: transparent url(../img/control_next.png) no-repeat -1px -1px;
+}
+
 /* line 1, ../../../src/scss/partials/_social-media.scss */
 .social-media {
   padding-top: 12px;

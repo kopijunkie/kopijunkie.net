@@ -23,23 +23,3 @@
         color: $list-filter-link-active-colour;
     }
 }
-
-
-$preview-height: 160px;
-$preview-width: 478px;
-.portfolio-list {
-
-    .preview {
-        display: block;
-        height: $preview-height;
-        width: $preview-width;
-        margin: 0 auto;
-    }
-
-}
-.portfolio-list__image {
-    height: $preview-height;
-    width: $preview-width;
-    border: 1px solid $image-border-colour;
-    box-shadow: 1px 2px 3px rgba(0,0,0,0.3);
-}

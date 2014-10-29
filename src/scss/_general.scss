@@ -91,6 +91,15 @@ $icon-size: 18px;
 }
 
 
+.appstore-badge {
+    width: 112px;
+    height: auto;
+    box-shadow: 1px 2px 3px $image-box-shadow;
+    border: 1px solid $image-border-colour;
+    border-radius: 5px;
+}
+
+
 .definition-list__title {
     color: $definition-list-title-colour;
     font-weight: bold;

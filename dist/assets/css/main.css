@@ -134,12 +134,21 @@ pre {
 }
 
 /* line 94, ../../../src/scss/_general.scss */
+.appstore-badge {
+  width: 112px;
+  height: auto;
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.3);
+  border: 1px solid #9c9f9f;
+  border-radius: 5px;
+}
+
+/* line 103, ../../../src/scss/_general.scss */
 .definition-list__title {
   color: #3f2108;
   font-weight: bold;
 }
 
-/* line 100, ../../../src/scss/_general.scss */
+/* line 109, ../../../src/scss/_general.scss */
 .list--no-bullets {
   list-style: none;
   padding: 0;
@@ -151,18 +160,18 @@ pre {
   clear: both;
 }
 
-/* line 106, ../../../src/scss/_general.scss */
+/* line 115, ../../../src/scss/_general.scss */
 .list__item {
   padding: 0.625em 1.25em;
 }
 
 @media screen and (min-width: 900px) {
-  /* line 112, ../../../src/scss/_general.scss */
+  /* line 121, ../../../src/scss/_general.scss */
   .list__item--horizontal {
     float: left;
   }
 }
-/* line 122, ../../../src/scss/_general.scss */
+/* line 131, ../../../src/scss/_general.scss */
 .wrapper {
   max-width: 68em;
   margin-left: auto;
@@ -178,14 +187,14 @@ pre {
   clear: both;
 }
 @media screen and (min-width: 1280px) {
-  /* line 122, ../../../src/scss/_general.scss */
+  /* line 131, ../../../src/scss/_general.scss */
   .wrapper {
     border-left: 1px solid #be864d;
     border-right: 1px solid #be864d;
   }
 }
 
-/* line 137, ../../../src/scss/_general.scss */
+/* line 146, ../../../src/scss/_general.scss */
 .wrapper--inner {
   width: 100%;
   display: -webkit-box;
@@ -206,7 +215,7 @@ pre {
   -ms-flex-align: stretch;
 }
 
-/* line 143, ../../../src/scss/_general.scss */
+/* line 152, ../../../src/scss/_general.scss */
 .content {
   float: left;
   display: block;
@@ -222,7 +231,7 @@ pre {
   margin-right: 0;
 }
 @media screen and (min-width: 900px) {
-  /* line 143, ../../../src/scss/_general.scss */
+  /* line 152, ../../../src/scss/_general.scss */
   .content {
     float: left;
     display: block;
@@ -235,15 +244,15 @@ pre {
     margin-right: 0;
   }
 }
-/* line 157, ../../../src/scss/_general.scss */
+/* line 166, ../../../src/scss/_general.scss */
 .content a {
   color: #75410d;
 }
-/* line 160, ../../../src/scss/_general.scss */
+/* line 169, ../../../src/scss/_general.scss */
 .content a:hover {
   color: #d38444;
 }
-/* line 164, ../../../src/scss/_general.scss */
+/* line 173, ../../../src/scss/_general.scss */
 .content a:visited {
   color: #b46c04;
 }
@@ -274,22 +283,6 @@ pre {
 /* line 22, ../../../src/scss/pages/_work.scss */
 .filter-list__item.active a {
   color: #0f6c8d;
-}
-
-/* line 32, ../../../src/scss/pages/_work.scss */
-.portfolio-list .preview {
-  display: block;
-  height: 160px;
-  width: 478px;
-  margin: 0 auto;
-}
-
-/* line 40, ../../../src/scss/pages/_work.scss */
-.portfolio-list__image {
-  height: 160px;
-  width: 478px;
-  border: 1px solid #9c9f9f;
-  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.3);
 }
 
 /* line 1, ../../../src/scss/pages/_blog.scss */
@@ -828,6 +821,22 @@ pre {
 .control-btn--next {
   left: 54.3%;
   background: transparent url(../img/control_next.png) no-repeat -1px -1px;
+}
+
+/* line 5, ../../../src/scss/partials/_portfolio.scss */
+.portfolio-list .preview {
+  display: block;
+  height: 160px;
+  width: 478px;
+  margin: 0 auto;
+}
+
+/* line 13, ../../../src/scss/partials/_portfolio.scss */
+.portfolio-list__image {
+  height: 160px;
+  width: 478px;
+  border: 1px solid #9c9f9f;
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.3);
 }
 
 /* line 1, ../../../src/scss/partials/_social-media.scss */

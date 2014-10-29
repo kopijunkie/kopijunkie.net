@@ -67,32 +67,31 @@
 }
 
 .nav-menu__item {
-    border: {
-        top: 6px solid $nav-bg-colour;
-        bottom: 5px solid $nav-bg-colour;
-    }
-
     padding: {
         left: em(15px);
         right: em(15px);
     }
-
+    border: {
+        top: 6px solid $nav-bg-colour;
+        bottom: 5px solid $nav-bg-colour;
+    }
     &:hover,
     &.active {
         border-bottom: 5px solid $nav-link-active-colour;
     }
-}
-
-.nav-menu__link {
-    font-weight: bold;
-    font-size: rem(18px);
-    line-height: 1.2em;
-    letter-spacing: 5px;
-    color: $nav-link-colour;
-    text-shadow: 0 1px 1px black;
-
     &:hover {
-        color: $nav-link-hover-colour;
-    }
+        cursor: pointer;
 
+        a { color: $nav-link-hover-colour; }
+    }
+    a {
+        font-weight: bold;
+        font-size: rem(18px);
+        line-height: 1.2em;
+        letter-spacing: 5px;
+        color: $nav-link-colour;
+        text-shadow: 0 1px 1px black;
+
+        &:hover { color: $nav-link-hover-colour; }
+    }
 }

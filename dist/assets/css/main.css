@@ -497,18 +497,25 @@ pre {
 
 /* line 69, ../../../src/scss/partials/_nav-menu.scss */
 .nav-menu__item {
-  border-top: 6px solid #794012;
-  border-bottom: 5px solid #794012;
   padding-left: 0.9375em;
   padding-right: 0.9375em;
+  border-top: 6px solid #794012;
+  border-bottom: 5px solid #794012;
 }
-/* line 80, ../../../src/scss/partials/_nav-menu.scss */
+/* line 78, ../../../src/scss/partials/_nav-menu.scss */
 .nav-menu__item:hover, .nav-menu__item.active {
   border-bottom: 5px solid #be864d;
 }
-
-/* line 86, ../../../src/scss/partials/_nav-menu.scss */
-.nav-menu__link {
+/* line 82, ../../../src/scss/partials/_nav-menu.scss */
+.nav-menu__item:hover {
+  cursor: pointer;
+}
+/* line 85, ../../../src/scss/partials/_nav-menu.scss */
+.nav-menu__item:hover a {
+  color: #d2ac85;
+}
+/* line 87, ../../../src/scss/partials/_nav-menu.scss */
+.nav-menu__item a {
   font-weight: bold;
   font-size: 1.125rem;
   line-height: 1.2em;
@@ -516,8 +523,8 @@ pre {
   color: white;
   text-shadow: 0 1px 1px black;
 }
-/* line 94, ../../../src/scss/partials/_nav-menu.scss */
-.nav-menu__link:hover {
+/* line 95, ../../../src/scss/partials/_nav-menu.scss */
+.nav-menu__item a:hover {
   color: #d2ac85;
 }
 

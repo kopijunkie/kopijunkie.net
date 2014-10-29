@@ -257,34 +257,6 @@ pre {
   color: #b46c04;
 }
 
-/* line 1, ../../../src/scss/pages/_work.scss */
-.filter-list__item {
-  border-right: 1px solid #9c9f9f;
-  padding: 0 20px;
-}
-/* line 5, ../../../src/scss/pages/_work.scss */
-.filter-list__item:last-child {
-  border-right: none;
-}
-/* line 9, ../../../src/scss/pages/_work.scss */
-.filter-list__item a, .filter-list__item a:visited {
-  color: #66cccc;
-}
-/* line 12, ../../../src/scss/pages/_work.scss */
-.filter-list__item a {
-  font-size: 1rem;
-  letter-spacing: 3px;
-  text-shadow: 1px 1px 2px #0D4242;
-}
-/* line 17, ../../../src/scss/pages/_work.scss */
-.filter-list__item a:hover {
-  text-decoration: underline;
-}
-/* line 22, ../../../src/scss/pages/_work.scss */
-.filter-list__item.active a {
-  color: #0f6c8d;
-}
-
 /* line 1, ../../../src/scss/pages/_blog.scss */
 .blog-post {
   padding-bottom: 2.5em;
@@ -821,6 +793,34 @@ pre {
 .control-btn--next {
   left: 54.3%;
   background: transparent url(../img/control_next.png) no-repeat -1px -1px;
+}
+
+/* line 1, ../../../src/scss/partials/_list-filter.scss */
+.filter-list__item {
+  border-right: 1px solid #9c9f9f;
+  padding: 0 20px;
+}
+/* line 5, ../../../src/scss/partials/_list-filter.scss */
+.filter-list__item:last-child {
+  border-right: none;
+}
+/* line 9, ../../../src/scss/partials/_list-filter.scss */
+.filter-list__item a, .filter-list__item a:visited {
+  color: #66cccc;
+}
+/* line 12, ../../../src/scss/partials/_list-filter.scss */
+.filter-list__item a {
+  font-size: 1rem;
+  letter-spacing: 3px;
+  text-shadow: 1px 1px 2px #0D4242;
+}
+/* line 17, ../../../src/scss/partials/_list-filter.scss */
+.filter-list__item a:hover {
+  text-decoration: underline;
+}
+/* line 22, ../../../src/scss/partials/_list-filter.scss */
+.filter-list__item.active a {
+  color: #0f6c8d;
 }
 
 /* line 5, ../../../src/scss/partials/_portfolio.scss */

@@ -9,4 +9,3 @@
  * 2014-10-19   v0.4.0   Set up blog post generation with Assemble and Grunt
  * 2014-10-23   v0.5.0   Set up Grunt tasks
  * 2014-10-27   v0.6.0   Refactored some JavaScript UI components
- * 2014-10-29   v0.7.0   Work/Portfolio styling

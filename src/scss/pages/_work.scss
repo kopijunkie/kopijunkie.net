@@ -9,6 +9,11 @@ $preview-width: 478px;
         margin: 0 auto;
     }
 
+    .portfolio-links-list__item:after {
+        content: "|";
+        padding: 0 5px;
+    }
+
 }
 .portfolio-list__item {
     padding: 10px;

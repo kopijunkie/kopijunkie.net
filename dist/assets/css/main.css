@@ -144,6 +144,11 @@ pre {
 
 /* line 103, ../../../src/scss/_general.scss */
 .appstore-badge {
+  display: block;
+}
+
+/* line 106, ../../../src/scss/_general.scss */
+.appstore-badge__image {
   width: 112px;
   height: auto;
   box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.3);
@@ -151,13 +156,13 @@ pre {
   border-radius: 5px;
 }
 
-/* line 112, ../../../src/scss/_general.scss */
+/* line 115, ../../../src/scss/_general.scss */
 .definition-list__title {
   color: #3f2108;
   font-weight: bold;
 }
 
-/* line 118, ../../../src/scss/_general.scss */
+/* line 121, ../../../src/scss/_general.scss */
 .list--no-bullets {
   list-style: none;
   padding: 0;
@@ -169,18 +174,18 @@ pre {
   clear: both;
 }
 
-/* line 124, ../../../src/scss/_general.scss */
+/* line 127, ../../../src/scss/_general.scss */
 .list__item {
   padding: 0.625em 1.25em;
 }
 
 @media screen and (min-width: 900px) {
-  /* line 130, ../../../src/scss/_general.scss */
+  /* line 133, ../../../src/scss/_general.scss */
   .list__item--horizontal {
     float: left;
   }
 }
-/* line 140, ../../../src/scss/_general.scss */
+/* line 143, ../../../src/scss/_general.scss */
 .wrapper {
   max-width: 68em;
   margin-left: auto;
@@ -196,14 +201,14 @@ pre {
   clear: both;
 }
 @media screen and (min-width: 1280px) {
-  /* line 140, ../../../src/scss/_general.scss */
+  /* line 143, ../../../src/scss/_general.scss */
   .wrapper {
     border-left: 1px solid #be864d;
     border-right: 1px solid #be864d;
   }
 }
 
-/* line 155, ../../../src/scss/_general.scss */
+/* line 158, ../../../src/scss/_general.scss */
 .wrapper--inner {
   width: 100%;
   display: -webkit-box;
@@ -224,7 +229,7 @@ pre {
   -ms-flex-align: stretch;
 }
 
-/* line 161, ../../../src/scss/_general.scss */
+/* line 164, ../../../src/scss/_general.scss */
 .content {
   float: left;
   display: block;
@@ -240,7 +245,7 @@ pre {
   margin-right: 0;
 }
 @media screen and (min-width: 900px) {
-  /* line 161, ../../../src/scss/_general.scss */
+  /* line 164, ../../../src/scss/_general.scss */
   .content {
     float: left;
     display: block;
@@ -309,25 +314,30 @@ pre {
   width: 478px;
   margin: 0 auto;
 }
+/* line 12, ../../../src/scss/pages/_work.scss */
+.portfolio-list .portfolio-links-list__item:after {
+  content: "|";
+  padding: 0 5px;
+}
 
-/* line 13, ../../../src/scss/pages/_work.scss */
+/* line 18, ../../../src/scss/pages/_work.scss */
 .portfolio-list__item {
   padding: 10px;
   margin: 0 10px 10px 0;
   background: #d0d1d1;
   border-radius: 10px;
 }
-/* line 19, ../../../src/scss/pages/_work.scss */
+/* line 24, ../../../src/scss/pages/_work.scss */
 .portfolio-list__item a {
   color: #0f6c8d;
 }
-/* line 22, ../../../src/scss/pages/_work.scss */
+/* line 27, ../../../src/scss/pages/_work.scss */
 .portfolio-list__item a:hover {
   color: #66cccc;
   text-shadow: 1px 1px 2px #0D4242;
 }
 
-/* line 28, ../../../src/scss/pages/_work.scss */
+/* line 33, ../../../src/scss/pages/_work.scss */
 .portfolio-list__image {
   height: 160px;
   width: 478px;

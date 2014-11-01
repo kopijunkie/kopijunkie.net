@@ -77,26 +77,31 @@ pre {
 
 $icon-size: 18px;
 .info {
+    display: table;
     font-size: rem(14px);
-    color: $light-grey;
+    color: darken($light-grey, 5%);
     text-shadow: 1px 1px 1px $greyish-white;
-    display: block;
     margin: em(15px) {
         bottom: em(20px);
     }
+}
+.info__icon,
+.info__text {
+    display: table-cell;
 }
 .info__icon {
     background: {
         image: url(../img/ic_info_outline_grey600_18dp.png);
         color: transparent;
-        position: 50% 75%;
-        size: $icon-size;
+        position: 50% 50%;
+        size: 20px;
     }
-
     width: $icon-size;
     height: $icon-size;
-    display: inline-block;
-    margin-right: 8px;
+}
+.info__text {
+    padding-left: 8px;
+    font-size: rem(15px);
 }
 
 

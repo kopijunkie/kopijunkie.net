@@ -9,12 +9,8 @@ $preview-width: 478px;
         margin: 0 auto;
     }
 
-    .portfolio-links-list__item:after {
-        content: "|";
-        padding: 0 5px;
-    }
-
 }
+
 .portfolio-list__item {
     padding: 10px;
     margin: 0 10px 10px 0;
@@ -29,10 +25,37 @@ $preview-width: 478px;
             text-shadow: 1px 1px 2px #0D4242;
         }
     }
+
+    .work-done-at {
+        display: block;
+    }
 }
+
 .portfolio-list__image {
     height: $preview-height;
     width: $preview-width;
     border: 1px solid $image-border-colour;
     box-shadow: 1px 2px 3px $image-box-shadow;
+}
+
+
+.portfolio-links-list {
+    padding: 10px;
+}
+
+.portfolio-links-list__item {
+
+    &:after {
+        content: "|";
+        padding: 0 5px;
+    }
+
+    &:last-child:after {
+        content: none;
+    }
+}
+
+
+.appstore-badge {
+    padding-left: 15px;
 }

@@ -91,6 +91,7 @@
         </li>
         <li class="nav-menu__item list__item list__item--horizontal">
             <a href="blog.html" class="nav-menu__link">Blog</a>
+            
         </li>
         <li class="nav-menu__item list__item list__item--horizontal">
             <a href="contact.html" class="nav-menu__link">Contact</a>
@@ -106,6 +107,17 @@
 <h1>Blog</h1>
 
 
+    
+        <article class="blog-post">
+            <h2 class="blog-post__title">Grunt Timekeeping</h2>
+            <h3 class="blog-post__date">Fri Oct 31 2014 00:00:00 GMT+0000 (GMT)</h3>
+            <p>Recently I plugged in a Grunt plugin that handily displays a summary of the time taken by a project&#x27;s Grunt build tasks. Before this the team had only been aware of the overall time taken. Especially with LiveReload running, waiting for the page to reload with our changes.</p>
+<p>We suspected the Compass compilation was taking &quot;a long time&quot;. But we didn&#x27;t know for certain how long and if that was the only problem area. With <a href="https://github.com/sindresorhus/time-grunt">time-grunt</a> we could now see a nice breakdown of each task&#x27;s time taken allowing us to know what to focus our performance improvements on.</p>
+<p>Setting it up was easy enough. Though it is slightly different from the usual Grunt tasks. Just install it using NPM and save it into the project&#x27;s &#x60;package.json&#x60; as a development dependency with &#x60;npm install time-grunt --save-dev&#x60; in the project&#x27;s front end root directory. Then in your project&#x27;s &#x60;Gruntfile.js&#x60; add &#x60;time-grunt&#x60; as a required module and pass it the Grunt instance with &#x60;require(&quot;time-grunt&quot;)(grunt);&#x60;</p>
+<p><a href="{{assets}}/img/blog/screenshot-time-grunt.png"><img src="assets/img/blog/screenshot-time-grunt.png" alt="time-grunt task output"></a></p>
+<p>Now when you run Grunt again, at the end of your Grunt output there will be a nice time chart broken down by tasks reporting how long each task took with a total run time also. Sweet!</p>
+
+        </article>
     
         <article class="blog-post">
             <h2 class="blog-post__title">Hello World! Again!</h2>
@@ -148,7 +160,7 @@
     <article class="blog-post">
     <h1 id="a-heading">A heading</h1>
 <p>Just a note, I&#39;ve found that I can&#39;t test my markdown parser vs others.
-For example, both markdown.js and showdown code blocks in lists wrong. They&#39;re
+For example, both <code>markdown.js</code> and showdown code blocks in lists wrong. They&#39;re
 also completely <a href="http://google.com/" title="Google">inconsistent</a> with regards to paragraphs in list items.</p>
 <p>A link. Not anymore.</p>
 <aside>This will make me fail the test because
@@ -194,13 +206,27 @@ Text here</li>
 I really need to get
 more creative with
 mockup text..
-markdown.js breaks here again</p>
+<code>markdown.js</code> breaks here again</p>
 </blockquote>
 <h2 id="another-heading">Another Heading</h2>
 <p>Hello <em>world</em>. Here is a <a href="//hello">link</a>.
 And an image <img src="src" alt="alt">.</p>
 <pre><code>Code goes here.
 Lots of it...</code></pre>
+
+    </article>
+
+    <article class="blog-post">
+    <hr>
+<p>title: &quot;Grunt Timekeeping&quot;
+posted: 2014-10-31
+tags: [&quot;development&quot;, &quot;workflow&quot;, &quot;grunt&quot;]</p>
+<h2 id="blog-true">blog: true</h2>
+<p>Recently I plugged in a Grunt plugin that handily displays a summary of the time taken by a project&#39;s Grunt build tasks. Before this the team had only been aware of the overall time taken. Especially with LiveReload running, waiting for the page to reload with our changes.</p>
+<p>We suspected the Compass compilation was taking &quot;a long time&quot;. But we didn&#39;t know for certain how long and if that was the only problem area. With <a href="https://github.com/sindresorhus/time-grunt">time-grunt</a> we could now see a nice breakdown of each task&#39;s time taken allowing us to know what to focus our performance improvements on.</p>
+<p>Setting it up was easy enough. Though it is slightly different from the usual Grunt tasks. Just install it using NPM and save it into the project&#39;s <code>package.json</code> as a development dependency with <code>npm install time-grunt --save-dev</code> in the project&#39;s front end root directory. Then in your project&#39;s <code>Gruntfile.js</code> add <code>time-grunt</code> as a required module and pass it the Grunt instance with <code>require(&quot;time-grunt&quot;)(grunt);</code></p>
+<p><a href="/img/blog/screenshot-time-grunt.png"><img src="assets/img/blog/screenshot-time-grunt.png" alt="time-grunt task output"></a></p>
+<p>Now when you run Grunt again, at the end of your Grunt output there will be a nice time chart broken down by tasks reporting how long each task took with a total run time also. Sweet!</p>
 
     </article>
 

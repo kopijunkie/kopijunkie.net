@@ -17,7 +17,3 @@ The entire site's front end is now developed, generated using a modern front end
 * [Bower](http://bower.io/) handles the site's front end library dependencies
 
 The code to put my site together is available at my [Github repo](https://github.com/kopijunkie/kopijunkie.net) for it.
-
-
-
-

@@ -9,7 +9,7 @@
     <meta name="Description" content="Web site and portfolio of Kimmi Gan a.k.a. KopiJunkie - web technologies geek and front end developer">
     <meta name="Keywords" content="Kimmi Gan, Gan Kimmi, KopiJunkie, Kimmi Gan portfolio, KopiJunkie portfolio, web design, web development, portfolio, front end developer, frontend developer, front-end developer">
 
-    <title>Home | Kopijunkie.net</title>
+    <title>Grunt Timekeeping | Kopijunkie.net</title>
 
     <link href="favicon.ico" type="image/x-icon" rel="shortcut icon">
     <link href="favicon.ico" type="image/x-icon" rel="icon">
@@ -103,18 +103,16 @@
         <div class="wrapper--inner">
             <section class="content" role="main">
                 
-<h1>KopiJunkie &#61; a coffee junkie who builds web sites and apps.</h1>
 
-<h2>Welcome to my home on the interwebz.</h2>
+Recently I plugged in a Grunt plugin that handily displays a summary of the time taken by a project's Grunt build tasks. Before this the team had only been aware of the overall time taken. Especially with LiveReload running, waiting for the page to reload with our changes.
 
-<p>
-    I'm a girl geek who loves to build web sites for desktops and mobiles using modern web technologies. Occasionally I do some graphics and user interface design too.
-</p>
+We suspected the Compass compilation was taking "a long time". But we didn't know for certain how long and if that was the only problem area. With [time-grunt](https://github.com/sindresorhus/time-grunt) we could now see a nice breakdown of each task's time taken allowing us to know what to focus our performance improvements on.
 
-<p>
-    Modern web technologies is a passion of mine along with arts and social science. Web technologies allow me to bring arts, social science and technology together to create engaging and informative story narratives and data visualisations as well as an enjoyable and equally engaging user experience. <strong>Kopijunkie.net</strong> is my personal web site, portfolio, and blog.
-</p>
+Setting it up was easy enough. Though it is slightly different from the usual Grunt tasks. Just install it using NPM and save it into the project's `package.json` as a development dependency with `npm install time-grunt --save-dev` in the project's front end root directory. Then in your project's `Gruntfile.js` add `time-grunt` as a required module and pass it the Grunt instance with `require("time-grunt")(grunt);`
 
+[![time-grunt task output](assets/img/blog/screenshot-time-grunt.png)](assets/img/blog/screenshot-time-grunt.png)
+
+Now when you run Grunt again, at the end of your Grunt output there will be a nice time chart broken down by tasks reporting how long each task took with a total run time also. Sweet!
             </section>
 
             <aside class="sidebar" role="complementary">

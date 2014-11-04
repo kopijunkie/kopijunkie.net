@@ -8,19 +8,32 @@
         padding: em(15px);
 
     }
+
+    .error-msg {
+        display: none;
+        float: right;
+        color: $error-text-colour;
+    }
+
+    .button {
+        margin: {
+            right: 10px;
+            left: 10px;
+        }
+    }
 }
 
-.form--fieldset {
+.form__fieldset {
     border: 0;
     padding: em(15px) em(10px);
 }
 
-.form--label,
-.form--input {
+.form__label,
+.form__input {
     padding: 7px 0;
 }
 
-.form--label {
+.form__label {
     @include fill-parent;
 
     @include media($tablet) {
@@ -30,7 +43,7 @@
     }
 }
 
-.form--input {
+.form__input {
     @include fill-parent;
     margin-top: 5px;
 
@@ -57,7 +70,12 @@
     &:focus {
         background: $form-input-bg-colour;
     }
+
+    &.error {
+        border-color: $error-border-colour;
+        background: $error-bg-colour;
+    }
 }
-.form--textarea {
+.form__textarea {
     height: 200px;
 }

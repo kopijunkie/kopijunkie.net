@@ -2,17 +2,35 @@
 
 $(function() {
 
-    var portfolioFilter = $.listFilter({
-        animate: true,
-        speed: "slow",
-        filterOptionsList: $("#filter-list"),
-        listToFilter: $("#portfolio-list")
-    });
-    portfolioFilter.init();
+    var path = window.location.pathname;
+    var pageFile = path.split("/").pop();
+    var pageName = pageFile.split(".html").shift();
 
-    var imageCarousel = $.imageCarousel({
-        container: $("#devere-carousel")
-    });
-    imageCarousel.init();
+    switch (pageName) {
+        case "work":
+            var portfolioFilter = $.listFilter({
+                animate: true,
+                speed: "slow",
+                filterOptionsList: $("#filter-list"),
+                listToFilter: $("#portfolio-list")
+            });
+            portfolioFilter.init();
+
+            var imageCarousel = $.imageCarousel({
+                container: $("#devere-carousel")
+            });
+            imageCarousel.init();
+            break;
+        case "contact":
+            console.log("contact me!");
+            var contactForm = $.contactForm();
+
+            $("#send").on("click", function(event) {
+                event.preventDefault();
+                $(".error-msg").hide();
+                contactForm.validate();
+            });
+            break;
+    }
 
 });

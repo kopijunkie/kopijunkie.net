@@ -18,6 +18,7 @@ $light-blue: lighten($greyish-blue, 10%);
 $greyish-white: #ebe8e8;
 $light-grey: #9c9f9f;
 $dark-grey: #393838;
+$error-red: #ec2828;
 
 
 // Backgrounds
@@ -29,6 +30,7 @@ $footer-bg-colour: $dark-grey;
 $form-input-bg-colour: #f5d3a4;
 $block-bg-colour: lighten($tea, 5%);
 $codeblock-bg-colour: $dark-grey;
+$error-bg-colour: #ffd8d8;
 
 
 // Borders
@@ -40,6 +42,7 @@ $nav-border-colour: #bebdbd;
 $footer-border-colour: #595959;
 $form-input-border-colour: $border-colour;
 $image-border-colour: $light-grey;
+$error-border-colour: #fd3d3d;
 
 // Box Shadows
 $image-box-shadow: rgba(0,0,0,0.3);
@@ -73,3 +76,4 @@ $tagline-text-colour: $dark-blue;
 $definition-list-title-colour: $black-coffee;
 $code-text-colour: #1cad1e;
 $footer-text-colour: $greyish-white;
+$error-text-colour: $error-red;

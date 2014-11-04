@@ -722,39 +722,50 @@ pre {
     padding: 0.9375em;
   }
 }
+/* line 12, ../../../src/scss/partials/_form.scss */
+.form .error-msg {
+  display: none;
+  float: right;
+  color: #ec2828;
+}
+/* line 18, ../../../src/scss/partials/_form.scss */
+.form .button {
+  margin-right: 10px;
+  margin-left: 10px;
+}
 
-/* line 13, ../../../src/scss/partials/_form.scss */
-.form--fieldset {
+/* line 26, ../../../src/scss/partials/_form.scss */
+.form__fieldset {
   border: 0;
   padding: 0.9375em 0.625em;
 }
 
-/* line 18, ../../../src/scss/partials/_form.scss */
-.form--label,
-.form--input {
+/* line 31, ../../../src/scss/partials/_form.scss */
+.form__label,
+.form__input {
   padding: 7px 0;
 }
 
-/* line 23, ../../../src/scss/partials/_form.scss */
-.form--label {
+/* line 36, ../../../src/scss/partials/_form.scss */
+.form__label {
   width: 100%;
 }
 @media screen and (min-width: 900px) {
-  /* line 23, ../../../src/scss/partials/_form.scss */
-  .form--label {
+  /* line 36, ../../../src/scss/partials/_form.scss */
+  .form__label {
     float: left;
     display: block;
     margin-right: 3.36108%;
     width: 27.03924%;
   }
   /* line 38, /Users/kimmigan/Development/kopijunkie.net/node_modules/node-neat/assets/stylesheets/grid/_span-columns.scss */
-  .form--label:last-child {
+  .form__label:last-child {
     margin-right: 0;
   }
 }
 
-/* line 33, ../../../src/scss/partials/_form.scss */
-.form--input {
+/* line 46, ../../../src/scss/partials/_form.scss */
+.form__input {
   width: 100%;
   margin-top: 5px;
   color: #3f2108;
@@ -765,8 +776,8 @@ pre {
   padding-right: 10px;
 }
 @media screen and (min-width: 900px) {
-  /* line 33, ../../../src/scss/partials/_form.scss */
-  .form--input {
+  /* line 46, ../../../src/scss/partials/_form.scss */
+  .form__input {
     float: left;
     display: block;
     margin-right: 3.36108%;
@@ -775,33 +786,38 @@ pre {
     margin-top: 0;
   }
   /* line 38, /Users/kimmigan/Development/kopijunkie.net/node_modules/node-neat/assets/stylesheets/grid/_span-columns.scss */
-  .form--input:last-child {
+  .form__input:last-child {
     margin-right: 0;
   }
 }
 /* line 4, /Users/kimmigan/Development/kopijunkie.net/node_modules/node-bourbon/assets/stylesheets/css3/_placeholder.scss */
-.form--input::-webkit-input-placeholder {
+.form__input::-webkit-input-placeholder {
   color: #907c6b;
 }
 /* line 4, /Users/kimmigan/Development/kopijunkie.net/node_modules/node-bourbon/assets/stylesheets/css3/_placeholder.scss */
-.form--input::-moz-placeholder {
+.form__input::-moz-placeholder {
   color: #907c6b;
 }
 /* line 4, /Users/kimmigan/Development/kopijunkie.net/node_modules/node-bourbon/assets/stylesheets/css3/_placeholder.scss */
-.form--input:-moz-placeholder {
+.form__input:-moz-placeholder {
   color: #907c6b;
 }
 /* line 4, /Users/kimmigan/Development/kopijunkie.net/node_modules/node-bourbon/assets/stylesheets/css3/_placeholder.scss */
-.form--input:-ms-input-placeholder {
+.form__input:-ms-input-placeholder {
   color: #907c6b;
 }
-/* line 57, ../../../src/scss/partials/_form.scss */
-.form--input:focus {
+/* line 70, ../../../src/scss/partials/_form.scss */
+.form__input:focus {
   background: #f5d3a4;
 }
+/* line 74, ../../../src/scss/partials/_form.scss */
+.form__input.error {
+  border-color: #fd3d3d;
+  background: #ffd8d8;
+}
 
-/* line 61, ../../../src/scss/partials/_form.scss */
-.form--textarea {
+/* line 79, ../../../src/scss/partials/_form.scss */
+.form__textarea {
   height: 200px;
 }
 

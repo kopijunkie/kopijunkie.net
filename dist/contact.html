@@ -108,28 +108,42 @@
 <p>Drop me a message with the form below.</p>
 
 
-<form id="contact-form" class="form form__bordered contact-form" action="contact.php" method="POST">
-    <fieldset class="form--fieldset">
-        <label class="form--label" for="name">Name</label>
-        <input type="text" class="form--input" name="name" placeholder="Your name" />
+<form id="contact-form" class="form form--bordered" action="contact.php" method="POST">
+    <fieldset class="form__fieldset">
+        <label class="form__label" for="name">Name</label>
+        <input type="text" placeholder="Your name" maxlength="40"
+            class="form__input" id="name" name="name" required />
+        <span class="error-msg" id="name-required">Name required.</span>
     </fieldset>
 
-    <fieldset class="form--fieldset">
-        <label class="form--label" for="email">Email</label>
-        <input type="text" class="form--input" name="email" placeholder="Your email" />
+
+    <fieldset class="form__fieldset">
+        <label class="form__label" for="email">Email</label>
+        <input type="email" class="form__input" id="email" name="email"
+            pattern="/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/" placeholder="Your email" required />
+        <span class="error-msg" id="email-required">Email required.</span>
+        <span class="error-msg" id="email-error">Invalid email.</span>
     </fieldset>
 
-    <fieldset class="form--fieldset">
-        <label class="form--label" for="message">Message</label>
-        <textarea class="form--input form--textarea" name="message" placeholder="Your message"></textarea>
+    <fieldset class="form__fieldset">
+        <label class="form__label" for="message">Message</label>
+        <textarea class="form__input form__textarea" placeholder="Your message"
+            required id="message" name="message" ></textarea>
+        <span class="error-msg" id="message-required">Message required.</span>
     </fieldset>
 
-    <fieldset class="form--fieldset">
-        <label class="form--label" for="spam">What's 5 + 2?</label>
-        <input type="text" class="form--input" name="spam" placeholder="The answer is..." />
+    <fieldset class="form__fieldset">
+        <label class="form__label" for="spam-check">What's 5 + 2?</label>
+        <input type="number" placeholder="The answer is..." class="form__input"
+            id="spam-check" name="spam-check" required />
+        <span class="error-msg" id="spam-check-required">Answer required.</span>
+        <span class="error-msg" id="spam-check-error">Sorry, wrong answer.</span>
     </fieldset>
 
-    <input type="submit" class="button right" id="submit-form" value="Send" />
+    <fieldset class="form__fieldset right">
+        <input type="reset" class="button button--reset" id="reset" value="Reset" />
+        <input type="submit" class="button button--submit" id="send" value="Send" />
+    </fieldset>
 </form>
             </section>
 
@@ -217,6 +231,7 @@
     <script src="assets/js/Main.js"></script>
     <script src="assets/js/ListFilter.js"></script>
     <script src="assets/js/ImageCarousel.js"></script>
+    <script src="assets/js/Contact.js"></script>
     <!-- endbuild -->
   </body>
 </html>

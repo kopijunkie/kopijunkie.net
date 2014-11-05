@@ -15,6 +15,15 @@
     }
 }
 
+
+.twitter--heading {
+    @include media($tablet) {
+        font-family: "Lobster", cursive;
+    }
+    color: $dark-coffee;
+    text-shadow: none;
+}
+
 .twitter-timeline {
     height: 350px;
 }

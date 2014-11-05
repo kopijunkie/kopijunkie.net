@@ -82,7 +82,10 @@
     &:hover {
         cursor: pointer;
 
-        a { color: $nav-link-hover-colour; }
+        a {
+            color: $nav-link-hover-colour;
+            text-decoration: none;
+        }
     }
     a {
         font-weight: bold;

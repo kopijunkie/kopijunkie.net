@@ -1,3 +1,4 @@
+@import url(http://fonts.googleapis.com/css?family=Lobster|Lobster+Two|Merriweather|Marvel);
 /* line 2, /Users/kimmigan/Development/kopijunkie.net/node_modules/node-neat/assets/stylesheets/grid/_grid.scss */
 * {
   -webkit-box-sizing: border-box;
@@ -5,12 +6,12 @@
   box-sizing: border-box;
 }
 
-/* line 3, ../../../src/scss/_general.scss */
+/* line 5, ../../../src/scss/_general.scss */
 html, body {
   height: 100%;
 }
 
-/* line 7, ../../../src/scss/_general.scss */
+/* line 9, ../../../src/scss/_general.scss */
 body {
   background: white;
   color: #393838;
@@ -19,44 +20,70 @@ body {
   line-height: 1.5;
 }
 
-/* line 15, ../../../src/scss/_general.scss */
+/* line 17, ../../../src/scss/_general.scss */
 h1, h2 {
-  text-shadow: 1px 2px #c8e3ff;
+  text-shadow: 0 2px white;
 }
 
-/* line 19, ../../../src/scss/_general.scss */
+/* line 22, ../../../src/scss/_general.scss */
 h1 {
-  color: #123456;
   font-size: 1.625rem;
+  color: #123456;
 }
-
-/* line 24, ../../../src/scss/_general.scss */
-h2 {
-  color: #0b4d90;
-  font-size: 1.375rem;
-  padding-top: 1.5625em;
+@media screen and (min-width: 900px) {
+  /* line 22, ../../../src/scss/_general.scss */
+  h1 {
+    font-family: "Lobster", cursive;
+  }
 }
 
 /* line 30, ../../../src/scss/_general.scss */
+h2 {
+  font-size: 1.375rem;
+  color: #0b4d90;
+  padding-top: 1.5625em;
+}
+@media screen and (min-width: 900px) {
+  /* line 30, ../../../src/scss/_general.scss */
+  h2 {
+    font-family: "Lobster Two", cursive;
+  }
+}
+
+/* line 39, ../../../src/scss/_general.scss */
+h3 {
+  font-size: 1.25rem;
+  color: #5a9ffa;
+}
+@media screen and (min-width: 900px) {
+  /* line 39, ../../../src/scss/_general.scss */
+  h3 {
+    font-family: "Merriweather", sans-serif;
+    text-shadow: 1px 1px 0px #123456;
+  }
+}
+
+/* line 48, ../../../src/scss/_general.scss */
 ul {
   margin: 0;
 }
 
-/* line 34, ../../../src/scss/_general.scss */
+/* line 52, ../../../src/scss/_general.scss */
 a {
   text-decoration: none;
   color: #75410d;
 }
-/* line 38, ../../../src/scss/_general.scss */
+/* line 56, ../../../src/scss/_general.scss */
 a:hover {
   color: #d38444;
+  text-decoration: underline;
 }
-/* line 42, ../../../src/scss/_general.scss */
+/* line 61, ../../../src/scss/_general.scss */
 a:visited {
   color: #b46c04;
 }
 
-/* line 47, ../../../src/scss/_general.scss */
+/* line 66, ../../../src/scss/_general.scss */
 blockquote {
   background: #eddac1;
   padding: 0 0.9375em;
@@ -64,7 +91,7 @@ blockquote {
   border-radius: 8px;
 }
 
-/* line 54, ../../../src/scss/_general.scss */
+/* line 73, ../../../src/scss/_general.scss */
 pre {
   color: #1cad1e;
   text-shadow: none;
@@ -73,17 +100,17 @@ pre {
   border-radius: 5px;
 }
 
-/* line 63, ../../../src/scss/_general.scss */
+/* line 82, ../../../src/scss/_general.scss */
 .left {
   float: left;
 }
 
-/* line 67, ../../../src/scss/_general.scss */
+/* line 86, ../../../src/scss/_general.scss */
 .right {
   float: right;
 }
 
-/* line 72, ../../../src/scss/_general.scss */
+/* line 91, ../../../src/scss/_general.scss */
 .button {
   border: 1px solid #3e1f06;
   border-radius: 3px;
@@ -120,7 +147,7 @@ pre {
   cursor: not-allowed;
 }
 
-/* line 79, ../../../src/scss/_general.scss */
+/* line 98, ../../../src/scss/_general.scss */
 .info {
   display: table;
   font-size: 0.875rem;
@@ -130,13 +157,13 @@ pre {
   margin-bottom: 1.25em;
 }
 
-/* line 88, ../../../src/scss/_general.scss */
+/* line 107, ../../../src/scss/_general.scss */
 .info__icon,
 .info__text {
   display: table-cell;
 }
 
-/* line 92, ../../../src/scss/_general.scss */
+/* line 111, ../../../src/scss/_general.scss */
 .info__icon {
   background-image: url(../img/ic_info_outline_grey600_18dp.png);
   background-color: transparent;
@@ -146,18 +173,18 @@ pre {
   height: 18px;
 }
 
-/* line 102, ../../../src/scss/_general.scss */
+/* line 121, ../../../src/scss/_general.scss */
 .info__text {
   padding-left: 8px;
   font-size: 0.9375rem;
 }
 
-/* line 108, ../../../src/scss/_general.scss */
+/* line 127, ../../../src/scss/_general.scss */
 .appstore-badge {
   display: block;
 }
 
-/* line 111, ../../../src/scss/_general.scss */
+/* line 130, ../../../src/scss/_general.scss */
 .appstore-badge__image {
   width: 112px;
   height: auto;
@@ -166,13 +193,13 @@ pre {
   border-radius: 5px;
 }
 
-/* line 120, ../../../src/scss/_general.scss */
+/* line 139, ../../../src/scss/_general.scss */
 .definition-list__title {
   color: #3f2108;
   font-weight: bold;
 }
 
-/* line 126, ../../../src/scss/_general.scss */
+/* line 145, ../../../src/scss/_general.scss */
 .list--no-bullets {
   list-style: none;
   padding: 0;
@@ -184,18 +211,18 @@ pre {
   clear: both;
 }
 
-/* line 132, ../../../src/scss/_general.scss */
+/* line 151, ../../../src/scss/_general.scss */
 .list__item {
   padding: 0.625em 1.25em;
 }
 
 @media screen and (min-width: 900px) {
-  /* line 138, ../../../src/scss/_general.scss */
+  /* line 157, ../../../src/scss/_general.scss */
   .list__item--horizontal {
     float: left;
   }
 }
-/* line 148, ../../../src/scss/_general.scss */
+/* line 167, ../../../src/scss/_general.scss */
 .wrapper {
   max-width: 68em;
   margin-left: auto;
@@ -211,14 +238,14 @@ pre {
   clear: both;
 }
 @media screen and (min-width: 1280px) {
-  /* line 148, ../../../src/scss/_general.scss */
+  /* line 167, ../../../src/scss/_general.scss */
   .wrapper {
     border-left: 1px solid #be864d;
     border-right: 1px solid #be864d;
   }
 }
 
-/* line 163, ../../../src/scss/_general.scss */
+/* line 182, ../../../src/scss/_general.scss */
 .wrapper--inner {
   width: 100%;
   display: -webkit-box;
@@ -239,7 +266,7 @@ pre {
   -ms-flex-align: stretch;
 }
 
-/* line 169, ../../../src/scss/_general.scss */
+/* line 188, ../../../src/scss/_general.scss */
 .content {
   float: left;
   display: block;
@@ -255,7 +282,7 @@ pre {
   margin-right: 0;
 }
 @media screen and (min-width: 900px) {
-  /* line 169, ../../../src/scss/_general.scss */
+  /* line 188, ../../../src/scss/_general.scss */
   .content {
     float: left;
     display: block;
@@ -585,8 +612,9 @@ pre {
 /* line 85, ../../../src/scss/partials/_nav-menu.scss */
 .nav-menu__item:hover a {
   color: #d2ac85;
+  text-decoration: none;
 }
-/* line 87, ../../../src/scss/partials/_nav-menu.scss */
+/* line 90, ../../../src/scss/partials/_nav-menu.scss */
 .nav-menu__item a {
   font-weight: bold;
   font-size: 1.125rem;
@@ -595,7 +623,7 @@ pre {
   color: white;
   text-shadow: 0 1px 1px black;
 }
-/* line 95, ../../../src/scss/partials/_nav-menu.scss */
+/* line 98, ../../../src/scss/partials/_nav-menu.scss */
 .nav-menu__item a:hover {
   color: #d2ac85;
 }
@@ -622,7 +650,19 @@ pre {
   }
 }
 
-/* line 18, ../../../src/scss/partials/_sidebar.scss */
+/* line 19, ../../../src/scss/partials/_sidebar.scss */
+.twitter--heading {
+  color: #794012;
+  text-shadow: none;
+}
+@media screen and (min-width: 900px) {
+  /* line 19, ../../../src/scss/partials/_sidebar.scss */
+  .twitter--heading {
+    font-family: "Lobster", cursive;
+  }
+}
+
+/* line 27, ../../../src/scss/partials/_sidebar.scss */
 .twitter-timeline {
   height: 350px;
 }
@@ -908,27 +948,33 @@ pre {
   border-right: 1px solid #9c9f9f;
   padding: 0 20px;
 }
-/* line 5, ../../../src/scss/partials/_list-filter.scss */
+@media screen and (min-width: 900px) {
+  /* line 1, ../../../src/scss/partials/_list-filter.scss */
+  .filter-list__item {
+    font-family: "Marvel", sans-serif;
+  }
+}
+/* line 8, ../../../src/scss/partials/_list-filter.scss */
 .filter-list__item:last-child {
   border-right: none;
 }
-/* line 9, ../../../src/scss/partials/_list-filter.scss */
-.filter-list__item a, .filter-list__item a:visited {
-  color: #66cccc;
-}
 /* line 12, ../../../src/scss/partials/_list-filter.scss */
-.filter-list__item a {
-  font-size: 1rem;
-  letter-spacing: 3px;
-  text-shadow: 1px 1px 2px #0D4242;
+.filter-list__item a, .filter-list__item a:visited {
+  color: #009def;
 }
-/* line 17, ../../../src/scss/partials/_list-filter.scss */
+/* line 15, ../../../src/scss/partials/_list-filter.scss */
+.filter-list__item a {
+  font-size: 1.125rem;
+  letter-spacing: 3px;
+}
+/* line 19, ../../../src/scss/partials/_list-filter.scss */
 .filter-list__item a:hover {
   text-decoration: underline;
 }
-/* line 22, ../../../src/scss/partials/_list-filter.scss */
+/* line 23, ../../../src/scss/partials/_list-filter.scss */
 .filter-list__item.active a {
-  color: #0f6c8d;
+  color: #00c57a;
+  text-decoration: underline;
 }
 
 /* line 1, ../../../src/scss/partials/_social-media.scss */

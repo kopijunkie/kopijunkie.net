@@ -10,6 +10,7 @@ $milk: #fffae7;
 // SECONDARY: 50 shades of sky blues (not really)
 $dark-blue: #123456;
 $blueprint-blue: #5588cc;
+$creamy-blue: #3f85e2;
 $greyish-blue: saturate(#afbac0, 20%);
 $sky-blue: #c8e3ff;
 $light-blue: lighten($greyish-blue, 10%);
@@ -60,8 +61,8 @@ $blog-link-colour: $link-colour;
 $blog-link-hover-colour: $greyish-blue;
 $footer-link-colour: $milky-coffee;
 $footer-link-visited-colour: #fff9e8;
-$list-filter-link-colour: #66cccc;
-$list-filter-link-active-colour: #0f6c8d;
+$list-filter-link-colour: #009def;
+$list-filter-link-active-colour: #00c57a;
 $portfolio-link-colour: #0f6c8d;
 $portfolio-link-hover-colour: #66cccc;
 
@@ -69,6 +70,10 @@ $portfolio-link-hover-colour: #66cccc;
 // Headings
 $primary-heading-colour: $dark-blue;
 $primary-heading-shadow-colour: $sky-blue;
+$secondary-heading-colour: $primary-heading-colour;
+$secondary-heading-shadow-colour: $primary-heading-shadow-colour;
+$tertiary-heading-colour: $creamy-blue;
+$tertiary-heading-shadow-colour: $dark-blue;
 
 // Text
 $body-text-colour: $dark-grey;

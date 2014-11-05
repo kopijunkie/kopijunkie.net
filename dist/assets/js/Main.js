@@ -22,9 +22,7 @@ $(function() {
             imageCarousel.init();
             break;
         case "contact":
-            console.log("contact me!");
             var contactForm = $.contactForm();
-
             $("#send").on("click", function(event) {
                 event.preventDefault();
                 $(".error-msg").hide();

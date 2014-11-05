@@ -9,13 +9,12 @@ component: contact-form
         <span class="error-msg" id="name-required">Name required.</span>
     </fieldset>
 
-
     <fieldset class="form__fieldset">
         <label class="form__label" for="email">Email</label>
         <input type="email" class="form__input" id="email" name="email"
             pattern="/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/" placeholder="Your email" required />
         <span class="error-msg" id="email-required">Email required.</span>
-        <span class="error-msg" id="email-error">Invalid email.</span>
+        <span class="error-msg" id="email-invalid">Invalid email.</span>
     </fieldset>
 
     <fieldset class="form__fieldset">
@@ -30,7 +29,7 @@ component: contact-form
         <input type="number" placeholder="The answer is..." class="form__input"
             id="spam-check" name="spam-check" required />
         <span class="error-msg" id="spam-check-required">Answer required.</span>
-        <span class="error-msg" id="spam-check-error">Sorry, wrong answer.</span>
+        <span class="error-msg" id="spam-check-invalid">Sorry, wrong answer.</span>
     </fieldset>
 
     <fieldset class="form__fieldset right">
@@ -38,3 +37,9 @@ component: contact-form
         <input type="submit" class="button button--submit" id="send" value="Send" />
     </fieldset>
 </form>
+
+<div class="form success-msg">
+    <h2 class="success-msg__heading">Success!</h2>
+
+    <p>Thank you for your message. I'll get back to you shortly.</p>
+</div>

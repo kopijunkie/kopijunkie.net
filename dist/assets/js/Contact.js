@@ -16,17 +16,21 @@
                     contactForm.sendMessage(formData);
                 } else {
                     $(".form__input").on("keyup", function() {
+                        var requiredError = "#" + $(this).attr("id") + "-required";
+                        var invalidValueError = "#" + $(this).attr("id") + "-invalid";
                         var value = $(this).val().trim();
-                        if (value.length > 1) {
+
+                        if (value.length > 0) {
                             $(this).removeClass("error");
-                            var errorId = "#" + $(this).attr("id") + "-required";
-                            $(errorId).hide();
+                            $(requiredError).hide();
+                            $(invalidValueError).hide();
                         } else {
                             $(this).addClass("error");
+                            $(invalidValueError).hide();
+                            $(requiredError).show();
                         }
                     });
                 }
-
             },
 
             validateValues: function() {
@@ -49,7 +53,7 @@
                 } else if (!emailRegex.test(email)) {
                     errorCount++;
                     $emailInput.addClass("error");
-                    $("#email-error").show();
+                    $("#email-invalid").show();
                 }
 
                 var $messageTextArea = $("#message");
@@ -70,27 +74,28 @@
                     if (isNaN(spamCheckValue) || parseInt(spamCheckValue) !== 7) {
                         errorCount++;
                         $spamCheckInput.addClass("error");
-                        $("#spam-check-error").show();
+                        $("#spam-check-invalid").show();
                     }
                 }
 
-                console.log(errorCount);
                 return errorCount;
             },
 
             sendMessage: function(formData) {
                 console.log("send message!", formData);
-                // $.ajax({
-                //     type: "POST",
-                //     url: "send.php",
-                //     data: formData,
-                //     success: function() {
-                //         $("form#contact-form").slideUp("slow").before(
-                //         "<div class='success'><h2>Success!</h2>" +
-                //         "<p>Thank you for your email. " +
-                //         "I'll get back to you shortly.</p></div>");
-                //     }
-                // });
+                $formEl.slideUp("slow");
+                $(".success-msg").slideDown("slow");
+                $.ajax({
+                    type: "POST",
+                    url: "send.php",
+                    data: formData,
+                    success: function() {
+                        $("form#contact-form").slideUp("slow").before(
+                        "<div class='success'><h2>Success!</h2>" +
+                        "<p>Thank you for your email. " +
+                        "I'll get back to you shortly.</p></div>");
+                    }
+                });
             }
 
         };

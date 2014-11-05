@@ -723,35 +723,29 @@ pre {
   }
 }
 /* line 12, ../../../src/scss/partials/_form.scss */
-.form .error-msg {
-  display: none;
-  float: right;
-  color: #ec2828;
-}
-/* line 18, ../../../src/scss/partials/_form.scss */
 .form .button {
   margin-right: 10px;
   margin-left: 10px;
 }
 
-/* line 26, ../../../src/scss/partials/_form.scss */
+/* line 20, ../../../src/scss/partials/_form.scss */
 .form__fieldset {
   border: 0;
   padding: 0.9375em 0.625em;
 }
 
-/* line 31, ../../../src/scss/partials/_form.scss */
+/* line 25, ../../../src/scss/partials/_form.scss */
 .form__label,
 .form__input {
   padding: 7px 0;
 }
 
-/* line 36, ../../../src/scss/partials/_form.scss */
+/* line 30, ../../../src/scss/partials/_form.scss */
 .form__label {
   width: 100%;
 }
 @media screen and (min-width: 900px) {
-  /* line 36, ../../../src/scss/partials/_form.scss */
+  /* line 30, ../../../src/scss/partials/_form.scss */
   .form__label {
     float: left;
     display: block;
@@ -764,7 +758,7 @@ pre {
   }
 }
 
-/* line 46, ../../../src/scss/partials/_form.scss */
+/* line 40, ../../../src/scss/partials/_form.scss */
 .form__input {
   width: 100%;
   margin-top: 5px;
@@ -776,7 +770,7 @@ pre {
   padding-right: 10px;
 }
 @media screen and (min-width: 900px) {
-  /* line 46, ../../../src/scss/partials/_form.scss */
+  /* line 40, ../../../src/scss/partials/_form.scss */
   .form__input {
     float: left;
     display: block;
@@ -806,19 +800,41 @@ pre {
 .form__input:-ms-input-placeholder {
   color: #907c6b;
 }
-/* line 70, ../../../src/scss/partials/_form.scss */
+/* line 64, ../../../src/scss/partials/_form.scss */
 .form__input:focus {
   background: #f5d3a4;
 }
-/* line 74, ../../../src/scss/partials/_form.scss */
+/* line 68, ../../../src/scss/partials/_form.scss */
 .form__input.error {
   border-color: #fd3d3d;
   background: #ffd8d8;
 }
 
-/* line 79, ../../../src/scss/partials/_form.scss */
+/* line 73, ../../../src/scss/partials/_form.scss */
 .form__textarea {
   height: 200px;
+}
+
+/* line 78, ../../../src/scss/partials/_form.scss */
+.error-msg,
+.success-msg {
+  display: none;
+}
+
+/* line 82, ../../../src/scss/partials/_form.scss */
+.error-msg {
+  float: right;
+  color: #ec2828;
+}
+
+/* line 86, ../../../src/scss/partials/_form.scss */
+.success-msg {
+  border: 2px solid #a6c432;
+}
+/* line 89, ../../../src/scss/partials/_form.scss */
+.success-msg .success-msg__heading {
+  padding-top: 0;
+  margin-top: 0;
 }
 
 /* line 1, ../../../src/scss/partials/_carousel.scss */

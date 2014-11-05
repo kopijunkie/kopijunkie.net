@@ -3,10 +3,18 @@
 $(function() {
 
     var path = window.location.pathname;
-    var pageFile = path.split("/").pop();
-    var pageName = pageFile.split(".html").shift();
+    var currentPageFile = path.split("/").pop();
+    var currentPage = currentPageFile.split(".html").shift();
+    var $navMenuLinks = $(".nav-menu__link");
 
-    switch (pageName) {
+    $navMenuLinks.each(function() {
+        var href = $(this).attr("href").split(".html").shift();
+        if (href === currentPage) {
+            $(this).parent().addClass("active");
+        }
+    });
+
+    switch (currentPage) {
         case "work":
             var portfolioFilter = $.listFilter({
                 animate: true,

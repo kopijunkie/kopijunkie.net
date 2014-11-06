@@ -641,6 +641,7 @@ pre {
     margin-right: 2.35765%;
     width: 27.49666%;
     margin-right: 0;
+    padding-top: 1.25em;
     padding-right: 1.6875em;
     padding-bottom: 1.25em;
   }
@@ -650,19 +651,36 @@ pre {
   }
 }
 
-/* line 19, ../../../src/scss/partials/_sidebar.scss */
-.twitter--heading {
+/* line 21, ../../../src/scss/partials/_sidebar.scss */
+.avatar__container {
+  height: 113px;
+  width: 114px;
+  border-radius: 50%;
+  background: white;
+  border: 1px solid #e8cead;
+}
+
+/* line 28, ../../../src/scss/partials/_sidebar.scss */
+.avatar__image {
+  margin: 6px;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+
+/* line 36, ../../../src/scss/partials/_sidebar.scss */
+.twitter__heading {
   color: #794012;
   text-shadow: none;
 }
 @media screen and (min-width: 900px) {
-  /* line 19, ../../../src/scss/partials/_sidebar.scss */
-  .twitter--heading {
+  /* line 36, ../../../src/scss/partials/_sidebar.scss */
+  .twitter__heading {
     font-family: "Lobster", cursive;
   }
 }
 
-/* line 27, ../../../src/scss/partials/_sidebar.scss */
+/* line 44, ../../../src/scss/partials/_sidebar.scss */
 .twitter-timeline {
   height: 350px;
 }

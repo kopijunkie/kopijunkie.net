@@ -11,7 +11,12 @@
     }
 
     @include omega;
-    background: $nav-bg-colour;
+    background: $mobile-header-bg-colour;
+
+    @include media($tablet) {
+        background: $nav-bg-colour;
+    }
+
     padding: 0 em(10px);
     box-shadow: 3px 3px 10px rgba(0,0,0,0.45);
 }
@@ -58,10 +63,18 @@
 
 .nav-menu__list {
     display: none;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 45px;
 
     @include media($tablet) {
 
         display: block;
+        position: relative;
+        left: auto;
+        top: auto;
+        border-top: none;
 
     }
 }
@@ -71,20 +84,39 @@
         left: em(15px);
         right: em(15px);
     }
-    border: {
-        top: 6px solid $nav-bg-colour;
-        bottom: 5px solid $nav-bg-colour;
+
+    height: 50px;
+    background: $nav-bg-colour;
+    border-bottom: 1px solid white;
+
+    &:last-child {
+        border-bottom: none;
     }
+
+    @include media($tablet) {
+
+        height: auto;
+        border: {
+            top: 6px solid $nav-bg-colour;
+            bottom: 5px solid $nav-bg-colour;
+        }
+
+    }
+
     &:hover,
     &.active {
         border-bottom: 5px solid $nav-link-active-colour;
     }
-    &:hover {
-        cursor: pointer;
+    &:hover { cursor: pointer; }
+    &:hover a,
+    a:hover {
+        color: $nav-link-hover-colour;
+    }
+    &.active a {
+        color: $nav-link-active-colour;
 
-        a {
-            color: $nav-link-hover-colour;
-            text-decoration: none;
+        @include media($tablet) {
+            color: inherit;
         }
     }
     a {
@@ -94,7 +126,10 @@
         letter-spacing: 5px;
         color: $nav-link-colour;
         text-shadow: 0 1px 1px black;
-
-        &:hover { color: $nav-link-hover-colour; }
+        text-decoration: none;
     }
+}
+
+.nav-menu__link {
+    display: block;
 }

@@ -1,8 +1,12 @@
+.filter-list {
+    margin-bottom: em(15px);
+}
+
 .filter-list__item {
     @include media($tablet) {
         font-family: "Marvel", sans-serif;
+        border-right: 1px solid $light-grey;
     }
-    border-right: 1px solid $light-grey;
     padding: 0 20px;
 
     &:last-child {

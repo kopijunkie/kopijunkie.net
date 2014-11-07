@@ -15,9 +15,10 @@ $greyish-blue: saturate(#afbac0, 20%);
 $sky-blue: #c8e3ff;
 $light-blue: lighten($greyish-blue, 10%);
 
-// TERTIARY: the whites
+// TERTIARY: the others
 $greyish-white: #ebe8e8;
 $light-grey: #9c9f9f;
+$soft-grey: #5a5a5a;
 $dark-grey: #393838;
 $error-red: #ec2828;
 
@@ -26,6 +27,7 @@ $error-red: #ec2828;
 $body-bg-colour: white;
 $wrapper-bg-colour: $milk;
 $header-bg-colour: #f7f2f8;
+$mobile-header-bg-colour: $milky-coffee;
 $nav-bg-colour: $dark-coffee;
 $footer-bg-colour: $dark-grey;
 $form-input-bg-colour: #f5d3a4;

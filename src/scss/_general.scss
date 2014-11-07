@@ -96,7 +96,7 @@ pre {
 
 $icon-size: 18px;
 .info {
-    display: table;
+    @include clearfix;
     font-size: rem(14px);
     color: darken($light-grey, 5%);
     text-shadow: 1px 1px 1px $greyish-white;
@@ -106,7 +106,7 @@ $icon-size: 18px;
 }
 .info__icon,
 .info__text {
-    display: table-cell;
+    float: left;
 }
 .info__icon {
     background: {
@@ -121,6 +121,7 @@ $icon-size: 18px;
 .info__text {
     padding-left: 8px;
     font-size: rem(15px);
+    width: 85%;
 }
 
 

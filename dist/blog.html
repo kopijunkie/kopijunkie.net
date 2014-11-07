@@ -75,11 +75,12 @@
         
 <nav class="nav-menu">
 
-    <button class="nav-menu__icon icon icon-ic_menu_white_24dp" role="tab" aria-expanded="false">Show navigation</button>
+    <button id="mobile-menu-toggle" class="nav-menu__icon icon icon-ic_menu_white_24dp"
+        role="tab" aria-expanded="false">Show navigation</button>
 
     <h1 class="header__logo--mobile" role="banner">KopiJunkie</h1>
 
-    <ul class="nav-menu__list list--no-bullets" role="navigation">
+    <ul id="mobile-nav-menu" class="nav-menu__list list--no-bullets" role="navigation">
         <li class="nav-menu__item list__item list__item--horizontal">
             <a href="index.html" class="nav-menu__link">Home</a>
         </li>
@@ -152,7 +153,14 @@
 <li>2014-10-18   v0.3.0   Styling for the site and blog ported over, with some style updates</li>
 <li>2014-10-19   v0.4.0   Set up blog post generation with Assemble and Grunt</li>
 <li>2014-10-23   v0.5.0   Set up Grunt tasks</li>
-<li>2014-11-05   v0.6.0   Refactored JavaScript UI components</li>
+<li>2014-11-05   v0.6.0   Refactored JavaScript UI components, added fonts for typography.</li>
+</ul>
+<h2 id="todo">TODO</h2>
+<ul>
+<li>Fix Work page&#39;s portfolio images display on mobiles - <code>Sass</code>/<code>JS</code></li>
+<li>Port over <code>contact.php</code>, <code>send.php</code> back end functions - <code>PHP</code></li>
+<li>Fix positioning of Prev/Next buttons in Work page carousel - <code>Sass</code></li>
+<li>Refactor Last.fm visualiser - <code>JS</code></li>
 </ul>
 
     </article>
@@ -235,7 +243,7 @@ tags: [&quot;development&quot;, &quot;workflow&quot;, &quot;grunt&quot;]</p>
 
             <aside class="sidebar" role="complementary">
                 
-<section>
+<section class="sidebar__section">
     <div class="avatar__container">
         <img class="avatar__image"
                 src="assets/img/avatar.jpg"
@@ -246,7 +254,7 @@ tags: [&quot;development&quot;, &quot;workflow&quot;, &quot;grunt&quot;]</p>
     </p>
 </section>
 
-<section>
+<section class="sidebar__section">
     <h3 class="twitter__heading">Coffee Fueled Thoughts&hellip;</h3>
 
     <div id="timeline-container" class="twitter__feed">

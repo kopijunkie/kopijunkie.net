@@ -16,14 +16,23 @@
     }
 }
 
+.sidebar__section {
+    @include clearfix;
+}
+
+
 $avatar-size: 100px;
 $padding: 15px;
 .avatar__container {
+    @include clearfix;
     height: $avatar-size + 13px;
     width: $avatar-size + 14px;
     border-radius: 50%;
     background: white;
     border: 1px solid $avatar-border-colour;
+    float: left;
+    margin-right: 15px;
+    shape-outside: circle();
 }
 .avatar__image {
     margin: 6px;

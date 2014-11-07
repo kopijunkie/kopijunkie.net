@@ -75,11 +75,12 @@
         
 <nav class="nav-menu">
 
-    <button class="nav-menu__icon icon icon-ic_menu_white_24dp" role="tab" aria-expanded="false">Show navigation</button>
+    <button id="mobile-menu-toggle" class="nav-menu__icon icon icon-ic_menu_white_24dp"
+        role="tab" aria-expanded="false">Show navigation</button>
 
     <h1 class="header__logo--mobile" role="banner">KopiJunkie</h1>
 
-    <ul class="nav-menu__list list--no-bullets" role="navigation">
+    <ul id="mobile-nav-menu" class="nav-menu__list list--no-bullets" role="navigation">
         <li class="nav-menu__item list__item list__item--horizontal">
             <a href="index.html" class="nav-menu__link">Home</a>
         </li>
@@ -160,7 +161,7 @@
 
             <aside class="sidebar" role="complementary">
                 
-<section>
+<section class="sidebar__section">
     <div class="avatar__container">
         <img class="avatar__image"
                 src="assets/img/avatar.jpg"
@@ -171,7 +172,7 @@
     </p>
 </section>
 
-<section>
+<section class="sidebar__section">
     <h3 class="twitter__heading">Coffee Fueled Thoughts&hellip;</h3>
 
     <div id="timeline-container" class="twitter__feed">

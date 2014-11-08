@@ -87,12 +87,17 @@
         @include clearfix;
         display: block;
         margin-top: 100px;
+        padding-bottom: 15px;
+        border-bottom: 1px solid $border-colour;
+        box-shadow: 3px 3px 10px rgba(0,0,0,0.45);
 
     }
 
     @include media($desktop) {
 
         margin-top: 175px;
+        box-shadow: none;
+        border: none;
 
     }
 }

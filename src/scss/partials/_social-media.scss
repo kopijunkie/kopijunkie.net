@@ -1,5 +1,6 @@
 .social-media {
     padding-top: 12px;
+    margin-right: em(15px);
     font-size: rem(13px);
 
     @include media($desktop) {

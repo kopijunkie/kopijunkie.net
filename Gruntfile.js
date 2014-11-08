@@ -72,7 +72,7 @@ module.exports = function(grunt) {
     },
 
     jshint: {
-      files: [ "Gruntfile.js", "src/js/**/*.js" ],
+      files: [ "Gruntfile.js", "src/js/*.js", "!src/js/last.fm.records.js" ],
       options: {
         jshintrc: ".jshintrc",
         reporter: require("jshint-stylish")

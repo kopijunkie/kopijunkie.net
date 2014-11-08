@@ -151,7 +151,7 @@
     <section class="media-wall">
         <h3 class="media-wall__heading">What I'm Listening To...</h3>
 
-        <div id="lastfm-records" class="lastfm-records"></div>
+        <div id="lastfmrecords" class="lastfm-records"></div>
     </section>
 
     <section class="media-wall">
@@ -165,7 +165,7 @@
     <section class="site-info" role="contentinfo">
         <ul class="site-info__list list--no-bullets">
             <li class="site-info__item site-info__copyright list__item--horizontal">
-                Copyright &copy; 2014 Kimmi Gan / KopiJunkie
+                Copyright &copy;<span id="year"></span> Kimmi Gan / KopiJunkie
             </li>
             <li class="site-info__item list__item--horizontal">
                 <a class="site-info__link" href="contact.html" title="Get In Touch">Contact</a>
@@ -193,12 +193,14 @@
     </script>
 
     <!-- build:js(dist) assets/js/libs.min.js -->
+    <script src="assets/libs/momentjs/moment.js"></script>
     <script src="assets/libs/jquery/jquery.js"></script>
     <script src="assets/libs/lightbox/js/lightbox.js"></script>
     <script src="assets/libs/slick.js/slick.min.js"></script>
     <!-- endbuild -->
 
     <!-- build:js(dist) assets/js/site.min.js -->
+    <script src="assets/js/last.fm.records.js"></script>
     <script src="assets/js/Main.js"></script>
     <script src="assets/js/ListFilter.js"></script>
     <script src="assets/js/Contact.js"></script>

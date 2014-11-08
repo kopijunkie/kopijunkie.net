@@ -51,4 +51,21 @@ $(function() {
             break;
     }
 
+    window.lastFmRecords.init({
+        username: "KopiJunkie",
+        count: 5,
+        period: "lovedtracks",
+        defaultthumb: "http://cdn.last.fm/flatness/catalogue/noimage/2/default_album_large.png"
+    });
+    $("#lastfmrecords a").append("<span class='vinyl'></span>");
+    $("#lastfmrecords a").hover(function() {
+            $(this).children(".vinyl").stop(true,true).animate({"left": "78px"}, 500);
+        }, function() {
+            $(this).children(".vinyl").animate({"left": "28px"}, 500);
+        }
+    );
+
+    var now = moment();
+    $("#year").text(" " + now.year());
+
 });

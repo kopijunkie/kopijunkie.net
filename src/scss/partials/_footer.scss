@@ -2,7 +2,6 @@
     @include span-columns(12);
     @include omega;
     padding: em(10px);
-    margin-top: em(30px);
     background: $footer-bg-colour;
     color: $footer-text-colour;
     font-size: rem(16px);
@@ -27,6 +26,7 @@
     }
 }
 .media-wall__heading {
+    color: white;
     font-size: rem(25px);
     letter-spacing: 3px;
     text-shadow:
@@ -41,7 +41,7 @@
 
 
 .site-info {
-    clear: both;
+    @include clearfix;
     margin-top: em(15px);
     font-size: rem(13px);
 }
@@ -53,7 +53,13 @@
     }
 
     &:not(.site-info__copyright) {
-      display: none;
+        display: none;
+
+        @include media($tablet) {
+
+            display: block;
+
+        }
     }
 }
 .site-info__link {

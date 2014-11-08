@@ -1,6 +1,7 @@
 .nav-menu {
     @include span-columns(12);
     height: 45px;
+    display: none;
 
     @include media($desktop) {
 
@@ -10,9 +11,6 @@
 
     }
 
-    @include omega;
-    background: $mobile-header-bg-colour;
-
     @include media($tablet) {
         background: $nav-bg-colour;
     }
@@ -21,48 +19,7 @@
     box-shadow: 3px 3px 10px rgba(0,0,0,0.45);
 }
 
-
-.nav-menu__icon {
-    display: inline-block;
-    background: {
-        image: url(../img/ic_menu_white_24dp.png);
-        color: transparent;
-        position: 50% 75%;
-    }
-    border: 0;
-    @include hide-text;
-    $size: 32px;
-    width: $size;
-    height: $size;
-
-    @include media($tablet) {
-
-        display: none;
-
-    }
-}
-
-.header__logo--mobile {
-    @include hide-text;
-    display: inline-block;
-    margin: {
-        top: 0;
-        left: 15px;
-    }
-    height: 40px;
-    background: url(../img/kopijunkie.png) no-repeat 50% 2px;
-    background-size: 139px 40px;
-
-    @include media($tablet) {
-
-        display: none;
-
-    }
-}
-
-
 .nav-menu__list {
-    display: none;
     position: absolute;
     width: 100%;
     left: 0;

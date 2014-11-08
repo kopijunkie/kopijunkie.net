@@ -20,24 +20,30 @@ h1, h2 {
 
 h1 {
     @include media($tablet) {
+
         font-family: "Lobster", cursive;
+
     }
     font-size: rem(26px);
     color: $primary-heading-colour;
 }
 
 h2 {
-    @include media($tablet) {
-        font-family: "Lobster Two", cursive;
-    }
     font-size: rem(22px);
     color: saturate(lighten($secondary-heading-colour, 10%), 20%);
-    padding-top: em(25px);
+
+    @include media($tablet) {
+
+        font-family: "Lobster Two", cursive;
+        padding-top: em(25px);
+
+    }
 }
 
 h3 {
     font-size: rem(20px);
     color: saturate(lighten($tertiary-heading-colour, 10%), 20%);
+
     @include media($tablet) {
 
         font-family: "Merriweather", sans-serif;

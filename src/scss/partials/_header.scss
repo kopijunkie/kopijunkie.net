@@ -1,6 +1,8 @@
 .header {
     @include span-columns(12);
     @include omega;
+    @include clearfix;
+    background: $mobile-header-bg-colour;
 
     @include media($tablet) {
 
@@ -19,29 +21,60 @@
     }
 }
 
-.header__logo {
-    margin: 0;
-    display: none;
+.nav-menu__icon {
+    @include hide-text;
+    display: inline-block;
+    background: {
+        image: url(../img/ic_menu_white_24dp.png);
+        color: transparent;
+        position: 50% 75%;
+    }
+    border: 0;
+    $size: 32px;
+    width: $size;
+    height: $size;
+    float: right;
+    margin: 10px 15px 0px 10px;
 
     @include media($tablet) {
 
-        @include clearfix;
-        @include hide-text;
+        display: none;
+
+    }
+}
+
+.header__logo {
+    @include clearfix;
+    @include hide-text;
+    float: left;
+    display: inline-block;
+    background: url(../img/kopijunkie.png) no-repeat;
+    background-size: 139px 40px;
+    width: 139px;
+    height: 40px;
+    margin: {
+        top: 3px;
+        bottom: 5px;
+        left: em(10px);
+    }
+
+
+    @include media($tablet) {
+
         display: block;
-        height: 80px;
+        background-size: 350px 84px;
+        width: 350px;
+        height: 84px;
         margin: {
             top: 10px;
             left: em(20px);
         }
-        background: url(../img/kopijunkie.png) no-repeat;
-        background-size: 350px 84px;
 
     }
 
     @include media($desktop) {
 
         background-image: none;
-        height: 175px;
 
     }
 }
@@ -53,6 +86,13 @@
 
         @include clearfix;
         display: block;
+        margin-top: 100px;
+
+    }
+
+    @include media($desktop) {
+
+        margin-top: 175px;
 
     }
 }

@@ -3,14 +3,14 @@ component: contact-form
 ---
 <form id="contact-form" class="form form--bordered" action="contact.php" method="POST">
     <fieldset class="form__fieldset">
-        <label class="form__label" for="name">Name</label>
+        <label class="form__label" for="name">Your Name</label>
         <input type="text" placeholder="Your name" maxlength="40"
             class="form__input" id="name" name="name" required />
         <span class="error-msg" id="name-required">Name required.</span>
     </fieldset>
 
     <fieldset class="form__fieldset">
-        <label class="form__label" for="email">Email</label>
+        <label class="form__label" for="email">Your Email</label>
         <input type="email" class="form__input" id="email" name="email"
             pattern="/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/" placeholder="Your email" required />
         <span class="error-msg" id="email-required">Email required.</span>
@@ -18,18 +18,10 @@ component: contact-form
     </fieldset>
 
     <fieldset class="form__fieldset">
-        <label class="form__label" for="message">Message</label>
+        <label class="form__label" for="message">Your Message</label>
         <textarea class="form__input form__textarea" placeholder="Your message"
             required id="message" name="message" ></textarea>
         <span class="error-msg" id="message-required">Message required.</span>
-    </fieldset>
-
-    <fieldset class="form__fieldset">
-        <label class="form__label" for="spam-check">What's 5 + 2?</label>
-        <input type="number" placeholder="The answer is..." class="form__input"
-            id="spam-check" name="spam-check" required />
-        <span class="error-msg" id="spam-check-required">Answer required.</span>
-        <span class="error-msg" id="spam-check-invalid">Sorry, wrong answer.</span>
     </fieldset>
 
     <fieldset class="form__fieldset right">

@@ -15,7 +15,6 @@ body {
 }
 
 h1, h2 {
-    // text-shadow: 1px 3px 3px $primary-heading-shadow-colour;
     text-shadow: 0 2px white;
 }
 
@@ -40,13 +39,20 @@ h3 {
     font-size: rem(20px);
     color: saturate(lighten($tertiary-heading-colour, 10%), 20%);
     @include media($tablet) {
+
         font-family: "Merriweather", sans-serif;
         text-shadow: 1px 1px 0px $tertiary-heading-shadow-colour;
+
     }
 }
 
 ul {
     margin: 0;
+    padding-left: em(25px);
+
+    @include media($tablet) {
+        padding-left: em(40px);
+    }
 }
 
 a {
@@ -68,6 +74,13 @@ blockquote {
     padding: 0 em(15px);
     border: 2px solid $border-colour;
     border-radius: 8px;
+    margin: 0;
+
+    @include media($tablet) {
+
+        margin: 20px 40px;
+
+    }
 }
 
 pre {
@@ -76,6 +89,16 @@ pre {
     background: $codeblock-bg-colour;
     padding: em(15px) em(20px);
     border-radius: 5px;
+}
+
+dt, dd {
+    margin-left: 0;
+
+    @include media($tablet) {
+
+        margin-left: 40px;
+
+    }
 }
 
 
@@ -98,7 +121,7 @@ $icon-size: 18px;
 .info {
     @include clearfix;
     font-size: rem(14px);
-    color: darken($light-grey, 5%);
+    color: darken($light-grey, 10%);
     text-shadow: 1px 1px 1px $greyish-white;
     margin: em(15px) {
         bottom: em(20px);
@@ -127,9 +150,10 @@ $icon-size: 18px;
 
 .appstore-badge {
     display: block;
+    width: 130px;
 }
 .appstore-badge__image {
-    width: 112px;
+    width: 115px;
     height: auto;
     box-shadow: 1px 2px 3px $image-box-shadow;
     border: 1px solid $image-border-colour;

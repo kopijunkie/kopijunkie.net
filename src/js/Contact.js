@@ -64,20 +64,6 @@
                     $("#message-required").show();
                 }
 
-                var $spamCheckInput = $("#spam-check");
-                var spamCheckValue = $spamCheckInput.val().trim();
-                if (spamCheckValue.length === 0) {
-                    errorCount++;
-                    $spamCheckInput.addClass("error");
-                    $("#spam-check-required").show();
-                } else {
-                    if (isNaN(spamCheckValue) || parseInt(spamCheckValue) !== 7) {
-                        errorCount++;
-                        $spamCheckInput.addClass("error");
-                        $("#spam-check-invalid").show();
-                    }
-                }
-
                 return errorCount;
             },
 

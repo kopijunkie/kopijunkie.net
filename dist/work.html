@@ -25,6 +25,7 @@
     <!-- build:css(dist) assets/css/style.min.css -->
     <link href="assets/libs/normalize.css/normalize.css" rel="stylesheet">
     <link href="assets/libs/lightbox/css/lightbox.css" rel="stylesheet">
+    <link href="assets/libs/slick.js/slick.css" rel="stylesheet">
     <link href="assets/css/main.css" rel="stylesheet">
     <!-- endbuild -->
 
@@ -216,25 +217,25 @@
         </ul>
 
         <p>
-            I was involved in a number of sprints throughout 2011-2012 implementing various front end design updates and new features added across all three sites, such as
+            I was involved in a number of sprints throughout 2011-2012 implementing various front end design updates and new features across all 3 sites, such as
         </p>
 
         <ul class="work-done">
             <li>
-                User interface for My Domino's (registered users area, including related functionality throughout each site)
+                User interface for My Domino's &mdash; a registered users area, and related user interfaces for a signed in My Domino's user throughout each site
             </li>
             <li>
-                Built layout for Store Locator page in Domino's Germany site
+                Built layout for Store Locator page in Domino's Pizza Germany site
             </li>
             <li>
-                Domino's Movies front end
+                User interface for Domino's Movies area which gives users the option to rent a movie with their pizza orders
             </li>
         </ul>
 
         <dl>
             <dt>Client:</dt>
             <dd>
-                Domino's Pizza UK, Ireland and Germany
+                Domino's Pizza
                 <em class="work-done-at">
                     &lowast; Work done at Vexed Digital (now known as Future Platforms)
                 </em>
@@ -243,34 +244,34 @@
     </li>
 
     <li class="portfolio-list__item sites">
-        <ul id="devere-carousel" class="carousel">
-            <li class="carousel__slide">
+        <div id="devere-carousel" class="carousel">
+            <div class="carousel__slide">
                 <a class="preview" href="assets/img/portfolio/devere-main.png"
                     data-lightbox="devere-sites" data-title="De Vere Group"
                     title="De Vere Group">
-                    <img src="assets/img/portfolio/devere-main-thumb.png" alt="De Vere (main) preview" />
+                    <img data-lazy="assets/img/portfolio/devere-main-thumb.png" alt="De Vere (main) preview" />
                 </a>
-            </li>
-            <li class="carousel__slide">
+            </div>
+            <div class="carousel__slide">
                 <a class="preview" href="assets/img/portfolio/devere-hotels.png"
                     data-lightbox="devere-sites" data-title="De Vere Group"
                     title="De Vere Hotels">
-                    <img src="assets/img/portfolio/devere-hotels-thumb.png" alt="De Vere Hotels preview" />
+                    <img data-lazy="assets/img/portfolio/devere-hotels-thumb.png" alt="De Vere Hotels preview" />
                 </a>
-            </li>
-            <li class="carousel__slide">
+            </div>
+            <div class="carousel__slide">
                 <a class="preview" href="assets/img/portfolio/devere-venues.png"
                     data-lightbox="devere-sites" data-title="De Vere Group"
                     title="De Vere Venues">
-                    <img src="assets/img/portfolio/devere-venues-thumb.png" alt="De Vere Venues preview" />
+                    <img data-lazy="assets/img/portfolio/devere-venues-thumb.png" alt="De Vere Venues preview" />
                 </a>
-            </li>
-            <li class="carousel__slide">
+            </div>
+            <div class="carousel__slide">
                 <a href="assets/img/portfolio/devere-booking.png" data-lightbox="devere-sites" data-title="De Vere Booking Engine" title="De Vere Booking Engine" class="preview" >
-                    <img src="assets/img/portfolio/devere-booking-thumb.png" alt="De Vere Booking Engine preview" />
+                    <img data-lazy="assets/img/portfolio/devere-booking-thumb.png" alt="De Vere Booking Engine preview" />
                 </a>
-            </li>
-        </ul>
+            </div>
+        </div>
 
         <ul class="list--no-bullets portfolio-links-list">
             <li class="list__item--horizontal portfolio-links-list__item">
@@ -565,12 +566,12 @@
     <!-- build:js(dist) assets/js/libs.min.js -->
     <script src="assets/libs/jquery/jquery.js"></script>
     <script src="assets/libs/lightbox/js/lightbox.js"></script>
+    <script src="assets/libs/slick.js/slick.min.js"></script>
     <!-- endbuild -->
 
     <!-- build:js(dist) assets/js/site.min.js -->
     <script src="assets/js/Main.js"></script>
     <script src="assets/js/ListFilter.js"></script>
-    <script src="assets/js/ImageCarousel.js"></script>
     <script src="assets/js/Contact.js"></script>
     <!-- endbuild -->
   </body>

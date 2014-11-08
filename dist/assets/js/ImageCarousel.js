@@ -8,7 +8,7 @@
 
             settings: $.extend({
                 slideWidth: 480,
-                slideHeight: 170,
+                slideHeight: "auto",
                 speed: "slow",
                 container: $("#carousel")
             }, options),
@@ -37,8 +37,10 @@
 
             initialiseCarousel: function() {
                 var $carousel = carousel.settings.container;
-                $carousel.width(carousel.settings.slideWidth + 1);
-                $carousel.height(carousel.settings.slideHeight + 1);
+                $carousel.width(carousel.settings.slideWidth);
+                if (carousel.settings.slideHeight !== "auto") {
+                    $carousel.height(carousel.settings.slideHeight + 1);
+                }
 
                 var $slides = $carousel.find("li");
                 $slides.wrapAll("<div class='carousel__slides'></div>")

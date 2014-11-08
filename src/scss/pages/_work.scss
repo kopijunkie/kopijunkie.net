@@ -1,19 +1,52 @@
 $preview-height: 160px;
 $preview-width: 478px;
+$mobile-preview-width: 260px;
+
 .portfolio-list {
 
     .preview {
         display: block;
-        height: $preview-height;
-        width: $preview-width;
         margin: 0 auto;
+        width: $mobile-preview-width;
+        height: auto;
+
+        @include media($tablet) {
+
+            width: $preview-width;
+            height: $preview-height;
+
+        }
+
+        img {
+            width: $mobile-preview-width;
+            height: auto;
+            border: 1px solid $image-border-colour;
+
+            @include media($tablet) {
+
+                width: $preview-width;
+                height: $preview-height;
+
+            }
+        }
+    }
+
+    .carousel {
+        width: $mobile-preview-width;
+        margin: 0 auto;
+
+        @include media($tablet) {
+
+            width: $preview-width;
+
+        }
     }
 
 }
 
 .portfolio-list__item {
     padding: 10px;
-    margin: 0 10px 10px 0;
+    margin-bottom: 10px;
     background: lighten($light-grey, 20%);
     border-radius: 10px;
 
@@ -32,8 +65,17 @@ $preview-width: 478px;
 }
 
 .portfolio-list__image {
-    height: $preview-height;
-    width: $preview-width;
+
+    height: auto;
+    width: $mobile-preview-width;
+
+    @include media($tablet) {
+
+        height: $preview-height;
+        width: $preview-width;
+
+    }
+
     border: 1px solid $image-border-colour;
     box-shadow: 1px 2px 3px $image-box-shadow;
 }
@@ -43,16 +85,35 @@ $preview-width: 478px;
     padding: 10px;
 }
 
-.portfolio-links-list__item {
+ @include media($tablet) {
 
-    &:after {
-        content: "|";
-        padding: 0 5px;
+    .portfolio-links-list__item {
+
+        &:after {
+            content: "|";
+            padding: 0 5px;
+        }
+
+        &:last-child:after {
+            content: none;
+        }
     }
 
-    &:last-child:after {
-        content: none;
+}
+
+.work-done {
+    padding-left: 20px;
+
+    @include media($tablet) {
+
+        padding-left: 30px;
+
     }
+}
+
+
+.carousel__slides {
+    @include clearfix;
 }
 
 

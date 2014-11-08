@@ -33,10 +33,13 @@ $(function() {
             });
             portfolioFilter.init();
 
-            var imageCarousel = $.imageCarousel({
-                container: $("ul#devere-carousel")
+            $(".carousel").slick({
+                lazyLoad: "ondemand",
+                autoplay: true,
+                autoplaySpeed: 5000,
+                infinite: true
             });
-            imageCarousel.init();
+
             break;
         case "contact":
             var contactForm = $.contactForm();

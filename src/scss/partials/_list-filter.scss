@@ -6,12 +6,13 @@
     @include media($tablet) {
         font-family: "Marvel", sans-serif;
         border-right: 1px solid $light-grey;
+
+        &:first-child,
+        &:last-child {
+            border-right: none;
+        }
     }
     padding: 0 20px;
-
-    &:last-child {
-        border-right: none;
-    }
 
     a, a:visited {
         color: $list-filter-link-colour;

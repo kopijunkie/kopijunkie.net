@@ -115,6 +115,10 @@ module.exports = function(grunt) {
         files: [ "<%= config.src %>/{content,data,templates}/{,*/}*.{md,hbs,yml}" ],
         tasks: [ "assemble" ]
       },
+      imagemin: {
+        files: [ "<%= config.dist %>/assets/{,*/}*.{png,jpg,jpeg,gif,webp,svg}" ],
+        tasks: [ "newer:imagemin" ]
+      },
       livereload: {
         options: {
           livereload: "<%= connect.options.livereload %>"

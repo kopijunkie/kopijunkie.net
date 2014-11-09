@@ -9,9 +9,7 @@
  * 2014-10-19   v0.4.0   Set up blog post generation with Assemble and Grunt
  * 2014-10-23   v0.5.0   Set up Grunt tasks
  * 2014-11-05   v0.6.0   Refactored JavaScript UI components, added fonts for typography.
+ * 2014-11-05   v0.7.0   Set up Travis CI build.
 
 ## TODO
- * Fix Work page's portfolio images display on mobiles - `Sass`/`JS`
- * Port over `contact.php`, `send.php` back end functions - `PHP`
- * Fix positioning of Prev/Next buttons in Work page carousel - `Sass`
- * Refactor Last.fm visualiser - `JS`
+ * Write my own Last.fm visualiser (using library used in existing site) - `JS`

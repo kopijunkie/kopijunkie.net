@@ -1,0 +1,16 @@
+language: node_js
+node_js:
+    - "0.10"
+install:
+    - "gem install sass"
+    - "gem install bourbon"
+    - "gem install neat"
+    - "npm install -g grunt-cli"
+    - "npm install -g bower"
+    - "npm install"
+    - "bower install"
+script:
+    - "grunt build"
+branches:
+    only:
+        - "master"

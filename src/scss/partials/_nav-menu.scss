@@ -71,10 +71,6 @@
     }
     &.active a {
         color: $nav-link-active-colour;
-
-        @include media($tablet) {
-            color: inherit;
-        }
     }
     a {
         font-weight: bold;

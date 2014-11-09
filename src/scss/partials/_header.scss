@@ -21,7 +21,7 @@
     }
 }
 
-.nav-menu__icon {
+.menu__icon {
     @include hide-text;
     display: inline-block;
     background: {
@@ -33,7 +33,6 @@
     $size: 32px;
     width: $size;
     height: $size;
-    float: right;
     margin: 10px 15px 0px 10px;
 
     @include media($tablet) {
@@ -46,7 +45,6 @@
 .header__logo {
     @include clearfix;
     @include hide-text;
-    float: left;
     display: inline-block;
     background: url(../img/kopijunkie.png) no-repeat;
     background-size: 139px 40px;

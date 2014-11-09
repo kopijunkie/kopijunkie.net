@@ -41,9 +41,9 @@
     <div class="wrapper">
         
 <header class="header" role="banner">
-    <h1 class="header__logo"><a href="http://kopijunkie.net">KopiJunkie</a></h1>
+    <h1 class="header__logo left"><a href="http://kopijunkie.net">KopiJunkie</a></h1>
 
-    <button id="mobile-menu-toggle" class="nav-menu__icon icon icon-ic_menu_white_24dp"
+    <button id="mobile-menu-toggle" class="menu__icon icon icon-ic_menu_white_24dp right"
         role="tab" aria-expanded="false">Show navigation</button>
     
 
@@ -54,8 +54,6 @@
 
         
 <section class="social-media right">
-    <span class="social-media__action">Follow Me On</span>
-
     <ul class="social-media__list list--no-bullets">
         <li class="list__item list__item--horizontal">
             <a class="social-media__link" href="http://codepen.io/kopijunkie" title="Codepen">
@@ -108,7 +106,7 @@
 <p>Drop me a message with the form below.</p>
 
 
-<form id="contact-form" class="form form--bordered" action="contact.php" method="POST">
+<form id="contact-form" class="form form--bordered" action="assets/php/contact.php" method="POST">
     <fieldset class="form__fieldset">
         <label class="form__label" for="name">Your Name</label>
         <input type="text" placeholder="Your name" maxlength="40"
@@ -137,10 +135,16 @@
     </fieldset>
 </form>
 
-<div class="form success-msg">
+<div class="form send-success-msg">
     <h2 class="success-msg__heading">Success!</h2>
 
     <p>Thank you for your message. I'll get back to you shortly.</p>
+</div>
+
+<div class="form send-error-msg">
+    <h2 class="error-msg__heading">Oops!</h2>
+
+    <p>Your message wasn't sent out. Please try again.</p>
 </div>
             </section>
 

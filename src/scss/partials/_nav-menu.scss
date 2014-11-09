@@ -62,7 +62,7 @@
 
     &:hover,
     &.active {
-        border-bottom: 5px solid $nav-link-active-colour;
+        border-bottom: 5px solid $nav-border-colour;
     }
     &:hover { cursor: pointer; }
     &:hover a,
@@ -71,10 +71,6 @@
     }
     &.active a {
         color: $nav-link-active-colour;
-
-        @include media($tablet) {
-            color: inherit;
-        }
     }
     a {
         font-weight: bold;

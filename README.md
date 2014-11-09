@@ -8,8 +8,8 @@
  * 2014-10-18   v0.3.0   Styling for the site and blog ported over, with some style updates
  * 2014-10-19   v0.4.0   Set up blog post generation with Assemble and Grunt
  * 2014-10-23   v0.5.0   Set up Grunt tasks
- * 2014-11-05   v0.6.0   Refactored JavaScript UI components, added fonts for typography.
  * 2014-11-05   v0.7.0   Set up Travis CI build.
+
 
 ## TODO
  * Write my own Last.fm visualiser (using library used in existing site) - `JS`

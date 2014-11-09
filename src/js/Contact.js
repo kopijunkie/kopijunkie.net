@@ -69,17 +69,17 @@
 
             sendMessage: function(formData) {
                 console.log("send message!", formData);
-                $formEl.slideUp("slow");
-                $(".success-msg").slideDown("slow");
+
                 $.ajax({
                     type: "POST",
-                    url: "send.php",
+                    url: "assets/php/send.php",
                     data: formData,
                     success: function() {
-                        $("form#contact-form").slideUp("slow").before(
-                        "<div class='success'><h2>Success!</h2>" +
-                        "<p>Thank you for your email. " +
-                        "I'll get back to you shortly.</p></div>");
+                        $formEl.slideUp("slow");
+                        $(".send-success-msg").slideDown("slow");
+                    },
+                    error: function() {
+                        $(".send-error-msg").slideDown("slow");
                     }
                 });
             }

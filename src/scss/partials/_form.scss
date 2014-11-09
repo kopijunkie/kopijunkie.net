@@ -76,18 +76,23 @@
 
 
 .error-msg,
-.success-msg {
+.send-error-msg,
+.send-success-msg {
     display: none;
 }
 .error-msg {
     float: right;
     color: $error-text-colour;
 }
-.success-msg {
-    border: 2px solid $success-text-colour;
 
-    .success-msg__heading {
-        padding-top: 0;
-        margin-top: 0;
-    }
+.send-error-msg {
+    border: 2px solid $error-text-colour;
+}
+.send-success-msg {
+    border: 2px solid $success-text-colour;
+}
+.success-msg__heading,
+.error-msg__heading {
+    padding-top: 0;
+    margin-top: 0;
 }

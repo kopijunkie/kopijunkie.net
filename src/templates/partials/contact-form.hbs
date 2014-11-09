@@ -1,7 +1,7 @@
 ---
 component: contact-form
 ---
-<form id="contact-form" class="form form--bordered" action="contact.php" method="POST">
+<form id="contact-form" class="form form--bordered" action="{{assets}}/php/contact.php" method="POST">
     <fieldset class="form__fieldset">
         <label class="form__label" for="name">Your Name</label>
         <input type="text" placeholder="Your name" maxlength="40"
@@ -30,8 +30,14 @@ component: contact-form
     </fieldset>
 </form>
 
-<div class="form success-msg">
+<div class="form send-success-msg">
     <h2 class="success-msg__heading">Success!</h2>
 
     <p>Thank you for your message. I'll get back to you shortly.</p>
+</div>
+
+<div class="form send-error-msg">
+    <h2 class="error-msg__heading">Oops!</h2>
+
+    <p>Your message wasn't sent out. Please try again.</p>
 </div>

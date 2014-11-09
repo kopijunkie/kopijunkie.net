@@ -10,4 +10,4 @@ script:
   - "grunt build"
 branches:
   only:
-    - "master"
+    - "develop"

@@ -22,12 +22,7 @@
     <link rel="apple-touch-icon-precomposed" href="assets/img/kopijunkie-icon.png" />
     -->
 
-    <!-- build:css(dist) assets/css/style.min.css -->
-    <link href="assets/libs/normalize.css/normalize.css" rel="stylesheet">
-    <link href="assets/libs/lightbox/css/lightbox.css" rel="stylesheet">
-    <link href="assets/libs/slick.js/slick.css" rel="stylesheet">
-    <link href="assets/css/main.css" rel="stylesheet">
-    <!-- endbuild -->
+    <link rel="stylesheet" href="assets/css/style.min.css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -45,7 +40,6 @@
 
     <button id="mobile-menu-toggle" class="menu__icon icon icon-ic_menu_white_24dp right"
         role="tab" aria-expanded="false">Show navigation</button>
-    
 
     <div class="header__subsection">
         <h2 class="header__tagline left">
@@ -76,8 +70,8 @@
 </header>
 
         
-<nav class="nav-menu">
-    <ul id="mobile-nav-menu" class="nav-menu__list list--no-bullets" role="navigation">
+<nav id="nav-menu" class="nav-menu">
+    <ul class="nav-menu__list list--no-bullets" role="navigation">
         <li class="nav-menu__item list__item list__item--horizontal">
             <a href="index.html" class="nav-menu__link">Home</a>
         </li>
@@ -88,8 +82,8 @@
             <a href="work.html" class="nav-menu__link">Work</a>
         </li>
         <li class="nav-menu__item list__item list__item--horizontal">
-            <a href="blog.html" class="nav-menu__link">Blog</a>
             
+            <a href="/blog" class="nav-menu__link">Blog</a>
         </li>
         <li class="nav-menu__item list__item list__item--horizontal">
             <a href="contact.html" class="nav-menu__link">Contact</a>
@@ -105,17 +99,6 @@
 <h1>Blog</h1>
 
 
-    
-        <article class="blog-post">
-            <h2 class="blog-post__title">Grunt Timekeeping</h2>
-            <h3 class="blog-post__date">Fri Oct 31 2014 00:00:00 GMT+0000 (GMT)</h3>
-            <p>Recently I plugged in a Grunt plugin that handily displays a summary of the time taken by a project&#x27;s Grunt build tasks. Before this the team had only been aware of the overall time taken. Especially with LiveReload running, waiting for the page to reload with our changes.</p>
-<p>We suspected the Compass compilation was taking &quot;a long time&quot;. But we didn&#x27;t know for certain how long and if that was the only problem area. With <a href="https://github.com/sindresorhus/time-grunt">time-grunt</a> we could now see a nice breakdown of each task&#x27;s time taken allowing us to know what to focus our performance improvements on.</p>
-<p>Setting it up was easy enough. Though it is slightly different from the usual Grunt tasks. Just install it using NPM and save it into the project&#x27;s &#x60;package.json&#x60; as a development dependency with &#x60;npm install time-grunt --save-dev&#x60; in the project&#x27;s front end root directory. Then in your project&#x27;s &#x60;Gruntfile.js&#x60; add &#x60;time-grunt&#x60; as a required module and pass it the Grunt instance with &#x60;require(&quot;time-grunt&quot;)(grunt);&#x60;</p>
-<p><a href="{{assets}}/img/blog/screenshot-time-grunt.png"><img src="assets/img/blog/screenshot-time-grunt.png" alt="time-grunt task output"></a></p>
-<p>Now when you run Grunt again, at the end of your Grunt output there will be a nice time chart broken down by tasks reporting how long each task took with a total run time also. Sweet!</p>
-
-        </article>
     
         <article class="blog-post">
             <h2 class="blog-post__title">Hello World! Again!</h2>
@@ -134,6 +117,58 @@
 
         </article>
     
+        <article class="blog-post">
+            <h2 class="blog-post__title">My Development Setup - 2014 edition</h2>
+            <h3 class="blog-post__date">Thu Mar 13 2014 00:00:00 GMT+0000 (GMT)</h3>
+            <p>My front end development setup is an evolving organism, which changes, grows, evolves as time goes by based on what&#x27;s going on in modern web development. </p>
+<p>With that in mind, here&#x27;s a run down of tools (that aren&#x27;t browsers) that I use for my front end development workflow - most of which are available on both Macs and PCs...</p>
+<ul>
+<li>&lt;a href=&quot;#sublime&quot;&gt;Sublime Text&lt;/a&gt;</li>
+<li>&lt;a href=&quot;#livereload&quot;&gt;LiveReload&lt;/a&gt;</li>
+<li>&lt;a href=&quot;#browserstack&quot;&gt;BrowserStack&lt;/a&gt;</li>
+<li>Version Control: &lt;a href=&quot;#git&quot;&gt;Git&lt;/a&gt;</li>
+<li>GUI Client: &lt;a href=&quot;#sourcetree&quot;&gt;SourceTree&lt;/a&gt;</li>
+<li>Diff Tool: &lt;a href=&quot;#kdiff3&quot;&gt;kdiff3&lt;/a&gt;</li>
+<li>Design (rasters): &lt;a href=&quot;#photoshop&quot;&gt;Photoshop&lt;/a&gt;</li>
+<li>Design (vectors): &lt;a href=&quot;#sketch&quot;&gt;Sketch&lt;/a&gt; (<em>Mac only</em>)
+&lt;!--more--&gt;
+&lt;h2 id=&quot;sublime&quot;&gt;&lt;a title=&quot;Sublime Text&quot; href=&quot;<a href="http://www.sublimetext.com/&quot;&gt;Sublime">http://www.sublimetext.com/&quot;&gt;Sublime</a> Text 2/3&lt;/a&gt;&lt;/h2&gt;
+I quite liked Notepad++ and up until last year I was quite happily still using it. Then I got introduced to Sublime Text 2. I thought it looked better out of the box design wise than Notepad++ and it could do what Notepad++ did, it just all looked nicer to me. Plus it was free too. It now feels like my life wouldn&#x27;t be complete as a front end developer without Sublime Text in it. I&#x27;m now using Sublime Text 3, if only because it&#x27;s available. I like how easily customisable it is, especially with <a href="https://sublime.wbond.net/">Package Control</a> installed. But what I really like are little shortcuts like easily selecting multiple instances of a word in a file using just &#x60;Ctrl+D&#x60;/&#x60;Cmd+D&#x60; once you learn and remember them. Plus I like that it&#x27;s a got the IDE-ish functionality of a project explorer view on the sidebar.</li>
+</ul>
+<p>In terms of customised preferences, I&#x27;ve got Sublime Text set up to do things like removing trailing whitespaces on saving a file by default. If you&#x27;re as OCD about trailing whitespaces as I am, to do this, just stick &#x60;&quot;trim_trailing_white_space_on_save&quot;: true&#x60; in the JSON formatted <strong>Settings - User</strong> file. Also, being from the &quot;4 spaces for tab indentations&quot; camp, I enforce this rule by having these 2 lines of configuration in for my user settings:</p>
+<pre><code>&amp;#x60;&amp;quot;tab_size&amp;quot;: 4,&amp;#x60;
+&amp;#x60;&amp;quot;translate_tabs_to_spaces&amp;quot;: true&amp;#x60;</code></pre>
+<p>I personally think that with 4-space indentation code doesn&#x27;t look not as cramped together as 2-space indentations. I actually can&#x27;t remember who put the idea in my head for 4-space indentations, but I blame my C programming lecturer at Bristol for this as he was well known for &quot;Neil&#x27;s Golden Rules&quot; in which this &quot;rule&quot; seems quite likely to have been in that list of rules.</p>
+<p>I also have a few plugins installed also to help with my development workflow which I&#x27;ll post as a blog post on its own. I&#x27;ve also got a custom Build System on my Sublime Text setup so that I can make a &quot;Chrome Build&quot;, which really means I can view a HTML file in my Chrome browser by just pressing &#x60;Ctrl+B&#x60;/&#x60;Cmd+B&#x60;.</p>
+<p>&lt;h2 id=&quot;livereload&quot;&gt;&lt;a title=&quot;LiveReload&quot; href=&quot;<a href="http://livereload.com/&quot;&gt;LiveReload&lt;/a&gt;&lt;/h2&amp;gt">http://livereload.com/&quot;&gt;LiveReload&lt;/a&gt;&lt;/h2&amp;gt</a>;
+A more recent discovery, made only earlier this year even, mainly because it works really well with <a href="http://gruntjs.com/">Grunt.js</a> and the Chrome browser plugin is LiveReload. To a certain extent I feel like this takes developer laziness to a whole new level, but when you&#x27;ve had to press the refresh button of your browser for the 1,000th time just to see some front end code change you&#x27;ll appreciate how not needing to press the refresh button to see your changes, whether it&#x27;s a new HTML element or a background colour change in the CSS as you save them is the best thing since sliced bread.</p>
+<p>&lt;h2 id=&quot;browserstack&quot;&gt;&lt;a href=&quot;<a href="http://www.browserstack.com/&amp;quot">http://www.browserstack.com/&amp;quot</a>; title=&quot;BrowserStack&quot;&gt;BrowserStack&lt;/a&gt;&lt;/h2&gt;
+Before the awesome thing that is BrowserStack came along, the best way to do reliable cross browser testing was to have a virtual machine or a dedicated machine running the OSes with the various browsers to test on, especially for IE and Safari. Maintaining these machines was a hassle...assuming you had the resources available to set them up. For the problem children that are the older IEs, there was/is IETester and the built-in IE developer tool, but those weren&#x27;t the most reliable of testing environments. I find that for mobile browser testing nothing still beats testing on the actual device unfortunately. But otherwise, BrowserStack has got my back covered for a reasonable subscription fee.</p>
+<p>&lt;h2 id=&quot;git&quot;&gt;&lt;a title=&quot;Git&quot; href=&quot;<a href="http://git-scm.com/&quot;&gt;Git&lt;/a&gt;&lt;/h2&amp;gt">http://git-scm.com/&quot;&gt;Git&lt;/a&gt;&lt;/h2&amp;gt</a>;
+My source code management system of choice is definitely Git, having used CVS (briefly at uni), SVN (my first workplace) and Git. I like the open, social collaboration that <a href="https://github.com/">GitHub</a> allows and encourages along with all the awesome 3rd party libraries, open source projects it already hosts. But I also like the option of being able to have a free private repo (or 2) on <a href="https://bitbucket.org/">BitBucket</a> for when I have something I just don&#x27;t want to or cannot make public for some reason.</p>
+<p>BTW, this may seem insane to some, especially if you&#x27;re not comfortable with Git. But I had at one point, after mucking around with various GUI clients at work, forced myself to use the dreaded command line to do all my Git commits, branching, status checks to try and understand using Git better - I recommend this...it helps heaps! Except for diffs. I&#x27;m not THAT hard core. But if you&#x27;re not like me and learning by doing or picking something apart isn&#x27;t your thing, I highly recommend giving the <a href="http://git-scm.com/book">Pro Git book</a> book a read. In fact, keep it as your bible to all things Git. For those times you can&#x27;t remember what&#x27;s the difference between a merge and a rebase.</p>
+<p>&lt;h2 id=&quot;sourcetree&quot;&gt;&lt;a href=&quot;<a href="http://www.sourcetreeapp.com/&amp;quot">http://www.sourcetreeapp.com/&amp;quot</a>; title=&quot;SourceTree&quot;&gt;SourceTree&lt;/a&gt;&lt;/h2&gt;
+I&#x27;ve been told <a href="http://www.git-tower.com/">Git Tower</a> is a pretty good Git client if you&#x27;re on a Mac. But if you&#x27;re on a Windows machine or just not willing to shell out for a Git client (like me), I think SourceTree&#x27;s already pretty good. And it&#x27;s not Git only - handy for if I ever have to work with a SVN or even Mercurial repo.</p>
+<p>&lt;h2 id=&quot;kdiff3&quot;&gt;&lt;a href=&quot;<a href="http://kdiff3.sourceforge.net/&amp;quot">http://kdiff3.sourceforge.net/&amp;quot</a>; title=&quot;kdiff3&quot;&gt;kdiff3&lt;/a&gt;&lt;/h2&gt;
+Sometimes, especially in times of merge conflicts, I need to go through a file&#x27;s differences between what&#x27;s on the remote vs what&#x27;s on my local copy. I like using kdiff3 for this as it has an auto merge function that does a pretty decent job and I can compare up to 3 files. But what I like most is that when I use it to resolve merge conflicts, I get a view of what&#x27;s on the remote vs what&#x27;s on my local vs what the merged result will look like. It goes through the conflicts line by line and ensures that I&#x27;ve gone through all the merge conflicts in the file before letting me save the file - in a resolved state.</p>
+<p>&lt;h2 id=&quot;photoshop&quot;&gt;&lt;a href=&quot;<a href="http://www.adobe.com/uk/products/photoshop.html&amp;quot">http://www.adobe.com/uk/products/photoshop.html&amp;quot</a>; title=&quot;Photoshop&quot;&gt;Photoshop&lt;/a&gt;&lt;/h2&gt;
+I&#x27;ve been using Adobe&#x27;s Photoshop since Photoshop 7 and still do. But I actually started out using it to whip up graphics like forum signature banners, random artistically tweaked images or just a simple animated/static button as and when I need a graphical asset (like the vinyl records on my site&#x27;s Last.fm data visualiser element) or just when inspiration strikes to make something digitally. When I started shifting from being a webmaster/web designer towards a front end developer, Photoshop was a way to design and/or pull graphical assets for a web site or a HTML emailer. I personally prefer just using Photoshop to have a rough idea of what I want to build, how it will look. But ultimately I prefer to design in the browser as I prefer to rely on CSS for styling up web things (and to be honest, being self taught when it comes to design, my style tends to be simple and minimalistic).</p>
+<p>&lt;h2 id=&quot;sketch&quot;&gt;&lt;a href=&quot;<a href="http://www.bohemiancoding.com/sketch/&amp;quot">http://www.bohemiancoding.com/sketch/&amp;quot</a>; title=&quot;Sketch&quot;&gt;Sketch&lt;/a&gt;&lt;/h2&gt;
+These days, with responsive web design to accommodate all the many varied device resolutions I&#x27;ve started looking at vector based images. Still getting used to using it more over Photoshop or even Illustrator, as I&#x27;ve lately drifted more towards the application development side of front end development and my current workplace has a preference for Fireworks. But first impressions: I found Sketch pretty good for my workflow, especially when I worked on the <a href="https://twitter.com/Twickets">Twickets</a> iOS app. This is partly probably because Sketch was developed from the ground up with UI and web design in mind. With Photoshop, I had resize the images manually by working out what resolution the &quot;standard&quot; image should be and what the @2x (double) version should be. Sketch has a 1-step option to also generate the @2x (or @1x, half size) version when exporting a graphical asset. It also helps a lot for the pocket that Sketch is pretty affordable compared to Photoshop or Illustrator (up until Adobe&#x27;s subscription based Creative Cloud service came along anyway). Love it.</p>
+
+        </article>
+    
+        <article class="blog-post">
+            <h2 class="blog-post__title">My Front End Development Setup - 2014 edition</h2>
+            <h3 class="blog-post__date">Thu Mar 13 2014 00:00:00 GMT+0000 (GMT)</h3>
+            <p>Recently I plugged in a Grunt plugin that handily displays a summary of the time taken by a project&#x27;s Grunt build tasks. Before this the team had only been aware of the overall time taken. Especially with LiveReload running, waiting for the page to reload with our changes.</p>
+<p>We suspected the Compass compilation was taking &quot;a long time&quot;. But we didn&#x27;t know for certain how long and if that was the only problem area. With <a href="https://github.com/sindresorhus/time-grunt">time-grunt</a> we could now see a nice breakdown of each task&#x27;s time taken allowing us to know what to focus our performance improvements on.</p>
+<p>Setting it up was easy enough. Though it is slightly different from the usual Grunt tasks. Just install it using NPM and save it into the project&#x27;s &#x60;package.json&#x60; as a development dependency with &#x60;npm install time-grunt --save-dev&#x60; in the project&#x27;s front end root directory. Then in your project&#x27;s &#x60;Gruntfile.js&#x60; add &#x60;time-grunt&#x60; as a required module and pass it the Grunt instance with &#x60;require(&quot;time-grunt&quot;)(grunt);&#x60;</p>
+<p><a href="{{assets}}/img/blog/screenshot-time-grunt.png"><img src="assets/img/blog/screenshot-time-grunt.png" alt="time-grunt task output"></a></p>
+<p>Now when you run Grunt again, at the end of your Grunt output there will be a nice time chart broken down by tasks reporting how long each task took with a total run time also. Sweet!</p>
+
+        </article>
+    
 
 
 
@@ -141,8 +176,9 @@
     <article class="blog-post">
     <h1 id="kopijunkie-net">kopijunkie.net</h1>
 <blockquote>
-<p>Code repository for KopiJunkie.net</p>
+<p>Code repository for KopiJunkie.net (mk.II - currently still in development)</p>
 </blockquote>
+<p><a href="https://travis-ci.org/kopijunkie/kopijunkie.net"><img src="https://travis-ci.org/kopijunkie/kopijunkie.net.svg?branch=master" alt="Build Status"></a></p>
 <h2 id="release-history">Release History</h2>
 <ul>
 <li>2014-10-11   v0.1.0   Generated by the <a href="https://github.com/assemble/generator-assemble">Yeoman Generator</a> for <a href="http://assemble.io">Assemble</a></li>
@@ -220,15 +256,59 @@ Lots of it...</code></pre>
 
     <article class="blog-post">
     <hr>
-<p>title: &quot;Grunt Timekeeping&quot;
-posted: 2014-10-31
-tags: [&quot;development&quot;, &quot;workflow&quot;, &quot;grunt&quot;]</p>
+<p>title: &quot;My Front End Development Setup - 2014 edition&quot;
+posted: 2014-03-13
+tags: [ &quot;development&quot;, &quot;workflow&quot;, &quot;browserstack&quot;, &quot;design&quot;, &quot;git&quot;, &quot;kdiff3&quot;, &quot;livereload&quot;, &quot;photoshop&quot;, &quot;sketch&quot;, &quot;sublime text&quot; ]</p>
 <h2 id="blog-true">blog: true</h2>
 <p>Recently I plugged in a Grunt plugin that handily displays a summary of the time taken by a project&#39;s Grunt build tasks. Before this the team had only been aware of the overall time taken. Especially with LiveReload running, waiting for the page to reload with our changes.</p>
 <p>We suspected the Compass compilation was taking &quot;a long time&quot;. But we didn&#39;t know for certain how long and if that was the only problem area. With <a href="https://github.com/sindresorhus/time-grunt">time-grunt</a> we could now see a nice breakdown of each task&#39;s time taken allowing us to know what to focus our performance improvements on.</p>
 <p>Setting it up was easy enough. Though it is slightly different from the usual Grunt tasks. Just install it using NPM and save it into the project&#39;s <code>package.json</code> as a development dependency with <code>npm install time-grunt --save-dev</code> in the project&#39;s front end root directory. Then in your project&#39;s <code>Gruntfile.js</code> add <code>time-grunt</code> as a required module and pass it the Grunt instance with <code>require(&quot;time-grunt&quot;)(grunt);</code></p>
 <p><a href="/img/blog/screenshot-time-grunt.png"><img src="assets/img/blog/screenshot-time-grunt.png" alt="time-grunt task output"></a></p>
 <p>Now when you run Grunt again, at the end of your Grunt output there will be a nice time chart broken down by tasks reporting how long each task took with a total run time also. Sweet!</p>
+
+    </article>
+
+    <article class="blog-post">
+    <hr>
+<p>title: &quot;My Development Setup - 2014 edition&quot;
+posted: 2014-03-13
+tags: [ &quot;development&quot;, &quot;workflow&quot;, &quot;browserstack&quot;, &quot;design&quot;, &quot;git&quot;, &quot;kdiff3&quot;, &quot;livereload&quot;, &quot;photoshop&quot;, &quot;sketch&quot;, &quot;sublime text&quot; ]</p>
+<h2 id="blog-true">blog: true</h2>
+<p>My front end development setup is an evolving organism, which changes, grows, evolves as time goes by based on what&#39;s going on in modern web development. </p>
+<p>With that in mind, here&#39;s a run down of tools (that aren&#39;t browsers) that I use for my front end development workflow - most of which are available on both Macs and PCs...</p>
+<ul>
+<li><a href="#sublime">Sublime Text</a></li>
+<li><a href="#livereload">LiveReload</a></li>
+<li><a href="#browserstack">BrowserStack</a></li>
+<li>Version Control: <a href="#git">Git</a></li>
+<li>GUI Client: <a href="#sourcetree">SourceTree</a></li>
+<li>Diff Tool: <a href="#kdiff3">kdiff3</a></li>
+<li>Design (rasters): <a href="#photoshop">Photoshop</a></li>
+<li>Design (vectors): <a href="#sketch">Sketch</a> (<em>Mac only</em>)
+<!--more-->
+<h2 id="sublime"><a title="Sublime Text" href="http://www.sublimetext.com/">Sublime Text 2/3</a></h2>
+I quite liked Notepad++ and up until last year I was quite happily still using it. Then I got introduced to Sublime Text 2. I thought it looked better out of the box design wise than Notepad++ and it could do what Notepad++ did, it just all looked nicer to me. Plus it was free too. It now feels like my life wouldn&#39;t be complete as a front end developer without Sublime Text in it. I&#39;m now using Sublime Text 3, if only because it&#39;s available. I like how easily customisable it is, especially with <a href="https://sublime.wbond.net/">Package Control</a> installed. But what I really like are little shortcuts like easily selecting multiple instances of a word in a file using just <code>Ctrl+D</code>/<code>Cmd+D</code> once you learn and remember them. Plus I like that it&#39;s a got the IDE-ish functionality of a project explorer view on the sidebar.</li>
+</ul>
+<p>In terms of customised preferences, I&#39;ve got Sublime Text set up to do things like removing trailing whitespaces on saving a file by default. If you&#39;re as OCD about trailing whitespaces as I am, to do this, just stick <code>&quot;trim_trailing_white_space_on_save&quot;: true</code> in the JSON formatted <strong>Settings - User</strong> file. Also, being from the &quot;4 spaces for tab indentations&quot; camp, I enforce this rule by having these 2 lines of configuration in for my user settings:</p>
+<pre><code>`&quot;tab_size&quot;: 4,`
+`&quot;translate_tabs_to_spaces&quot;: true`</code></pre>
+<p>I personally think that with 4-space indentation code doesn&#39;t look not as cramped together as 2-space indentations. I actually can&#39;t remember who put the idea in my head for 4-space indentations, but I blame my C programming lecturer at Bristol for this as he was well known for &quot;Neil&#39;s Golden Rules&quot; in which this &quot;rule&quot; seems quite likely to have been in that list of rules.</p>
+<p>I also have a few plugins installed also to help with my development workflow which I&#39;ll post as a blog post on its own. I&#39;ve also got a custom Build System on my Sublime Text setup so that I can make a &quot;Chrome Build&quot;, which really means I can view a HTML file in my Chrome browser by just pressing <code>Ctrl+B</code>/<code>Cmd+B</code>.</p>
+<p><h2 id="livereload"><a title="LiveReload" href="http://livereload.com/">LiveReload</a></h2>
+A more recent discovery, made only earlier this year even, mainly because it works really well with <a href="http://gruntjs.com/">Grunt.js</a> and the Chrome browser plugin is LiveReload. To a certain extent I feel like this takes developer laziness to a whole new level, but when you&#39;ve had to press the refresh button of your browser for the 1,000th time just to see some front end code change you&#39;ll appreciate how not needing to press the refresh button to see your changes, whether it&#39;s a new HTML element or a background colour change in the CSS as you save them is the best thing since sliced bread.</p>
+<p><h2 id="browserstack"><a href="http://www.browserstack.com/" title="BrowserStack">BrowserStack</a></h2>
+Before the awesome thing that is BrowserStack came along, the best way to do reliable cross browser testing was to have a virtual machine or a dedicated machine running the OSes with the various browsers to test on, especially for IE and Safari. Maintaining these machines was a hassle...assuming you had the resources available to set them up. For the problem children that are the older IEs, there was/is IETester and the built-in IE developer tool, but those weren&#39;t the most reliable of testing environments. I find that for mobile browser testing nothing still beats testing on the actual device unfortunately. But otherwise, BrowserStack has got my back covered for a reasonable subscription fee.</p>
+<p><h2 id="git"><a title="Git" href="http://git-scm.com/">Git</a></h2>
+My source code management system of choice is definitely Git, having used CVS (briefly at uni), SVN (my first workplace) and Git. I like the open, social collaboration that <a href="https://github.com/">GitHub</a> allows and encourages along with all the awesome 3rd party libraries, open source projects it already hosts. But I also like the option of being able to have a free private repo (or 2) on <a href="https://bitbucket.org/">BitBucket</a> for when I have something I just don&#39;t want to or cannot make public for some reason.</p>
+<p>BTW, this may seem insane to some, especially if you&#39;re not comfortable with Git. But I had at one point, after mucking around with various GUI clients at work, forced myself to use the dreaded command line to do all my Git commits, branching, status checks to try and understand using Git better - I recommend this...it helps heaps! Except for diffs. I&#39;m not THAT hard core. But if you&#39;re not like me and learning by doing or picking something apart isn&#39;t your thing, I highly recommend giving the <a href="http://git-scm.com/book">Pro Git book</a> book a read. In fact, keep it as your bible to all things Git. For those times you can&#39;t remember what&#39;s the difference between a merge and a rebase.</p>
+<p><h2 id="sourcetree"><a href="http://www.sourcetreeapp.com/" title="SourceTree">SourceTree</a></h2>
+I&#39;ve been told <a href="http://www.git-tower.com/">Git Tower</a> is a pretty good Git client if you&#39;re on a Mac. But if you&#39;re on a Windows machine or just not willing to shell out for a Git client (like me), I think SourceTree&#39;s already pretty good. And it&#39;s not Git only - handy for if I ever have to work with a SVN or even Mercurial repo.</p>
+<p><h2 id="kdiff3"><a href="http://kdiff3.sourceforge.net/" title="kdiff3">kdiff3</a></h2>
+Sometimes, especially in times of merge conflicts, I need to go through a file&#39;s differences between what&#39;s on the remote vs what&#39;s on my local copy. I like using kdiff3 for this as it has an auto merge function that does a pretty decent job and I can compare up to 3 files. But what I like most is that when I use it to resolve merge conflicts, I get a view of what&#39;s on the remote vs what&#39;s on my local vs what the merged result will look like. It goes through the conflicts line by line and ensures that I&#39;ve gone through all the merge conflicts in the file before letting me save the file - in a resolved state.</p>
+<p><h2 id="photoshop"><a href="http://www.adobe.com/uk/products/photoshop.html" title="Photoshop">Photoshop</a></h2>
+I&#39;ve been using Adobe&#39;s Photoshop since Photoshop 7 and still do. But I actually started out using it to whip up graphics like forum signature banners, random artistically tweaked images or just a simple animated/static button as and when I need a graphical asset (like the vinyl records on my site&#39;s Last.fm data visualiser element) or just when inspiration strikes to make something digitally. When I started shifting from being a webmaster/web designer towards a front end developer, Photoshop was a way to design and/or pull graphical assets for a web site or a HTML emailer. I personally prefer just using Photoshop to have a rough idea of what I want to build, how it will look. But ultimately I prefer to design in the browser as I prefer to rely on CSS for styling up web things (and to be honest, being self taught when it comes to design, my style tends to be simple and minimalistic).</p>
+<p><h2 id="sketch"><a href="http://www.bohemiancoding.com/sketch/" title="Sketch">Sketch</a></h2>
+These days, with responsive web design to accommodate all the many varied device resolutions I&#39;ve started looking at vector based images. Still getting used to using it more over Photoshop or even Illustrator, as I&#39;ve lately drifted more towards the application development side of front end development and my current workplace has a preference for Fireworks. But first impressions: I found Sketch pretty good for my workflow, especially when I worked on the <a href="https://twitter.com/Twickets">Twickets</a> iOS app. This is partly probably because Sketch was developed from the ground up with UI and web design in mind. With Photoshop, I had resize the images manually by working out what resolution the &quot;standard&quot; image should be and what the @2x (double) version should be. Sketch has a 1-step option to also generate the @2x (or @1x, half size) version when exporting a graphical asset. It also helps a lot for the pocket that Sketch is pretty affordable compared to Photoshop or Illustrator (up until Adobe&#39;s subscription based Creative Cloud service came along anyway). Love it.</p>
 
     </article>
 
@@ -310,18 +390,8 @@ tags: [&quot;development&quot;, &quot;workflow&quot;, &quot;grunt&quot;]</p>
         ga('send', 'pageview');
     </script>
 
-    <!-- build:js(dist) assets/js/libs.min.js -->
-    <script src="assets/libs/momentjs/moment.js"></script>
-    <script src="assets/libs/jquery/jquery.js"></script>
-    <script src="assets/libs/lightbox/js/lightbox.js"></script>
-    <script src="assets/libs/slick.js/slick.min.js"></script>
-    <!-- endbuild -->
+    <script src="assets/js/libs.min.js"></script>
 
-    <!-- build:js(dist) assets/js/site.min.js -->
-    <script src="assets/js/last.fm.records.js"></script>
-    <script src="assets/js/Main.js"></script>
-    <script src="assets/js/ListFilter.js"></script>
-    <script src="assets/js/Contact.js"></script>
-    <!-- endbuild -->
+    <script src="assets/js/site.min.js"></script>
   </body>
 </html>

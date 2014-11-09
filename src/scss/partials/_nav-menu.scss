@@ -1,7 +1,19 @@
 .nav-menu {
     @include span-columns(12);
-    height: 45px;
+    height: 100%;
     display: none;
+    position: absolute;
+    top: 50px;
+    z-index: 100;
+
+    @include media($tablet) {
+        display: block !important;
+        position: relative;
+        top: auto;
+        background: $nav-bg-colour;
+        padding: 0 em(10px);
+        box-shadow: 3px 3px 10px rgba(0,0,0,0.45);
+    }
 
     @include media($desktop) {
 
@@ -11,26 +23,13 @@
 
     }
 
-    @include media($tablet) {
-        background: $nav-bg-colour;
-    }
-
-    padding: 0 em(10px);
-    box-shadow: 3px 3px 10px rgba(0,0,0,0.45);
 }
 
 .nav-menu__list {
-    position: absolute;
     width: 100%;
-    left: 0;
-    top: 45px;
 
     @include media($tablet) {
 
-        display: block;
-        position: relative;
-        left: auto;
-        top: auto;
         border-top: none;
 
     }

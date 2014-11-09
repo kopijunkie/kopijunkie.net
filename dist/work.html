@@ -22,12 +22,7 @@
     <link rel="apple-touch-icon-precomposed" href="assets/img/kopijunkie-icon.png" />
     -->
 
-    <!-- build:css(dist) assets/css/style.min.css -->
-    <link href="assets/libs/normalize.css/normalize.css" rel="stylesheet">
-    <link href="assets/libs/lightbox/css/lightbox.css" rel="stylesheet">
-    <link href="assets/libs/slick.js/slick.css" rel="stylesheet">
-    <link href="assets/css/main.css" rel="stylesheet">
-    <!-- endbuild -->
+    <link rel="stylesheet" href="assets/css/style.min.css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -45,7 +40,6 @@
 
     <button id="mobile-menu-toggle" class="menu__icon icon icon-ic_menu_white_24dp right"
         role="tab" aria-expanded="false">Show navigation</button>
-    
 
     <div class="header__subsection">
         <h2 class="header__tagline left">
@@ -76,8 +70,8 @@
 </header>
 
         
-<nav class="nav-menu">
-    <ul id="mobile-nav-menu" class="nav-menu__list list--no-bullets" role="navigation">
+<nav id="nav-menu" class="nav-menu">
+    <ul class="nav-menu__list list--no-bullets" role="navigation">
         <li class="nav-menu__item list__item list__item--horizontal">
             <a href="index.html" class="nav-menu__link">Home</a>
         </li>
@@ -88,8 +82,8 @@
             <a href="work.html" class="nav-menu__link">Work</a>
         </li>
         <li class="nav-menu__item list__item list__item--horizontal">
-            <a href="blog.html" class="nav-menu__link">Blog</a>
             
+            <a href="/blog" class="nav-menu__link">Blog</a>
         </li>
         <li class="nav-menu__item list__item list__item--horizontal">
             <a href="contact.html" class="nav-menu__link">Contact</a>
@@ -559,18 +553,8 @@
         ga('send', 'pageview');
     </script>
 
-    <!-- build:js(dist) assets/js/libs.min.js -->
-    <script src="assets/libs/momentjs/moment.js"></script>
-    <script src="assets/libs/jquery/jquery.js"></script>
-    <script src="assets/libs/lightbox/js/lightbox.js"></script>
-    <script src="assets/libs/slick.js/slick.min.js"></script>
-    <!-- endbuild -->
+    <script src="assets/js/libs.min.js"></script>
 
-    <!-- build:js(dist) assets/js/site.min.js -->
-    <script src="assets/js/last.fm.records.js"></script>
-    <script src="assets/js/Main.js"></script>
-    <script src="assets/js/ListFilter.js"></script>
-    <script src="assets/js/Contact.js"></script>
-    <!-- endbuild -->
+    <script src="assets/js/site.min.js"></script>
   </body>
 </html>

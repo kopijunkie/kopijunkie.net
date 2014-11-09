@@ -14,14 +14,9 @@ $(function() {
         }
     });
 
-    var mobileTreshold = 768;
-    if ($(window).width() <= mobileTreshold) {
-        var $mobileNavMenu = $("ul#mobile-nav-menu");
-
-        $("button#mobile-menu-toggle").on("click", function() {
-            $mobileNavMenu.slideToggle();
-        });
-    }
+    $("button#mobile-menu-toggle").on("click", function() {
+        $("nav#nav-menu").slideToggle("slow");
+    });
 
     switch (currentPage) {
         case "work":

@@ -40,9 +40,6 @@ module.exports = function(grunt) {
     },
 
     imagemin: {
-      options: {
-        optimizationLevel: 7
-      },
       dist: {
         files: [{
           expand: true,
@@ -99,10 +96,10 @@ module.exports = function(grunt) {
     },
 
     useminPrepare: {
-      html: "<%= config.dist %>/index.html"
+      html: "<%= config.dist %>/*.html"
     },
     usemin: {
-      html: "<%= config.dist %>/index.html"
+      html: "<%= config.dist %>/*.html"
     },
 
     watch: {
@@ -112,7 +109,7 @@ module.exports = function(grunt) {
       },
       sass: {
         files: [ "<%= config.src %>/scss/**/*.scss" ],
-        tasks: [ "sass" ]
+        tasks: [ "sass", "newer:imagemin" ]
       },
       assemble: {
         files: [ "<%= config.src %>/{content,data,templates}/{,*/}*.{md,hbs,yml}" ],
@@ -183,6 +180,7 @@ module.exports = function(grunt) {
 
   grunt.registerTask("stage", [
     "bower",
+    "newer:imagemin",
     "jshint",
     "sass",
     "clean",
@@ -194,6 +192,7 @@ module.exports = function(grunt) {
 
   grunt.registerTask("build", [
     "bower",
+    "newer:imagemin",
     "jshint",
     "sass",
     "clean",

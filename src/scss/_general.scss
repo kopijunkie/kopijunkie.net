@@ -1,7 +1,4 @@
 //  GENERAL Elements
-
-@import url(http://fonts.googleapis.com/css?family=Lobster|Lobster+Two|Merriweather|Marvel);
-
 html, body {
     height: 100%;
 }
@@ -46,7 +43,7 @@ h3 {
 
     @include media($tablet) {
 
-        font-family: "Merriweather", sans-serif;
+        font-family: "Marvel", sans-serif;
         text-shadow: 1px 1px 0px $tertiary-heading-shadow-colour;
 
     }

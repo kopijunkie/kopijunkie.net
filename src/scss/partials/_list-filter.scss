@@ -4,7 +4,6 @@
 
 .filter-list__item {
     @include media($tablet) {
-        font-family: "Marvel", sans-serif;
         border-right: 1px solid $light-grey;
 
         &:first-child,

@@ -14,4 +14,5 @@
 
 
 ## TODO
+ * Look into the weird errors coming from the Twitter, Flickr badge widgets 
  * Write my own Last.fm visualiser (using library used in existing site) - `JS`

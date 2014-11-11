@@ -1115,26 +1115,27 @@ dt, dd {
   /* line 5, ../../../src/scss/partials/_list-filter.scss */
   .filter-list__item {
     border-right: 1px solid #9c9f9f;
+    line-height: 2em;
   }
-  /* line 9, ../../../src/scss/partials/_list-filter.scss */
+  /* line 10, ../../../src/scss/partials/_list-filter.scss */
   .filter-list__item:first-child, .filter-list__item:last-child {
     border-right: none;
   }
 }
-/* line 16, ../../../src/scss/partials/_list-filter.scss */
+/* line 17, ../../../src/scss/partials/_list-filter.scss */
 .filter-list__item a, .filter-list__item a:visited {
   color: #009def;
 }
-/* line 19, ../../../src/scss/partials/_list-filter.scss */
+/* line 20, ../../../src/scss/partials/_list-filter.scss */
 .filter-list__item a {
   font-size: 1.125rem;
   letter-spacing: 3px;
 }
-/* line 23, ../../../src/scss/partials/_list-filter.scss */
+/* line 24, ../../../src/scss/partials/_list-filter.scss */
 .filter-list__item a:hover {
   text-decoration: underline;
 }
-/* line 27, ../../../src/scss/partials/_list-filter.scss */
+/* line 28, ../../../src/scss/partials/_list-filter.scss */
 .filter-list__item.active a {
   color: #00c57a;
   text-decoration: underline;

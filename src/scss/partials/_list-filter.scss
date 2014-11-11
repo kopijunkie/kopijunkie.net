@@ -5,6 +5,7 @@
 .filter-list__item {
     @include media($tablet) {
         border-right: 1px solid $light-grey;
+        line-height: 2em;
 
         &:first-child,
         &:last-child {

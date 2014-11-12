@@ -18,7 +18,7 @@ deploy:
   provider: s3
   access_key_id:
     secure: "U4Wc2atLIH1qEJOtOzN1+MxxKYk2iug3fYFGWndjoNsF6NKncjzneJ27hO7Ga5Q/7jZgxaBusvV6xEv8parmhO9pgWyF3jx7A9WjjwlSZjQWlRm0bwBb8yUcIYi5Hi20NyvicRFJ+zhqJ8vYVBV7iBmn2QCP+voRwNXyf2tA7kA="
-  secret_access_key: iv4nfy8zTmycdATK28IJTEbtVxtRQl14fXPq/C3X
+  secret_access_key:
     secure: "DIYJYlh1SKSE9VM1miw2vKXmWSHBau9mDpg+pMCruKwZGBCuXk1G/v05Bq0/UAegZTib6VOrIMb4cYMgbSyXDjBasgNnVOhmpvumV5uz5/LqxvyVBR76DmCYNA3C7XqDeVDyftYNvPkcxBggLmoY0P6VbYJNUnoNIHKkoL/PH6A="
   bucket: kopijunkie.me
   skip_cleanup: true

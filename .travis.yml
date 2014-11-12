@@ -1,16 +1,30 @@
 language: node_js
 node_js:
-    - "0.10"
+- '0.10'
 install:
-    - "gem install sass"
-    - "gem install bourbon"
-    - "gem install neat"
-    - "npm install -g grunt-cli"
-    - "npm install -g bower"
-    - "npm install"
-    - "bower install"
+- gem install sass
+- gem install bourbon
+- gem install neat
+- npm install -g grunt-cli
+- npm install -g bower
+- npm install
+- bower install
 script:
-    - "grunt build"
+- grunt build
 branches:
-    only:
-        - "master"
+  only:
+  - master
+deploy:
+  provider: s3
+  access_key_id: AKIAIKWWENUGTDB2AZLQ
+  secret_access_key:
+    secure: PdmZbWSfi8xMFdDMCq0+EOtEJBMGKi19z26SwsPGL+Mhnwf3cLY8i7UyrdS9WsuD/0WYkzlG+2QW+LQETYoCXTuN8IfqXz1qMwjgZQoCTmVE5fghERkAoSvM4wa2uZHcXZFg1A8ECiSDsjlV0za3T+rjIeHleceTGGnjG2AGcRY=
+  bucket: kopijunkie.me
+  skip_cleanup: true
+  endpoint: kopijunkie.me.s3-website-eu-west-1.amazonaws.com/
+  region: eu-west-1
+  local-dir: dist
+env:
+  global:
+  - secure: Nm9xy7OBB6xuP9pnFSJAobvD6t+O+edq/RzmzRQLvvbLWQcTjZKRR5AThiBss+ys96nN3OlV3aOhl+G7im+OwVVdDwcmmWEuiiT0zbX6A/Q9dKQuY7ooWrH9lPGNbV+wyC4h17bEsRxWSHJrZpUjD1baSaaw03NKfc4u1Ba6oY4=
+  - secure: VEDN5pbybIl2eRLKskPeCCm7b0AonIkU1RguxaDMg+apxcRCNNKSQ6UX5SrahSDufRyfGuQuiYvrWMaS/E6S1jdA2uwT4J39BKo3dZq3dHK+u7lEAVGyiRnF6GKfh7bCMuo91Y3bdUajnkc37PWjUtwIB3zET+oLcSRig6r6PuQ=

@@ -16,12 +16,12 @@ branches:
   - master
 deploy:
   provider: s3
-  access_key_id:
-    secure: "U4Wc2atLIH1qEJOtOzN1+MxxKYk2iug3fYFGWndjoNsF6NKncjzneJ27hO7Ga5Q/7jZgxaBusvV6xEv8parmhO9pgWyF3jx7A9WjjwlSZjQWlRm0bwBb8yUcIYi5Hi20NyvicRFJ+zhqJ8vYVBV7iBmn2QCP+voRwNXyf2tA7kA="
-  secret_access_key:
-    secure: "DIYJYlh1SKSE9VM1miw2vKXmWSHBau9mDpg+pMCruKwZGBCuXk1G/v05Bq0/UAegZTib6VOrIMb4cYMgbSyXDjBasgNnVOhmpvumV5uz5/LqxvyVBR76DmCYNA3C7XqDeVDyftYNvPkcxBggLmoY0P6VbYJNUnoNIHKkoL/PH6A="
   bucket: kopijunkie.me
   skip_cleanup: true
   endpoint: kopijunkie.me.s3-website-eu-west-1.amazonaws.com/
   region: eu-west-1
   local-dir: dist
+env:
+  global:
+  - secure: g5L3wnXTe7G/ZikoXL71/kLb98Q/P193+3/SRBbsDNkOmlN9JflsZuvdRQ+NH4pTQjtmW8kHgEXpafT2xNch+tC4OnbBPX8+17ZT5zB+QRw5AWN82crBaZQDZMuTn7ffMl8fmlh4+elRxKXNxkkBMvXL/okLFfT0+n3VEQj8BDc=
+  - secure: GsNfaK3oaMDq5WeRZnmWyt5f+tKDAGZzkd2RG1N34piwBLS3D5iImOTLzhuDjeRTge873kgjXi4G+QKdYQIgKBO588h65YRIWvoRKITuHl4oyocfKS8CrvpGfQAvC1Te7L1imvCoMiLKRXS/KkkDdjJB7raSu9owE8cxo1EMGe4=

@@ -1,6 +1,6 @@
 "use strict";
 
-$(function() {
+$(document).ready(function() {
 
     var path = window.location.pathname;
     var currentPageFile = path.split("/").pop();

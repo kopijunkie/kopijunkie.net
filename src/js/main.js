@@ -2,6 +2,8 @@
 
 $(document).ready(function() {
 
+    console.log("AWS JS Test");
+
     var path = window.location.pathname;
     var currentPageFile = path.split("/").pop();
     var currentPage = currentPageFile.split(".html").shift();

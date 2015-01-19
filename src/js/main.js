@@ -1,8 +1,10 @@
-"use strict";
+console.log("AWS JS Test 1");
 
 $(document).ready(function() {
 
-    console.log("AWS JS Test");
+    "use strict";
+
+    console.log("AWS JS Test 2");
 
     var path = window.location.pathname;
     var currentPageFile = path.split("/").pop();

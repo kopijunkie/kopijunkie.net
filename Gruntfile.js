@@ -83,7 +83,7 @@ module.exports = function(grunt) {
         src: "**",
         dest: "<%= config.dist %>/assets/js",
         flatten: true,
-        filter: "isFile",
+        filter: "isFile"
       },
       php: {
         expand: true,
@@ -91,7 +91,7 @@ module.exports = function(grunt) {
         src: "**",
         dest: "<%= config.dist %>/assets/php",
         flatten: true,
-        filter: "isFile",
+        filter: "isFile"
       }
     },
 

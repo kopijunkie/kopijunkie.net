@@ -89,7 +89,7 @@ module.exports = function(grunt) {
         expand: true,
         cwd: "<%= config.src %>/php",
         src: "**",
-        dest: "<%= config.dist %>/assets/php",
+        dest: "<%= config.dist %>",
         flatten: true,
         filter: "isFile"
       }

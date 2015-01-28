@@ -6,7 +6,7 @@
 
     <meta name="Author" content="Kimmi Gan aka KopiJunkie">
     <meta name="Description" content="Web site and portfolio of Kimmi Gan a.k.a. KopiJunkie - web technologies geek and front end developer">
-    <meta name="Keywords" content="Kimmi Gan, Gan Kimmi, KopiJunkie, Kimmi Gan portfolio, KopiJunkie portfolio, web design, web development, portfolio, front end developer, frontend developer, front-end developer">
+    <meta name="Keywords" content="Kimmi Gan, Gan Kimmi, KopiJunkie, Kimmi Gan portfolio, Gan Kimmi portfolio, KopiJunkie portfolio, web design, web development, portfolio, front end developer, frontend developer, front-end developer">
 
     <title>My Front End Development Setup - 2014 edition | Kopijunkie.net</title>
 
@@ -14,7 +14,12 @@
     <link href="favicon.ico" type="image/x-icon" rel="icon">
 
     <link href="http://fonts.googleapis.com/css?family=Lobster|Lobster+Two|Marvel" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="assets/css/style.min.css">
+    <!-- build:css(dist) assets/css/style.min.css -->
+    <link href="assets/libs/normalize.css/normalize.css" rel="stylesheet" type="text/css">
+    <link href="assets/libs/lightbox/css/lightbox.css" rel="stylesheet" type="text/css">
+    <link href="assets/libs/slick.js/slick.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/main.css" rel="stylesheet" type="text/css">
+    <!-- endbuild -->
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -171,7 +176,12 @@ Now when you run Grunt again, at the end of your Grunt output there will be a ni
         ga('send', 'pageview');
     </script>
 
-    <script src="assets/js/libs.min.js"></script>
+    <!-- build:js(dist) assets/js/libs.min.js -->
+    <script src="assets/libs/momentjs/moment.js"></script>
+    <script src="assets/libs/jquery/jquery.js"></script>
+    <script src="assets/libs/lightbox/js/lightbox.js"></script>
+    <script src="assets/libs/slick.js/slick.min.js"></script>
+    <!-- endbuild -->
 
     <script src="assets/js/last.fm.records.js"></script>
 

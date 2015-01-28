@@ -68,11 +68,9 @@
             },
 
             sendMessage: function(formData) {
-                console.log("send message!", formData);
-
                 $.ajax({
                     type: "POST",
-                    url: "assets/php/send.php",
+                    url: "send.php",
                     data: formData,
                     success: function() {
                         $formEl.slideUp("slow");

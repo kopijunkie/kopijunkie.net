@@ -105,7 +105,7 @@ module.exports = function(grunt) {
     watch: {
       jshint: {
         files: [ "<%= config.src %>/js/**/*.js"],
-        tasks: [ "jshint", "copy" ]
+        tasks: [ "newer:jshint", "copy" ]
       },
       sass: {
         files: [ "<%= config.src %>/scss/**/*.scss" ],
@@ -113,7 +113,7 @@ module.exports = function(grunt) {
       },
       assemble: {
         files: [ "<%= config.src %>/{content,data,templates}/{,*/}*.{md,hbs,yml}" ],
-        tasks: [ "assemble" ]
+        tasks: [ "newer:assemble" ]
       },
       imagemin: {
         files: [ "<%= config.dist %>/assets/{,*/}*.{png,jpg,jpeg,gif,webp,svg}" ],

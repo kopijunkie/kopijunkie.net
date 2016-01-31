@@ -16,12 +16,7 @@
     <link href="favicon.ico" type="image/x-icon" rel="icon">
 
     <link href="http://fonts.googleapis.com/css?family=Lobster|Lobster+Two|Marvel" rel="stylesheet" type="text/css">
-    <!-- build:css(dist) assets/css/style.min.css -->
-    <link href="assets/libs/normalize.css/normalize.css" rel="stylesheet" type="text/css">
-    <link href="assets/libs/lightbox/css/lightbox.css" rel="stylesheet" type="text/css">
-    <link href="assets/libs/slick.js/slick.css" rel="stylesheet" type="text/css">
-    <link href="assets/css/main.css" rel="stylesheet" type="text/css">
-    <!-- endbuild -->
+    <link rel="stylesheet" href="assets/css/style.min.css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -99,6 +94,18 @@
 <h1>Coffee Fueled Ramblings (aka The Blog)</h1>
 
 
+    
+        <article class="blog-post">
+            <h2 class="blog-post__title">Using rsync to deploy to HostGator</h2>
+            <h3 class="blog-post__date">Mon Jan 26 2015 00:00:00 GMT+0000 (GMT)</h3>
+            <p>Deploying my generated site to my HostGator shared server now is just a matter of using &#x60;rsync&#x60; in Terminal to sync my local repository’s dist directory contents to the remote server’s public_html directory. Something like this:</p>
+<p>  rsync -avz --progress --partial -e &#x27;ssh -p 2222&#x27; ~/path/to/dist username@domain.name:/path/to/public_html/</p>
+<p>Here’s an <a href="http://explainshell.com/explain?cmd=rsync+-avz+--progress+--partial+-e">explanation</a> of the &#x60;rsync&#x60; command.</p>
+<p>For quite a while, my personal site deployment process was still old school file transfers over FTP despite using continuous integration tools like Hudson and Jenkins at work. I eventually got around to setting up a PHP web hook when the site’s code base was kept on BitBucket. This was great when my entire repository basically was all the HTML, CSS, JavaScript files needed for the site.</p>
+<p>With my site morphing from a dynamic site with very static content to a pretty much static site with some PHP, setting up PHP web hooks on the Github repo wasn’t quite suitable for me this time. I only need the generated files that my Gruntfile’s assemble task puts in the dist directory every time Grunt runs.</p>
+<p>With &#x60;rsync&#x60;, since I can change what goes where on the fly whenever I need to do a deploy, I could have a subdomain called test.kopijunkie.net that points to a test subdirectory which has a version of my site with new features from another branch of my site’s Github repository. Handy for testing things out stuff in the production environment before being deploying to the actual site.</p>
+
+        </article>
     
         <article class="blog-post">
             <h2 class="blog-post__title">Grunt Timekeeping</h2>
@@ -258,12 +265,7 @@ translate_tabs_to_spaces: true</code></pre>
         ga('send', 'pageview');
     </script>
 
-    <!-- build:js(dist) assets/js/libs.min.js -->
-    <script src="assets/libs/momentjs/moment.js"></script>
-    <script src="assets/libs/jquery/jquery.js"></script>
-    <script src="assets/libs/lightbox/js/lightbox.js"></script>
-    <script src="assets/libs/slick.js/slick.min.js"></script>
-    <!-- endbuild -->
+    <script src="assets/js/libs.min.js"></script>
 
     <script src="assets/js/last.fm.records.js"></script>
 

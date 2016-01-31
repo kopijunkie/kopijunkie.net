@@ -52,10 +52,10 @@
   ],
   "keywords": [
     "assemble",
-    "templates",
+    "static site",
     "handlebars",
-    "site generator",
-    "site builder",
-    "grunt"
+    "grunt",
+    "javascript",
+    "node"
   ]
 }

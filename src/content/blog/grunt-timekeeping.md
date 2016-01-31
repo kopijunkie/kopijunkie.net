@@ -1,6 +1,6 @@
 ---
-title: "My Front End Development Setup - 2014 edition"
-posted: 2014-03-13
+title: "Grunt Timekeeping"
+posted: 2014-10-31
 tags: [ "development", "workflow", "browserstack", "design", "git", "kdiff3", "livereload", "photoshop", "sketch", "sublime text" ]
 blog: true
 ---

@@ -6,7 +6,7 @@ posts: [
           "src/content/blog/my-development-setup-2014.md" ]
 ---
 
-<h1>Blog</h1>
+<h1>Coffee Fueled Ramblings (aka The Blog)</h1>
 
 {{#withSort blog "data.posted"}}
     {{#each this.pages }}
@@ -19,10 +19,3 @@ posts: [
         </article>
     {{/each}}
 {{/withSort}}
-
-{{!-- TODO: remove when done debugging/developing --}}
-{{#each posts}}
-    <article class="blog-post">
-    {{md this}}
-    </article>
-{{/each}}

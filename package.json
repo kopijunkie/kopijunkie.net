@@ -1,7 +1,7 @@
 {
   "name": "kopijunkie.net",
   "description": "Online home of Kimmi Gan - front end web developer.",
-  "version": "0.5.0",
+  "version": "1.6.0",
   "homepage": "https://github.com/kopijunkie/kopijunkienet",
   "author": {
     "name": "Kimmi G.",
@@ -15,7 +15,7 @@
     "url": "https://github.com/kopijunkie/kopijunkienet/issues"
   },
   "engines": {
-    "node": ">=0.8"
+    "node": ">=4.2"
   },
   "scripts": {
     "test": "grunt assemble"

@@ -1,6 +1,6 @@
 # kopijunkie.net
 
-> Code repository for KopiJunkie.net (mk.II - currently still in development)
+> Code repository for KopiJunkie.net (mk.II - built using a static site generator)
 
 [![Build Status](https://travis-ci.org/kopijunkie/kopijunkie.net.svg?branch=master)](https://travis-ci.org/kopijunkie/kopijunkie.net)
 
@@ -15,6 +15,6 @@
 
 
 ## TODO
- * Look into the weird errors coming from the Twitter, Flickr badge widgets
- * Write my own Last.fm visualiser (using library used in existing site) - `JS`
+ * Fix weird errors coming from the Twitter, Flickr badge widgets
+ * Write own Last.fm visualiser (using library used in existing site) - `JS`
  * Fix `grunt-concat` task missing out the first JS file in `build` block - `grunt`
